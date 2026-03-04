@@ -1,0 +1,108 @@
+% =============================================================================
+% Main TeX File for a Brazilian Undergraduate Thesis (TCC)
+% Template Style: IEEEtran for conferences
+% Author: Gemini
+% =============================================================================
+
+\documentclass[conference]{IEEEtran}
+
+% -----------------------------------------------------------------------------
+% PACKAGES
+% -----------------------------------------------------------------------------
+
+% Encoding
+\usepackage[utf8]{inputenc} % Allows the use of UTF-8 characters
+\usepackage[T1]{fontenc}    % Specifies the font encoding
+
+% Language
+\usepackage[brazil]{babel} % Sets the language to Brazilian Portuguese
+
+% Math
+\usepackage{amsmath} % Advanced math environments and symbols
+
+% Graphics
+\usepackage{graphicx} % To include images
+\usepackage{xcolor}   % To use colors
+% \graphicspath{{figuras/}} % Sets the default path for figures
+
+% CSL: Citation Style Language
+\usepackage{cite} % Manages citations in IEEE style
+
+% Hyperlinks
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Alchemon TCC},
+    pdfpagemode=FullScreen,
+}
+
+% -----------------------------------------------------------------------------
+% DOCUMENT INFORMATION
+% -----------------------------------------------------------------------------
+
+	itle{Alchemon: Desenvolvimento de um Jogo Sério para o Ensino da Tabela Periódica}
+
+\author{
+    \IEEEauthorblockN{Mateus Nedel dos Reis}
+    \IEEEauthorblockA{
+        	extit{Curso de Tecnologias em Jogos Digitais} 
+        	extit{Universidade Franciscana}
+        Santa Maria, RS, Brasil 
+        email@example.com
+    }
+}
+
+% -----------------------------------------------------------------------------
+% BEGIN DOCUMENT
+% -----------------------------------------------------------------------------
+
+\begin{document}
+
+% Make the title
+\maketitle
+
+% -----------------------------------------------------------------------------
+% ABSTRACT & KEYWORDS
+% -----------------------------------------------------------------------------
+
+\begin{abstract}
+Este documento descreve o projeto de pesquisa e desenvolvimento do jogo sério "Alchemon", focado no auxílio ao processo de ensino e aprendizagem da Tabela Periódica para estudantes do ensino médio. O projeto aborda a concepção, o design e a implementação de uma ferramenta gamificada que visa aumentar o engajamento e a retenção de conhecimento em um tópico fundamental da química. A metodologia de desenvolvimento será baseada em princípios de design de jogos educativos e avaliação contínua com o público-alvo. Espera-se que o "Alchemon" se torne um recurso didático eficaz e motivador.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Jogos Sérios, Gamificação, Ensino de Química, Tabela Periódica, Tecnologia Educacional.
+\end{IEEEkeywords}
+
+% -----------------------------------------------------------------------------
+% SECTIONS
+%
+% Each chapter of the thesis is included from a separate file
+% in the 'sections' directory. This keeps the project organized.
+% -----------------------------------------------------------------------------
+
+\input{sections/01_introducao.tex}
+\input{sections/02_problema.tex}
+\input{sections/03_objetivos.tex}
+\input{sections/04_justificativa.tex}
+\input{sections/05_fundamentacao.tex}
+\input{sections/06_metodologia.tex}
+\input{sections/07_planejamento_jogo.tex}
+\input{sections/08_conclusao.tex}
+
+% -----------------------------------------------------------------------------
+% BIBLIOGRAPHY
+%
+% The 'IEEEtran' style is a standard for many engineering and tech fields.
+% The bibliography data is stored in 'referencias.bib'.
+% -----------------------------------------------------------------------------
+
+\bibliographystyle{IEEEtran}
+\bibliography{referencias}
+
+\end{document}
+% =============================================================================
+% END OF FILE
+% =============================================================================

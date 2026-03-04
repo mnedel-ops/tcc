@@ -1,0 +1,21 @@
+% Chapter 7: Game Planning
+\section{Planejamento do Jogo "Alchemon"}
+
+Esta seção detalha o conceito e o design do jogo "Alchemon".
+
+\subsection{Conceito}
+"Alchemon" é um RPG de batalha e coleta, onde os "monstros" são personificações dos elementos químicos ("Alchemons"). O jogador assume o papel de um jovem alquimista que explora um mundo de fantasia, captura Alchemons e os utiliza em batalhas. Cada Alchemon possui habilidades e atributos baseados nas propriedades reais do elemento químico que representa. Por exemplo, um Alchemon do tipo "Hélio" (gás nobre) pode ter habilidades defensivas que o tornam "inerte" a certos ataques.
+
+\subsection{Mecânicas Principais}
+\begin{itemize}
+    \item 	extbf{Exploração:} O jogador navega por um mapa-múndi dividido em regiões que correspondem a grupos da Tabela Periódica (metais alcalinos, halogênios, etc.).
+    \item 	extbf{Captura:} Ao encontrar um Alchemon selvagem, o jogador pode tentar capturá-lo respondendo a uma pergunta sobre o elemento correspondente (e.g., "Qual o número atômico do Carbono?").
+    \item 	extbf{Batalha:} As batalhas ocorrem em turnos. A eficácia dos ataques depende das interações entre os tipos de Alchemons, que simulam reações químicas. Por exemplo, um ataque de um Alchemon do tipo "Sódio" pode ser super eficaz contra um do tipo "Cloro", formando "Sal".
+\end{itemize}
+
+O progresso no jogo está diretamente ligado ao aprendizado, incentivando o jogador a estudar a Tabela Periódica para se tornar mais forte no jogo, uma ideia inspirada por \cite{journal_example}.
+A complexidade de uma batalha pode ser modelada pela seguinte relação:
+\begin{equation}
+    C = \sum_{i=1}^{n} P_i 	imes T_i
+\end{equation}
+onde \(C\) é a complexidade, \(P_i\) é a propriedade do elemento \(i\), e \(T_i\) é o tipo de interação.
