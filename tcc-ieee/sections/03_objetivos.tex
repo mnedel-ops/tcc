@@ -1,23 +1,56 @@
-% Chapter 3: Objectives
+% ============================================================
+% sections/03_objetivos.tex — Objetivos
+% ============================================================
+
 \section{Objetivos}
 
-Para investigar o problema de pesquisa, foram definidos um objetivo geral e vários objetivos específicos.
-
 \subsection{Objetivo Geral}
-Desenvolver "Alchemon", um jogo sério para dispositivos móveis, com o propósito de auxiliar e motivar estudantes do ensino médio no aprendizado da Tabela Periódica.
+
+Desenvolver o \textit{Alchemon}, um jogo sério para plataformas digitais que
+utilize mecânicas de coleção e batalha de criaturas baseadas nos elementos
+químicos, com o objetivo de apoiar o ensino da tabela periódica no ensino médio.
 
 \subsection{Objetivos Específicos}
-\begin{itemize}
-    \item Realizar uma revisão bibliográfica sobre o uso de jogos sérios e gamificação no contexto educacional, com foco no ensino de ciências.
-    \item Levantar os requisitos pedagógicos e de design de jogo necessários para a criação de uma ferramenta educacional eficaz, baseando-se em trabalhos como \cite{conference_example}.
-    \item Projetar a mecânica, a narrativa e a interface do jogo "Alchemon" de forma a alinhar os objetivos de aprendizagem com uma experiência de usuário engajadora.
-    \item Implementar um protótipo funcional do jogo utilizando tecnologias de desenvolvimento de jogos modernas.
-    \item Planejar um método de avaliação da eficácia do jogo, a ser aplicado em futuros trabalhos (TCC II), para medir seu impacto no engajamento e na retenção de conhecimento dos alunos.
-\end{itemize}
 
-A equação de engajamento \(E\) pode ser modelada como uma função da diversão \(D\) e do aprendizado percebido \(A\), conforme a Equação~ef{eq:engagement}.
-\begin{equation}
-    E = \alpha D + \beta A
-    \label{eq:engagement}
-\end{equation}
-Onde \(\alpha\) e \(\beta\) são coeficientes que ponderam a importância de cada fator.
+Os objetivos específicos deste trabalho são:
+
+\begin{enumerate}[i.]
+    \item Realizar levantamento bibliográfico sobre jogos sérios e sua aplicação
+          no ensino de ciências \cite{prensky2001digital};
+    \item Definir o escopo, mecânicas e conteúdo educacional do jogo com base
+          em princípios pedagógicos consolidados;
+    \item Projetar a arquitetura do sistema e o design de personagens baseados
+          nos elementos químicos;
+    \item Implementar o protótipo funcional do jogo;
+    \item Avaliar o protótipo por meio de testes com usuários e análise de
+          métricas de aprendizagem.
+\end{enumerate}
+
+% TODO: Refinar objetivos específicos com orientador
+% TODO: Verificar alinhamento com a ementa do curso
+
+\subsection{Delimitação do Escopo}
+
+O presente trabalho, por tratar-se de TCC I, abrange as etapas de pesquisa
+bibliográfica, definição de requisitos, design do jogo e desenvolvimento do
+protótipo inicial. A avaliação com usuários reais e a versão final do produto
+serão conduzidas no âmbito do TCC II.
+
+% Exemplo de tabela de objetivos vs. entregas
+\begin{table}[htbp]
+    \centering
+    \caption{Mapeamento de Objetivos e Entregas — TCC I}
+    \label{tab:objetivos_entregas}
+    \begin{tabular}{@{}p{0.45\columnwidth}p{0.45\columnwidth}@{}}
+        \toprule
+        \textbf{Objetivo} & \textbf{Entrega} \\
+        \midrule
+        Revisão bibliográfica & Referencial teórico \\
+        Design do jogo        & Documento de Design (GDD) \\
+        Prototipação          & Protótipo jogável \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+A Tabela~\ref{tab:objetivos_entregas} apresenta o mapeamento entre os objetivos
+específicos e os artefatos entregues ao final deste trabalho.

@@ -1,21 +1,83 @@
-% Chapter 7: Game Planning
-\section{Planejamento do Jogo "Alchemon"}
+% ============================================================
+% sections/07_planejamento_jogo.tex — Planejamento do Jogo
+% ============================================================
 
-Esta seção detalha o conceito e o design do jogo "Alchemon".
+\section{Planejamento do Jogo}
 
-\subsection{Conceito}
-"Alchemon" é um RPG de batalha e coleta, onde os "monstros" são personificações dos elementos químicos ("Alchemons"). O jogador assume o papel de um jovem alquimista que explora um mundo de fantasia, captura Alchemons e os utiliza em batalhas. Cada Alchemon possui habilidades e atributos baseados nas propriedades reais do elemento químico que representa. Por exemplo, um Alchemon do tipo "Hélio" (gás nobre) pode ter habilidades defensivas que o tornam "inerte" a certos ataques.
+Esta seção descreve o planejamento do \textit{Alchemon} sob a perspectiva de
+design de jogos, detalhando conceito, mecânicas, narrativa e arquitetura
+técnica do sistema.
+
+\subsection{Conceito e \textit{Pitch}}
+
+O \textit{Alchemon} é um RPG de coleção e batalha em que cada criatura
+(\textit{Alchemon}) representa um elemento químico da tabela periódica. O
+jogador assume o papel de um jovem alquimista que coleta, treina e bate com
+seus \textit{Alchemons} em duelos baseados nas propriedades reais dos
+elementos \cite{prensky2001digital}.
 
 \subsection{Mecânicas Principais}
+
+As mecânicas são derivadas do framework MDA (\textit{Mechanics, Dynamics,
+Aesthetics}), que propõe analisar jogos a partir das regras formais, dos
+comportamentos emergentes e das experiências geradas:
+
 \begin{itemize}
-    \item 	extbf{Exploração:} O jogador navega por um mapa-múndi dividido em regiões que correspondem a grupos da Tabela Periódica (metais alcalinos, halogênios, etc.).
-    \item 	extbf{Captura:} Ao encontrar um Alchemon selvagem, o jogador pode tentar capturá-lo respondendo a uma pergunta sobre o elemento correspondente (e.g., "Qual o número atômico do Carbono?").
-    \item 	extbf{Batalha:} As batalhas ocorrem em turnos. A eficácia dos ataques depende das interações entre os tipos de Alchemons, que simulam reações químicas. Por exemplo, um ataque de um Alchemon do tipo "Sódio" pode ser super eficaz contra um do tipo "Cloro", formando "Sal".
+    \item \textbf{Coleção}: o jogador desbloqueia \textit{Alchemons} ao
+          acertar questões sobre os respectivos elementos;
+    \item \textbf{Batalha por turnos}: atributos de ataque e defesa são
+          derivados de propriedades como eletronegatividade e raio atômico;
+    \item \textbf{Progressão}: sistema de experiência e evolução baseado
+          em reações químicas entre elementos.
 \end{itemize}
 
-O progresso no jogo está diretamente ligado ao aprendizado, incentivando o jogador a estudar a Tabela Periódica para se tornar mais forte no jogo, uma ideia inspirada por \cite{journal_example}.
-A complexidade de uma batalha pode ser modelada pela seguinte relação:
-\begin{equation}
-    C = \sum_{i=1}^{n} P_i 	imes T_i
-\end{equation}
-onde \(C\) é a complexidade, \(P_i\) é a propriedade do elemento \(i\), e \(T_i\) é o tipo de interação.
+% TODO: Detalhar sistema de combate com exemplos numéricos
+% TODO: Adicionar diagrama de fluxo das mecânicas
+
+\subsection{Mapeamento Elemento–Atributo}
+
+A Tabela~\ref{tab:atributos} apresenta o mapeamento entre propriedades
+químicas e atributos de jogo:
+
+\begin{table}[htbp]
+    \centering
+    \caption{Mapeamento de Propriedades Químicas para Atributos de Jogo}
+    \label{tab:atributos}
+    \begin{tabular}{@{}ll@{}}
+        \toprule
+        \textbf{Propriedade Química} & \textbf{Atributo de Jogo} \\
+        \midrule
+        Eletronegatividade           & Poder de Ataque           \\
+        Raio Atômico                 & Pontos de Vida (HP)       \\
+        Energia de Ionização         & Defesa Especial           \\
+        Ponto de Fusão               & Resistência Física        \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\subsection{Arquitetura do Sistema}
+
+O sistema é organizado segundo o padrão Model-View-Controller (MVC),
+separando a lógica de negócio (dados dos elementos), a apresentação
+(interface gráfica) e o controle (lógica de batalha e progressão).
+
+\begin{figure}[htbp]
+    \centering
+    \framebox[\columnwidth]{\rule{0pt}{3.5cm} [Diagrama de Arquitetura MVC]}
+    \caption{Arquitetura do sistema \textit{Alchemon} baseada no padrão MVC.}
+    \label{fig:arquitetura}
+\end{figure}
+
+A Fig.~\ref{fig:arquitetura} ilustra a separação de responsabilidades entre
+os componentes do sistema, facilitando a manutenção e escalabilidade do
+código.
+
+\subsection{Design de Personagens}
+
+Cada \textit{Alchemon} possui uma identidade visual inspirada nas
+características do elemento que representa. Por exemplo, o \textit{Alchemon}
+correspondente ao Hidrogênio (H) é pequeno e ágil, enquanto o do Urânio (U)
+é robusto e possui aparência radioativa.
+
+% TODO: Inserir concept art dos primeiros Alchemons desenvolvidos
+% TODO: Descrever processo de criação visual com referência ao ciclo de vida do asset

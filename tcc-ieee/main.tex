@@ -1,108 +1,131 @@
-% =============================================================================
-% Main TeX File for a Brazilian Undergraduate Thesis (TCC)
-% Template Style: IEEEtran for conferences
-% Author: Gemini
-% =============================================================================
+% ============================================================
+% main.tex — Documento Raiz do TCC
+% Projeto: Alchemon - Jogo Sério para Ensino da Tabela Periódica
+% Autor: Mateus Nedel dos Reis
+% Formato: IEEE Conference (IEEEtran)
+% Compilação: pdflatex -> bibtex -> pdflatex -> pdflatex
+%             ou: latexmk -pdf
+% ============================================================
 
 \documentclass[conference]{IEEEtran}
 
-% -----------------------------------------------------------------------------
-% PACKAGES
-% -----------------------------------------------------------------------------
+% ------------------------------------------------------------
+% CODIFICAÇÃO E IDIOMA
+% ------------------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
 
-% Encoding
-\usepackage[utf8]{inputenc} % Allows the use of UTF-8 characters
-\usepackage[T1]{fontenc}    % Specifies the font encoding
+% ------------------------------------------------------------
+% GRÁFICOS E MATEMÁTICA
+% ------------------------------------------------------------
+\usepackage{graphicx}
+\graphicspath{{figuras/}}
+\usepackage{amsmath}
+\usepackage{amssymb}
 
-% Language
-\usepackage[brazil]{babel} % Sets the language to Brazilian Portuguese
-
-% Math
-\usepackage{amsmath} % Advanced math environments and symbols
-
-% Graphics
-\usepackage{graphicx} % To include images
-\usepackage{xcolor}   % To use colors
-% \graphicspath{{figuras/}} % Sets the default path for figures
-
-% CSL: Citation Style Language
-\usepackage{cite} % Manages citations in IEEE style
-
-% Hyperlinks
+% ------------------------------------------------------------
+% HIPERLINKS E CITAÇÕES
+% ------------------------------------------------------------
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
-    linkcolor=blue,
-    filecolor=magenta,      
-    urlcolor=cyan,
-    pdftitle={Alchemon TCC},
-    pdfpagemode=FullScreen,
+    linkcolor=black,
+    citecolor=black,
+    urlcolor=blue,
+    pdftitle={Alchemon: Desenvolvimento de um Jogo Sério para o Ensino da Tabela Periódica},
+    pdfauthor={Mateus Nedel dos Reis},
+    pdfsubject={TCC - Jogos Digitais},
+    pdfkeywords={jogos sérios, tabela periódica, gamificação, ensino}
+}
+\usepackage{cite}
+
+% ------------------------------------------------------------
+% TABELAS E LISTAS
+% ------------------------------------------------------------
+\usepackage{icomma}     % Vírgula decimal em modo matemático (padrão brasileiro)
+\usepackage{array}
+\usepackage{enumerate}
+
+% ------------------------------------------------------------
+% CÓDIGO-FONTE (opcional, para trechos de código)
+% ------------------------------------------------------------
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstset{
+    basicstyle=\ttfamily\footnotesize,
+    keywordstyle=\color{blue}\bfseries,
+    commentstyle=\color{gray},
+    stringstyle=\color{orange},
+    breaklines=true,
+    frame=single,
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    captionpos=b
 }
 
-% -----------------------------------------------------------------------------
-% DOCUMENT INFORMATION
-% -----------------------------------------------------------------------------
-
-	itle{Alchemon: Desenvolvimento de um Jogo Sério para o Ensino da Tabela Periódica}
+% ------------------------------------------------------------
+% TÍTULO E AUTORES
+% ------------------------------------------------------------
+\title{Alchemon: Desenvolvimento de um Jogo Sério\\
+para o Ensino da Tabela Periódica}
 
 \author{
     \IEEEauthorblockN{Mateus Nedel dos Reis}
     \IEEEauthorblockA{
-        	extit{Curso de Tecnologias em Jogos Digitais} 
-        	extit{Universidade Franciscana}
-        Santa Maria, RS, Brasil 
-        email@example.com
+        Curso de Tecnologias em Jogos Digitais\\
+        Universidade Franciscana\\
+        Santa Maria, RS, Brasil\\
+        \textit{email@ufn.edu.br}
     }
 }
 
-% -----------------------------------------------------------------------------
-% BEGIN DOCUMENT
-% -----------------------------------------------------------------------------
-
+% ============================================================
+% INÍCIO DO DOCUMENTO
+% ============================================================
 \begin{document}
 
-% Make the title
 \maketitle
-
-% -----------------------------------------------------------------------------
-% ABSTRACT & KEYWORDS
-% -----------------------------------------------------------------------------
-
+Teste de citacao: \cite{prensky2001digital}
+% ------------------------------------------------------------
+% RESUMO E PALAVRAS-CHAVE
+% ------------------------------------------------------------
 \begin{abstract}
-Este documento descreve o projeto de pesquisa e desenvolvimento do jogo sério "Alchemon", focado no auxílio ao processo de ensino e aprendizagem da Tabela Periódica para estudantes do ensino médio. O projeto aborda a concepção, o design e a implementação de uma ferramenta gamificada que visa aumentar o engajamento e a retenção de conhecimento em um tópico fundamental da química. A metodologia de desenvolvimento será baseada em princípios de design de jogos educativos e avaliação contínua com o público-alvo. Espera-se que o "Alchemon" se torne um recurso didático eficaz e motivador.
+Este trabalho apresenta o desenvolvimento do \textit{Alchemon}, um jogo sério
+voltado ao ensino da tabela periódica para estudantes do ensino médio. O projeto
+explora a interseção entre gamificação e educação em química, propondo uma
+solução lúdica e interativa que visa aumentar o engajamento e a retenção do
+conteúdo pelos alunos. A abordagem metodológica combina o design de jogos
+digitais com princípios pedagógicos modernos, resultando em um produto educativo
+avaliado por métricas de aprendizagem e experiência do usuário. Os resultados
+preliminares indicam que a mecânica baseada em coleta e batalha de elementos
+favorece a memorização das propriedades dos elementos químicos, contribuindo
+para um aprendizado mais significativo e duradouro.
 \end{abstract}
 
 \begin{IEEEkeywords}
-Jogos Sérios, Gamificação, Ensino de Química, Tabela Periódica, Tecnologia Educacional.
+jogos sérios, tabela periódica, gamificação, ensino de química, jogos digitais educacionais
 \end{IEEEkeywords}
 
-% -----------------------------------------------------------------------------
-% SECTIONS
-%
-% Each chapter of the thesis is included from a separate file
-% in the 'sections' directory. This keeps the project organized.
-% -----------------------------------------------------------------------------
 
-\input{sections/01_introducao.tex}
-\input{sections/02_problema.tex}
-\input{sections/03_objetivos.tex}
-\input{sections/04_justificativa.tex}
-\input{sections/05_fundamentacao.tex}
-\input{sections/06_metodologia.tex}
-\input{sections/07_planejamento_jogo.tex}
-\input{sections/08_conclusao.tex}
+% ------------------------------------------------------------
+% SEÇÕES — cada uma em arquivo separado
+% ------------------------------------------------------------
+\input{sections/01_introducao}
+\input{sections/02_problema}
+\input{sections/03_objetivos}
+\input{sections/04_justificativa}
+\input{sections/05_fundamentacao}
+\input{sections/06_metodologia}
+\input{sections/07_planejamento_jogo}
+\input{sections/08_conclusao}
 
-% -----------------------------------------------------------------------------
-% BIBLIOGRAPHY
-%
-% The 'IEEEtran' style is a standard for many engineering and tech fields.
-% The bibliography data is stored in 'referencias.bib'.
-% -----------------------------------------------------------------------------
-
+% ------------------------------------------------------------
+% REFERÊNCIAS BIBLIOGRÁFICAS
+% OBRIGATÓRIO: bibliographystyle + bibliography para bibtex
+% ------------------------------------------------------------
 \bibliographystyle{IEEEtran}
 \bibliography{referencias}
 
 \end{document}
-% =============================================================================
-% END OF FILE
-% =============================================================================

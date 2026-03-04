@@ -1,19 +1,74 @@
-% Chapter 5: Theoretical Foundation
+% ============================================================
+% sections/05_fundamentacao.tex — Fundamentação Teórica
+% ============================================================
+
 \section{Fundamentação Teórica}
 
-Esta seção apresenta a base teórica que sustenta o projeto, abrangendo os principais conceitos relacionados a jogos sérios, gamificação e teorias de aprendizagem aplicadas ao design de jogos.
+Esta seção apresenta os principais conceitos teóricos que embasam o
+desenvolvimento do \textit{Alchemon}, organizados em três eixos: teoria dos
+jogos sérios, aprendizagem baseada em jogos e a tabela periódica como objeto
+de ensino.
 
-\subsection{Jogos Sérios e Gamificação}
-Jogos sérios são jogos projetados para um propósito primário que não é o puro entretenimento. Conforme discutido por autores como Miyamoto \cite{conference_example}, o design de jogos pode ser aplicado a diversos contextos, incluindo treinamento, simulação e educação. A gamificação, por sua vez, refere-se ao uso de elementos e mecânicas de jogos em contextos de não-jogo para aumentar o engajamento e a motivação dos usuários.
+\subsection{Jogos Sérios (\textit{Serious Games})}
 
-\subsection{Teorias da Aprendizagem}
-O design de "Alchemon" será influenciado por teorias da aprendizagem como o Construtivismo e o Conectivismo. O Construtivismo, popularizado por Piaget, postula que o aprendizado é um processo ativo de construção de novos conhecimentos com base em experiências anteriores. Um jogo que permite a exploração e a experimentação, como o proposto, alinha-se perfeitamente com esta visão.
+Os jogos sérios são definidos como aplicações que, apesar de utilizarem
+tecnologias e mecânicas de entretenimento, possuem objetivos primários além
+da diversão, como treinamento, educação ou conscientização
+\cite{mayer2019serious}. Desde os anos 2000, o campo experimentou crescimento
+expressivo, impulsionado pela disseminação de dispositivos digitais e pela
+consolidação de evidências sobre a eficácia do aprendizado lúdico.
 
-O design de objetos e interfaces também deve considerar os princípios de usabilidade e design centrado no usuário, para garantir que a ferramenta seja intuitiva e fácil de usar, como Norman descreve em seu livro seminal \cite{book_example}. A clareza da interface é crucial para não criar barreiras ao aprendizado.
+A taxonomia de Mayer (2019) classifica os jogos sérios em três categorias
+principais: instrucionais, exploratórios e participativos. O \textit{Alchemon}
+se enquadra predominantemente na categoria instrucional, com elementos
+exploratórios na mecânica de descoberta de novos elementos.
 
-\begin{figure}[h]
+% TODO: Ampliar com outras taxonomias (Sawyer & Smith, Zyda)
+% TODO: Incluir exemplos de jogos sérios de sucesso na área científica
+
+\subsection{Aprendizagem Baseada em Jogos}
+
+Gee \cite{gee2003videogames} identificou 36 princípios de aprendizagem
+incorporados em bons videogames, entre os quais destacam-se: o princípio da
+identidade projetada, o feedback imediato e o aprendizado situado. Esses
+princípios alinham-se com as teorias construtivistas de Vygotsky e Piaget,
+que enfatizam a construção ativa do conhecimento.
+
+A aprendizagem baseada em jogos (\textit{Game-Based Learning} — GBL) distingue-se
+da gamificação: enquanto a gamificação adiciona elementos de jogo a contextos
+não-jogo, a GBL utiliza jogos completos como veículo de ensino \cite{prensky2001digital}.
+
+\begin{equation}
+    \text{GBL} = \text{Conteúdo Curricular} \oplus \text{Mecânicas de Jogo}
+    \label{eq:gbl}
+\end{equation}
+
+A Eq.~\eqref{eq:gbl} representa de forma simbólica a integração entre
+conteúdo e mecânicas que caracteriza a GBL.
+
+\subsection{A Tabela Periódica como Objeto de Ensino}
+
+A tabela periódica organiza os 118 elementos químicos conhecidos por número
+atômico crescente, revelando padrões de propriedades físicas e químicas.
+Entre os desafios pedagógicos associados ao seu ensino, destacam-se:
+
+\begin{itemize}
+    \item O volume de informação a ser memorizado;
+    \item A natureza abstrata de conceitos como eletronegatividade e raio atômico;
+    \item A falta de conexão com o cotidiano dos estudantes.
+\end{itemize}
+
+% Exemplo de figura com diagrama
+\begin{figure}[htbp]
     \centering
-    % \includegraphics[width=0.9\columnwidth]{placeholder2}
-    \caption{Exemplo de um ciclo de feedback em um jogo sério, onde o jogador age, recebe feedback e aprende.}
-    \label{fig:feedback_loop}
+    \framebox[\columnwidth]{\rule{0pt}{3cm} [Diagrama: Propriedades Periódicas]}
+    \caption{Tendências das propriedades periódicas ao longo dos grupos e períodos.}
+    \label{fig:propriedades}
 \end{figure}
+
+A Fig.~\ref{fig:propriedades} ilustra as tendências das principais propriedades
+periódicas, que são utilizadas no \textit{Alchemon} para definir os atributos
+de batalha de cada criatura-elemento.
+
+% TODO: Referenciar diretrizes da BNCC para o ensino de química
+% TODO: Incluir subseção sobre design de jogos (MDA Framework)

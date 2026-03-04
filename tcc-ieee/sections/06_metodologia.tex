@@ -1,14 +1,75 @@
-% Chapter 6: Methodology
+% ============================================================
+% sections/06_metodologia.tex — Metodologia
+% ============================================================
+
 \section{Metodologia}
 
-A metodologia de desenvolvimento deste projeto será baseada no modelo ADDIE, um framework de design instrucional que consiste em cinco fases: Análise (Analyze), Design, Desenvolvimento (Develop), Implementação (Implement) e Avaliação (Evaluate). Para este TCC I, o foco estará nas três primeiras fases: Análise, Design e Desenvolvimento do protótipo.
+Este trabalho adota uma abordagem de pesquisa aplicada com método de
+desenvolvimento iterativo, combinando revisão bibliográfica sistemática,
+design centrado no usuário e prototipação ágil \cite{mayer2019serious}.
 
-\begin{enumerate}
-    \item 	extbf{Análise:} Esta fase envolve a revisão da literatura para fundamentar o projeto, a definição do público-alvo (estudantes do ensino médio) e a análise de jogos similares para identificar boas práticas e oportunidades de inovação.
-    
-    \item 	extbf{Design:} Nesta etapa, serão criados os documentos de design do jogo (Game Design Document - GDD). O GDD detalhará a narrativa, as mecânicas de jogo (como batalhas, coleta de elementos, etc.), o design de níveis, a arte conceitual e o design da interface do usuário. A estrutura do jogo será planejada para cobrir os principais grupos da Tabela Periódica.
-    
-    \item 	extbf{Desenvolvimento:} A fase de desenvolvimento consistirá na implementação de um protótipo funcional do jogo. A ferramenta escolhida para o desenvolvimento será o motor de jogo Godot Engine, devido à sua natureza de código aberto e flexibilidade. A programação será feita em GDScript. O protótipo incluirá a mecânica central do jogo e uma pequena porção do conteúdo planejado.
+\subsection{Classificação da Pesquisa}
+
+Quanto à natureza: pesquisa aplicada, pois visa gerar um produto com
+aplicação prática imediata. Quanto à abordagem: qualitativa e quantitativa
+(mista). Quanto aos objetivos: exploratória e descritiva. Quanto aos
+procedimentos: pesquisa bibliográfica e estudo de desenvolvimento.
+
+% TODO: Fundamentar classificação metodológica com referência (ex: Gil, 2017)
+
+\subsection{Etapas do Desenvolvimento}
+
+O desenvolvimento do \textit{Alchemon} está organizado nas seguintes etapas:
+
+\begin{enumerate}[1.]
+    \item \textbf{Pesquisa bibliográfica}: revisão de literatura sobre jogos
+          sérios, GBL e ensino de química;
+    \item \textbf{Análise de requisitos}: levantamento das necessidades
+          educacionais e técnicas;
+    \item \textbf{Design do jogo}: elaboração do \textit{Game Design Document} (GDD);
+    \item \textbf{Prototipação}: implementação do protótipo de baixa e alta fidelidade;
+    \item \textbf{Avaliação} (TCC II): testes com usuários e análise de resultados.
 \end{enumerate}
 
-A avaliação da eficácia do jogo (fases de Implementação e Avaliação do ADDIE) será planejada nesta etapa, mas sua execução ocorrerá em uma fase posterior da pesquisa (TCC II).
+\subsection{Ferramentas e Tecnologias}
+
+% TODO: Confirmar motor de jogo com orientador e atualizar esta subseção
+
+\begin{table}[htbp]
+    \centering
+    \caption{Ferramentas Utilizadas no Desenvolvimento}
+    \label{tab:ferramentas}
+    \begin{tabular}{@{}lll@{}}
+        \toprule
+        \textbf{Ferramenta} & \textbf{Categoria} & \textbf{Versão} \\
+        \midrule
+        Unity               & Motor de Jogo      & 2022 LTS         \\
+        Visual Studio Code  & Editor de Código   & 1.x              \\
+        Blender             & Modelagem 3D       & 4.x              \\
+        Git / GitHub        & Controle de Versão & ---              \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+A Tabela~\ref{tab:ferramentas} lista as principais ferramentas adotadas no
+projeto, selecionadas por serem gratuitas, amplamente utilizadas na indústria
+e compatíveis com o ambiente de desenvolvimento do autor.
+
+\subsection{Métricas de Avaliação}
+
+A eficácia educacional do \textit{Alchemon} será mensurada por meio do
+coeficiente de ganho normalizado de Hake:
+
+\begin{equation}
+    \langle g \rangle = \frac{\langle S_{pós} \rangle - \langle S_{pré} \rangle}
+                             {100\% - \langle S_{pré} \rangle}
+    \label{eq:hake}
+\end{equation}
+
+\noindent onde $\langle S_{pré} \rangle$ e $\langle S_{pós} \rangle$ representam
+as médias dos escores percentuais em pré-teste e pós-teste, respectivamente.
+Valores de $\langle g \rangle > 0{,}3$ são considerados ganhos satisfatórios
+% NOTA: O uso de {,} em modo matemático requer \usepackage{icomma} ou siunitx
+\cite{gee2003videogames}.
+
+% TODO: Detalhar protocolo de coleta de dados e comitê de ética (se aplicável)
