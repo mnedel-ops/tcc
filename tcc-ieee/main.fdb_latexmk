@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1772646005.39591 "main.aux" "main.bbl" "main" 1772814887.57745 2
+["bibtex main"] 1772815526.69846 "main.aux" "main.bbl" "main" 1772815526.84262 2
   "./referencias.bib" 1772656126 1740 a8a7e44568fd9cc5f455ca65359260c7 ""
   "/usr/share/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1755987285 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "main.aux" 1772814887.07719 7156 a8015888fc9128d6f9a58167a2a5cf0b "pdflatex"
+  "main.aux" 1772815526.68879 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1772814885.81262 "/run/media/reis/SDextra/Faculdade/tcc/tcc-ieee/main.tex" "main.pdf" "main" 1772814887.57832 2
-  "/run/media/reis/SDextra/Faculdade/tcc/tcc-ieee/main.tex" 1772646005.0515 4710 e19c58e44edc0f3b31fe12f955da9e41 ""
+["pdflatex"] 1772815524.69595 "/run/media/reis/SDextra/Faculdade/tcc/tcc-ieee/main.tex" "main.pdf" "main" 1772815526.40825 2
+  "/run/media/reis/SDextra/Faculdade/tcc/tcc-ieee/main.tex" 1772815524.44479 4710 e19c58e44edc0f3b31fe12f955da9e41 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1755987285 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1755987285 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1755987285 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -123,10 +123,10 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1755987285 42087 b0f9697c952c8f5a8eede4134282cb0d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1772552222 5311557 9da84c45f5b388655502706482323571 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1772552180 2008230 15f252adeb7e6cb2b57edfc3fc0c2e61 ""
-  "main.aux" 1772814887.07719 7156 a8015888fc9128d6f9a58167a2a5cf0b "pdflatex"
-  "main.bbl" 1772646005.4665 0 d41d8cd98f00b204e9800998ecf8427e "bibtex main"
-  "main.out" 1772814887.08219 5337 a6b53aa7ec64d5de7bce8366ff6b4088 "pdflatex"
-  "main.tex" 1772646005.0515 4710 e19c58e44edc0f3b31fe12f955da9e41 ""
+  "main.aux" 1772815526.68879 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "main.bbl" 1772815526.83879 0 d41d8cd98f00b204e9800998ecf8427e "bibtex main"
+  "main.out" 0 -1 0 "pdflatex"
+  "main.tex" 1772815524.44479 4710 e19c58e44edc0f3b31fe12f955da9e41 ""
   "sections/01_introducao.tex" 1772656126 2729 dcc5c8b16e37576862a539c3c2456013 ""
   "sections/02_problema.tex" 1772656126 2316 8f1b7a1ff49b9bcbc542dd05ed3970a8 ""
   "sections/03_objetivos.tex" 1772656126 2260 396171b352cd00efe2a77cae6d8ac640 ""
