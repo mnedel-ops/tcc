@@ -1,0 +1,33 @@
+{
+  "latex-workshop.latex.rootFile.useSubFile": false,
+  "latex-workshop.latex.rootFile.indicator": "% !TEX root",
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk (pdflatex) — TCC UFN",
+      "tools": ["latexmk"]
+    }
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-pdf",
+        "-pdflatex=pdflatex -interaction=nonstopmode -synctex=1 %O %S",
+        "-outdir=%OUTDIR%",
+        "%DOC%"
+      ],
+      "env": {}
+    }
+  ],
+  "latex-workshop.latex.outDir": "%DIR%/out",
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.synctex.afterBuild.enabled": true,
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.latex.clean.fileTypes": [
+    "*.aux", "*.bbl", "*.blg", "*.idx", "*.ind",
+    "*.lof", "*.lot", "*.out", "*.toc", "*.acn",
+    "*.acr", "*.alg", "*.glg", "*.glo", "*.gls",
+    "*.fls", "*.log", "*.fdb_latexmk", "*.snm", "*.synctex.gz"
+  ]
+}
