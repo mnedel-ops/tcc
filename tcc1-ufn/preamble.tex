@@ -1,0 +1,114 @@
+% ENCODING & LANGUAGE
+\usepackage[utf8]{inputenc}
+% UTF-8 encoding for Portuguese characters (ã, ç, ê, etc.)
+
+\usepackage[T1]{fontenc}
+% T1 font encoding for correct hyphenation of accented words
+
+\usepackage[brazilian]{babel}
+% Brazilian Portuguese hyphenation rules and date formatting
+
+% TYPOGRAPHY
+\usepackage{mathptmx}
+% Times New Roman for body text and math — matches UFN formatting standard
+
+% GEOMETRY (UFN MARGINS)
+\usepackage[
+  a4paper,
+  top=2.5cm,
+  bottom=2.5cm,
+  left=1.8cm,
+  right=1.8cm
+]{geometry}
+% Overrides IEEEtran defaults to match UFN submission margins
+
+% FIGURES
+\usepackage{graphicx}
+% \includegraphics — single figures from /images folder
+
+\usepackage{subcaption}
+% \begin{subfigure} — side-by-side figures (e.g., robot arm views)
+
+% MATHEMATICS
+\usepackage{amsmath}
+% align, equation, matrix environments — for IK/AI formulas
+
+\usepackage{amssymb}
+% \mathbb{R}, \forall, \exists — for formal notation
+
+% CITATIONS
+\usepackage{cite}
+% IEEE-style numeric citation compression: [1]–[4] instead of [1][2][3][4]
+
+% CODE LISTINGS
+\usepackage{listings}
+\usepackage{xcolor}
+% Configure listings for UFN monospaced code with line numbers:
+\lstset{
+  basicstyle=	tfamily\footnotesize,
+  numbers=left,
+  numberstyle=	iny\color{gray},
+  stepnumber=1,
+  numbersep=5pt,
+  backgroundcolor=\color{gray!10},
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  frame=single,
+  rulecolor=\color{black!30},
+  tabsize=2,
+  captionpos=b,
+  breaklines=true,
+  breakatwhitespace=false,
+  keywordstyle=\color{blue!70}\bfseries,
+  commentstyle=\color{green!50!black}\itshape,
+  stringstyle=\color{red!60},
+  language=Python,   % default; override per listing with language=Java, C++, etc.
+  literate=
+    {á}{{'a}}1 {é}{{'e}}1 {í}{{'i}}1 {ó}{{'o}}1 {ú}{{'u}}1
+    {Á}{{'A}}1 {É}{{'E}}1 {Í}{{'I}}1 {Ó}{{'O}}1 {Ú}{{'U}}1
+    {ã}{{\~a}}1 {õ}{{\~o}}1 {ç}{{\c{c}}}1 {ñ}{{\~n}}1
+}
+% literate block handles Portuguese characters inside code blocks
+
+% TABLES
+\usepackage{tabularx}
+% Auto-expanding columns — required for TCC 2 schedule table
+
+\usepackage{booktabs}
+% 	oprule, \midrule, \bottomrule — professional table rules (no \hline)
+
+% PDF METADATA & HYPERLINKS
+\usepackage[
+  pdftitle={TCC 1 — [TÍTULO DO TRABALHO]},
+  pdfauthor={[NOME DO ALUNO]},
+  pdfsubject={Trabalho de Conclusão de Curso — UFN},
+  pdfkeywords={[palavra1], [palavra2], [palavra3]},
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=blue!70!black,
+  bookmarks=true
+]{hyperref}
+% Must be the LAST package loaded — handles all PDF metadata and clickable refs
+
+% CUSTOM ABNT COMMANDS
+% ABNT NBR 10520 — Long quotation (citação longa > 3 linhas):
+% 4cm left indent, \small font, single-spaced, no quotation marks
+
+ewenvironment{citacaolonga}{%
+  \begin{list}{}{%
+    \setlength{\leftmargin}{4cm}%
+    \setlength{ightmargin}{0cm}%
+    \setlength{	opsep}{0pt}%
+    \setlength{\partopsep}{0pt}%
+  }%
+  \item\small\setstretch{1.0}%
+}{%
+  \end{list}%
+}
+% Usage: \begin{citacaolonga} texto da citação... \end{citacaolonga}
+
+% Convenience macro for institutional name
+
+ewcommand{\UFN}{Universidade Franciscana (UFN)}
