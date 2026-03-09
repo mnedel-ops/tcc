@@ -1,0 +1,41 @@
+% !TEX root = main.tex
+
+%% ─────────────────────────────────────────────────────────────
+%% HOW TO ADD A NEW SECTION
+%% ─────────────────────────────────────────────────────────────
+%% 1. Create:  sections/NN_slug.tex
+%%             where NN  = zero-padded number (e.g. 08, 09, 10)
+%%             where slug = lowercase-hyphenated section name
+%%             e.g.  sections/08_resultados.tex
+%%
+%% 2. Start the file with:
+%%       % [Section name in Portuguese]
+%%       \section{Nome da Seção}
+%%
+%% 3. Add to main.tex (before \input{sections/07_bibliography}):
+%%       \input{sections/08_resultados}
+%%
+%% 4. Run:  latexmk -pdf main.tex
+%%          (biblatex needs two passes — latexmk handles this automatically)
+%% ─────────────────────────────────────────────────────────────
+
+\documentclass[10pt, conference, compsocconf]{IEEEtran}
+
+\input{preamble}
+
+\begin{document}
+
+\input{sections/00_header}
+\maketitle
+\input{sections/01_abstract}
+\IEEEpeerreviewmaketitle
+\input{sections/02_introducao}
+\input{sections/03_secao}
+\input{sections/04_secao2}
+\input{sections/05_metodologia}
+\input{sections/06_conclusao}
+\input{sections/07_bibliography}
+
+\end{document}
+
+
