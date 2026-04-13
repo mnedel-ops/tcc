@@ -1,7 +1,7 @@
 % --- Encoding & Language ---
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[brazilian]{babel}
+% \usepackage[portuguese]{babel}  % Temporarily disabled due to system TeX configuration
 
 % --- Graphics & Floats ---
 \usepackage{graphicx,url}
@@ -16,7 +16,7 @@
 
 % --- Bibliography (biblatex — UFN style) ---
 \usepackage{csquotes} % required by biblatex when babel is loaded
-\usepackage[natbib=true, style=numeric, sorting=none]{biblatex}
+\usepackage[natbib=true, style=numeric, sorting=none, backend=bibtex]{biblatex}
 \addbibresource{references.bib}
 
 % --- Hyphenation exceptions ---

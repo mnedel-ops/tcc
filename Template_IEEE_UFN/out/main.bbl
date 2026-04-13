@@ -1,0 +1,86 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global/global}
+  \entry{Ryan1985}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=RRM}{%
+         family={Ryan},
+         familyi={R\bibinitperiod},
+         given={Richard\bibnamedelima M},
+         giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=DEL}{%
+         family={Deci},
+         familyi={D\bibinitperiod},
+         given={Edward\bibnamedelima L},
+         giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RRMDEL1}
+    \strng{fullhash}{RRMDEL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Human beings can be proactive and engaged or, alternatively , passive and alienated, largely as a function of the social conditions in which they develop and function. Accordingly , research guided by self-determination theo~ has focused on the social-contextual conditions that facilitate versus forestall the natural processes of self-motivation and healthy psychological development. Specifically, factors have been examined that enhance versus undermine intrinsic motivation, self-regulation, and well-being. The findings have led to the postulate of three innate psychological needs-competence, autonomy, and relatedness-which when satisfied yield enhanced self-motivation and mental health and when thwarted lead to diminished motivation and well-being. Also considered is the significance of these psychological needs and processes within domains such as health care, education, work, sport, religion, and psychotherapy. T he fullest representations of humanity show people to be curious, vital, and self-motivated. At their best, they are agentic and inspired, striving to learn; extend themselves; master new skills; and apply their talents responsibly. That most people show considerable effort, agency, and commitment in their lives appears, in fact, to be more normative than exceptional, suggesting some very positive and persistent features of human nature. Yet, it is also clear that the human spirit can be diminished or crushed and that individuals sometimes reject growth and responsibility. Regardless of social strata or cultural origin, examples of both children and adults who are apathetic, alienated, and irresponsible are abundant. Such non-optimal human functioning can be observed not only in our psychological clinics but also among the millions who, for hours a day, sit passively before their televisions, stare blankly from the back of their classrooms, or wait listlessly for the weekend as they go about their jobs. The persistent, proactive, and positive tendencies of human nature are clearly not invariantly apparent. The fact that human nature, phenotypically expressed, can be either active or passive, constructive or indolent, suggests more than mere dispositional differences and is a function of more than just biological endowments. It also bespeaks a wide range of reactions to social environments that is worthy of our most intense scientific investigation. Specifically, social contexts catalyze both within-and between person differences in motivation and personal growth, resulting in people being more self-motivated, energized, and integrated in some situations, domains, and cultures than in others. Research on the conditions that foster versus undermine positive human potentials has both theoretical import and practical significance because it can contribute not only to formal knowledge of the causes of human behavior but also to the design of social environments that optimize people's development, performance, and well-being. Research guided by self-determination theory (SDT) has had an ongoing concern with precisely these%
+    }
+    \field{pages}{145\bibrangedash 162}
+    \field{title}{Self-Determination Theory: An Approach to Motivation for Learning}
+    \field{volume}{94}
+    \field{journaltitle}{Psychological Review}
+    \field{year}{1985}
+  \endentry
+
+  \entry{Ryan2020}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=RRM}{%
+         family={Ryan},
+         familyi={R\bibinitperiod},
+         given={Richard\bibnamedelima M.},
+         giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=DEL}{%
+         family={Deci},
+         familyi={D\bibinitperiod},
+         given={Edward\bibnamedelima L.},
+         giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Academic Press Inc.}%
+    }
+    \strng{namehash}{RRMDEL2}
+    \strng{fullhash}{RRMDEL2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Self-determination theory (SDT) is a broad framework for understanding factors that facilitate or undermine intrinsic motivation, autonomous extrinsic motivation, and psychological wellness, all issues of direct relevance to educational settings. We review research from SDT showing that both intrinsic motivation and well-internalized (and thus autonomous) forms of extrinsic motivation predict an array of positive outcomes across varied educational levels and cultural contexts and are enhanced by supports for students’ basic psychological needs for autonomy, competence, and relatedness. Findings also show a dynamic link between teacher and student motivation, as teachers are themselves impacted and constrained by controlling mandates, institutional pressures, and leadership styles. Ironically, despite substantial evidence for the importance of psychological need satisfactions in learning contexts, many current educational policies and practices around the globe remain anchored in traditional motivational models that fail to support students’ and teachers’ needs, a knowledge versus policy gap we should aspire to close.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.cedpsych.2020.101860
+    \endverb
+    \field{issn}{10902384}
+    \field{pages}{1\bibrangedash 19}
+    \field{title}{Intrinsic and extrinsic motivation from a self-determination theory perspective: Definitions, theory, practices, and future directions}
+    \field{volume}{61}
+    \field{journaltitle}{Contemporary Educational Psychology}
+    \field{month}{04}
+    \field{year}{2020}
+  \endentry
+\enddatalist
+\endinput
