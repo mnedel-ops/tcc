@@ -160,6 +160,130 @@
     \field{year}{2020}
   \endentry
 
+  \entry{Coelho2025}{article}{}{}
+    \name{author}{6}{}{%
+      {{hash=CF}{%
+         family={Coelho},
+         familyi={C\bibinitperiod},
+         given={Franz},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=RB}{%
+         family={Rando},
+         familyi={R\bibinitperiod},
+         given={Belén},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=AD}{%
+         family={Aparício},
+         familyi={A\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=PSP}{%
+         family={Pontífice-Sousa},
+         familyi={P\bibinithyphendelim S\bibinitperiod},
+         given={Patrícia},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=GD}{%
+         family={Gonçalves},
+         familyi={G\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=AAM}{%
+         family={Abreu},
+         familyi={A\bibinitperiod},
+         given={Ana\bibnamedelima Maria},
+         giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CF+1}
+    \strng{fullhash}{CFRBADPSPGDAAM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1007/s40692-025-00366-x
+    \endverb
+    \field{title}{The impact of educational gamification on cognition, emotions, and motivation: a randomized controlled trial}
+    \field{journaltitle}{Journal of Computers in Education}
+    \field{year}{2025}
+  \endentry
+
+  \entry{Ryan2022}{article}{}{}
+    \name{author}{6}{}{%
+      {{hash=RRM}{%
+         family={Ryan},
+         familyi={R\bibinitperiod},
+         given={Richard\bibnamedelima M.},
+         giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=DJJ}{%
+         family={Duineveld},
+         familyi={D\bibinitperiod},
+         given={Jasper\bibnamedelima J.},
+         giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=DSID}{%
+         family={Domenico},
+         familyi={D\bibinitperiod},
+         given={Stefano I.\bibnamedelima Di},
+         giveni={S\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=RWS}{%
+         family={Ryan},
+         familyi={R\bibinitperiod},
+         given={William\bibnamedelima S.},
+         giveni={W\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=SBA}{%
+         family={Steward},
+         familyi={S\bibinitperiod},
+         given={Ben\bibnamedelima A.},
+         giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=BEL}{%
+         family={Bradshaw},
+         familyi={B\bibinitperiod},
+         given={Emma\bibnamedelima L.},
+         giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RRM+1}
+    \strng{fullhash}{RRMDJJDSIDRWSSBABEL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{A Meta-Review of Meta-Analytic Findings Evaluating Self-Determination Theory}
+    \field{volume}{34}
+    \field{journaltitle}{Educational Psychology Review}
+    \field{year}{2022}
+  \endentry
+
+  \entry{Gao2024}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=GF}{%
+         family={Gao},
+         familyi={G\bibinitperiod},
+         given={Fei},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GF1}
+    \strng{fullhash}{GF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1007/s11528-024-00968-9
+    \endverb
+    \field{number}{4}
+    \field{pages}{661\bibrangedash 671}
+    \field{title}{Advancing Gamification Research and Practice with Three Underexplored Ideas in Self-Determination Theory}
+    \field{volume}{68}
+    \field{journaltitle}{TechTrends}
+    \field{year}{2024}
+  \endentry
+
   \entry{Ausubel1963}{book}{}{}
     \name{author}{1}{}{%
       {{hash=ADP}{%
@@ -249,7 +373,7 @@
          giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod},
       }}%
     }
-    \strng{namehash}{CF+1}
+    \strng{namehash}{CF+2}
     \strng{fullhash}{CFCCRJSND1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -258,6 +382,36 @@
     \field{volume}{8}
     \field{journaltitle}{Revista Brasileira de Ensino de Ciência e Tecnologia}
     \field{year}{2015}
+  \endentry
+
+  \entry{Bryce2024}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=BTGK}{%
+         family={Bryce},
+         familyi={B\bibinitperiod},
+         given={T.\bibnamedelima G.\bibnamedelima K.},
+         giveni={T\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=BEJ}{%
+         family={Blown},
+         familyi={B\bibinitperiod},
+         given={E.\bibnamedelima J.},
+         giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BTGKBEJ1}
+    \strng{fullhash}{BTGKBEJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1007/s12144-023-04440-4
+    \endverb
+    \field{number}{5}
+    \field{pages}{1\bibrangedash 16}
+    \field{title}{Ausubel’s meaningful learning re-visited}
+    \field{volume}{43}
+    \field{journaltitle}{Current Psychology}
+    \field{year}{2024}
   \endentry
 
   \entry{Portnow2012}{online}{}{}
