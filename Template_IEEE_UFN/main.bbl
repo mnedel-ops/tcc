@@ -244,6 +244,44 @@
     \field{year}{2020}
   \endentry
 
+  \entry{Soriano-Sanchez2026}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=SSJG}{%
+         family={Soriano-Sánchez},
+         familyi={S\bibinithyphendelim S\bibinitperiod},
+         given={José\bibnamedelima Gabriel},
+         giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=LRQ}{%
+         family={López},
+         familyi={L\bibinitperiod},
+         given={Rocío\bibnamedelima Quijano},
+         giveni={R\bibinitperiod\bibinitdelim Q\bibinitperiod},
+      }}%
+      {{hash=RDA}{%
+         family={Rodríguez},
+         familyi={R\bibinitperiod},
+         given={Diego\bibnamedelima Airado},
+         giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SSJGLRQRDA1}
+    \strng{fullhash}{SSJGLRQRDA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.3390/educsci16010122
+    \endverb
+    \field{number}{1}
+    \field{pages}{122}
+    \field{title}{The Impact of Game-Based Learning on Motivation,
+  Self-Efficacy, and Academic Achievement in the Natural Sciences: A
+  Meta-Analysis}
+    \field{volume}{16}
+    \field{journaltitle}{Education Sciences}
+    \field{year}{2026}
+  \endentry
+
   \entry{Bellotti2010}{article}{}{}
     \name{author}{3}{}{%
       {{hash=BF}{%

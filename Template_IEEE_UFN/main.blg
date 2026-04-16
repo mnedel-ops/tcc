@@ -19,49 +19,47 @@ Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Database file #1: main-blx.bib
 Database file #2: references.bib
-Warning--I didn't find a database entry for "Soriano-Sanches2026"
 Biblatex version: 3.21
 Reallocated wiz_functions (elt_size=8) to 9000 items from 6000.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
-You've used 30 entries,
+You've used 31 entries,
             6402 wiz_defined-function locations,
-            1423 strings with 15409 characters,
-and the built_in function-call counts, 275051 in all, are:
-= -- 23866
-> -- 3349
-< -- 889
-+ -- 7002
-- -- 1203
-* -- 20498
-:= -- 31246
+            1430 strings with 15672 characters,
+and the built_in function-call counts, 287611 in all, are:
+= -- 25004
+> -- 3476
+< -- 913
++ -- 7277
+- -- 1260
+* -- 21579
+:= -- 32712
 add.period$ -- 0
-call.type$ -- 30
-change.case$ -- 531
+call.type$ -- 31
+change.case$ -- 538
 chr.to.int$ -- 45
-cite$ -- 58
-duplicate$ -- 24661
-empty$ -- 24742
-format.name$ -- 1995
-if$ -- 56454
+cite$ -- 60
+duplicate$ -- 25570
+empty$ -- 25909
+format.name$ -- 2077
+if$ -- 59039
 int.to.chr$ -- 0
-int.to.str$ -- 82
+int.to.str$ -- 84
 missing$ -- 0
-newline$ -- 961
-num.names$ -- 1481
-pop$ -- 10608
+newline$ -- 997
+num.names$ -- 1519
+pop$ -- 10980
 preamble$ -- 1
-purify$ -- 730
+purify$ -- 746
 quote$ -- 0
-skip$ -- 5744
+skip$ -- 5920
 stack$ -- 0
-substring$ -- 48783
-swap$ -- 4247
-text.length$ -- 672
+substring$ -- 51408
+swap$ -- 4401
+text.length$ -- 699
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 1002
+type$ -- 1036
 warning$ -- 0
-while$ -- 3238
+while$ -- 3362
 width$ -- 0
-write$ -- 932
-(There was 1 warning)
+write$ -- 967
