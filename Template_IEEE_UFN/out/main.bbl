@@ -17,27 +17,294 @@
 \endgroup
 
 \datalist[entry]{none/global//global/global/global}
-  \entry{Huizinga2014}{book}{}{}
-    \name{author}{1}{}{%
-      {{hash=HJ}{%
-         family={Huizinga},
-         familyi={H\bibinitperiod},
-         given={Johan},
-         giveni={J\bibinitperiod},
+  \entry{Latonio2023}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=LBC}{%
+         family={Latonio},
+         familyi={L\bibinitperiod},
+         given={B.\bibnamedelima C.},
+         giveni={B\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=LRAS}{%
+         family={Limjuco},
+         familyi={L\bibinitperiod},
+         given={R.\bibnamedelima A.\bibnamedelima S.},
+         giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=VJMA}{%
+         family={Villaluz},
+         familyi={V\bibinitperiod},
+         given={J.\bibnamedelima M.\bibnamedelima A.},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim A\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
-      {Perspectiva}%
+      {Academia Pedia}%
     }
-    \strng{namehash}{HJ1}
-    \strng{fullhash}{HJ1}
+    \strng{namehash}{LBCLRASVJMA1}
+    \strng{fullhash}{LBCLRASVJMA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{title}{Homo Ludens: o jogo como elemento da cultura}
-    \list{location}{1}{%
-      {São Paulo}%
+    \verb{doi}
+    \verb 10.11594/ijmaber.04.06.14
+    \endverb
+    \field{number}{6}
+    \field{pages}{1878\bibrangedash 1892}
+    \field{title}{Beyond Symbols and Trends: Conceptual Understanding and Motivation in Periodic Table Learning among Grade 9 Students}
+    \field{volume}{4}
+    \field{journaltitle}{International Journal of Multidisciplinary: Applied Business and Education Research}
+    \field{year}{2023}
+  \endentry
+
+  \entry{Lima2010}{inproceedings}{}{}
+    \name{author}{3}{}{%
+      {{hash=dOLK}{%
+         prefix={de},
+         prefixi={d\bibinitperiod},
+         family={O.\bibnamedelima Lima},
+         familyi={O\bibinitperiod\bibinitdelim L\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=dSGM}{%
+         prefix={da},
+         prefixi={d\bibinitperiod},
+         family={Silva},
+         familyi={S\bibinitperiod},
+         given={G.\bibnamedelima M.},
+         giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=MMS}{%
+         family={Matos},
+         familyi={M\bibinitperiod},
+         given={M.\bibnamedelima S.},
+         giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
     }
-    \field{year}{2014}
+    \strng{namehash}{OLKdSGMdMMS1}
+    \strng{fullhash}{OLKdSGMdMMS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Anais do XV Encontro Nacional de Ensino de Química (ENEQ)}
+    \field{note}{Trabalho que mapeia o estado da arte do uso de jogos didáticos no Brasil.}
+    \field{title}{O uso de jogos no ensino de química: uma revisão da literatura}
+    \verb{url}
+    \verb http://www.eneq2010.unb.br/
+    \endverb
+    \list{location}{1}{%
+      {Brasília, DF, Brasil}%
+    }
+    \field{year}{2010}
+  \endentry
+
+  \entry{OECD2023}{book}{}{}
+    \name{author}{1}{}{%
+      {{hash=O}{%
+         family={{OECD}},
+         familyi={O\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {PISA, OECD Publishing}%
+    }
+    \strng{namehash}{O1}
+    \strng{fullhash}{O1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1787/53f23881-en
+    \endverb
+    \field{note}{Relatório baseado nos dados coletados em 2022, publicado em 2023.}
+    \field{title}{PISA 2022 Results (Volume I): The State of Learning and Equity in Education}
+    \list{location}{1}{%
+      {Paris, France}%
+    }
+    \field{year}{2023}
+  \endentry
+
+  \entry{SilvaFilho2023}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=dSFTD}{%
+         prefix={da},
+         prefixi={d\bibinitperiod},
+         family={Silva\bibnamedelima Filho},
+         familyi={S\bibinitperiod\bibinitdelim F\bibinitperiod},
+         given={T.\bibnamedelima D.},
+         giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=AJG}{%
+         family={Aquino},
+         familyi={A\bibinitperiod},
+         given={J.\bibnamedelima G.},
+         giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Abraptec}%
+    }
+    \strng{namehash}{SFTDdAJG1}
+    \strng{fullhash}{SFTDdAJG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.28173/2179-33012023v23e39647
+    \endverb
+    \field{eid}{e39647}
+    \field{pages}{1\bibrangedash 22}
+    \field{title}{Os Usos da Tabela Periódica no Campo Escolar: Um Estudo Sobre o Ensino da Química em Dois Periódicos}
+    \field{volume}{23}
+    \field{journaltitle}{Revista Brasileira de Pesquisa em Educação em Ciências (RBPEC)}
+    \field{year}{2023}
+  \endentry
+
+  \entry{Custodio2015}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=CF}{%
+         family={Custodio},
+         familyi={C\bibinitperiod},
+         given={Fernando},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=CC}{%
+         family={Campos},
+         familyi={C\bibinitperiod},
+         given={Cerqueira},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=RJ}{%
+         family={Ricardo},
+         familyi={R\bibinitperiod},
+         given={João},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SND}{%
+         family={Silva},
+         familyi={S\bibinitperiod},
+         given={Neves\bibnamedelima Da},
+         giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CF+2}
+    \strng{fullhash}{CFCCRJSND1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{title}{O DESENVOLVIMENTO E ANÁLISES DE UM JOGO VIRTUAL PARA O ENSINO DE ASTRONOMIA: UMA COMPREENSÃO SOBRE AS PRIMEIRAS INTERAÇÕES}
+    \field{volume}{8}
+    \field{journaltitle}{Revista Brasileira de Ensino de Ciência e Tecnologia}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Plass2020}{book}{}{}
+    \name{editor}{3}{}{%
+      {{hash=PJL}{%
+         family={Plass},
+         familyi={P\bibinitperiod},
+         given={Jan\bibnamedelima L.},
+         giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=MRE}{%
+         family={Mayer},
+         familyi={M\bibinitperiod},
+         given={Richard\bibnamedelima E.},
+         giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=HBD}{%
+         family={Homer},
+         familyi={H\bibinitperiod},
+         given={Bruce\bibnamedelima D.},
+         giveni={B\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {The MIT Press}%
+    }
+    \strng{namehash}{PJLMREHBD1}
+    \strng{fullhash}{PJLMREHBD1}
+    \field{labelnamesource}{editor}
+    \field{labeltitlesource}{title}
+    \field{isbn}{9780262043045}
+    \field{note}{Publicado originalmente no final de 2019, registrado em 2020.}
+    \field{title}{Handbook of Game-Based Learning}
+    \list{location}{1}{%
+      {Cambridge, MA}%
+    }
+    \field{year}{2020}
+  \endentry
+
+  \entry{Bellotti2010}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=BF}{%
+         family={Bellotti},
+         familyi={B\bibinitperiod},
+         given={Francesco},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=BR}{%
+         family={Berta},
+         familyi={B\bibinitperiod},
+         given={Riccardo},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=GAD}{%
+         family={Gloria},
+         familyi={G\bibinitperiod},
+         given={Alessandro\bibnamedelima De},
+         giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {International Association of Online Engineering}%
+    }
+    \strng{namehash}{BFBRGAD1}
+    \strng{fullhash}{BFBRGAD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.3991/ijet.v5s3.1500
+    \endverb
+    \field{number}{3}
+    \field{pages}{22\bibrangedash 35}
+    \field{title}{Designing Effective Serious Games: Opportunities and Challenges for Research}
+    \field{volume}{5}
+    \field{journaltitle}{International Journal of Emerging Technologies in Learning (iJET)}
+    \field{year}{2010}
+  \endentry
+
+  \entry{Li2024}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=LL}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Liuyufeng},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=HKF}{%
+         family={Hew},
+         familyi={H\bibinitperiod},
+         given={Khe\bibnamedelima Foon},
+         giveni={K\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={Du},
+         familyi={D\bibinitperiod},
+         given={Jiahui},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LLHKFDJ1}
+    \strng{fullhash}{LLHKFDJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1007/s11423-023-10337-7
+    \endverb
+    \field{number}{2}
+    \field{pages}{765\bibrangedash 796}
+    \field{title}{Gamification enhances student intrinsic motivation, perceptions of autonomy and relatedness}
+    \field{volume}{72}
+    \field{journaltitle}{Educational Technology Research and Development}
+    \field{year}{2024}
   \endentry
 
   \entry{Ryan1985}{article}{}{}
@@ -123,41 +390,246 @@
     \field{year}{2016}
   \endentry
 
-  \entry{Plass2020}{book}{}{}
-    \name{editor}{3}{}{%
-      {{hash=PJL}{%
-         family={Plass},
+  \entry{Portnow2012}{online}{}{}
+    \name{author}{1}{}{%
+      {{hash=PJ}{%
+         family={Portnow},
          familyi={P\bibinitperiod},
-         given={Jan\bibnamedelima L.},
-         giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
       }}%
-      {{hash=MRE}{%
-         family={Mayer},
+    }
+    \list{organization}{1}{%
+      {Extra Credits}%
+    }
+    \strng{namehash}{PJ1}
+    \strng{fullhash}{PJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Vídeo original que popularizou o conceito de Aprendizagem Tangencial no design de jogos.}
+    \field{title}{Tangential Learning - {E}xtra {C}redits}
+    \verb{url}
+    \verb https://www.youtube.com/watch?v=rlQZreov_v0
+    \endverb
+    \field{month}{03}
+    \field{year}{2012}
+  \endentry
+
+  \entry{Ausubel1963}{book}{}{}
+    \name{author}{1}{}{%
+      {{hash=ADP}{%
+         family={Ausubel},
+         familyi={A\bibinitperiod},
+         given={David\bibnamedelima P.},
+         giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Grune}%
+      {Stratton}%
+    }
+    \strng{namehash}{ADP1}
+    \strng{fullhash}{ADP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Obra fundamental onde o autor estabelece a Teoria da Aprendizagem Significativa.}
+    \field{title}{The Psychology of Meaningful Verbal Learning}
+    \list{location}{1}{%
+      {New York}%
+    }
+    \field{year}{1963}
+  \endentry
+
+  \entry{Espirito2020}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=SPFDES}{%
+         family={Silva-Pires},
+         familyi={S\bibinithyphendelim P\bibinitperiod},
+         given={Felipe Do Espirito\bibnamedelima Santo},
+         giveni={F\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=TVDS}{%
+         family={Trajano},
+         familyi={T\bibinitperiod},
+         given={Valéria Da\bibnamedelima Silva},
+         giveni={V\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=dAJTC}{%
+         prefix={de},
+         prefixi={d\bibinitperiod},
+         family={Araujo-Jorge},
+         familyi={A\bibinithyphendelim J\bibinitperiod},
+         given={Tania\bibnamedelima Cremonini},
+         giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SPFDESTVDSAJTCd1}
+    \strng{fullhash}{SPFDESTVDSAJTCd1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.21680/1981-1802.2020v58n57id21088
+    \endverb
+    \field{number}{57}
+    \field{title}{A Teoria da Aprendizagem Significativa e o jogo}
+    \field{volume}{58}
+    \field{journaltitle}{Revista Educação em Questão}
+    \field{year}{2020}
+  \endentry
+
+  \entry{Lorenzatti2020}{inproceedings}{}{}
+    \name{author}{2}{}{%
+      {{hash=LL}{%
+         family={Lorenzatti},
+         familyi={L\bibinitperiod},
+         given={Lucas},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=CR}{%
+         family={Cherobin},
+         familyi={C\bibinitperiod},
+         given={Ricardo},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LLCR1}
+    \strng{fullhash}{LLCR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Anais do XIX Simpósio Brasileiro de Games e Entretenimento Digital (SBGames)}
+    \field{pages}{344\bibrangedash 347}
+    \field{title}{Análise do Aprendizado Tangencial em Jogos Digitais}
+    \field{year}{2020}
+  \endentry
+
+  \entry{Vahlo2023}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=VJ}{%
+         family={Vahlo},
+         familyi={V\bibinitperiod},
+         given={Jukka},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=VT}{%
+         family={Välisalo},
+         familyi={V\bibinitperiod},
+         given={Tanja},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=TK}{%
+         family={Tuuri},
+         familyi={T\bibinitperiod},
+         given={Kai},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{VJVTTK1}
+    \strng{fullhash}{VJVTTK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.3389/fpsyg.2023.1176773
+    \endverb
+    \field{title}{Informal learning and wellbeing outcomes of gameplay and their associations with gameplay motivation}
+    \field{volume}{14}
+    \field{journaltitle}{Frontiers in Psychology}
+    \field{year}{2023}
+  \endentry
+
+  \entry{LimadaCostaJunior2022}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=dCJAL}{%
+         prefix={da},
+         prefixi={d\bibinitperiod},
+         family={Costa\bibnamedelima Junior},
+         familyi={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+         given={Alfredo\bibnamedelima Lima},
+         giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=dSKSS}{%
+         prefix={da},
+         prefixi={d\bibinitperiod},
+         family={Silva},
+         familyi={S\bibinitperiod},
+         given={Karen Sulliany\bibnamedelima Souza},
+         giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=AFPO}{%
+         family={Araújo},
+         familyi={A\bibinitperiod},
+         given={Fabíola Pantoja\bibnamedelima Oliveira},
+         giveni={F\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim O\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CJALdSKSSdAFPO1}
+    \strng{fullhash}{CJALdSKSSdAFPO1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.22456/1679-1916.126636
+    \endverb
+    \field{number}{1}
+    \field{pages}{203\bibrangedash 212}
+    \field{title}{Uso da Aprendizagem Tangencial Através de Jogos: Um Mapeamento Sistemático da Literatura}
+    \field{volume}{20}
+    \field{journaltitle}{RENOTE}
+    \field{year}{2022}
+  \endentry
+
+  \entry{Mozelius2017}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=MP}{%
+         family={Mozelius},
          familyi={M\bibinitperiod},
-         given={Richard\bibnamedelima E.},
-         giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
       }}%
-      {{hash=HBD}{%
-         family={Homer},
+      {{hash=FA}{%
+         family={Fagerström},
+         familyi={F\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Söderquist},
+         familyi={S\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MPFASM1}
+    \strng{fullhash}{MPFASM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{4}
+    \field{pages}{343\bibrangedash 355}
+    \field{title}{Motivating Factors and Tangential Learning for Knowledge Acquisition in Educational Games}
+    \field{volume}{15}
+    \field{journaltitle}{The Electronic Journal of e-Learning}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Huizinga2014}{book}{}{}
+    \name{author}{1}{}{%
+      {{hash=HJ}{%
+         family={Huizinga},
          familyi={H\bibinitperiod},
-         given={Bruce\bibnamedelima D.},
-         giveni={B\bibinitperiod\bibinitdelim D\bibinitperiod},
+         given={Johan},
+         giveni={J\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
-      {The MIT Press}%
+      {Perspectiva}%
     }
-    \strng{namehash}{PJLMREHBD1}
-    \strng{fullhash}{PJLMREHBD1}
-    \field{labelnamesource}{editor}
+    \strng{namehash}{HJ1}
+    \strng{fullhash}{HJ1}
+    \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{isbn}{9780262043045}
-    \field{note}{Publicado originalmente no final de 2019, registrado em 2020.}
-    \field{title}{Handbook of Game-Based Learning}
+    \field{title}{Homo Ludens: o jogo como elemento da cultura}
     \list{location}{1}{%
-      {Cambridge, MA}%
+      {São Paulo}%
     }
-    \field{year}{2020}
+    \field{year}{2014}
   \endentry
 
   \entry{Coelho2025}{article}{}{}
@@ -284,106 +756,6 @@
     \field{year}{2024}
   \endentry
 
-  \entry{Ausubel1963}{book}{}{}
-    \name{author}{1}{}{%
-      {{hash=ADP}{%
-         family={Ausubel},
-         familyi={A\bibinitperiod},
-         given={David\bibnamedelima P.},
-         giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{2}{%
-      {Grune}%
-      {Stratton}%
-    }
-    \strng{namehash}{ADP1}
-    \strng{fullhash}{ADP1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{note}{Obra fundamental onde o autor estabelece a Teoria da Aprendizagem Significativa.}
-    \field{title}{The Psychology of Meaningful Verbal Learning}
-    \list{location}{1}{%
-      {New York}%
-    }
-    \field{year}{1963}
-  \endentry
-
-  \entry{Espirito2020}{article}{}{}
-    \name{author}{3}{}{%
-      {{hash=SPFDES}{%
-         family={Silva-Pires},
-         familyi={S\bibinithyphendelim P\bibinitperiod},
-         given={Felipe Do Espirito\bibnamedelima Santo},
-         giveni={F\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim S\bibinitperiod},
-      }}%
-      {{hash=TVDS}{%
-         family={Trajano},
-         familyi={T\bibinitperiod},
-         given={Valéria Da\bibnamedelima Silva},
-         giveni={V\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim S\bibinitperiod},
-      }}%
-      {{hash=dAJTC}{%
-         prefix={de},
-         prefixi={d\bibinitperiod},
-         family={Araujo-Jorge},
-         familyi={A\bibinithyphendelim J\bibinitperiod},
-         given={Tania\bibnamedelima Cremonini},
-         giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{SPFDESTVDSAJTCd1}
-    \strng{fullhash}{SPFDESTVDSAJTCd1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.21680/1981-1802.2020v58n57id21088
-    \endverb
-    \field{number}{57}
-    \field{title}{A Teoria da Aprendizagem Significativa e o jogo}
-    \field{volume}{58}
-    \field{journaltitle}{Revista Educação em Questão}
-    \field{year}{2020}
-  \endentry
-
-  \entry{Custodio2015}{article}{}{}
-    \name{author}{4}{}{%
-      {{hash=CF}{%
-         family={Custodio},
-         familyi={C\bibinitperiod},
-         given={Fernando},
-         giveni={F\bibinitperiod},
-      }}%
-      {{hash=CC}{%
-         family={Campos},
-         familyi={C\bibinitperiod},
-         given={Cerqueira},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=RJ}{%
-         family={Ricardo},
-         familyi={R\bibinitperiod},
-         given={João},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=SND}{%
-         family={Silva},
-         familyi={S\bibinitperiod},
-         given={Neves\bibnamedelima Da},
-         giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{CF+2}
-    \strng{fullhash}{CFCCRJSND1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{3}
-    \field{title}{O DESENVOLVIMENTO E ANÁLISES DE UM JOGO VIRTUAL PARA O ENSINO DE ASTRONOMIA: UMA COMPREENSÃO SOBRE AS PRIMEIRAS INTERAÇÕES}
-    \field{volume}{8}
-    \field{journaltitle}{Revista Brasileira de Ensino de Ciência e Tecnologia}
-    \field{year}{2015}
-  \endentry
-
   \entry{Bryce2024}{article}{}{}
     \name{author}{2}{}{%
       {{hash=BTGK}{%
@@ -414,104 +786,6 @@
     \field{year}{2024}
   \endentry
 
-  \entry{Portnow2012}{online}{}{}
-    \name{author}{1}{}{%
-      {{hash=PJ}{%
-         family={Portnow},
-         familyi={P\bibinitperiod},
-         given={James},
-         giveni={J\bibinitperiod},
-      }}%
-    }
-    \list{organization}{1}{%
-      {Extra Credits}%
-    }
-    \strng{namehash}{PJ1}
-    \strng{fullhash}{PJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{note}{Vídeo original que popularizou o conceito de Aprendizagem Tangencial no design de jogos.}
-    \field{title}{Tangential Learning - {E}xtra {C}redits}
-    \verb{url}
-    \verb https://www.youtube.com/watch?v=rlQZreov_v0
-    \endverb
-    \field{month}{03}
-    \field{year}{2012}
-  \endentry
-
-  \entry{Mozelius2017}{article}{}{}
-    \name{author}{3}{}{%
-      {{hash=MP}{%
-         family={Mozelius},
-         familyi={M\bibinitperiod},
-         given={P.},
-         giveni={P\bibinitperiod},
-      }}%
-      {{hash=FA}{%
-         family={Fagerström},
-         familyi={F\bibinitperiod},
-         given={A.},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=SM}{%
-         family={Söderquist},
-         familyi={S\bibinitperiod},
-         given={M.},
-         giveni={M\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{MPFASM1}
-    \strng{fullhash}{MPFASM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{4}
-    \field{pages}{343\bibrangedash 355}
-    \field{title}{Motivating Factors and Tangential Learning for Knowledge Acquisition in Educational Games}
-    \field{volume}{15}
-    \field{journaltitle}{The Electronic Journal of e-Learning}
-    \field{year}{2017}
-  \endentry
-
-  \entry{LimadaCostaJunior2022}{article}{}{}
-    \name{author}{3}{}{%
-      {{hash=dCJAL}{%
-         prefix={da},
-         prefixi={d\bibinitperiod},
-         family={Costa\bibnamedelima Junior},
-         familyi={C\bibinitperiod\bibinitdelim J\bibinitperiod},
-         given={Alfredo\bibnamedelima Lima},
-         giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod},
-      }}%
-      {{hash=dSKSS}{%
-         prefix={da},
-         prefixi={d\bibinitperiod},
-         family={Silva},
-         familyi={S\bibinitperiod},
-         given={Karen Sulliany\bibnamedelima Souza},
-         giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim S\bibinitperiod},
-      }}%
-      {{hash=AFPO}{%
-         family={Araújo},
-         familyi={A\bibinitperiod},
-         given={Fabíola Pantoja\bibnamedelima Oliveira},
-         giveni={F\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim O\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{CJALdSKSSdAFPO1}
-    \strng{fullhash}{CJALdSKSSdAFPO1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.22456/1679-1916.126636
-    \endverb
-    \field{number}{1}
-    \field{pages}{203\bibrangedash 212}
-    \field{title}{Uso da Aprendizagem Tangencial Através de Jogos: Um Mapeamento Sistemático da Literatura}
-    \field{volume}{20}
-    \field{journaltitle}{RENOTE}
-    \field{year}{2022}
-  \endentry
-
   \entry{GomesdeFreitas2017}{article}{}{}
     \name{author}{1}{}{%
       {{hash=dFRG}{%
@@ -530,31 +804,6 @@
     \field{title}{VALIDAÇÃO DO JOGO DIGITAL BATALHA QUIMICARD PARA O ENSINO DE ÁCIDOS E BASES}
     \field{journaltitle}{Revista Brasileira de Ensino de Química}
     \field{year}{2017}
-  \endentry
-
-  \entry{Lorenzatti2020}{inproceedings}{}{}
-    \name{author}{2}{}{%
-      {{hash=LL}{%
-         family={Lorenzatti},
-         familyi={L\bibinitperiod},
-         given={Lucas},
-         giveni={L\bibinitperiod},
-      }}%
-      {{hash=CR}{%
-         family={Cherobin},
-         familyi={C\bibinitperiod},
-         given={Ricardo},
-         giveni={R\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{LLCR1}
-    \strng{fullhash}{LLCR1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{Anais do XIX Simpósio Brasileiro de Games e Entretenimento Digital (SBGames)}
-    \field{pages}{344\bibrangedash 347}
-    \field{title}{Análise do Aprendizado Tangencial em Jogos Digitais}
-    \field{year}{2020}
   \endentry
 
   \entry{Bloom1956}{book}{}{}
