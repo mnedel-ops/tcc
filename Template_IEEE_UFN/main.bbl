@@ -834,14 +834,14 @@
     \field{year}{2024}
   \endentry
 
-  \entry{GomesdeFreitas2017}{article}{}{}
+  \entry{GomesdeFreitas2017}{thesis}{}{}
     \name{author}{1}{}{%
       {{hash=dFRG}{%
          prefix={de},
          prefixi={d\bibinitperiod},
          family={Freitas},
          familyi={F\bibinitperiod},
-         given={Ronaldo\bibnamedelima Gomes},
+         given={R.\bibnamedelima G.},
          giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod},
       }}%
     }
@@ -849,9 +849,16 @@
     \strng{fullhash}{FRGd1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{title}{VALIDAÇÃO DO JOGO DIGITAL BATALHA QUIMICARD PARA O ENSINO
-  DE ÁCIDOS E BASES}
-    \field{journaltitle}{Revista Brasileira de Ensino de Química}
+    \field{note}{Referência [6] no documento original [cite: 126, 127]}
+    \field{title}{Validação do jogo digital Batalha Quimicard para o ensino
+  de ácidos e bases}
+    \list{location}{1}{%
+      {Caruaru, PE}%
+    }
+    \list{institution}{1}{%
+      {Universidade Federal de Pernambuco (UFPE)}%
+    }
+    \field{type}{Trabalho de Conclusão de Curso}
     \field{year}{2017}
   \endentry
 
@@ -1010,6 +1017,28 @@
       {New York}%
     }
     \field{year}{2003}
+  \endentry
+
+  \entry{Latonio2026}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=LBC}{%
+         family={Latonio},
+         familyi={L\bibinitperiod},
+         given={B.\bibnamedelima C.},
+         giveni={B\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LBC1}
+    \strng{fullhash}{LBC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Referência [2] no documento original [cite: 108, 109, 110]}
+    \field{number}{1}
+    \field{title}{Conceptual Understanding and Motivation in Periodic Table
+  Learning among Grade 9 Students}
+    \field{volume}{10}
+    \field{journaltitle}{IJRISS}
+    \field{year}{2026}
   \endentry
 \enddatalist
 \endinput
