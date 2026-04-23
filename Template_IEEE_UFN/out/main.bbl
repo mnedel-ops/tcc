@@ -157,44 +157,6 @@
     \field{year}{2023}
   \endentry
 
-  \entry{Custodio2015}{article}{}{}
-    \name{author}{4}{}{%
-      {{hash=CF}{%
-         family={Custodio},
-         familyi={C\bibinitperiod},
-         given={Fernando},
-         giveni={F\bibinitperiod},
-      }}%
-      {{hash=CC}{%
-         family={Campos},
-         familyi={C\bibinitperiod},
-         given={Cerqueira},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=RJ}{%
-         family={Ricardo},
-         familyi={R\bibinitperiod},
-         given={João},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=SND}{%
-         family={Silva},
-         familyi={S\bibinitperiod},
-         given={Neves\bibnamedelima Da},
-         giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{CF+2}
-    \strng{fullhash}{CFCCRJSND1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{3}
-    \field{title}{O DESENVOLVIMENTO E ANÁLISES DE UM JOGO VIRTUAL PARA O ENSINO DE ASTRONOMIA: UMA COMPREENSÃO SOBRE AS PRIMEIRAS INTERAÇÕES}
-    \field{volume}{8}
-    \field{journaltitle}{Revista Brasileira de Ensino de Ciência e Tecnologia}
-    \field{year}{2015}
-  \endentry
-
   \entry{Plass2020}{book}{}{}
     \name{editor}{3}{}{%
       {{hash=PJL}{%
@@ -645,29 +607,6 @@
     \field{year}{2017}
   \endentry
 
-  \entry{Huizinga2014}{book}{}{}
-    \name{author}{1}{}{%
-      {{hash=HJ}{%
-         family={Huizinga},
-         familyi={H\bibinitperiod},
-         given={Johan},
-         giveni={J\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Perspectiva}%
-    }
-    \strng{namehash}{HJ1}
-    \strng{fullhash}{HJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Homo Ludens: o jogo como elemento da cultura}
-    \list{location}{1}{%
-      {São Paulo}%
-    }
-    \field{year}{2014}
-  \endentry
-
   \entry{Coelho2025}{article}{}{}
     \name{author}{6}{}{%
       {{hash=CF}{%
@@ -790,6 +729,44 @@
     \field{volume}{68}
     \field{journaltitle}{TechTrends}
     \field{year}{2024}
+  \endentry
+
+  \entry{Custodio2015}{article}{}{}
+    \name{author}{4}{}{%
+      {{hash=CF}{%
+         family={Custodio},
+         familyi={C\bibinitperiod},
+         given={Fernando},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=CC}{%
+         family={Campos},
+         familyi={C\bibinitperiod},
+         given={Cerqueira},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=RJ}{%
+         family={Ricardo},
+         familyi={R\bibinitperiod},
+         given={João},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SND}{%
+         family={Silva},
+         familyi={S\bibinitperiod},
+         given={Neves\bibnamedelima Da},
+         giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CF+2}
+    \strng{fullhash}{CFCCRJSND1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{title}{O DESENVOLVIMENTO E ANÁLISES DE UM JOGO VIRTUAL PARA O ENSINO DE ASTRONOMIA: UMA COMPREENSÃO SOBRE AS PRIMEIRAS INTERAÇÕES}
+    \field{volume}{8}
+    \field{journaltitle}{Revista Brasileira de Ensino de Ciência e Tecnologia}
+    \field{year}{2015}
   \endentry
 
   \entry{Bryce2024}{article}{}{}
