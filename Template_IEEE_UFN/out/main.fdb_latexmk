@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex out/main"] 1776949188.66111 "out/main.aux" "out/main.bbl" "out/main" 1776949190.58312 0
-  "./references.bib" 1776948550.87214 14834 8235c565e06ef7c9112ce75848d4543e ""
+["bibtex out/main"] 1777304132.84418 "out/main.aux" "out/main.bbl" "out/main" 1777304502.72869 0
+  "./references.bib" 1777304130.95094 15095 910cd64bcc10932cd0297ff8b5356674 ""
   "/usr/share/texmf-dist/bibtex/bst/biblatex/biblatex.bst" 1772820570 65510 9a2a51799b543ff279b8ea2dd91ec499 ""
-  "out/main-blx.bib" 1776949190.32238 343 bf1f0c75b5bafd473925320ac9611e26 "pdflatex"
-  "out/main.aux" 1776949190.31975 12559 f91083b583b971c8f3057509502ebd9f "pdflatex"
+  "out/main-blx.bib" 1777304502.49668 343 bf1f0c75b5bafd473925320ac9611e26 "pdflatex"
+  "out/main.aux" 1777304502.49068 14889 482ab7571cb41d536a5d9d5f47694ed9 "pdflatex"
   (generated)
   "out/main.bbl"
   "out/main.blg"
   (rewritten before read)
-["pdflatex"] 1776949188.75828 "/run/media/reis/SDextra/Faculdade/tcc/Template_IEEE_UFN/main.tex" "out/main.pdf" "main" 1776949190.58338 0
+["pdflatex"] 1777304501.02243 "/run/media/reis/SDextra/Faculdade/tcc/Template_IEEE_UFN/main.tex" "out/main.pdf" "main" 1777304502.72891 0
   "/run/media/reis/SDextra/Faculdade/tcc/Template_IEEE_UFN/main.tex" 1776168244.28093 1535 4c394709fcc838aa970c7842bb611280 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1772820570 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1772820570 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -98,16 +98,16 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1775260537 2328184 936252e5bcbcf38dd81f80adbfa26fe6 ""
   "IEEEtran.cls" 1683944528 201898 c611c96d79f50ef1cebe9cbcd284feea ""
   "main.tex" 1776168244.28093 1535 4c394709fcc838aa970c7842bb611280 ""
-  "out/main.aux" 1776949190.31975 12559 f91083b583b971c8f3057509502ebd9f "pdflatex"
-  "out/main.bbl" 1776949188.75138 30854 92837510cf5bd12a46bcb7966b6918f6 "bibtex out/main"
-  "out/main.run.xml" 1776949190.32476 2556 c574e2e664554eee136ad23daae1c323 "pdflatex"
+  "out/main.aux" 1777304502.49068 14889 482ab7571cb41d536a5d9d5f47694ed9 "pdflatex"
+  "out/main.bbl" 1777304132.92693 32664 6267a43ac34961882e4a6151dd315548 "bibtex out/main"
+  "out/main.run.xml" 1777304502.49846 2556 c574e2e664554eee136ad23daae1c323 "pdflatex"
   "preamble.tex" 1776102470.5433 673 b53b7888d2e85356481cb0a7f2025e0d ""
   "sections/00_header.tex" 1776173527.26825 286 e9558322a8450640f7c2bac2e08ba19f ""
   "sections/01_abstract.tex" 1776946308.76318 194 c0a0e3c0e3af6b34bc1aab508bcddd3f ""
-  "sections/02_introducao.tex" 1776949184.88539 3852 4d87ad0cee3d18df7df179ac7642e963 ""
-  "sections/03_secao.tex" 1776946951.22308 7181 3df2b53c7eb11fc20d849ad148293f48 ""
-  "sections/04_secao2.tex" 1776946780.5527 5007 5d26574e00e404649f96fdcfa498f6c2 ""
-  "sections/05_metodologia.tex" 1776949184.82139 6548 b543630d24447d1e9955cf7dcd2eb004 ""
+  "sections/02_introducao.tex" 1777291777.89384 3922 09e269369219e2bd1a5e793d4387d931 ""
+  "sections/03_secao.tex" 1777291833.14018 7183 ea57dab179679189e812a679ce83b53d ""
+  "sections/04_secao2.tex" 1777293032.71242 4075 951077994b4a3c9d0227a9ccb953dc5a ""
+  "sections/05_metodologia.tex" 1777304500.83943 7566 f28cefd9ed9d162745b51debf8cff872 ""
   "sections/06_conclusao.tex" 1776173522.98043 45 7577821b65dc46753bc3c02b2c85ac7e ""
   "sections/07_bibliography.tex" 1773066615.76537 62 df187e92fd7e6dfeb25215f21253d933 ""
   (generated)

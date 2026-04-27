@@ -944,25 +944,30 @@
     \field{year}{2003}
   \endentry
 
-  \entry{Latonio2026}{article}{}{}
+  \entry{Chandler2009}{book}{}{}
     \name{author}{1}{}{%
-      {{hash=LBC}{%
-         family={Latonio},
-         familyi={L\bibinitperiod},
-         given={B.\bibnamedelima C.},
-         giveni={B\bibinitperiod\bibinitdelim C\bibinitperiod},
+      {{hash=CHM}{%
+         family={Chandler},
+         familyi={C\bibinitperiod},
+         given={Heather\bibnamedelima Maxwell},
+         giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod},
       }}%
     }
-    \strng{namehash}{LBC1}
-    \strng{fullhash}{LBC1}
+    \list{publisher}{2}{%
+      {Jones}%
+      {Bartlett Publishers}%
+    }
+    \strng{namehash}{CHM1}
+    \strng{fullhash}{CHM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{note}{Referência [2] no documento original [cite: 108, 109, 110]}
-    \field{number}{1}
-    \field{title}{Conceptual Understanding and Motivation in Periodic Table Learning among Grade 9 Students}
-    \field{volume}{10}
-    \field{journaltitle}{IJRISS}
-    \field{year}{2026}
+    \field{edition}{2nd}
+    \field{isbn}{978-0-7637-5420-4}
+    \field{title}{The Game Production Handbook}
+    \list{location}{1}{%
+      {Sudbury, Massachusetts}%
+    }
+    \field{year}{2009}
   \endentry
 
   \entry{Vahlo2023}{article}{}{}
@@ -997,6 +1002,63 @@
     \field{volume}{14}
     \field{journaltitle}{Frontiers in Psychology}
     \field{year}{2023}
+  \endentry
+
+  \entry{Gomez2019}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=GJ}{%
+         family={Gomez},
+         familyi={G\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Barnett},
+         familyi={B\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GSK}{%
+         family={Grill-Spector},
+         familyi={G\bibinithyphendelim S\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GJBMGSK1}
+    \strng{fullhash}{GJBMGSK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Referência [7] no documento original [cite: 128, 129]}
+    \field{number}{6}
+    \field{pages}{611\bibrangedash 624}
+    \field{title}{Extensive childhood experience with Pokémon suggests eccentricity drives organization of visual cortex}
+    \field{volume}{3}
+    \field{journaltitle}{Nature Human Behaviour}
+    \field{year}{2019}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Jacobs2021}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=JRS}{%
+         family={Jacobs},
+         familyi={J\bibinitperiod},
+         given={R.\bibnamedelima S.},
+         giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JRS1}
+    \strng{fullhash}{JRS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Referência [4] no documento original [cite: 115]}
+    \field{number}{1}
+    \field{pages}{28\bibrangedash 38}
+    \field{title}{Winning Over the Players: Investigating the Motivations to Play and Acceptance of Serious Games}
+    \field{volume}{9}
+    \field{journaltitle}{Media and Communication}
+    \field{year}{2021}
   \endentry
 \enddatalist
 \endinput

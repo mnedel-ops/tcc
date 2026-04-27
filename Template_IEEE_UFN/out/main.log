@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.4.3)  23 APR 2026 09:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.4.3)  27 APR 2026 12:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -569,13 +569,49 @@ Package biblatex Info: Data encoding 'utf8' specified.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (out/main.bbl)
+ (out/main.bbl
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Gomez2019':
+(biblatex)                - Invalid format of field 'month'.
+
+)
 Package biblatex Info: Reference section=0 on input line 26.
 Package biblatex Info: Reference segment=0 on input line 26.
  (./sections/00_header.tex) (./sections/01_abstract.tex) (./sections/02_introducao.tex) (./sections/03_secao.tex [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
 
-]) (./sections/04_secao2.tex [2]) (./sections/05_metodologia.tex [3]) (./sections/06_conclusao.tex [4]) (./sections/07_bibliography.tex)
+]) (./sections/04_secao2.tex [2]
+
+LaTeX Warning: Citation 'AceEdVenture2016' on page 3 undefined on input line 7.
+
+
+LaTeX Warning: Citation 'Weaver2022' on page 3 undefined on input line 9.
+
+
+LaTeX Warning: Citation 'Weaver2022' on page 3 undefined on input line 9.
+
+
+LaTeX Warning: Citation 'Han2021' on page 3 undefined on input line 13.
+
+
+LaTeX Warning: Citation 'Han2021' on page 3 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'Han2021' on page 3 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'AceEdVenture2016' on page 3 undefined on input line 25.
+
+
+LaTeX Warning: Citation 'Han2021' on page 3 undefined on input line 25.
+
+) (./sections/05_metodologia.tex [3]
+Underfull \hbox (badness 1430) in paragraph at lines 30--31
+\T1/ptm/m/n/10 acadêmico em uma fer-ra-menta de em-poder-a-mento es-
+ []
+
+) (./sections/06_conclusao.tex [4]) (./sections/07_bibliography.tex)
 Underfull \hbox (badness 2158) in paragraph at lines 37--37
 []\T1/ptm/m/n/10 Richard M. Ryan and Ed-ward L. Deci. ^^P  Self-
  []
@@ -611,9 +647,7 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[6
-
-] (out/main.aux)
+[6] (out/main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -632,15 +666,15 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 14043 strings out of 469515
- 254691 string characters out of 5470808
- 902126 words of memory out of 5000000
- 42539 multiletter control sequences out of 15000+600000
+ 14051 strings out of 469515
+ 255033 string characters out of 5470808
+ 902316 words of memory out of 5000000
+ 42547 multiletter control sequences out of 15000+600000
  731124 words of font info for 132 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
  68i,9n,69p,1954b,1422s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on out/main.pdf (6 pages, 113962 bytes).
+Output written on out/main.pdf (6 pages, 114051 bytes).
 PDF statistics:
  59 PDF objects out of 1000 (max. 8388607)
  36 compressed objects within 1 object stream

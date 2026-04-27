@@ -17,49 +17,54 @@ Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated field_info (elt_size=8) to 10040 items from 5000.
 Database file #1: main-blx.bib
 Database file #2: references.bib
+Warning--I didn't find a database entry for "AceEdVenture2016"
+Warning--I didn't find a database entry for "Weaver2022"
+Warning--I didn't find a database entry for "Han2021"
 Biblatex version: 3.21
 Reallocated wiz_functions (elt_size=8) to 9000 items from 6000.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
-You've used 31 entries,
+You've used 33 entries,
             6402 wiz_defined-function locations,
-            1432 strings with 15843 characters,
-and the built_in function-call counts, 289399 in all, are:
-= -- 25194
-> -- 3504
-< -- 941
-+ -- 7307
-- -- 1260
-* -- 21696
-:= -- 32822
+            1457 strings with 16333 characters,
+and the built_in function-call counts, 305002 in all, are:
+= -- 26477
+> -- 3753
+< -- 1028
++ -- 7714
+- -- 1337
+* -- 22757
+:= -- 34427
 add.period$ -- 0
-call.type$ -- 31
-change.case$ -- 566
-chr.to.int$ -- 45
-cite$ -- 60
-duplicate$ -- 25669
-empty$ -- 26063
-format.name$ -- 2077
-if$ -- 59467
+call.type$ -- 33
+change.case$ -- 628
+chr.to.int$ -- 46
+cite$ -- 64
+duplicate$ -- 27222
+empty$ -- 27440
+format.name$ -- 2205
+if$ -- 62729
 int.to.chr$ -- 0
-int.to.str$ -- 84
+int.to.str$ -- 90
 missing$ -- 0
-newline$ -- 1002
-num.names$ -- 1547
-pop$ -- 10969
+newline$ -- 1064
+num.names$ -- 1675
+pop$ -- 11671
 preamble$ -- 1
-purify$ -- 774
+purify$ -- 848
 quote$ -- 0
-skip$ -- 6003
+skip$ -- 6465
 stack$ -- 0
-substring$ -- 51792
-swap$ -- 4459
-text.length$ -- 699
+substring$ -- 54124
+swap$ -- 4787
+text.length$ -- 743
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 1032
+type$ -- 1100
 warning$ -- 0
-while$ -- 3362
+while$ -- 3541
 width$ -- 0
-write$ -- 972
+write$ -- 1032
+(There were 3 warnings)
