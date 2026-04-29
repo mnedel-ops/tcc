@@ -17,55 +17,49 @@ Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated field_info (elt_size=8) to 10040 items from 5000.
 Database file #1: main-blx.bib
 Database file #2: references.bib
-Warning--I didn't find a database entry for "AceEdVenture2016"
-Warning--I didn't find a database entry for "Weaver2022"
-Warning--I didn't find a database entry for "Han2021"
-Warning--I didn't find a database entry for "Chandler2009"
 Biblatex version: 3.21
 Reallocated wiz_functions (elt_size=8) to 9000 items from 6000.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
-You've used 32 entries,
+You've used 35 entries,
             6402 wiz_defined-function locations,
-            1450 strings with 16206 characters,
-and the built_in function-call counts, 298052 in all, are:
-= -- 25895
-> -- 3634
-< -- 966
-+ -- 7576
-- -- 1315
-* -- 22351
-:= -- 33849
+            1455 strings with 16301 characters,
+and the built_in function-call counts, 307566 in all, are:
+= -- 26545
+> -- 3753
+< -- 1044
++ -- 7716
+- -- 1337
+* -- 22787
+:= -- 34471
 add.period$ -- 0
-call.type$ -- 32
-change.case$ -- 573
+call.type$ -- 35
+change.case$ -- 628
 chr.to.int$ -- 46
-cite$ -- 62
-duplicate$ -- 26585
-empty$ -- 26795
-format.name$ -- 2159
-if$ -- 61178
+cite$ -- 68
+duplicate$ -- 27592
+empty$ -- 27888
+format.name$ -- 2205
+if$ -- 63347
 int.to.chr$ -- 0
-int.to.str$ -- 86
+int.to.str$ -- 92
 missing$ -- 0
-newline$ -- 1038
-num.names$ -- 1585
-pop$ -- 11340
+newline$ -- 1070
+num.names$ -- 1675
+pop$ -- 12341
 preamble$ -- 1
-purify$ -- 790
+purify$ -- 848
 quote$ -- 0
-skip$ -- 6178
+skip$ -- 6587
 stack$ -- 0
-substring$ -- 53103
-swap$ -- 4626
-text.length$ -- 726
+substring$ -- 54126
+swap$ -- 4857
+text.length$ -- 759
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 1066
+type$ -- 1168
 warning$ -- 0
-while$ -- 3489
+while$ -- 3543
 width$ -- 0
-write$ -- 1007
-(There were 4 warnings)
+write$ -- 1036

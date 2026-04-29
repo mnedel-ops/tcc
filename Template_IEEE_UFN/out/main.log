@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.4.3)  27 APR 2026 12:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.4.3)  29 APR 2026 12:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -581,32 +581,7 @@ Package biblatex Info: Reference segment=0 on input line 26.
  (./sections/00_header.tex) (./sections/01_abstract.tex) (./sections/02_introducao.tex) (./sections/03_secao.tex [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
 
-]) (./sections/04_secao2.tex [2]
-
-LaTeX Warning: Citation 'AceEdVenture2016' on page 3 undefined on input line 7.
-
-
-LaTeX Warning: Citation 'Weaver2022' on page 3 undefined on input line 9.
-
-
-LaTeX Warning: Citation 'Weaver2022' on page 3 undefined on input line 9.
-
-
-LaTeX Warning: Citation 'Han2021' on page 3 undefined on input line 13.
-
-
-LaTeX Warning: Citation 'Han2021' on page 3 undefined on input line 15.
-
-
-LaTeX Warning: Citation 'Han2021' on page 3 undefined on input line 15.
-
-
-LaTeX Warning: Citation 'AceEdVenture2016' on page 3 undefined on input line 25.
-
-
-LaTeX Warning: Citation 'Han2021' on page 3 undefined on input line 25.
-
-) (./sections/05_metodologia.tex [3]
+]) (./sections/04_secao2.tex [2]) (./sections/05_metodologia.tex [3]
 Underfull \hbox (badness 1430) in paragraph at lines 30--31
 \T1/ptm/m/n/10 acadêmico em uma fer-ra-menta de em-poder-a-mento es-
  []
@@ -616,7 +591,7 @@ Underfull \hbox (badness 2158) in paragraph at lines 37--37
 []\T1/ptm/m/n/10 Richard M. Ryan and Ed-ward L. Deci. ^^P  Self-
  []
 
-
+[5]
 Underfull \hbox (badness 5388) in paragraph at lines 37--37
 \T1/ptm/m/n/10 Analytic Find-ings Eval-u-at-ing Self-Determination
  []
@@ -626,7 +601,7 @@ Underfull \hbox (badness 1742) in paragraph at lines 37--37
 \T1/ptm/m/n/10 The-ory^^Q. In: \T1/ptm/m/it/10 Ed-u-ca-tional Psy-chol-ogy Re-view \T1/ptm/m/n/10 34
  []
 
-[5]
+
 Underfull \hbox (badness 1354) in paragraph at lines 37--37
 \T1/ptm/m/n/10 ^^P  Mo-ti-vat-ing Fac-tors and Tan-gen-tial Learn-ing for
  []
@@ -636,6 +611,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--37
 []\T1/ptm/m/n/10 Popat Kr-ishna Shinde and Lavkush Singh.
  []
 
+[6]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -647,7 +623,9 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[6] (out/main.aux)
+[7
+
+] (out/main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -666,18 +644,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 14051 strings out of 469515
- 255033 string characters out of 5470808
- 902316 words of memory out of 5000000
- 42547 multiletter control sequences out of 15000+600000
+ 14059 strings out of 469515
+ 255363 string characters out of 5470808
+ 903356 words of memory out of 5000000
+ 42555 multiletter control sequences out of 15000+600000
  731124 words of font info for 132 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
  68i,9n,69p,1954b,1422s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on out/main.pdf (6 pages, 114051 bytes).
+Output written on out/main.pdf (7 pages, 115517 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
- 36 compressed objects within 1 object stream
+ 64 PDF objects out of 1000 (max. 8388607)
+ 40 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

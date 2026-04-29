@@ -984,6 +984,38 @@
     \field{year}{2003}
   \endentry
 
+  \entry{Weaver2022}{article}{}{}
+  \endentry
+
+  \entry{Han2021}{article}{}{}
+  \endentry
+
+  \entry{Chandler2009}{book}{}{}
+    \name{author}{1}{}{%
+      {{hash=CHM}{%
+         family={Chandler},
+         familyi={C\bibinitperiod},
+         given={Heather\bibnamedelima Maxwell},
+         giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Jones}%
+      {Bartlett Publishers}%
+    }
+    \strng{namehash}{CHM1}
+    \strng{fullhash}{CHM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{edition}{2nd}
+    \field{isbn}{978-0-7637-5420-4}
+    \field{title}{The Game Production Handbook}
+    \list{location}{1}{%
+      {Sudbury, Massachusetts}%
+    }
+    \field{year}{2009}
+  \endentry
+
   \entry{Vahlo2023}{article}{}{}
     \name{author}{3}{}{%
       {{hash=VJ}{%
