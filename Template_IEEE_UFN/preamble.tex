@@ -1,7 +1,19 @@
 % --- Encoding & Language ---
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-% \usepackage[portuguese]{babel}  % Temporarily disabled due to system TeX configuration
+\IfFileExists{brazil.ldf}{%
+  \usepackage[brazilian]{babel}%
+}{%
+  \IfFileExists{portuguese.ldf}{%
+    \usepackage[portuguese]{babel}%
+  }{%
+    % Fallback for TeX installations without Portuguese hyphenation patterns.
+    % This avoids incorrect English-based syllable breaks in Portuguese words.
+    \usepackage[none]{hyphenat}
+    \emergencystretch=1em
+  }%
+}
+\usepackage{microtype}
 
 % --- Graphics & Floats ---
 \usepackage{graphicx,url}

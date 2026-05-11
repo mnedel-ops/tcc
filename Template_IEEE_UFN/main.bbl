@@ -984,10 +984,59 @@
     \field{year}{2003}
   \endentry
 
-  \entry{Weaver2022}{article}{}{}
+  \entry{Lackey2022}{thesis}{}{}
+    \name{author}{1}{}{%
+      {{hash=LS}{%
+         family={Lackey},
+         familyi={L\bibinitperiod},
+         given={Samuel},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LS1}
+    \strng{fullhash}{LS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{The Effects of Game-Based Learning on the Motivation and
+  Engagement of Career Technical Education Students in the High School
+  Chemistry Classroom}
+    \verb{url}
+    \verb https://scholarcommons.sc.edu/etd/6741
+    \endverb
+    \list{institution}{1}{%
+      {University of South Carolina}%
+    }
+    \field{type}{Doctoral dissertation}
+    \field{year}{2022}
   \endentry
 
-  \entry{Han2021}{article}{}{}
+  \entry{Han2021}{inproceedings}{}{}
+    \name{author}{1}{}{%
+      {{hash=HJ}{%
+         family={Han},
+         familyi={H\bibinitperiod},
+         given={Jihae},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{HJ1}
+    \strng{fullhash}{HJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{CHI Conference on Human Factors in Computing Systems
+  Extended Abstracts (CHI '21 Extended Abstracts)}
+    \verb{doi}
+    \verb 10.1145/3411763.3451854
+    \endverb
+    \field{pages}{1\bibrangedash 5}
+    \field{title}{ChemCraft: A Ludic Approach to Educational Game Design}
+    \list{location}{1}{%
+      {New York, NY, USA}%
+    }
+    \field{year}{2021}
   \endentry
 
   \entry{Chandler2009}{book}{}{}
@@ -1083,8 +1132,8 @@
   eccentricity drives organization of visual cortex}
     \field{volume}{3}
     \field{journaltitle}{Nature Human Behaviour}
+    \field{month}{06}
     \field{year}{2019}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{Jacobs2021}{article}{}{}
