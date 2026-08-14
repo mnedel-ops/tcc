@@ -1,7 +1,8 @@
 extends CharacterBody3D
+class_name Player
 
 const SPEED = 5.0
-@export var mochila: InventoryData
+@export var mochila: Resource
 @onready var mesh: MeshInstance3D = $Mesh #Chamar a malha e alterara a rotacao dela
 @onready var interact_area: Area3D = $Mesh/InteractArea
 
