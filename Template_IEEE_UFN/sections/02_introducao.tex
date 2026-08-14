@@ -1,30 +1,54 @@
 \section{INTRODUÇÃO}
-Nesta seção, apresenta-se a delimitação do problema, justificando a escolha de jogos sérios como solução pedagógica e estabelecendo sua fundamentação teórica.
+A sociedade contemporânea vivencia uma fase de transformações profundas no campo educacional, em que o ensino tradicional enfrenta o desafio de se adaptar às novas linguagens e dinâmicas da era digital \cite{Bellotti2010}.
+Nesse cenário, a inserção das Tecnologias de Informação e Comunicação (TICs) e, especificamente, do \textit{Game-Based Learning} (GBL), tem se consolidado como uma estratégia de mediação pedagógica eficaz para aumentar o engajamento discente \cite{Turkay2012}.
+Os jogos digitais, ao integrarem elementos lúdicos a objetivos de instrução, deixaram de ser meros artefatos de entretenimento para se tornarem ambientes complexos de construção de conhecimento e desenvolvimento de habilidades críticas \cite{Soriano-Sanchez2026}.
+Essa evolução tecnológica permite criar contextos situados onde o aprendizado ocorre imersivamente, assim supera as limitações de modelos puramente expositivos e proporciona experiências que favorecem a retenção de informações a longo prazo \cite{Bellotti2010,Espirito2020}.
 
-\subsection{Justificativa}
-O ensino de Química no Ensino Médio, particularmente no que tange ao domínio da Tabela Periódica e da atomística, enfrenta desafios críticos relacionados à excessiva abstração dos conteúdos e ao baixo engajamento dos estudantes \cite{Latonio2023}. Métodos tradicionais baseados na recepção passiva falham em promover a compreensão das relações entre os níveis macroscópico e microscópico da matéria, o que resulta em uma memorização mecânica que compromete a retenção do conhecimento a longo prazo \cite{Lima2010}.
+Contudo, a despeito do potencial das novas tecnologias, os índices de desempenho escolar em áreas fundamentais permanecem em patamares alarmantes.
+No âmbito das ciências da natureza, o relatório do PISA 2022 revela um déficit quantitativo significativo no sistema educacional brasileiro, no qual a pontuação média em ciências fixou-se em 403 pontos, valor substancialmente abaixo da média da OCDE, de 485 pontos.
+De forma mais crítica, os dados estatísticos indicam que apenas cerca de 45\% dos estudantes brasileiros atingiram o nível mínimo de proficiência em ciências (Nível 2). 
+Isso implica que a maioria absoluta dos jovens não consegue reconhecer explicações corretas para fenômenos científicos familiares ou identificar se uma conclusão é válida com base em dados simples, reflete uma estagnação no letramento científico que persiste há mais de uma década \cite{OECD2023}.
 
-Dados do PISA \cite{OECD2023} e avaliações nacionais corroboram um cenário de desinteresse generalizado pelas ciências básicas \cite{SilvaFilho2023}. Nesse panorama, a Aprendizagem Baseada em Jogos (GBL) \cite{Plass2020} surge como uma ferramenta de intervenção pedagógica necessária, apresentando um tamanho de efeito superior aos meios convencionais para o ensino de ciências naturais \cite{Soriano-Sanchez2026}. Os jogos digitais oferecem ambientes imersivos nos quais a cognição situada permite que o aprendizado ocorra dentro de um contexto funcional \cite{Bellotti2010}, facilitando a transposição didática por meio de desafios progressivos \cite{Li2024}.
+Este déficit de aprendizagem é particularmente acentuado no ensino de Química, disciplina frequentemente percebida pelos estudantes como um domínio de excessiva abstração e complexidade \cite{Latonio2023,Lackey2022}. 
+O estudo de tópicos fundantes, como a Atomística e a Tabela Periódica, é marcado por uma aversão histórica por parte dos alunos, frequentemente agravada por práticas pedagógicas que priorizam a recepção passiva e a memorização mecânica de símbolos, fórmulas e tendências periódicas. 
+Tais métodos tradicionais resultam em sobrecarga cognitiva e falham ao tentar estabelecer conexões entre as estruturas microscópicas e os fenômenos do cotidiano, e gera uma fragmentação do conhecimento.
+A frustração das necessidades psicológicas básicas de autonomia e competência dos estudantes culmina em um cenário de baixo engajamento e desinteresse pela continuidade dos estudos na área \cite{Lima2010}.
+Diante dessa conjuntura, manifesta-se uma necessidade latente de ferramentas lúdicas e interativas que realizem a transposição didática de conceitos químicos para sistemas digitais integrados, capazes de preencher essa lacuna pedagógica e transformar o esforço intelectual em um processo volitivo e significativo \cite{Han2021,Latonio2023}.
+
+Nesta seção, define-se os objetivos do projeto, justifica-se a escolha de jogos sérios como solução pedagógica e apresenta-se a delimitação do problema.
 
 \subsection{Objetivo geral}
-Desenvolver o jogo sério Alchemon, utilizando mecânicas de captura e colecionismo de criaturas como estratégia para promover a aprendizagem tangencial e o engajamento volitivo de estudantes do Ensino Médio no domínio da Tabela Periódica.
+Desenvolver o jogo sério Alchemon, por meio de mecânicas de captura e colecionismo de criaturas como estratégia para promover a aprendizagem tangencial e o engajamento volitivo de estudantes do Ensino Médio no domínio da Tabela Periódica.
 
 \subsection{Objetivos específicos}
 Para a consecução do objetivo geral e o desenvolvimento do jogo sério Alchemon, estabelecem-se os seguintes objetivos específicos:
 \begin{itemize}
     \item Investigar o estado da arte e as fragilidades no ensino de Química para o Ensino Médio, correlacionando-as aos referenciais de engajamento volitivo da Teoria da Autodeterminação (SDT) e da Aprendizagem Significativa (TAS);
     \item Mapear as propriedades físico-químicas e tendências periódicas dos elementos químicos para a transposição didática em arquétipos e atributos de criaturas colecionáveis;
-    \item Projetar a arquitetura do jogo por meio de um \textit{Game Design Document} (GDD), definindo mecânicas de captura e colecionismo que operem como organizadores prévios alinhados aos níveis de \enquote{Lembrar} e \enquote{Entender} da Taxonomia de Bloom;
-    \item Desenvolver o protótipo funcional do jogo utilizando um motor de jogos, como Unity ou Godot, programando sistemas de \textit{feedback} imediato e ciclos de maestria para satisfazer a necessidade de competência do jogador;
+    \item Projetar a arquitetura do jogo por meio de um \textit{Game Design Document} (GDD), definir mecânicas de captura e colecionismo que operem como organizadores prévios alinhados aos níveis de \enquote{Lembrar} e \enquote{Entender} da Taxonomia de Bloom;
+    \item Desenvolver o protótipo funcional do jogo em um motor de jogos, como Unity ou Godot, programar sistemas de \textit{feedback} imediato e ciclos de maestria para satisfazer a necessidade de competência do jogador;
     \item Implementar ferramentas de aprendizagem tangencial, como enciclopédias \textit{in-game} e espaços informativos, visando estimular a pesquisa autodidata sobre o conteúdo científico fora do ambiente virtual.
 \end{itemize}
+
+\subsection{Justificativa}
+O ensino de Química no Ensino Médio, particularmente no que tange ao domínio da Tabela Periódica e da atomística, enfrenta desafios críticos relacionados à excessiva abstração dos conteúdos e ao baixo engajamento dos estudantes \cite{Latonio2023}. 
+Métodos tradicionais baseados na recepção passiva falham em promover a compreensão das relações entre os níveis macroscópico e microscópico da matéria, o que resulta em uma memorização mecânica que compromete a retenção do conhecimento a longo prazo \cite{Lima2010}.
+
+Dados do PISA \cite{OECD2023} e avaliações nacionais corroboram um cenário de desinteresse generalizado pelas ciências básicas \cite{SilvaFilho2023}. 
+Nesse panorama, a Aprendizagem Baseada em Jogos (GBL) \cite{Plass2020} surge como uma ferramenta de intervenção pedagógica necessária, que apresenta um tamanho de efeito superior aos meios convencionais para o ensino de ciências naturais \cite{Soriano-Sanchez2026}.
+Os jogos digitais oferecem ambientes imersivos nos quais a cognição situada permite que o aprendizado ocorra dentro de um contexto funcional \cite{Bellotti2010}, que facilitam a transposição didática por meio de desafios progressivos \cite{Li2024}.
+
+\subsection{Delimitação do Estudo}
+O presente projeto delimita-se ao planejamento e design instrucional dos conteúdos programáticos iniciais de Química Geral e Físico-Química, convergindo as diretrizes da Base Nacional Comum Curricular (BNCC) para o Ensino Médio \cite{BNCC26} e o referencial internacional \textit{Cambridge IGCSE Chemistry} \cite{igcse_chemistry_2023}. O escopo pedagógico do jogo \textit{Alchemon} compreende especificamente os módulos de: (i) Estados da Matéria e Modelos Atômicos; (ii) Tabela Periódica e Propriedades Periódicas; (iii) Ligações Químicas (Iônica, Covalente e Metálica). 
+
+Estão explicitamente excluídos deste ciclo inicial de desenvolvimento os tópicos avançados de Termoquímica, Cinética, Equilíbrio Químico e Química Orgânica. Essa delimitação justifica-se pela necessidade de consolidar um Produto Mínimo Viável (MVP) que valide a arquitetura lúdico-pedagógica proposta, assegurando a profundidade mecânica necessária para a compreensão das relações estequiométricas antes da expansão para outras áreas da disciplina.
 
 \subsection{Estrutura do trabalho}
 Este trabalho está organizado em seis seções principais, estruturadas conforme descrito a seguir:
 
-Na Seção 2, apresenta-se o referencial teórico, abordando os conceitos de Teoria da Autodeterminação (SDT), Teoria da Aprendizagem Significativa (TAS), Aprendizagem Tangencial e a Taxonomia de Bloom.
-A Seção 3 detalha os trabalhos correlatos, estabelecendo um comparativo entre o projeto Alchemon e outras iniciativas da área.
+Na Seção 2, apresenta-se o referencial teórico, abordam-se conceitos da Teoria da Autodeterminação (SDT), da Teoria da Aprendizagem Significativa (TAS), da Aprendizagem Tangencial, da Taxonomia de Bloom e define-se o gênero de Creature Capture.
+A Seção 3 detalha-se os trabalhos correlatos, estabelece-se um comparativo entre o projeto Alchemon e outras iniciativas da área.
 A Seção 4 descreve a metodologia científica adotada e o planejamento para o desenvolvimento do protótipo.
 
-A Seção 5 dedica-se à identificação e resolução do problema, detalhando a aplicação prática dos conceitos pedagógicos no \textit{design} das mecânicas do jogo.
+A Seção 5 dedica-se à identificação e resolução do problema, ao detalhar a aplicação prática dos conceitos pedagógicos no design das mecânicas do jogo.
 Por fim, a Seção 6 apresenta as conclusões parciais, bem como as sugestões para o prosseguimento da pesquisa e trabalhos futuros.
