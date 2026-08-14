@@ -4,6 +4,8 @@ signal menu_opened
 signal menu_closed
 signal menu_button_pressed(button_name: String)
 
+@export var mochila: InventoryData
+
 @export var button_names: PackedStringArray = [
 	"Periodic",
 	"Alchemon",
@@ -115,8 +117,15 @@ func _on_button_pressed(button_name: String) -> void:
 	if button_name == "Exit":
 		_open_exit_without_saving_popup()
 		return
-
+		
+	if button_name == "Bag":
+		_open_bag()
 	menu_button_pressed.emit(button_name)
+
+#Abrir a mochila.
+func _open_bag():
+	print(mochila.items)
+	
 
 # Exit confirmation functions
 func _open_exit_without_saving_popup() -> void:
