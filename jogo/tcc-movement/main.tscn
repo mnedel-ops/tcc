@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://i02ouo6uredv" path="res://Interfaces/menu_pause.tscn" id="3_h2yge"]
 [ext_resource type="PackedScene" uid="uid://lkv7cq3sslkk" path="res://Inventory/interactable_item.tscn" id="4_1bvp3"]
 [ext_resource type="Resource" uid="uid://bt4psd2exd6eu" path="res://Inventory/inventory.tres" id="4_lquwl"]
+[ext_resource type="Resource" uid="uid://bpxnmv76ylahn" path="res://Inventory/Itens/2ItemGenerico.tres" id="6_7mycd"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7dm0k"]
 size = Vector3(20, 0.5, 20)
@@ -40,3 +41,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5.4100204)
 
 [node name="InteractableItem2" parent="." unique_id=1955324893 groups=["collectible"] instance=ExtResource("4_1bvp3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5887017, 0, -2.5382733)
+
+[node name="InteractableItem3" parent="." unique_id=110038747 groups=["collectible"] instance=ExtResource("4_1bvp3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5887017, 0, 0.56134605)
+item_data = ExtResource("6_7mycd")
