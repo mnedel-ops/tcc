@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.9)  9 MAY 2026 15:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.18)  23 JUN 2026 15:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main.tex
-(./main.tex
+**/run/media/reis/SDextra/Faculdade/tcc/Template_IEEE_UFN/main.tex
+(/run/media/reis/SDextra/Faculdade/tcc/Template_IEEE_UFN/main.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (./IEEEtran.cls
@@ -15,8 +15,7 @@ Document Class: IEEEtran 2007/03/05 V1.7a by Michael Shell
 \@IEEEtrantmpcountA=\count275
 \@IEEEtrantmpcountB=\count276
 \@IEEEtrantmptoksA=\toks17
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
-73.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 373.
 (/usr/share/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
@@ -24,8 +23,7 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 -- Using PDF output.
 \@IEEEnormalsizeunitybaselineskip=\dimen150
 -- This is a 10 point document.
-LaTeX Encoding Info:    Redeclaring text command \textunderscore (encoding ?) o
-n input line 593.
+LaTeX Encoding Info:    Redeclaring text command \textunderscore (encoding ?) on input line 593.
 \CLASSINFOnormalsizebaselineskip=\dimen151
 \CLASSINFOnormalsizeunitybaselineskip=\dimen152
 \IEEEnormaljot=\dimen153
@@ -96,58 +94,40 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks18
 \inpenc@posthook=\toks19
-)
-(/usr/share/texmf-dist/tex/latex/base/fontenc.sty
+) (/usr/share/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 11
-6.
-
-(/usr/share/texmf-dist/tex/latex/psnfss/t1ptm.fd
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 116.
+ (/usr/share/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-))
-(/usr/share/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2026/02/14 v26.3 The multilingual framework for LuaLaTeX, pdfLaT
-eX and XeLaTeX
+)) (/usr/share/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2026/02/14 v26.3 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
 \babel@savecnt=\count287
-LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
-ne 2078.
-LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
-ne 2080.
-LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input lin
-e 2082.
-LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input lin
-e 2083.
-LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) 
-on input line 2084.
-LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
-on input line 2086.
-LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
-on input line 2111.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2078.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2080.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2082.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line 2083.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2084.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2086.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2111.
 \U@D=\dimen163
 \l@unhyphenated=\language4
-
-(/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
+ (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count288
-
-(/usr/share/texmf-dist/tex/generic/babel/locale/pt/babel-brazilian.tex)
+ (/usr/share/texmf-dist/tex/generic/babel/locale/pt/babel-brazilian.tex)
 Package babel Info: Importing font and identification data for brazilian
 (babel)             from babel-pt-BR.ini. Reported on input line 4330.
-
-(/usr/share/texmf-dist/tex/generic/babel-portuges/brazilian.ldf
+ (/usr/share/texmf-dist/tex/generic/babel-portuges/brazilian.ldf
 Language: portuges 2026/01/24 v1.2u Portuguese support from the babel system
 Package babel Info: Hyphen rules for 'brazilian' set to \l@portuguese
 (babel)             (\language3). Reported on input line 100.
 Package babel Info: Making " an active character on input line 132.
-))
-(/usr/share/texmf-dist/tex/latex/microtype/microtype.sty
+)) (/usr/share/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2026/03/01 v3.2d Micro-typographical refinements (RS)
-
-(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+ (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks20
-)
-(/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+) (/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count289
 )
@@ -163,81 +143,74 @@ LaTeX Info: Redefining \textls on input line 1449.
 LaTeX Info: Redefining \microtypecontext on input line 2053.
 LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
 \MT@listname@count=\count291
-
-(/usr/share/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+ (/usr/share/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 File: microtype-pdftex.def 2026/03/01 v3.2d Definitions specific to pdftex (RS)
-
 LaTeX Info: Redefining \lsstyle on input line 944.
 LaTeX Info: Redefining \lslig on input line 944.
 \MT@outer@space=\skip52
 )
 Package microtype Info: Loading configuration file microtype.cfg.
-
-(/usr/share/texmf-dist/tex/latex/microtype/microtype.cfg
+ (/usr/share/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2026/03/01 v3.2d microtype main configuration file (RS)
 )
 LaTeX Info: Redefining \microtypesetup on input line 3065.
-)
-(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+) (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+ (/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+ (/usr/share/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-)
-(/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
-
-(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+ (/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen165
 \Gin@req@width=\dimen166
-)
-(/usr/share/texmf-dist/tex/latex/url/url.sty
+) (/usr/share/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
-(/usr/share/texmf-dist/tex/latex/placeins/placeins.sty
+) (/usr/share/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
-)
-(/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+) (/usr/share/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count292
+\float@exts=\toks23
+\float@box=\box55
+\@float@everytoks=\toks24
+\@floatcapt=\box56
+) (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
 \@mathmargin=\skip53
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2024/11/17 v2.01 AMS text
-
-(/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+ (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks23
+\@emptytoks=\toks25
 \ex@=\dimen167
-))
-(/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+)) (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen168
-)
-(/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+) (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count292
+\inf@bad=\count293
 LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count293
-\leftroot@=\count294
+\uproot@=\count294
+\leftroot@=\count295
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count295
-\DOTSCASE@=\count296
+\classnum@=\count296
+\DOTSCASE@=\count297
 LaTeX Info: Redefining \ldots on input line 495.
 LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
-\Mathstrutbox@=\box55
-\strutbox@=\box56
+\Mathstrutbox@=\box57
+\strutbox@=\box58
 LaTeX Info: Redefining \big on input line 721.
 LaTeX Info: Redefining \Big on input line 722.
 LaTeX Info: Redefining \bigg on input line 723.
@@ -245,43 +218,40 @@ LaTeX Info: Redefining \Bigg on input line 724.
 \big@size=\dimen169
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count297
+\macc@depth=\count298
 LaTeX Info: Redefining \bmod on input line 904.
 LaTeX Info: Redefining \pmod on input line 909.
 LaTeX Info: Redefining \smash on input line 939.
 LaTeX Info: Redefining \relbar on input line 969.
 LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count298
+\c@MaxMatrixCols=\count299
 \dotsspace@=\muskip18
-\c@parentequation=\count299
-\dspbrk@lvl=\count300
-\tag@help=\toks24
-\row@=\count301
-\column@=\count302
-\maxfields@=\count303
-\andhelp@=\toks25
+\c@parentequation=\count300
+\dspbrk@lvl=\count301
+\tag@help=\toks26
+\row@=\count302
+\column@=\count303
+\maxfields@=\count304
+\andhelp@=\toks27
 \eqnshift@=\dimen170
 \alignsep@=\dimen171
 \tagshift@=\dimen172
 \tagwidth@=\dimen173
 \totwidth@=\dimen174
 \lineht@=\dimen175
-\@envbody=\toks26
+\@envbody=\toks28
 \multlinegap=\skip54
 \multlinetaggap=\skip55
-\mathdisplay@stack=\toks27
+\mathdisplay@stack=\toks29
 LaTeX Info: Redefining \[ on input line 2950.
 LaTeX Info: Redefining \] on input line 2951.
-)
-(/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
+) (/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
-
-(/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+ (/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
-
-(/usr/share/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+ (/usr/share/texmf-dist/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
@@ -291,31 +261,27 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-)
-(/usr/share/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count304
-\lst@gtempboxa=\box57
-\lst@token=\toks28
-\lst@length=\count305
+) (/usr/share/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count305
+\lst@gtempboxa=\box59
+\lst@token=\toks30
+\lst@length=\count306
 \lst@currlwidth=\dimen176
-\lst@column=\count306
-\lst@pos=\count307
+\lst@column=\count307
+\lst@pos=\count308
 \lst@lostspace=\dimen177
 \lst@width=\dimen178
-\lst@newlines=\count308
-\lst@lineno=\count309
+\lst@newlines=\count309
+\lst@lineno=\count310
 \lst@maxwidth=\dimen179
-
-(/usr/share/texmf-dist/tex/latex/listings/lstpatch.sty
+ (/usr/share/texmf-dist/tex/latex/listings/lstpatch.sty
 File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
-)
-(/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+) (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
-\c@lstnumber=\count310
-\lst@skipnumbers=\count311
-\lst@framebox=\box58
-)
-(/usr/share/texmf-dist/tex/latex/listings/listings.cfg
+\c@lstnumber=\count311
+\lst@skipnumbers=\count312
+\lst@framebox=\box60
+) (/usr/share/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2025/11/14 1.11b listings configuration
 ))
 Package: listings 2025/11/14 1.11b (Carsten Heinz)
@@ -328,102 +294,89 @@ Package: listings 2025/11/14 1.11b (Carsten Heinz)
     so I'm assuming it got fixed.
 (/usr/share/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
-\csq@reset=\count312
-\csq@gtype=\count313
-\csq@glevel=\count314
-\csq@qlevel=\count315
-\csq@maxlvl=\count316
-\csq@tshold=\count317
-\csq@ltx@everypar=\toks29
-
-(/usr/share/texmf-dist/tex/latex/csquotes/csquotes.def
+\csq@reset=\count313
+\csq@gtype=\count314
+\csq@glevel=\count315
+\csq@qlevel=\count316
+\csq@maxlvl=\count317
+\csq@tshold=\count318
+\csq@ltx@everypar=\toks31
+ (/usr/share/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2024-04-04 v5.2o csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
-
-(/usr/share/texmf-dist/tex/latex/csquotes/csquotes.cfg
+ (/usr/share/texmf-dist/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
-))
-(/usr/share/texmf-dist/tex/latex/biblatex/biblatex.sty
+)) (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
-
-(/usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(/usr/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+ (/usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-)
-(/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
+) (/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
-)
-(/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+) (/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)
-(/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+) (/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
-
-(/usr/share/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+ (/usr/share/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-))
-(/usr/share/texmf-dist/tex/latex/logreq/logreq.sty
+)) (/usr/share/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count318
-
-(/usr/share/texmf-dist/tex/latex/logreq/logreq.def
+\lrq@indent=\count319
+ (/usr/share/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
-))
-(/usr/share/texmf-dist/tex/latex/base/ifthen.sty
+)) (/usr/share/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
-\c@tabx@nest=\count319
-\c@listtotal=\count320
-\c@listcount=\count321
-\c@liststart=\count322
-\c@liststop=\count323
-\c@citecount=\count324
-\c@citetotal=\count325
-\c@multicitecount=\count326
-\c@multicitetotal=\count327
-\c@instcount=\count328
-\c@maxnames=\count329
-\c@minnames=\count330
-\c@maxitems=\count331
-\c@minitems=\count332
-\c@citecounter=\count333
-\c@maxcitecounter=\count334
-\c@savedcitecounter=\count335
-\c@uniquelist=\count336
-\c@uniquename=\count337
-\c@refsection=\count338
-\c@refsegment=\count339
-\c@maxextratitle=\count340
-\c@maxextratitleyear=\count341
-\c@maxextraname=\count342
-\c@maxextradate=\count343
-\c@maxextraalpha=\count344
-\c@abbrvpenalty=\count345
-\c@highnamepenalty=\count346
-\c@lownamepenalty=\count347
-\c@maxparens=\count348
-\c@parenlevel=\count349
-\blx@tempcnta=\count350
-\blx@tempcntb=\count351
-\blx@tempcntc=\count352
-\c@blx@maxsection=\count353
-\blx@maxsegment@0=\count354
-\blx@notetype=\count355
-\blx@parenlevel@text=\count356
-\blx@parenlevel@foot=\count357
-\blx@sectionciteorder@0=\count358
-\blx@sectionciteorderinternal@0=\count359
-\blx@entrysetcounter=\count360
-\blx@biblioinstance=\count361
+\c@tabx@nest=\count320
+\c@listtotal=\count321
+\c@listcount=\count322
+\c@liststart=\count323
+\c@liststop=\count324
+\c@citecount=\count325
+\c@citetotal=\count326
+\c@multicitecount=\count327
+\c@multicitetotal=\count328
+\c@instcount=\count329
+\c@maxnames=\count330
+\c@minnames=\count331
+\c@maxitems=\count332
+\c@minitems=\count333
+\c@citecounter=\count334
+\c@maxcitecounter=\count335
+\c@savedcitecounter=\count336
+\c@uniquelist=\count337
+\c@uniquename=\count338
+\c@refsection=\count339
+\c@refsegment=\count340
+\c@maxextratitle=\count341
+\c@maxextratitleyear=\count342
+\c@maxextraname=\count343
+\c@maxextradate=\count344
+\c@maxextraalpha=\count345
+\c@abbrvpenalty=\count346
+\c@highnamepenalty=\count347
+\c@lownamepenalty=\count348
+\c@maxparens=\count349
+\c@parenlevel=\count350
+\blx@tempcnta=\count351
+\blx@tempcntb=\count352
+\blx@tempcntc=\count353
+\c@blx@maxsection=\count354
+\blx@maxsegment@0=\count355
+\blx@notetype=\count356
+\blx@parenlevel@text=\count357
+\blx@parenlevel@foot=\count358
+\blx@sectionciteorder@0=\count359
+\blx@sectionciteorderinternal@0=\count360
+\blx@entrysetcounter=\count361
+\blx@biblioinstance=\count362
 \labelnumberwidth=\skip56
 \labelalphawidth=\skip57
 \biblabelsep=\skip58
@@ -435,87 +388,86 @@ Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 \blx@bcfin=\read3
 \blx@bcfout=\write3
 \blx@langwohyphens=\language5
-\c@mincomprange=\count362
-\c@maxcomprange=\count363
-\c@mincompwidth=\count364
+\c@mincomprange=\count363
+\c@maxcomprange=\count364
+\c@mincompwidth=\count365
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
-
-(/usr/share/texmf-dist/tex/latex/biblatex/blx-dm.def
+ (/usr/share/texmf-dist/tex/latex/biblatex/blx-dm.def
 File: blx-dm.def 2025/07/10 v3.21 biblatex datamodel (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'numeric.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count365
-\c@savedafterword=\count366
-\c@annotator=\count367
-\c@savedannotator=\count368
-\c@author=\count369
-\c@savedauthor=\count370
-\c@bookauthor=\count371
-\c@savedbookauthor=\count372
-\c@commentator=\count373
-\c@savedcommentator=\count374
-\c@editor=\count375
-\c@savededitor=\count376
-\c@editora=\count377
-\c@savededitora=\count378
-\c@editorb=\count379
-\c@savededitorb=\count380
-\c@editorc=\count381
-\c@savededitorc=\count382
-\c@foreword=\count383
-\c@savedforeword=\count384
-\c@holder=\count385
-\c@savedholder=\count386
-\c@introduction=\count387
-\c@savedintroduction=\count388
-\c@namea=\count389
-\c@savednamea=\count390
-\c@nameb=\count391
-\c@savednameb=\count392
-\c@namec=\count393
-\c@savednamec=\count394
-\c@translator=\count395
-\c@savedtranslator=\count396
-\c@shortauthor=\count397
-\c@savedshortauthor=\count398
-\c@shorteditor=\count399
-\c@savedshorteditor=\count400
-\c@labelname=\count401
-\c@savedlabelname=\count402
-\c@institution=\count403
-\c@savedinstitution=\count404
-\c@lista=\count405
-\c@savedlista=\count406
-\c@listb=\count407
-\c@savedlistb=\count408
-\c@listc=\count409
-\c@savedlistc=\count410
-\c@listd=\count411
-\c@savedlistd=\count412
-\c@liste=\count413
-\c@savedliste=\count414
-\c@listf=\count415
-\c@savedlistf=\count416
-\c@location=\count417
-\c@savedlocation=\count418
-\c@organization=\count419
-\c@savedorganization=\count420
-\c@origlocation=\count421
-\c@savedoriglocation=\count422
-\c@origpublisher=\count423
-\c@savedorigpublisher=\count424
-\c@publisher=\count425
-\c@savedpublisher=\count426
-\c@language=\count427
-\c@savedlanguage=\count428
-\c@origlanguage=\count429
-\c@savedoriglanguage=\count430
-\c@pageref=\count431
-\c@savedpageref=\count432
+\c@afterword=\count366
+\c@savedafterword=\count367
+\c@annotator=\count368
+\c@savedannotator=\count369
+\c@author=\count370
+\c@savedauthor=\count371
+\c@bookauthor=\count372
+\c@savedbookauthor=\count373
+\c@commentator=\count374
+\c@savedcommentator=\count375
+\c@editor=\count376
+\c@savededitor=\count377
+\c@editora=\count378
+\c@savededitora=\count379
+\c@editorb=\count380
+\c@savededitorb=\count381
+\c@editorc=\count382
+\c@savededitorc=\count383
+\c@foreword=\count384
+\c@savedforeword=\count385
+\c@holder=\count386
+\c@savedholder=\count387
+\c@introduction=\count388
+\c@savedintroduction=\count389
+\c@namea=\count390
+\c@savednamea=\count391
+\c@nameb=\count392
+\c@savednameb=\count393
+\c@namec=\count394
+\c@savednamec=\count395
+\c@translator=\count396
+\c@savedtranslator=\count397
+\c@shortauthor=\count398
+\c@savedshortauthor=\count399
+\c@shorteditor=\count400
+\c@savedshorteditor=\count401
+\c@labelname=\count402
+\c@savedlabelname=\count403
+\c@institution=\count404
+\c@savedinstitution=\count405
+\c@lista=\count406
+\c@savedlista=\count407
+\c@listb=\count408
+\c@savedlistb=\count409
+\c@listc=\count410
+\c@savedlistc=\count411
+\c@listd=\count412
+\c@savedlistd=\count413
+\c@liste=\count414
+\c@savedliste=\count415
+\c@listf=\count416
+\c@savedlistf=\count417
+\c@location=\count418
+\c@savedlocation=\count419
+\c@organization=\count420
+\c@savedorganization=\count421
+\c@origlocation=\count422
+\c@savedoriglocation=\count423
+\c@origpublisher=\count424
+\c@savedorigpublisher=\count425
+\c@publisher=\count426
+\c@savedpublisher=\count427
+\c@language=\count428
+\c@savedlanguage=\count429
+\c@origlanguage=\count430
+\c@savedoriglanguage=\count431
+\c@pageref=\count432
+\c@savedpageref=\count433
 \shorthandwidth=\skip64
 \shortjournalwidth=\skip65
 \shortserieswidth=\skip66
@@ -532,14 +484,12 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \localshorteditorwidth=\skip77
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
-
-(/usr/share/texmf-dist/tex/latex/biblatex/blx-compat.def
+ (/usr/share/texmf-dist/tex/latex/biblatex/blx-compat.def
 File: blx-compat.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load BibTeX backend compatibility...
 Package biblatex Info: ... file 'blx-bibtex.def' found.
-
-(/usr/share/texmf-dist/tex/latex/biblatex/blx-bibtex.def
+ (/usr/share/texmf-dist/tex/latex/biblatex/blx-bibtex.def
 File: blx-bibtex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
 
 
@@ -551,45 +501,40 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
-\c@textcitecount=\count433
-\c@textcitetotal=\count434
-\c@textcitemaxnames=\count435
-\c@biburlbigbreakpenalty=\count436
-\c@biburlbreakpenalty=\count437
-\c@biburlnumpenalty=\count438
-\c@biburlucpenalty=\count439
-\c@biburllcpenalty=\count440
+\c@textcitecount=\count434
+\c@textcitetotal=\count435
+\c@textcitemaxnames=\count436
+\c@biburlbigbreakpenalty=\count437
+\c@biburlbreakpenalty=\count438
+\c@biburlnumpenalty=\count439
+\c@biburlucpenalty=\count440
+\c@biburllcpenalty=\count441
 \biburlbigskip=\muskip19
 \biburlnumskip=\muskip20
 \biburlucskip=\muskip21
 \biburllcskip=\muskip22
-\c@smartand=\count441
+\c@smartand=\count442
 )
 Package biblatex Info: Trying to load natbib compatibility...
 Package biblatex Info: ... file 'blx-natbib.def' found.
-
-(/usr/share/texmf-dist/tex/latex/biblatex/blx-natbib.def
+ (/usr/share/texmf-dist/tex/latex/biblatex/blx-natbib.def
 File: blx-natbib.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
-Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined,
- overwriting.
+Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined, overwriting.
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
-
-(/usr/share/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+ (/usr/share/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
 File: numeric.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
-
-(/usr/share/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+ (/usr/share/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count442
-\c@bbx:relatedtotal=\count443
+\c@bbx:relatedcount=\count443
+\c@bbx:relatedtotal=\count444
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
-
-(/usr/share/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+ (/usr/share/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
 File: numeric.cbx 2025/07/10 v3.21 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
@@ -605,27 +550,22 @@ Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
-
-(/usr/share/texmf-dist/tex/latex/biblatex/biblatex.cfg
+ (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
 )
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Document encoding is UTF8 ....
-
-(/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
+ (/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2026-01-19 L3 programming layer (loader) 
-
-(/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+ (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count444
+\l__color_backend_stack_int=\count445
 ))
 Package biblatex Info: ... and expl3
 (biblatex)             2026-01-19 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
-
-(/usr/share/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
-(/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+ (/usr/share/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty (/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2025-10-09 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
@@ -636,7 +576,7 @@ Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'brazilian'.
  (out/main.aux
 Package babel Info: 'brazilian' activates 'portuges' shorthands.
-(babel)             Reported on input line 33.
+(babel)             Reported on input line 42.
 )
 \openout1 = `main.aux'.
 
@@ -673,34 +613,29 @@ Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
  (/usr/share/texmf-dist/tex/latex/microtype/mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
-)
-(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+) (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count445
+\scratchcounter=\count446
 \scratchdimen=\dimen180
-\scratchbox=\box59
-\nofMPsegments=\count446
-\nofMParguments=\count447
-\everyMPshowfont=\toks30
-\MPscratchCnt=\count448
+\scratchbox=\box61
+\nofMPsegments=\count447
+\nofMParguments=\count448
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count449
 \MPscratchDim=\dimen181
-\MPnumerator=\count449
-\makeMPintoPDFobject=\count450
-\everyMPtoPDFconversion=\toks31
+\MPnumerator=\count450
+\makeMPintoPDFobject=\count451
+\everyMPtoPDFconversion=\toks33
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\c@lstlisting=\count451
+\c@lstlisting=\count452
 Package biblatex Info: Trying to load language 'brazilian'...
 Package biblatex Info: ... file 'brazilian.lbx' found.
-
-(/usr/share/texmf-dist/tex/latex/biblatex/lbx/brazilian.lbx
+ (/usr/share/texmf-dist/tex/latex/biblatex/lbx/brazilian.lbx
 File: brazilian.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 )
 Package biblatex Info: Input encoding 'utf8' detected.
@@ -716,24 +651,456 @@ Package biblatex Info: ... file 'main.bbl' found.
  (out/main.bbl)
 Package biblatex Info: Reference section=0 on input line 26.
 Package biblatex Info: Reference segment=0 on input line 26.
+ (./sections/00_header.tex) (./sections/01_abstract.tex) (./sections/02_introducao.tex
 
-(./sections/00_header.tex) (./sections/01_abstract.tex)
-(./sections/02_introducao.tex
-(/usr/share/texmf-dist/tex/latex/microtype/mt-cmr.cfg
-File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
-(RS)
-) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/f
-onts/enc/dvips/base/8r.enc}
+LaTeX Warning: Citation 'Bellotti2010' on page 1 undefined on input line 2.
 
 
-]) (./sections/03_secao.tex [2]) (./sections/04_secao2.tex)
-(./sections/05_metodologia.tex [3] [4]) (./sections/06_conclusao.tex)
-(./sections/07_bibliography.tex) [5]
-Underfull \hbox (badness 4660) in paragraph at lines 37--37
-[]\T1/ptm/m/n/10 (+20) Richard M. Ryan e Edward L. Deci. ^^P  Self-
+LaTeX Warning: Citation 'Turkay2012' on page 1 undefined on input line 3.
+
+
+LaTeX Warning: Citation 'Soriano-Sanchez2026' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Citation 'Bellotti2010' on page 1 undefined on input line 5.
+
+
+LaTeX Warning: Citation 'Espirito2020' on page 1 undefined on input line 5.
+
+
+LaTeX Warning: Citation 'OECD2023' on page 1 undefined on input line 10.
+
+
+LaTeX Warning: Citation 'Latonio2023' on page 1 undefined on input line 12.
+
+
+LaTeX Warning: Citation 'Lackey2022' on page 1 undefined on input line 12.
+
+
+LaTeX Warning: Citation 'Lima2010' on page 1 undefined on input line 15.
+
+
+LaTeX Warning: Citation 'Han2021' on page 1 undefined on input line 16.
+
+
+LaTeX Warning: Citation 'Latonio2023' on page 1 undefined on input line 16.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}
+
+
+] (/usr/share/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
+)
+
+LaTeX Warning: Citation 'Latonio2023' on page 2 undefined on input line 34.
+
+
+LaTeX Warning: Citation 'Lima2010' on page 2 undefined on input line 35.
+
+
+LaTeX Warning: Citation 'OECD2023' on page 2 undefined on input line 37.
+
+
+LaTeX Warning: Citation 'SilvaFilho2023' on page 2 undefined on input line 37.
+
+
+LaTeX Warning: Citation 'Plass2020' on page 2 undefined on input line 38.
+
+
+LaTeX Warning: Citation 'Soriano-Sanchez2026' on page 2 undefined on input line 38.
+
+
+LaTeX Warning: Citation 'Bellotti2010' on page 2 undefined on input line 39.
+
+
+LaTeX Warning: Citation 'Li2024' on page 2 undefined on input line 39.
+
+
+LaTeX Warning: Citation 'BNCC26' on page 2 undefined on input line 42.
+
+
+LaTeX Warning: Citation 'igcse_chemistry_2023' on page 2 undefined on input line 42.
+
+) (./sections/03_secao.tex
+
+LaTeX Warning: Citation 'Ryan1985' on page 2 undefined on input line 5.
+
+
+LaTeX Warning: Citation 'Ryan2020' on page 2 undefined on input line 5.
+
+
+LaTeX Warning: Citation 'Ryan1985' on page 2 undefined on input line 5.
+
+
+LaTeX Warning: Citation 'Ryan1985' on page 2 undefined on input line 5.
+
+
+LaTeX Warning: Citation 'Shi2016' on page 2 undefined on input line 5.
+
+[2]
+<images/sdt.png, id=14, 957.5775pt x 453.19313pt>
+File: images/sdt.png Graphic file (type png)
+<use images/sdt.png>
+Package pdftex.def Info: images/sdt.png  used on input line 9.
+(pdftex.def)             Requested size: 202.3529pt x 95.76807pt.
+
+
+LaTeX Warning: Citation 'Ryan1985' on page 3 undefined on input line 14.
+
+
+LaTeX Warning: Citation 'Plass2020' on page 3 undefined on input line 14.
+
+
+LaTeX Warning: Citation 'Coelho2025' on page 3 undefined on input line 14.
+
+
+LaTeX Warning: Citation 'Ryan2022' on page 3 undefined on input line 16.
+
+
+LaTeX Warning: Citation 'Gao2024' on page 3 undefined on input line 16.
+
+
+LaTeX Warning: Citation 'Ryan2022' on page 3 undefined on input line 18.
+
+
+LaTeX Warning: Citation 'Ryan2022' on page 3 undefined on input line 18.
+
+
+LaTeX Warning: Citation 'Ryan1985' on page 3 undefined on input line 18.
+
+
+LaTeX Warning: Citation 'Gao2024' on page 3 undefined on input line 18.
+
+
+LaTeX Warning: Citation 'Ausubel1963' on page 3 undefined on input line 21.
+
+
+LaTeX Warning: Citation 'Espirito2020' on page 3 undefined on input line 21.
+
+
+LaTeX Warning: Citation 'Ausubel1963' on page 3 undefined on input line 21.
+
+
+LaTeX Warning: Citation 'Custodio2015' on page 3 undefined on input line 21.
+
+
+LaTeX Warning: Citation 'Espirito2020' on page 3 undefined on input line 21.
+
+
+LaTeX Warning: Citation 'Custodio2015' on page 3 undefined on input line 21.
+
+
+LaTeX Warning: Citation 'Bryce2024' on page 3 undefined on input line 23.
+
+
+LaTeX Warning: Citation 'Bryce2024' on page 3 undefined on input line 23.
+
+<images/tas.png, id=16, 2372.11218pt x 853.68938pt>
+File: images/tas.png Graphic file (type png)
+<use images/tas.png>
+Package pdftex.def Info: images/tas.png  used on input line 27.
+(pdftex.def)             Requested size: 202.3529pt x 72.81665pt.
+
+LaTeX Warning: Citation 'Portnow2012' on page 3 undefined on input line 33.
+
+
+LaTeX Warning: Citation 'Mozelius2017' on page 3 undefined on input line 33.
+
+
+LaTeX Warning: Citation 'LimadaCostaJunior2022' on page 3 undefined on input line 33.
+
+
+LaTeX Warning: Citation 'GomesdeFreitas2017' on page 3 undefined on input line 33.
+
+
+LaTeX Warning: Citation 'Lorenzatti2020' on page 3 undefined on input line 33.
+
+
+LaTeX Warning: Citation 'Lorenzatti2020' on page 3 undefined on input line 33.
+
+<images/tangencial.png, id=17, 383.18156pt x 172.39406pt>
+File: images/tangencial.png Graphic file (type png)
+<use images/tangencial.png>
+Package pdftex.def Info: images/tangencial.png  used on input line 37.
+(pdftex.def)             Requested size: 202.3529pt x 91.0396pt.
+
+Underfull \vbox (badness 5519) has occurred while \output is active []
+
+ [3 <./images/sdt.png> <./images/tas.png>]
+
+LaTeX Warning: Citation 'Mozelius2017' on page 4 undefined on input line 42.
+
+
+LaTeX Warning: Citation 'Mozelius2017' on page 4 undefined on input line 42.
+
+
+LaTeX Warning: Citation 'GomesdeFreitas2017' on page 4 undefined on input line 42.
+
+
+LaTeX Warning: Citation 'Bloom1956' on page 4 undefined on input line 45.
+
+
+LaTeX Warning: Citation 'Anderson2001' on page 4 undefined on input line 45.
+
+
+LaTeX Warning: Citation 'Plass2020' on page 4 undefined on input line 45.
+
+<images/bloom.png, id=23, 603.75563pt x 341.77687pt>
+File: images/bloom.png Graphic file (type png)
+<use images/bloom.png>
+Package pdftex.def Info: images/bloom.png  used on input line 49.
+(pdftex.def)             Requested size: 202.3529pt x 114.54941pt.
+
+LaTeX Warning: Citation 'KrishnaShinde2025' on page 4 undefined on input line 54.
+
+
+LaTeX Warning: Citation 'Tuomisto2015' on page 4 undefined on input line 54.
+
+
+LaTeX Warning: Citation 'Plass2020' on page 4 undefined on input line 54.
+
+
+LaTeX Warning: Citation 'Gee2003' on page 4 undefined on input line 54.
+
+
+LaTeX Warning: Citation 'sapach17' on page 4 undefined on input line 59.
+
+
+LaTeX Warning: Citation 'Gomez2019' on page 4 undefined on input line 65.
+
+
+LaTeX Warning: Citation 'Plass2020' on page 4 undefined on input line 65.
+
+) (./sections/04_secao2.tex
+
+LaTeX Warning: Citation 'AceEdVenture2016' on page 4 undefined on input line 7.
+
+[4 <./images/tangencial.png> <./images/bloom.png>]
+
+LaTeX Warning: Citation 'Lackey2022' on page 5 undefined on input line 9.
+
+
+LaTeX Warning: Citation 'Lackey2022' on page 5 undefined on input line 9.
+
+<images/chemcaper.jpg, id=31, 461.725pt x 215.80624pt>
+File: images/chemcaper.jpg Graphic file (type jpg)
+<use images/chemcaper.jpg>
+Package pdftex.def Info: images/chemcaper.jpg  used on input line 13.
+(pdftex.def)             Requested size: 202.3529pt x 94.57634pt.
+
+LaTeX Warning: Citation 'AceEdVenture2016' on page 5 undefined on input line 14.
+
+
+LaTeX Warning: Citation 'AceEdVenture2016' on page 5 undefined on input line 14.
+
+
+LaTeX Warning: Citation 'Han2021' on page 5 undefined on input line 20.
+
+
+LaTeX Warning: Citation 'Han2021' on page 5 undefined on input line 22.
+
+
+LaTeX Warning: Citation 'Han2021' on page 5 undefined on input line 22.
+
+<images/chemcraft.jpg, id=32, 527.9725pt x 413.545pt>
+File: images/chemcraft.jpg Graphic file (type jpg)
+<use images/chemcraft.jpg>
+Package pdftex.def Info: images/chemcraft.jpg  used on input line 26.
+(pdftex.def)             Requested size: 202.3529pt x 158.4928pt.
+
+LaTeX Warning: Citation 'Han2021' on page 5 undefined on input line 27.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Citation 'GomesdeFreitas2017' on page 5 undefined on input line 33.
+
+
+LaTeX Warning: Citation 'GomesdeFreitas2017' on page 5 undefined on input line 33.
+
+
+LaTeX Warning: Citation 'Portnow2012' on page 5 undefined on input line 35.
+
+
+LaTeX Warning: Citation 'LimadaCostaJunior2022' on page 5 undefined on input line 35.
+
+
+LaTeX Warning: Citation 'GomesdeFreitas2017' on page 5 undefined on input line 35.
+
+<images/batalhaquimicard.png, id=33, 963.6pt x 542.025pt>
+File: images/batalhaquimicard.png Graphic file (type png)
+<use images/batalhaquimicard.png>
+Package pdftex.def Info: images/batalhaquimicard.png  used on input line 39.
+(pdftex.def)             Requested size: 202.3529pt x 113.82033pt.
+
+LaTeX Warning: Citation 'GomesdeFreitas2017' on page 5 undefined on input line 40.
+
+
+LaTeX Warning: Citation 'GomesdeFreitas2017' on page 5 undefined on input line 40.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+\T1/ptm/m/n/8 (+20) Figura 7.   In-ter-face do jogo Ba-ta-lha Qui-mi-card. Fonte:
  []
 
-[6]
+
+LaTeX Warning: Citation 'GomesdeFreitas2017' on page 5 undefined on input line 46.
+
+
+LaTeX Warning: Citation 'Han2021' on page 5 undefined on input line 46.
+
+) (./sections/05_metodologia.tex
+
+LaTeX Warning: Citation 'Chandler2009' on page 5 undefined on input line 2.
+
+[5 <./images/chemcaper.jpg> <./images/chemcraft.jpg> <./images/batalhaquimicard.png>]
+<images/ciclochandler.png, id=37, 505.13719pt x 505.13719pt>
+File: images/ciclochandler.png Graphic file (type png)
+<use images/ciclochandler.png>
+Package pdftex.def Info: images/ciclochandler.png  used on input line 6.
+(pdftex.def)             Requested size: 202.3529pt x 202.3519pt.
+
+
+LaTeX Warning: Citation 'Chandler2009' on page 6 undefined on input line 7.
+
+
+LaTeX Warning: Citation 'Chandler2009' on page 6 undefined on input line 7.
+
+
+LaTeX Warning: Citation 'BNCC26' on page 6 undefined on input line 13.
+
+
+LaTeX Warning: Citation 'igcse_chemistry_2023' on page 6 undefined on input line 13.
+
+
+LaTeX Warning: Citation 'Godot2024' on page 6 undefined on input line 24.
+
+
+LaTeX Warning: Citation 'Blender2024' on page 6 undefined on input line 26.
+
+
+LaTeX Warning: Citation 'Krita2024' on page 6 undefined on input line 26.
+
+
+LaTeX Warning: Citation 'Gomez2019' on page 6 undefined on input line 26.
+
+
+LaTeX Warning: Citation 'Portnow2012' on page 6 undefined on input line 26.
+
+
+LaTeX Warning: Citation 'Jacobs2021' on page 6 undefined on input line 29.
+
+
+LaTeX Warning: Citation 'Ryan1985' on page 6 undefined on input line 29.
+
+
+LaTeX Warning: Citation 'Latonio2023' on page 6 undefined on input line 33.
+
+
+LaTeX Warning: Citation 'Lima2010' on page 6 undefined on input line 33.
+
+
+LaTeX Warning: Citation 'Latonio2023' on page 6 undefined on input line 35.
+
+
+LaTeX Warning: Citation 'OECD2023' on page 6 undefined on input line 35.
+
+
+LaTeX Warning: Citation 'Ryan1985' on page 6 undefined on input line 37.
+
+
+LaTeX Warning: Citation 'SilvaFilho2023' on page 6 undefined on input line 37.
+
+[6 <./images/ciclochandler.png>]
+
+LaTeX Warning: Citation 'Plass2020' on page 7 undefined on input line 39.
+
+
+LaTeX Warning: Citation 'Ryan1985' on page 7 undefined on input line 42.
+
+
+LaTeX Warning: Citation 'Ausubel1963' on page 7 undefined on input line 42.
+
+
+LaTeX Warning: Citation 'Portnow2012' on page 7 undefined on input line 42.
+
+
+LaTeX Warning: Citation 'Plass2020' on page 7 undefined on input line 42.
+
+
+LaTeX Warning: Citation 'Lorenzatti2020' on page 7 undefined on input line 42.
+
+
+LaTeX Warning: Citation 'Vahlo2023' on page 7 undefined on input line 42.
+
+
+LaTeX Warning: Citation 'Plass2020' on page 7 undefined on input line 42.
+
+
+LaTeX Warning: Citation 'Mozelius2017' on page 7 undefined on input line 42.
+
+
+LaTeX Warning: Citation 'Shi2016' on page 7 undefined on input line 44.
+
+
+LaTeX Warning: Citation 'Plass2020' on page 7 undefined on input line 44.
+
+
+LaTeX Warning: Citation 'Shi2016' on page 7 undefined on input line 44.
+
+
+LaTeX Warning: Citation 'Vahlo2023' on page 7 undefined on input line 44.
+
+
+LaTeX Warning: Citation 'LimadaCostaJunior2022' on page 7 undefined on input line 44.
+
+
+LaTeX Warning: Citation 'Portnow2012' on page 7 undefined on input line 46.
+
+
+LaTeX Warning: Citation 'Ausubel1963' on page 7 undefined on input line 46.
+
+
+LaTeX Warning: Citation 'Ausubel1963' on page 7 undefined on input line 46.
+
+
+LaTeX Warning: Citation 'Espirito2020' on page 7 undefined on input line 46.
+
+
+LaTeX Warning: Citation 'Ryan1985' on page 7 undefined on input line 48.
+
+<images/cicloteorico.png, id=42, 535.2497pt x 538.26094pt>
+File: images/cicloteorico.png Graphic file (type png)
+<use images/cicloteorico.png>
+Package pdftex.def Info: images/cicloteorico.png  used on input line 54.
+(pdftex.def)             Requested size: 202.3529pt x 203.48999pt.
+) (./sections/06_conclusao.tex
+
+LaTeX Warning: Citation 'Lima2010' on page 7 undefined on input line 2.
+
+
+LaTeX Warning: Citation 'SilvaFilho2023' on page 7 undefined on input line 2.
+
+
+LaTeX Warning: Citation 'Ryan1985' on page 7 undefined on input line 3.
+
+
+LaTeX Warning: Citation 'Ryan2022' on page 7 undefined on input line 3.
+
+
+LaTeX Warning: Citation 'Ausubel1963' on page 7 undefined on input line 3.
+
+
+LaTeX Warning: Citation 'Espirito2020' on page 7 undefined on input line 3.
+
+
+LaTeX Warning: Citation 'Portnow2012' on page 7 undefined on input line 3.
+
+[7 <./images/cicloteorico.png>]) (./sections/07_bibliography.tex)
+
+LaTeX Warning: Empty bibliography on input line 2.
+
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -745,7 +1112,7 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[7
+[8
 
 ] (out/main.aux)
  ***********
@@ -766,23 +1133,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 17460 strings out of 469495
- 313659 string characters out of 5470099
- 993610 words of memory out of 5000000
- 45584 multiletter control sequences out of 15000+600000
- 752099 words of font info for 359 fonts, out of 8000000 for 9000
+ 17502 strings out of 469495
+ 313101 string characters out of 5470098
+ 987243 words of memory out of 5000000
+ 45648 multiletter control sequences out of 15000+600000
+ 756021 words of font info for 339 fonts, out of 8000000 for 9000
  19 hyphenation exceptions out of 8191
- 68i,9n,69p,1898b,1647s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/urw/tim
-es/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/sh
-are/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/ty
-pe1/urw/times/utmri8a.pfb>
-Output written on out/main.pdf (7 pages, 126756 bytes).
+ 68i,9n,69p,1954b,1651s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on out/main.pdf (8 pages, 5691264 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 83 PDF objects out of 1000 (max. 8388607)
+ 43 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 46593 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 59950 words of extra memory for PDF output out of 61914 (max. 10000000)
 
