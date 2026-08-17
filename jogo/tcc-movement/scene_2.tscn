@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dxh818mftoswm"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8dwar"]
+size = Vector3(50, 0.5, 50)
+
+[node name="scene2" type="Node3D" unique_id=902831012]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1551058803]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=965140357]
+shape = SubResource("BoxShape3D_8dwar")

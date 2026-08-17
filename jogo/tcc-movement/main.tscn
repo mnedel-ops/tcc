@@ -5,13 +5,17 @@
 [ext_resource type="PackedScene" uid="uid://i02ouo6uredv" path="res://Interfaces/menu_pause.tscn" id="3_h2yge"]
 [ext_resource type="PackedScene" uid="uid://lkv7cq3sslkk" path="res://Inventory/interactable_item.tscn" id="4_1bvp3"]
 [ext_resource type="Resource" uid="uid://bt4psd2exd6eu" path="res://Inventory/inventory.tres" id="4_lquwl"]
-[ext_resource type="Resource" path="res://Inventory/Itens/2ItemGenerico.tres" id="6_7mycd"]
-[ext_resource type="PackedScene" path="res://porta.tscn" id="7_272bh"]
+[ext_resource type="Script" uid="uid://cq0o7r4jvvodg" path="res://porta.gd" id="6_7mycd"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7dm0k"]
 size = Vector3(20, 0.5, 20)
 
 [sub_resource type="BoxMesh" id="BoxMesh_0xm2m"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lquwl"]
+size = Vector3(1, 3.6341553, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_7mycd"]
 
 [node name="main" type="Node3D" unique_id=1718374945]
 
@@ -45,7 +49,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5887017, 0, -2.5382733)
 
 [node name="InteractableItem3" parent="." unique_id=110038747 groups=["collectible"] instance=ExtResource("4_1bvp3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5887017, 0, 0.56134605)
-item_data = ExtResource("6_7mycd")
 
-[node name="porta" parent="." unique_id=1231842104 instance=ExtResource("7_272bh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8.316041)
+[node name="porta" type="Area3D" parent="." unique_id=1937842032]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 9.041096)
+script = ExtResource("6_7mycd")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="porta" unique_id=1719133332]
+transform = Transform3D(2.001714, 0, 0, 0, 1, 0, 0, 0, 0.427449, 0, 0.8283081, 0)
+shape = SubResource("BoxShape3D_lquwl")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="porta" unique_id=1109346113]
+mesh = SubResource("BoxMesh_7mycd")
+
+[connection signal="body_entered" from="porta" to="porta" method="_on_body_entered"]
