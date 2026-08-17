@@ -4,6 +4,7 @@ extends Node
 @export var level_holder: Node3D
 @export var player: CharacterBody3D
 @export var camera_rig: Node3D
+
 @export var first_level: PackedScene        # arrasta Scene1.tscn aqui no Inspector
 @export var first_spawn_point: String
 
@@ -13,6 +14,7 @@ func _ready() -> void:
 	add_to_group("scene_manager")
 	if first_level:
 		change_level(first_level, first_spawn_point)
+		print("Fase inicial")
 
 func change_level(new_level_scene: PackedScene, spawn_point_name: String) -> void:
 	if new_level_scene == null:
