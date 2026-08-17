@@ -5,7 +5,7 @@ extends Node
 @export var player: CharacterBody3D
 @export var camera_rig: Node3D
 @export var first_level: PackedScene        # arrasta Scene1.tscn aqui no Inspector
-@export var first_spawn_point: String = "SpawnPoint_Default"
+@export var first_spawn_point: String
 
 var _current_level: Node3D
 
@@ -15,6 +15,10 @@ func _ready() -> void:
 		change_level(first_level, first_spawn_point)
 
 func change_level(new_level_scene: PackedScene, spawn_point_name: String) -> void:
+	if new_level_scene == null:
+		push_error("Cena destino não configurada para porta.")
+		return
+
 	if _current_level:
 		_current_level.queue_free()
 
