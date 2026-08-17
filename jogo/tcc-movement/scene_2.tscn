@@ -1,11 +1,36 @@
 [gd_scene format=3 uid="uid://dxh818mftoswm"]
 
+[ext_resource type="Script" uid="uid://cq0o7r4jvvodg" path="res://porta.gd" id="1_3r24c"]
+[ext_resource type="PackedScene" uid="uid://depmw26wbrjt1" path="res://scene1.tscn" id="2_ogt5y"]
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_8dwar"]
 size = Vector3(50, 0.5, 50)
 
-[node name="scene2" type="Node3D" unique_id=902831012]
+[sub_resource type="BoxShape3D" id="BoxShape3D_3r24c"]
+size = Vector3(1, 3.6341553, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ogt5y"]
+
+[node name="Scene2" type="Node3D" unique_id=797117270]
+
+[node name="SpawnPoint_FromA" type="Marker3D" parent="." unique_id=1487543955]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.38857448, 0)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1551058803]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=965140357]
 shape = SubResource("BoxShape3D_8dwar")
+
+[node name="DoorToA" type="Area3D" parent="." unique_id=1951286211]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 9.041096)
+script = ExtResource("1_3r24c")
+target_level = ExtResource("2_ogt5y")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DoorToA" unique_id=984616267]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8283081, 0)
+shape = SubResource("BoxShape3D_3r24c")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="DoorToA" unique_id=380216817]
+mesh = SubResource("BoxMesh_ogt5y")
+
+[connection signal="body_entered" from="DoorToA" to="DoorToA" method="_on_body_entered"]

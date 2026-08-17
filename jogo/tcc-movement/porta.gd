@@ -1,16 +1,19 @@
+class_name SceneDoor
 extends Area3D
 
+@export var target_level: PackedScene
+@export var target_spawn_point: String = "SpawnPoint_Default"
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	body_entered.connect(_on_body_entered)
 
+func _on_body_entered(body: Node3D) -> void:
+	if not body.is_in_group("player"):
+		return
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+	var scene_manager := get_tree().get_first_node_in_group("scene_manager") as SceneManager
+	if scene_manager == null:
+		push_error("SceneManager nao encontrado")
+		return
 
-
-func _on_body_entered(body: Player) -> void:
-	print("entrou na porta")
-	
+	scene_manager.change_level(target_level, target_spawn_point)

@@ -19,6 +19,7 @@ config/icon="res://Inventory/icon.svg"
 
 collectible=""
 player=""
+scene_manager=""
 
 [input]
 
