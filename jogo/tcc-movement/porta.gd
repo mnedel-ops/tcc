@@ -1,8 +1,8 @@
 class_name SceneDoor
 extends Area3D
 
-@export var new_level_scene: PackedScene
-@export var spawn_point_name: String
+@export_file("*.tscn") var target_level_path: String
+@export var target_spawn_point: String
 
 func _ready() -> void:
 	body_entered.connect(_on_body_entered)
@@ -16,4 +16,5 @@ func _on_body_entered(body: Node3D) -> void:
 		push_error("SceneManager nao encontrado")
 		return
 
-	scene_manager.change_level(new_level_scene, spawn_point_name)
+	var target_level: PackedScene = load(target_level_path)
+	scene_manager.change_level(target_level, target_spawn_point)

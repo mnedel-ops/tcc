@@ -7,7 +7,7 @@
 
 [node name="main" type="Node3D" unique_id=782036806]
 
-[node name="SceneManager" type="Node" parent="." unique_id=396373712 node_paths=PackedStringArray("level_holder", "player", "camera_rig")]
+[node name="SceneManager" type="Node" parent="." unique_id=396373712 node_paths=PackedStringArray("level_holder", "player", "camera_rig") groups=["scene_manager"]]
 script = ExtResource("1_lquwl")
 level_holder = NodePath("../LevelHolder")
 player = NodePath("../player")
@@ -15,7 +15,7 @@ camera_rig = NodePath("../CameraRig")
 first_level = ExtResource("2_1bvp3")
 first_spawn_point = "SpawnPoint1"
 
-[node name="player" parent="." unique_id=247398753 instance=ExtResource("1_ig7tw")]
+[node name="player" parent="." unique_id=247398753 groups=["player"] instance=ExtResource("1_ig7tw")]
 
 [node name="CameraRig" type="Node3D" parent="." unique_id=1543104433]
 script = ExtResource("2_0xm2m")

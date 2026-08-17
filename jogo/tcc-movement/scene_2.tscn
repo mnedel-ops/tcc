@@ -23,8 +23,8 @@ shape = SubResource("BoxShape3D_icno0")
 [node name="DoorTo1" type="Area3D" parent="." unique_id=1359538025]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -11.298392)
 script = ExtResource("1_3r24c")
-new_level_scene = null
-spawn_point_name = "SpawnPoint2"
+target_level_path = "uid://yxvf5eisronk"
+target_spawn_point = "SpawnPoint1"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DoorTo1" unique_id=737028408]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4882813, -0.37768555)
