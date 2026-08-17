@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://dxh818mftoswm"]
+
+[ext_resource type="Script" uid="uid://cq0o7r4jvvodg" path="res://porta.gd" id="1_3r24c"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_icno0"]
+size = Vector3(60, 0.5, 60)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3sd7o"]
+size = Vector3(1, 2.984375, 0.2446289)
+
+[sub_resource type="BoxMesh" id="BoxMesh_3xosi"]
+size = Vector3(1.505, 3.23, 0.24)
+
+[node name="scene2" type="Node3D" unique_id=1951922366]
+
+[node name="SpawnPoint2" type="Marker3D" parent="." unique_id=138369254]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1613718894]
+collision_layer = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=40167014]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+shape = SubResource("BoxShape3D_icno0")
+
+[node name="DoorTo1" type="Area3D" parent="." unique_id=1359538025]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -11.298392)
+script = ExtResource("1_3r24c")
+target_level_path = "uid://yxvf5eisronk"
+target_spawn_point = "SpawnPoint1"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DoorTo1" unique_id=737028408]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4882813, -0.37768555)
+shape = SubResource("BoxShape3D_3sd7o")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="DoorTo1" unique_id=1321682669]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6821923, -0.69281864)
+mesh = SubResource("BoxMesh_3xosi")

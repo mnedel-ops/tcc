@@ -1,47 +1,26 @@
 [gd_scene format=3 uid="uid://qpi32vuj8vcr"]
 
 [ext_resource type="PackedScene" uid="uid://cvnumu170lca7" path="res://Player/player.tscn" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://bed66nl4l3rew" path="res://scene_manager.gd" id="1_lquwl"]
 [ext_resource type="Script" uid="uid://i8hwn8g0i6hc" path="res://Player/camera_rig.gd" id="2_0xm2m"]
-[ext_resource type="PackedScene" uid="uid://i02ouo6uredv" path="res://Interfaces/menu_pause.tscn" id="3_h2yge"]
-[ext_resource type="PackedScene" uid="uid://lkv7cq3sslkk" path="res://Inventory/interactable_item.tscn" id="4_1bvp3"]
-[ext_resource type="Resource" uid="uid://bt4psd2exd6eu" path="res://Inventory/inventory.tres" id="4_lquwl"]
-[ext_resource type="Resource" uid="uid://bpxnmv76ylahn" path="res://Inventory/Itens/2ItemGenerico.tres" id="6_7mycd"]
+[ext_resource type="PackedScene" uid="uid://yxvf5eisronk" path="res://scene_1.tscn" id="2_1bvp3"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_7dm0k"]
-size = Vector3(20, 0.5, 20)
+[node name="main" type="Node3D" unique_id=782036806]
 
-[sub_resource type="BoxMesh" id="BoxMesh_0xm2m"]
-
-[node name="main" type="Node3D" unique_id=1718374945]
-
-[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=279849664]
-collision_layer = 2
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=2032803117]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.24859619, 0)
-shape = SubResource("BoxShape3D_7dm0k")
+[node name="SceneManager" type="Node" parent="." unique_id=396373712 node_paths=PackedStringArray("level_holder", "player", "camera_rig") groups=["scene_manager"]]
+script = ExtResource("1_lquwl")
+level_holder = NodePath("../LevelHolder")
+player = NodePath("../player")
+camera_rig = NodePath("../CameraRig")
+first_level = ExtResource("2_1bvp3")
+first_spawn_point = "SpawnPoint1"
 
 [node name="player" parent="." unique_id=247398753 groups=["player"] instance=ExtResource("1_ig7tw")]
 
-[node name="CameraRig" type="Node3D" parent="." unique_id=150659886 node_paths=PackedStringArray("player")]
+[node name="CameraRig" type="Node3D" parent="." unique_id=1543104433]
 script = ExtResource("2_0xm2m")
-player = NodePath("../player")
 
-[node name="Camera3D" type="Camera3D" parent="CameraRig" unique_id=2006775177]
-transform = Transform3D(1, 0, 0, 0, 0.8903082, 0.45535845, 0, -0.45535845, 0.8903082, 0, 7, 9)
+[node name="Camera3D" type="Camera3D" parent="CameraRig" unique_id=1444418647]
+transform = Transform3D(1, 0, 0, 0, 0.8660254, 0.5, 0, -0.5, 0.8660254, 0, 6.287901, 5.782965)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1028059810]
-mesh = SubResource("BoxMesh_0xm2m")
-
-[node name="MenuPause" parent="." unique_id=1170522014 instance=ExtResource("3_h2yge")]
-mochila = ExtResource("4_lquwl")
-
-[node name="InteractableItem" parent="." unique_id=1606038511 groups=["collectible"] instance=ExtResource("4_1bvp3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5.4100204)
-
-[node name="InteractableItem2" parent="." unique_id=1955324893 groups=["collectible"] instance=ExtResource("4_1bvp3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5887017, 0, -2.5382733)
-
-[node name="InteractableItem3" parent="." unique_id=110038747 groups=["collectible"] instance=ExtResource("4_1bvp3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5887017, 0, 0.56134605)
-item_data = ExtResource("6_7mycd")
+[node name="LevelHolder" type="Node3D" parent="." unique_id=3420809]
