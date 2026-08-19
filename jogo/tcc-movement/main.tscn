@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://qpi32vuj8vcr"]
 
+[ext_resource type="PackedScene" uid="uid://bp4tekd8olulx" path="res://Interfaces/menu.tscn" id="1_7mycd"]
 [ext_resource type="PackedScene" uid="uid://cvnumu170lca7" path="res://Player/player.tscn" id="1_ig7tw"]
 [ext_resource type="Script" uid="uid://i8hwn8g0i6hc" path="res://Player/camera_rig.gd" id="2_0xm2m"]
 <<<<<<< Updated upstream
@@ -27,6 +28,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.24859619, 0)
 shape = SubResource("BoxShape3D_7dm0k")
 =======
 [node name="MenuPause" parent="." unique_id=1170522014 instance=ExtResource("5_lquwl")]
+
+[node name="menu" parent="." unique_id=2020587563 instance=ExtResource("1_7mycd")]
 
 [node name="SceneManager" type="Node" parent="." unique_id=396373712 node_paths=PackedStringArray("level_holder", "player", "camera_rig") groups=["scene_manager"]]
 script = ExtResource("1_lquwl")
