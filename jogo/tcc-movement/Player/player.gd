@@ -1,17 +1,12 @@
 extends CharacterBody3D
+class_name Player
 
-<<<<<<< Updated upstream
-const SPEED = 5.0
-@export var mochila: InventoryData
-@onready var mesh: MeshInstance3D = $Mesh #Chamar a malha e alterara a rotacao dela
-=======
 #Componentes
 @onready var movement: MovementComponent = $MovementComponent
 @onready var interaction: InteractionComponent = $InteractionComponent
 @onready var inventory: InventoryComponent = $InventoryComponent
 
 @export var mochila: Resource
->>>>>>> Stashed changes
 @onready var interact_area: Area3D = $Mesh/InteractArea
 
 
