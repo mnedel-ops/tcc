@@ -19,6 +19,3 @@ func _physics_process(delta: float) -> void:
 		if target:
 			inventory.collect_from_area(target)
 		
-
-func talk():
-	pass

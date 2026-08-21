@@ -34,5 +34,17 @@ collision_layer = 8
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DialogueCollision" unique_id=106728003]
 shape = SubResource("BoxShape3D_ideak")
 
+[node name="Root" type="Control" parent="." unique_id=1152905465]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Dialogo" type="Label" parent="Root" unique_id=1803018782]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Estamos conversando..."
+
 [connection signal="area_entered" from="DialogueCollision" to="." method="_on_dialogue_collision_area_entered"]
 [connection signal="area_exited" from="DialogueCollision" to="." method="_on_dialogue_collision_area_exited"]
