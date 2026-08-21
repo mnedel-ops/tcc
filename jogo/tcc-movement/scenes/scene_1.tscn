@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://cq0o7r4jvvodg" path="res://scenes/porta.gd" id="1_3sd7o"]
 [ext_resource type="PackedScene" uid="uid://lkv7cq3sslkk" path="res://Inventory/interactable_item.tscn" id="2_3xosi"]
-[ext_resource type="PackedScene" path="res://npc.tscn" id="3_cn2eb"]
 
 [sub_resource type="Environment" id="Environment_3xosi"]
 
@@ -70,5 +69,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4.487591)
 [node name="InteractableItem" parent="." unique_id=1606038511 instance=ExtResource("2_3xosi")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.6044545, 1.9073486e-06, -3.6319332)
 
-[node name="NPC" parent="." unique_id=844920822 instance=ExtResource("3_cn2eb")]
+[node name="NPC" parent="." unique_id=844920822]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7835724, 1.0164676, -4.679837)
