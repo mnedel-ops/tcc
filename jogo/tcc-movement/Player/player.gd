@@ -15,4 +15,8 @@ func _physics_process(delta: float) -> void:
 		var target := interaction.try_collect()
 		if target:
 			inventory.collect_from_area(target)
+<<<<<<< HEAD
 	
+=======
+		
+>>>>>>> parent of b6aaa99 (Revert "Caixa de dialogo aparece")
