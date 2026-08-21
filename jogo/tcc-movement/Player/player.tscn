@@ -11,9 +11,6 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_4flbx"]
 <<<<<<< Updated upstream
 size = Vector3(2, 2.527, 2.994)
-=======
-size = Vector3(2, 2, 2.0062773)
->>>>>>> Stashed changes
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_4flbx"]
 
@@ -27,6 +24,15 @@ script = ExtResource("1_4flbx")
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 1, 0)
 mesh = SubResource("CapsuleMesh_sh265")
 
+<<<<<<< HEAD
+=======
+[node name="InteractArea" type="Area3D" parent="Mesh" unique_id=627225193]
+collision_mask = 4
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Mesh/InteractArea" unique_id=326791604]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.23657227, -1.4968262)
+=======
+>>>>>>> parent of 04bb1ef (Consertos.)
 [node name="InteractArea" type="Area3D" parent="Mesh" unique_id=627225193 groups=["player"]]
 collision_mask = 14
 
