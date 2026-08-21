@@ -9,6 +9,8 @@ class_name Player
 @export var mochila: Resource
 @onready var interact_area: Area3D = $Mesh/InteractArea
 
+var guy : CharacterBody3D = null
+
 
 func _physics_process(delta: float) -> void:
 	movement.process_movement(delta)
@@ -16,4 +18,4 @@ func _physics_process(delta: float) -> void:
 		var target := interaction.try_collect()
 		if target:
 			inventory.collect_from_area(target)
-	
+		
