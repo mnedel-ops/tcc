@@ -19,8 +19,8 @@ size = Vector3(2, 2, 2.0062773)
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_4flbx"]
 
-[node name="player" type="CharacterBody3D" unique_id=247398753]
-collision_mask = 6
+[node name="player" type="CharacterBody3D" unique_id=247398753 groups=["player"]]
+collision_mask = 14
 script = ExtResource("1_4flbx")
 
 [node name="Mesh" type="MeshInstance3D" parent="." unique_id=686788492]
@@ -62,3 +62,5 @@ interact_area = NodePath("../Mesh/InteractArea")
 [node name="InventoryComponent" type="Node" parent="." unique_id=1831759049]
 script = ExtResource("4_gwnis")
 mochila = ExtResource("2_onrkg")
+
+[connection signal="body_entered" from="Mesh/InteractArea" to="." method="_on_interact_area_body_entered"]
