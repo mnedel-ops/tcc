@@ -6,7 +6,6 @@ class_name Player
 @onready var interaction: InteractionComponent = $InteractionComponent
 @onready var inventory: InventoryComponent = $InventoryComponent
 
-@export var mochila: Resource
 @onready var interact_area: Area3D = $Mesh/InteractArea
 
 

@@ -31,7 +31,7 @@ environment = SubResource("Environment_3xosi")
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment" unique_id=787060187]
 transform = Transform3D(1, 0, 0, 0, 0.49999997, 0.86602545, 0, -0.86602545, 0.49999997, 0, 3.014634, 3.2644968)
 
-[node name="SpawnPoint1" type="Marker3D" parent="." unique_id=138369254]
+[node name="SpawnPoint0" type="Marker3D" parent="." unique_id=390636365]
 
 [node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1613718894]
 collision_layer = 2
@@ -47,7 +47,7 @@ mesh = SubResource("PlaneMesh_3xosi")
 
 [node name="DoorTo2" type="Area3D" parent="." unique_id=1359538025]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4.6339803)
-collision_mask = 2
+collision_layer = 2
 script = ExtResource("1_3sd7o")
 target_level_path = "uid://dxh818mftoswm"
 target_spawn_point = "SpawnPoint2"
@@ -63,6 +63,9 @@ mesh = SubResource("BoxMesh_3xosi")
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="DoorTo2" unique_id=175205377]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5124393, -5.2117906)
 mesh = SubResource("CylinderMesh_3xosi")
+
+[node name="SpawnPoint1" type="Marker3D" parent="." unique_id=138369254]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4.487591)
 
 [node name="InteractableItem" parent="." unique_id=1606038511 instance=ExtResource("2_3xosi")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.6044545, 1.9073486e-06, -3.6319332)

@@ -16,9 +16,9 @@ level_holder = NodePath("../LevelHolder")
 player = NodePath("../player")
 camera_rig = NodePath("../CameraRig")
 first_level = ExtResource("2_1bvp3")
-first_spawn_point = "SpawnPoint1"
+first_spawn_point = "SpawnPoint0"
 
-[node name="player" parent="." unique_id=247398753 groups=["player"] instance=ExtResource("1_ig7tw")]
+[node name="player" parent="." unique_id=247398753 instance=ExtResource("1_ig7tw")]
 
 [node name="CameraRig" type="Node3D" parent="." unique_id=150659886 node_paths=PackedStringArray("player")]
 script = ExtResource("2_0xm2m")
