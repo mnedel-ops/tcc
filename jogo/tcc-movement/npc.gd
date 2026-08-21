@@ -3,7 +3,7 @@ class_name NPC
 
 @onready var dialoguearea : Area3D = $DialogueCollision
 @onready var is_zone : bool = false 
-@onready var dialogueBox : CanvasLayer = $Ui_Dialog/CanvasLayer
+@onready var dialogueBox : Label = $Root/Dialogo
 
 func _ready() -> void:
 	dialoguearea.area_entered.connect(_on_area_entered)
@@ -26,5 +26,6 @@ func _on_area_exited(area: Area3D) -> void:
 
 
 func talk():
+	print("Estamos conversando...")
 	dialogueBox.visible = true
 	

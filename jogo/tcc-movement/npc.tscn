@@ -34,39 +34,16 @@ collision_layer = 8
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DialogueCollision" unique_id=106728003]
 shape = SubResource("BoxShape3D_ideak")
 
-[node name="Ui_Dialog" type="Control" parent="." unique_id=1152905465]
+[node name="Root" type="Control" parent="." unique_id=1152905465]
 layout_mode = 3
-anchors_preset = 12
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 0
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
 
-[node name="CanvasLayer" type="CanvasLayer" parent="Ui_Dialog" unique_id=101573857]
-
-[node name="ColorRect" type="ColorRect" parent="Ui_Dialog/CanvasLayer" unique_id=895937705]
-anchors_preset = 12
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = -153.0
-grow_horizontal = 2
-grow_vertical = 0
-color = Color(0.008202022, 0.008202025, 0.008202025, 1)
-
-[node name="Npc_nome" type="RichTextLabel" parent="Ui_Dialog/CanvasLayer" unique_id=1218162485]
-offset_left = 8.0
-offset_top = 504.0
-offset_right = 82.0
-offset_bottom = 544.0
-text = "NPC #1:"
-
-[node name="Dialogo" type="RichTextLabel" parent="Ui_Dialog/CanvasLayer" unique_id=1732399273]
-offset_left = 43.0
-offset_top = 537.0
-offset_right = 226.0
-offset_bottom = 560.0
+[node name="Dialogo" type="Label" parent="Root" unique_id=1803018782]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
 text = "Estamos conversando..."
 
 [connection signal="area_entered" from="DialogueCollision" to="." method="_on_dialogue_collision_area_entered"]
