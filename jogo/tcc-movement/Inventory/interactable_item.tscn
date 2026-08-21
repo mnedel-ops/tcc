@@ -7,7 +7,7 @@
 
 [sub_resource type="SphereMesh" id="SphereMesh_uvdoe"]
 
-[node name="InteractableItem" type="Area3D" unique_id=1606038511]
+[node name="InteractableItem" type="Area3D" unique_id=1606038511 groups=["collectible"]]
 collision_layer = 4
 collision_mask = 0
 script = ExtResource("1_item")
