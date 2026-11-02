@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.18)  23 JUN 2026 15:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.18)  2 NOV 2026 17:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -574,10 +574,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'brazilian'.
- (out/main.aux
-Package babel Info: 'brazilian' activates 'portuges' shorthands.
-(babel)             Reported on input line 42.
-)
+ (out/main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
@@ -594,6 +591,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
+Package babel Info: 'brazilian' activates 'portuges' shorthands.
+(babel)             Reported on input line 26.
 LaTeX Info: Redefining \microtypecontext on input line 26.
 Package microtype Info: Applying patch `item' on input line 26.
 Package microtype Info: Applying patch `toc' on input line 26.
@@ -685,12 +684,12 @@ LaTeX Warning: Citation 'Han2021' on page 1 undefined on input line 16.
 
 LaTeX Warning: Citation 'Latonio2023' on page 1 undefined on input line 16.
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}
-
-
-] (/usr/share/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+(/usr/share/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
-)
+) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}
+
+
+]
 
 LaTeX Warning: Citation 'Latonio2023' on page 2 undefined on input line 34.
 
@@ -723,428 +722,176 @@ LaTeX Warning: Citation 'igcse_chemistry_2023' on page 2 undefined on input line
 
 ) (./sections/03_secao.tex
 
-LaTeX Warning: Citation 'Ryan1985' on page 2 undefined on input line 5.
+LaTeX Warning: Citation 'Ryan1985' on page 2 undefined on input line 8.
 
 
-LaTeX Warning: Citation 'Ryan2020' on page 2 undefined on input line 5.
+LaTeX Warning: Citation 'Ryan2020' on page 2 undefined on input line 8.
 
 
-LaTeX Warning: Citation 'Ryan1985' on page 2 undefined on input line 5.
+LaTeX Warning: Citation 'Ryan1985' on page 2 undefined on input line 8.
 
 
-LaTeX Warning: Citation 'Ryan1985' on page 2 undefined on input line 5.
+LaTeX Warning: Citation 'Ryan1985' on page 2 undefined on input line 8.
 
 
-LaTeX Warning: Citation 'Shi2016' on page 2 undefined on input line 5.
+LaTeX Warning: Citation 'Shi2016' on page 2 undefined on input line 8.
 
-[2]
-<images/sdt.png, id=14, 957.5775pt x 453.19313pt>
+
+LaTeX Warning: Reference `fig:sdt' on page 2 undefined on input line 8.
+
+<images/sdt.png, id=11, 957.5775pt x 453.19313pt>
 File: images/sdt.png Graphic file (type png)
 <use images/sdt.png>
-Package pdftex.def Info: images/sdt.png  used on input line 9.
+Package pdftex.def Info: images/sdt.png  used on input line 12.
 (pdftex.def)             Requested size: 202.3529pt x 95.76807pt.
 
-
-LaTeX Warning: Citation 'Ryan1985' on page 3 undefined on input line 14.
-
-
-LaTeX Warning: Citation 'Plass2020' on page 3 undefined on input line 14.
+LaTeX Warning: Citation 'Ryan1985' on page 2 undefined on input line 17.
 
 
-LaTeX Warning: Citation 'Coelho2025' on page 3 undefined on input line 14.
+LaTeX Warning: Citation 'Plass2020' on page 2 undefined on input line 17.
 
 
-LaTeX Warning: Citation 'Ryan2022' on page 3 undefined on input line 16.
+LaTeX Warning: Citation 'Coelho2025' on page 2 undefined on input line 17.
+
+[2 <./images/sdt.png>]
+
+LaTeX Warning: Citation 'Ryan2022' on page 3 undefined on input line 19.
 
 
-LaTeX Warning: Citation 'Gao2024' on page 3 undefined on input line 16.
+LaTeX Warning: Citation 'Gao2024' on page 3 undefined on input line 19.
 
 
-LaTeX Warning: Citation 'Ryan2022' on page 3 undefined on input line 18.
+LaTeX Warning: Citation 'Ryan2022' on page 3 undefined on input line 21.
 
 
-LaTeX Warning: Citation 'Ryan2022' on page 3 undefined on input line 18.
+LaTeX Warning: Citation 'Ryan2022' on page 3 undefined on input line 21.
 
 
-LaTeX Warning: Citation 'Ryan1985' on page 3 undefined on input line 18.
+LaTeX Warning: Citation 'Ryan1985' on page 3 undefined on input line 21.
 
 
-LaTeX Warning: Citation 'Gao2024' on page 3 undefined on input line 18.
+LaTeX Warning: Citation 'Gao2024' on page 3 undefined on input line 21.
 
 
-LaTeX Warning: Citation 'Ausubel1963' on page 3 undefined on input line 21.
+LaTeX Warning: Citation 'Ausubel1963' on page 3 undefined on input line 24.
 
 
-LaTeX Warning: Citation 'Espirito2020' on page 3 undefined on input line 21.
+LaTeX Warning: Citation 'Espirito2020' on page 3 undefined on input line 24.
 
 
-LaTeX Warning: Citation 'Ausubel1963' on page 3 undefined on input line 21.
+LaTeX Warning: Citation 'Ausubel1963' on page 3 undefined on input line 24.
 
 
-LaTeX Warning: Citation 'Custodio2015' on page 3 undefined on input line 21.
+LaTeX Warning: Citation 'Custodio2015' on page 3 undefined on input line 24.
 
 
-LaTeX Warning: Citation 'Espirito2020' on page 3 undefined on input line 21.
+LaTeX Warning: Citation 'Espirito2020' on page 3 undefined on input line 24.
 
 
-LaTeX Warning: Citation 'Custodio2015' on page 3 undefined on input line 21.
+LaTeX Warning: Citation 'Custodio2015' on page 3 undefined on input line 24.
 
 
-LaTeX Warning: Citation 'Bryce2024' on page 3 undefined on input line 23.
+LaTeX Warning: Citation 'Bryce2024' on page 3 undefined on input line 26.
 
 
-LaTeX Warning: Citation 'Bryce2024' on page 3 undefined on input line 23.
+LaTeX Warning: Citation 'Bryce2024' on page 3 undefined on input line 26.
 
-<images/tas.png, id=16, 2372.11218pt x 853.68938pt>
+
+LaTeX Warning: Reference `fig:tas' on page 3 undefined on input line 26.
+
+<images/tas.png, id=17, 2372.11218pt x 853.68938pt>
 File: images/tas.png Graphic file (type png)
 <use images/tas.png>
-Package pdftex.def Info: images/tas.png  used on input line 27.
+Package pdftex.def Info: images/tas.png  used on input line 30.
 (pdftex.def)             Requested size: 202.3529pt x 72.81665pt.
 
-LaTeX Warning: Citation 'Portnow2012' on page 3 undefined on input line 33.
+LaTeX Warning: Citation 'Portnow2012' on page 3 undefined on input line 36.
 
 
-LaTeX Warning: Citation 'Mozelius2017' on page 3 undefined on input line 33.
+LaTeX Warning: Citation 'Mozelius2017' on page 3 undefined on input line 36.
 
 
-LaTeX Warning: Citation 'LimadaCostaJunior2022' on page 3 undefined on input line 33.
+LaTeX Warning: Citation 'LimadaCostaJunior2022' on page 3 undefined on input line 36.
 
 
-LaTeX Warning: Citation 'GomesdeFreitas2017' on page 3 undefined on input line 33.
+LaTeX Warning: Citation 'GomesdeFreitas2017' on page 3 undefined on input line 36.
 
 
-LaTeX Warning: Citation 'Lorenzatti2020' on page 3 undefined on input line 33.
+LaTeX Warning: Citation 'Lorenzatti2020' on page 3 undefined on input line 36.
 
 
-LaTeX Warning: Citation 'Lorenzatti2020' on page 3 undefined on input line 33.
+LaTeX Warning: Reference `fig:tangencial' on page 3 undefined on input line 36.
 
-<images/tangencial.png, id=17, 383.18156pt x 172.39406pt>
+
+LaTeX Warning: Citation 'Lorenzatti2020' on page 3 undefined on input line 36.
+
+<images/tangencial.png, id=18, 383.18156pt x 172.39406pt>
 File: images/tangencial.png Graphic file (type png)
 <use images/tangencial.png>
-Package pdftex.def Info: images/tangencial.png  used on input line 37.
+Package pdftex.def Info: images/tangencial.png  used on input line 40.
 (pdftex.def)             Requested size: 202.3529pt x 91.0396pt.
 
-Underfull \vbox (badness 5519) has occurred while \output is active []
-
- [3 <./images/sdt.png> <./images/tas.png>]
-
-LaTeX Warning: Citation 'Mozelius2017' on page 4 undefined on input line 42.
+LaTeX Warning: Citation 'Mozelius2017' on page 3 undefined on input line 45.
 
 
-LaTeX Warning: Citation 'Mozelius2017' on page 4 undefined on input line 42.
+LaTeX Warning: Citation 'Mozelius2017' on page 3 undefined on input line 45.
 
 
-LaTeX Warning: Citation 'GomesdeFreitas2017' on page 4 undefined on input line 42.
+LaTeX Warning: Citation 'GomesdeFreitas2017' on page 3 undefined on input line 45.
 
 
-LaTeX Warning: Citation 'Bloom1956' on page 4 undefined on input line 45.
+LaTeX Warning: Citation 'Bloom1956' on page 3 undefined on input line 48.
 
 
-LaTeX Warning: Citation 'Anderson2001' on page 4 undefined on input line 45.
+LaTeX Warning: Citation 'Anderson2001' on page 3 undefined on input line 48.
 
 
-LaTeX Warning: Citation 'Plass2020' on page 4 undefined on input line 45.
+LaTeX Warning: Reference `fig:bloom' on page 3 undefined on input line 48.
 
-<images/bloom.png, id=23, 603.75563pt x 341.77687pt>
+
+LaTeX Warning: Citation 'Plass2020' on page 3 undefined on input line 48.
+
+[3 <./images/tas.png> <./images/tangencial.png>]
+<images/bloom.png, id=26, 603.75563pt x 341.77687pt>
 File: images/bloom.png Graphic file (type png)
 <use images/bloom.png>
-Package pdftex.def Info: images/bloom.png  used on input line 49.
+Package pdftex.def Info: images/bloom.png  used on input line 52.
 (pdftex.def)             Requested size: 202.3529pt x 114.54941pt.
 
-LaTeX Warning: Citation 'KrishnaShinde2025' on page 4 undefined on input line 54.
 
+LaTeX Warning: Citation 'KrishnaShinde2025' on page 4 undefined on input line 57.
 
-LaTeX Warning: Citation 'Tuomisto2015' on page 4 undefined on input line 54.
 
+LaTeX Warning: Citation 'Tuomisto2015' on page 4 undefined on input line 57.
 
-LaTeX Warning: Citation 'Plass2020' on page 4 undefined on input line 54.
 
+LaTeX Warning: Citation 'Plass2020' on page 4 undefined on input line 57.
 
-LaTeX Warning: Citation 'Gee2003' on page 4 undefined on input line 54.
 
+LaTeX Warning: Citation 'Gee2003' on page 4 undefined on input line 57.
 
-LaTeX Warning: Citation 'sapach17' on page 4 undefined on input line 59.
+)
 
+! LaTeX Error: File `sections/04_secao2.tex' not found.
 
-LaTeX Warning: Citation 'Gomez2019' on page 4 undefined on input line 65.
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: tex)
 
+Enter file name: 
+! Emergency stop.
+<read *> 
+         
+l.34 \input{sections/04_secao2}
+                               ^^M
+*** (cannot \read from terminal in nonstop modes)
 
-LaTeX Warning: Citation 'Plass2020' on page 4 undefined on input line 65.
-
-) (./sections/04_secao2.tex
-
-LaTeX Warning: Citation 'AceEdVenture2016' on page 4 undefined on input line 7.
-
-[4 <./images/tangencial.png> <./images/bloom.png>]
-
-LaTeX Warning: Citation 'Lackey2022' on page 5 undefined on input line 9.
-
-
-LaTeX Warning: Citation 'Lackey2022' on page 5 undefined on input line 9.
-
-<images/chemcaper.jpg, id=31, 461.725pt x 215.80624pt>
-File: images/chemcaper.jpg Graphic file (type jpg)
-<use images/chemcaper.jpg>
-Package pdftex.def Info: images/chemcaper.jpg  used on input line 13.
-(pdftex.def)             Requested size: 202.3529pt x 94.57634pt.
-
-LaTeX Warning: Citation 'AceEdVenture2016' on page 5 undefined on input line 14.
-
-
-LaTeX Warning: Citation 'AceEdVenture2016' on page 5 undefined on input line 14.
-
-
-LaTeX Warning: Citation 'Han2021' on page 5 undefined on input line 20.
-
-
-LaTeX Warning: Citation 'Han2021' on page 5 undefined on input line 22.
-
-
-LaTeX Warning: Citation 'Han2021' on page 5 undefined on input line 22.
-
-<images/chemcraft.jpg, id=32, 527.9725pt x 413.545pt>
-File: images/chemcraft.jpg Graphic file (type jpg)
-<use images/chemcraft.jpg>
-Package pdftex.def Info: images/chemcraft.jpg  used on input line 26.
-(pdftex.def)             Requested size: 202.3529pt x 158.4928pt.
-
-LaTeX Warning: Citation 'Han2021' on page 5 undefined on input line 27.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: Citation 'GomesdeFreitas2017' on page 5 undefined on input line 33.
-
-
-LaTeX Warning: Citation 'GomesdeFreitas2017' on page 5 undefined on input line 33.
-
-
-LaTeX Warning: Citation 'Portnow2012' on page 5 undefined on input line 35.
-
-
-LaTeX Warning: Citation 'LimadaCostaJunior2022' on page 5 undefined on input line 35.
-
-
-LaTeX Warning: Citation 'GomesdeFreitas2017' on page 5 undefined on input line 35.
-
-<images/batalhaquimicard.png, id=33, 963.6pt x 542.025pt>
-File: images/batalhaquimicard.png Graphic file (type png)
-<use images/batalhaquimicard.png>
-Package pdftex.def Info: images/batalhaquimicard.png  used on input line 39.
-(pdftex.def)             Requested size: 202.3529pt x 113.82033pt.
-
-LaTeX Warning: Citation 'GomesdeFreitas2017' on page 5 undefined on input line 40.
-
-
-LaTeX Warning: Citation 'GomesdeFreitas2017' on page 5 undefined on input line 40.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--40
-\T1/ptm/m/n/8 (+20) Figura 7.   In-ter-face do jogo Ba-ta-lha Qui-mi-card. Fonte:
- []
-
-
-LaTeX Warning: Citation 'GomesdeFreitas2017' on page 5 undefined on input line 46.
-
-
-LaTeX Warning: Citation 'Han2021' on page 5 undefined on input line 46.
-
-) (./sections/05_metodologia.tex
-
-LaTeX Warning: Citation 'Chandler2009' on page 5 undefined on input line 2.
-
-[5 <./images/chemcaper.jpg> <./images/chemcraft.jpg> <./images/batalhaquimicard.png>]
-<images/ciclochandler.png, id=37, 505.13719pt x 505.13719pt>
-File: images/ciclochandler.png Graphic file (type png)
-<use images/ciclochandler.png>
-Package pdftex.def Info: images/ciclochandler.png  used on input line 6.
-(pdftex.def)             Requested size: 202.3529pt x 202.3519pt.
-
-
-LaTeX Warning: Citation 'Chandler2009' on page 6 undefined on input line 7.
-
-
-LaTeX Warning: Citation 'Chandler2009' on page 6 undefined on input line 7.
-
-
-LaTeX Warning: Citation 'BNCC26' on page 6 undefined on input line 13.
-
-
-LaTeX Warning: Citation 'igcse_chemistry_2023' on page 6 undefined on input line 13.
-
-
-LaTeX Warning: Citation 'Godot2024' on page 6 undefined on input line 24.
-
-
-LaTeX Warning: Citation 'Blender2024' on page 6 undefined on input line 26.
-
-
-LaTeX Warning: Citation 'Krita2024' on page 6 undefined on input line 26.
-
-
-LaTeX Warning: Citation 'Gomez2019' on page 6 undefined on input line 26.
-
-
-LaTeX Warning: Citation 'Portnow2012' on page 6 undefined on input line 26.
-
-
-LaTeX Warning: Citation 'Jacobs2021' on page 6 undefined on input line 29.
-
-
-LaTeX Warning: Citation 'Ryan1985' on page 6 undefined on input line 29.
-
-
-LaTeX Warning: Citation 'Latonio2023' on page 6 undefined on input line 33.
-
-
-LaTeX Warning: Citation 'Lima2010' on page 6 undefined on input line 33.
-
-
-LaTeX Warning: Citation 'Latonio2023' on page 6 undefined on input line 35.
-
-
-LaTeX Warning: Citation 'OECD2023' on page 6 undefined on input line 35.
-
-
-LaTeX Warning: Citation 'Ryan1985' on page 6 undefined on input line 37.
-
-
-LaTeX Warning: Citation 'SilvaFilho2023' on page 6 undefined on input line 37.
-
-[6 <./images/ciclochandler.png>]
-
-LaTeX Warning: Citation 'Plass2020' on page 7 undefined on input line 39.
-
-
-LaTeX Warning: Citation 'Ryan1985' on page 7 undefined on input line 42.
-
-
-LaTeX Warning: Citation 'Ausubel1963' on page 7 undefined on input line 42.
-
-
-LaTeX Warning: Citation 'Portnow2012' on page 7 undefined on input line 42.
-
-
-LaTeX Warning: Citation 'Plass2020' on page 7 undefined on input line 42.
-
-
-LaTeX Warning: Citation 'Lorenzatti2020' on page 7 undefined on input line 42.
-
-
-LaTeX Warning: Citation 'Vahlo2023' on page 7 undefined on input line 42.
-
-
-LaTeX Warning: Citation 'Plass2020' on page 7 undefined on input line 42.
-
-
-LaTeX Warning: Citation 'Mozelius2017' on page 7 undefined on input line 42.
-
-
-LaTeX Warning: Citation 'Shi2016' on page 7 undefined on input line 44.
-
-
-LaTeX Warning: Citation 'Plass2020' on page 7 undefined on input line 44.
-
-
-LaTeX Warning: Citation 'Shi2016' on page 7 undefined on input line 44.
-
-
-LaTeX Warning: Citation 'Vahlo2023' on page 7 undefined on input line 44.
-
-
-LaTeX Warning: Citation 'LimadaCostaJunior2022' on page 7 undefined on input line 44.
-
-
-LaTeX Warning: Citation 'Portnow2012' on page 7 undefined on input line 46.
-
-
-LaTeX Warning: Citation 'Ausubel1963' on page 7 undefined on input line 46.
-
-
-LaTeX Warning: Citation 'Ausubel1963' on page 7 undefined on input line 46.
-
-
-LaTeX Warning: Citation 'Espirito2020' on page 7 undefined on input line 46.
-
-
-LaTeX Warning: Citation 'Ryan1985' on page 7 undefined on input line 48.
-
-<images/cicloteorico.png, id=42, 535.2497pt x 538.26094pt>
-File: images/cicloteorico.png Graphic file (type png)
-<use images/cicloteorico.png>
-Package pdftex.def Info: images/cicloteorico.png  used on input line 54.
-(pdftex.def)             Requested size: 202.3529pt x 203.48999pt.
-) (./sections/06_conclusao.tex
-
-LaTeX Warning: Citation 'Lima2010' on page 7 undefined on input line 2.
-
-
-LaTeX Warning: Citation 'SilvaFilho2023' on page 7 undefined on input line 2.
-
-
-LaTeX Warning: Citation 'Ryan1985' on page 7 undefined on input line 3.
-
-
-LaTeX Warning: Citation 'Ryan2022' on page 7 undefined on input line 3.
-
-
-LaTeX Warning: Citation 'Ausubel1963' on page 7 undefined on input line 3.
-
-
-LaTeX Warning: Citation 'Espirito2020' on page 7 undefined on input line 3.
-
-
-LaTeX Warning: Citation 'Portnow2012' on page 7 undefined on input line 3.
-
-[7 <./images/cicloteorico.png>]) (./sections/07_bibliography.tex)
-
-LaTeX Warning: Empty bibliography on input line 2.
-
-
-** Conference Paper **
-Before submitting the final camera ready copy, remember to:
-
- 1. Manually equalize the lengths of two columns on the last page
- of your paper;
-
- 2. Ensure that any PostScript and/or PDF output post-processing
- uses only Type 1 fonts and that every step in the generation
- process uses the appropriate paper size.
-
-[8
-
-] (out/main.aux)
- ***********
-LaTeX2e <2025-11-01>
-L3 programming layer <2026-01-19>
- ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run BibTeX on the file(s):
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
-
-Package logreq Info: Writing requests to 'main.run.xml'.
-\openout1 = `main.run.xml'.
-
- ) 
+ 
 Here is how much of TeX's memory you used:
- 17502 strings out of 469495
- 313101 string characters out of 5470098
- 987243 words of memory out of 5000000
- 45648 multiletter control sequences out of 15000+600000
- 756021 words of font info for 339 fonts, out of 8000000 for 9000
+ 17307 strings out of 469495
+ 309695 string characters out of 5470098
+ 984971 words of memory out of 5000000
+ 45558 multiletter control sequences out of 15000+600000
+ 744942 words of font info for 277 fonts, out of 8000000 for 9000
  19 hyphenation exceptions out of 8191
- 68i,9n,69p,1954b,1651s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on out/main.pdf (8 pages, 5691264 bytes).
-PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 59950 words of extra memory for PDF output out of 61914 (max. 10000000)
-
+ 68i,9n,69p,1954b,1368s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, no output PDF file produced!
