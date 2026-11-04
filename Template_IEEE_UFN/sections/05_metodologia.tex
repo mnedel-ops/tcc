@@ -16,6 +16,7 @@ Por fim, na etapa de pós-produção, foram analisados os resultados de cada cic
 
 
 \subsection{Produção e transposição didática}
+\textit{Penso em cortar esta secao, pois nao consegui implementar a parte pedagogica como gostaria}
 A seleção dos conteúdos para o \textit{Alchemon} foi estruturada para refletir as competências de análise de fenômenos naturais da BNCC (competência EM13CNT201 da BNCC) \cite{BNCC26}, utilizando a clareza prática e experimental do currículo internacional IGCSE \cite{igcse_chemistry_2023}. 
 
 No sistema de jogo, essa progressão curricular dita a curva de dificuldade e o desbloqueio de mecânicas:
@@ -26,10 +27,10 @@ No sistema de jogo, essa progressão curricular dita a curva de dificuldade e o 
 
 O diferencial desta etapa reside na transformação das propriedades periódicas em regras de mecânica e atributos sistêmicos, de modo que o domínio das leis da Química se torne condição essencial para o sucesso estratégico no jogo. As mecânicas e a fundamentação teórica serão expandidas no \textit{High-Concept Document} (HCD) anexado.
 
-\subsection{Desenvolvimendo dos Testes Funcionais Internos (QA - Quality Assurance)}
+\subsection{Desenvolvimento dos Testes Funcionais Internos (QA - Quality Assurance)}
 A verificação do Alchemon foi conduzida por meio de testes funcionais internos de Garantia de Qualidade (QA), realizados durante o desenvolvimento do protótipo. Os testes tiveram como objetivo verificar o funcionamento das mecânicas implementadas e sua conformidade com os requisitos funcionais definidos para o projeto. Não foram realizados \textit{playtests} com estudantes nesta etapa.
 
-O protocolo de testes considerou a verificação dos requisitos funcionais, a identificação de erros de execução e travamentos, o tempo de resposta das funcionalidades, a estabilidade da taxa de quadros (FPS) e a integridade da compilação do jogo. Os critérios de aceite foram definidos com base no comportamento esperado de cada funcionalidade e na ausência de falhas que impedissem sua utilização.
+O protocolo de testes considerou a verificação dos requisitos funcionais, a identificação de erros de execução e travamentos, o tempo de resposta das funcionalidades, a estabilidade da taxa de quadros (FPS). Os critérios de aceite foram definidos com base no comportamento esperado de cada funcionalidade e na ausência de falhas que impedissem sua utilização.
 
 Os testes automatizados foram desenvolvidos com o \textit{framework} GdUnit4, exclusivo do motor Godot 4.
 
@@ -45,8 +46,8 @@ Além das dificuldades cognitivas, a predominância de métodos expositivos e ce
 Nesse panorama, o desenvolvimento do projeto Alchemon justifica-se como uma tentativa de mitigar essas barreiras por meio de um jogo sério \cite{Plass2020}. A proposta busca converter a passividade da recepção de conteúdo em uma experiência de descoberta ativa, utilizando a estética de captura de criaturas para transformar o estudo da Química em uma ferramenta estratégica de progressão e maestria.
 
 \section{SOLUÇÃO DESENVOLVIDA}
-Nesta seção, apresenta-se o desenvolvimento técnico do protótipo do jogo digital Alchemon, concebido para promover a aprendizagem tangencial e o engajamento de estudantes do Ensino Médio com os conceitos e elementos da Tabela Periódica. A seção está organizada em três subseções: a Subseção A descreve a arquitetura de software e a organização estrutural do projeto; a Subseção B apresenta as principais mecânicas de jogabilidade (gameplay) e seus aspectos de implementação; e a Subseção C reúne registros visuais das interfaces e dos ambientes do jogo durante sua execução.
-\subsection{Arquitetura e Engenharia do Sistema/Jogo}
+Nesta seção, apresenta-se o desenvolvimento técnico do protótipo do jogo digital \textit{Alchemon}, concebido para promover a aprendizagem tangencial e o engajamento de estudantes do Ensino Médio com os conceitos e elementos da Tabela Periódica. A seção está organizada em três subseções: a Subseção A descreve a arquitetura de software e a organização estrutural do projeto; a Subseção B apresenta as principais mecânicas de jogabilidade (\textit{gameplay}) e seus aspectos de implementação; e a Subseção C reúne registros visuais das interfaces e dos ambientes do jogo durante sua execução.
+\subsection{Arquitetura e Engenharia do Jogo}
 A arquitetura do Alchemon foi organizada em módulos responsáveis pelos sistemas de exploração, combate, persistência de dados, interfaces e gerenciamento de cenas. Essa divisão estabelece as responsabilidades de cada componente e facilita a manutenção e a expansão do projeto.
 
 O sistema de exploração reúne os elementos necessários à movimentação do personagem, à interação com objetos e personagens não jogáveis (NPCs) e ao gerenciamento do inventário. A cena principal integra o personagem, a câmera, os seguidores e os elementos de interface. O carregamento dinâmico das fases permite a transição entre ambientes durante a sessão de jogo.
@@ -64,28 +65,25 @@ A exploração ocorre em ambientes tridimensionais, nos quais o jogador moviment
 
 Os encontros com criaturas selvagens ocorrem por meio de uma probabilidade de encontro, com um intervalo entre as tentativas. Os NPCs treinadores possuem equipes predefinidas, compostas por criaturas de espécies e níveis específicos, e podem iniciar combates quando o jogador entra em contato com eles.
 
-\subsubsection{Captura de Criaturas}
-A captura ocorre durante os combates em que essa ação está disponível. A probabilidade de sucesso considera a quantidade atual de pontos de vida da criatura em relação ao seu total, além da compatibilidade do item de captura. Assim, criaturas com menos pontos de vida apresentam maior probabilidade de captura.
+\subsubsection{Captura de Alchemons}
+A captura ocorre durante os combates contra Alchemons selvagens, sem treinador, em que essa ação está disponível. A probabilidade de sucesso considera a quantidade atual de pontos de vida da criatura em relação ao seu total, além da compatibilidade do item de captura. Assim, criaturas com menos pontos de vida apresentam maior probabilidade de captura.
 
 O cálculo produz um resultado dentro de uma faixa de valores, cujo limite superior representa uma captura garantida. Após o sucesso, o sistema registra a instância específica da criatura capturada, preservando seus dados individuais, como identificador, características genéticas, personalidade e pontos de vida restantes. Dessa forma, cada criatura mantém suas características próprias ao integrar a equipe ou o armazenamento do jogador.
 
 \subsubsection{Sistema de Combate e Atributos}
+O combate utiliza um sistema de turnos no qual o jogador pode selecionar ataques, utilizar itens, tentar capturar criaturas ou fugir, conforme as condições do confronto. A ordem das ações considera a velocidade mecânica dos participantes. Os ataques levam em conta os atributos das criaturas e a efetividade entre suas categorias químicas, além de contemplarem erros, acertos críticos e consumo de energia.
 
-O combate utiliza um sistema de turnos, com etapas de seleção e resolução das ações. Durante o confronto, o jogador pode escolher entre atacar, utilizar itens, tentar capturar uma criatura ou fugir, conforme as condições da batalha.
+Cada Alchemon pertence a uma das três categorias: Metal, Metaloide ou Ametal. A relação entre elas segue um ciclo de vantagens: Metal possui vantagem sobre Metaloide, Metaloide sobre Ametal e Ametal sobre Metal. Quando um ataque possui vantagem de categoria, seu dano recebe um multiplicador de 1,5; quando o alvo apresenta resistência, o multiplicador é de 0,66; e, em situações neutras, aplica-se o multiplicador de 1,0. Essa organização estabelece uma relação estratégica entre a composição da equipe e a escolha dos ataques durante os confrontos.
 
-Os ataques consideram os atributos das criaturas e a efetividade entre os elementos químicos. O sistema também contempla a possibilidade de erros de ataque e acertos críticos, além do consumo de energia pelas habilidades. Quando a energia disponível não permite o uso de determinado ataque, outra opção pode ser utilizada. Os itens de cura também seguem limites de uso.
+Os atributos das criaturas também estabelecem correspondências com propriedades químicas. A vida utiliza a massa atômica como referência; o ataque relaciona-se à eletronegatividade; a defesa, à energia de ionização; a velocidade mecânica, à velocidade cinética; e a energia de ação, à quantidade de elétrons de valência. Essas associações orientam a definição dos valores e das características das criaturas, convertendo propriedades da Tabela Periódica em parâmetros utilizados pelo sistema de combate.
 
-Os atributos das criaturas são calculados a partir dos valores básicos de cada espécie, do nível, das características individuais e da personalidade. A experiência acumulada permite que as criaturas subam de nível, com ajustes nos atributos e nos limites de pontos de vida e energia.
-
-A relação entre a Química e as mecânicas também aparece na representação dos estados físicos das criaturas. O sistema considera os pontos de fusão e ebulição associados a cada espécie para determinar seus estados sólido, líquido ou gasoso. Durante o combate, a temperatura da arena pode alterar esses estados e seus efeitos.
-
-Essas relações incorporam propriedades químicas às regras do jogo, especialmente por meio da efetividade entre elementos e da representação dos estados físicos. A correspondência entre as demais propriedades periódicas e os atributos das criaturas deve ser explicitada conforme sua aplicação efetiva na implementação, de modo que a descrição não atribua ao protótipo relações que ainda não estejam implementadas.
-
+Os valores finais dos atributos consideram os valores básicos da espécie, o nível, as características individuais e a personalidade da criatura. A experiência acumulada permite subir de nível, com ajustes nos atributos e nos limites de vida e energia. O sistema também considera os estados físicos sólido, líquido e gasoso, determinados pelos pontos de fusão e ebulição de cada espécie. Durante o combate, a temperatura da arena pode alterar esses estados e produzir efeitos sobre as criaturas.
 \subsubsection{Outros Sistemas}
 Além das mecânicas principais, o jogo possui sistemas de vitória e derrota, distribuição de recompensas, gerenciamento da equipe e armazenamento de criaturas. Nas batalhas contra treinadores, a vitória concede moedas ao jogador, enquanto o sistema também registra o resultado do confronto e atualiza o progresso relacionado ao NPC.
 
 A persistência em arquivos JSON mantém os dados da equipe, das criaturas armazenadas, do inventário, das moedas, do progresso dos NPCs e da posição do personagem. Esses recursos permitem preservar o progresso entre sessões e retomar a exploração após o carregamento dos dados.
 
+Mais informacoes podem ser encontradas no GDD do projeto, que detalha as mecânicas, os sistemas e as regras de jogo, bem como as especificações técnicas e os requisitos funcionais.
 \subsection{Evidências Visuais}
 Tela de Menu / Título.
 Gameplay principal, Exploracao e Combate.

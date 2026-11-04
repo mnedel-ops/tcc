@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.18)  4 NOV 2026 12:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.18)  4 NOV 2026 15:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -779,13 +779,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  17566 strings out of 469495
  315258 string characters out of 5470098
- 995971 words of memory out of 5000000
+ 999971 words of memory out of 5000000
  45689 multiletter control sequences out of 15000+600000
  759657 words of font info for 360 fonts, out of 8000000 for 9000
  19 hyphenation exceptions out of 8191
  68i,10n,69p,1954b,1685s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on out/main.pdf (9 pages, 2147177 bytes).
+Output written on out/main.pdf (9 pages, 2147504 bytes).
 PDF statistics:
  79 PDF objects out of 1000 (max. 8388607)
  45 compressed objects within 1 object stream
