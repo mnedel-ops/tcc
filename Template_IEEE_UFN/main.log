@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.18)  23 JUN 2026 15:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.18)  4 NOV 2026 12:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -735,74 +735,72 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 onts/enc/dvips/base/8r.enc}
 
 
-]) (./sections/03_secao.tex
-<images/sdt.png, id=10, 957.5775pt x 453.19313pt>
+]) (./sections/03_secao.tex [2]
+<images/sdt.png, id=14, 957.5775pt x 453.19313pt>
 File: images/sdt.png Graphic file (type png)
 <use images/sdt.png>
-Package pdftex.def Info: images/sdt.png  used on input line 9.
+Package pdftex.def Info: images/sdt.png  used on input line 16.
 (pdftex.def)             Requested size: 202.3529pt x 95.76807pt.
- [2]
 <images/tas.png, id=16, 2372.11218pt x 853.68938pt>
 File: images/tas.png Graphic file (type png)
 <use images/tas.png>
-Package pdftex.def Info: images/tas.png  used on input line 27.
+Package pdftex.def Info: images/tas.png  used on input line 34.
 (pdftex.def)             Requested size: 202.3529pt x 72.81665pt.
 <images/tangencial.png, id=17, 383.18156pt x 172.39406pt>
 File: images/tangencial.png Graphic file (type png)
 <use images/tangencial.png>
-Package pdftex.def Info: images/tangencial.png  used on input line 37.
+Package pdftex.def Info: images/tangencial.png  used on input line 44.
 (pdftex.def)             Requested size: 202.3529pt x 91.0396pt.
- [3 <./images/sdt.png> <./images/tas.png> <./images/tangencial.png>]
-<images/bloom.png, id=24, 603.75563pt x 341.77687pt>
-File: images/bloom.png Graphic file (type png)
-<use images/bloom.png>
-Package pdftex.def Info: images/bloom.png  used on input line 49.
-(pdftex.def)             Requested size: 202.3529pt x 114.54941pt.
-) (./sections/04_secao2.tex
-<images/chemcaper.jpg, id=25, 461.725pt x 215.80624pt>
-File: images/chemcaper.jpg Graphic file (type jpg)
-<use images/chemcaper.jpg>
-Package pdftex.def Info: images/chemcaper.jpg  used on input line 13.
-(pdftex.def)             Requested size: 202.3529pt x 94.57634pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[4 <./images/bloom.png>]
-<images/chemcraft.jpg, id=32, 527.9725pt x 413.545pt>
-File: images/chemcraft.jpg Graphic file (type jpg)
-<use images/chemcraft.jpg>
-Package pdftex.def Info: images/chemcraft.jpg  used on input line 26.
-(pdftex.def)             Requested size: 202.3529pt x 158.4928pt.
-<images/batalhaquimicard.png, id=33, 963.6pt x 542.025pt>
-File: images/batalhaquimicard.png Graphic file (type png)
-<use images/batalhaquimicard.png>
-Package pdftex.def Info: images/batalhaquimicard.png  used on input line 39.
-(pdftex.def)             Requested size: 202.3529pt x 113.82033pt.
-) (./sections/05_metodologia.tex
-<images/ciclochandler.png, id=34, 505.13719pt x 505.13719pt>
+ [3 <./images/sdt.png> <./images/tas.png>]) (./sections/05_metodologia.tex
+<images/ciclochandler.png, id=23, 505.13719pt x 505.13719pt>
 File: images/ciclochandler.png Graphic file (type png)
 <use images/ciclochandler.png>
-Package pdftex.def Info: images/ciclochandler.png  used on input line 6.
+Package pdftex.def Info: images/ciclochandler.png  used on input line 7.
 (pdftex.def)             Requested size: 202.3529pt x 202.3519pt.
+ [4 <./images/tangencial.png> <./images/ciclochandler.png>] [5]) (./sections/06
+_conclusao.tex
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+[]\T1/ptm/m/n/8 (+20) Não
+ []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 36--36
+[]\T1/ptm/m/n/8 (+20) Não
+ []
 
-[5 <./images/chemcaper.jpg> <./images/chemcraft.jpg> <./images/batalhaquimicard
-.png>] [6 <./images/ciclochandler.png>]
-<images/cicloteorico.png, id=42, 535.2497pt x 538.26094pt>
-File: images/cicloteorico.png Graphic file (type png)
-<use images/cicloteorico.png>
-Package pdftex.def Info: images/cicloteorico.png  used on input line 54.
-(pdftex.def)             Requested size: 202.3529pt x 203.48999pt.
-) (./sections/06_conclusao.tex)
-(./sections/07_bibliography.tex) [7 <./images/cicloteorico.png>]
-Underfull \hbox (badness 4660) in paragraph at lines 37--37
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
+[]\T1/ptm/m/n/8 (+20) Não
+ []
+
+
+Overfull \hbox (1.84883pt too wide) in paragraph at lines 32--39
+ [][] 
+ []
+
+
+Underfull \hbox (badness 3439) in paragraph at lines 51--51
+[]\T1/ptm/b/n/8 (+20) Teste im-ple-men-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
+[]\T1/ptm/b/n/8 (+20) Integração
+ []
+
+
+Overfull \hbox (18.7281pt too wide) in paragraph at lines 49--59
+ [][] 
+ []
+
+[6] [7]) (./sections/07_bibliography.tex) [8]
+Underfull \hbox (badness 4660) in paragraph at lines 36--36
 []\T1/ptm/m/n/10 (+20) Richard M. Ryan e Edward L. Deci. ^^P  Self-
  []
 
-[8]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -833,23 +831,23 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 17695 strings out of 469495
- 318689 string characters out of 5470098
- 995797 words of memory out of 5000000
- 45785 multiletter control sequences out of 15000+600000
- 759094 words of font info for 382 fonts, out of 8000000 for 9000
+ 17565 strings out of 469495
+ 315084 string characters out of 5470098
+ 999025 words of memory out of 5000000
+ 45690 multiletter control sequences out of 15000+600000
+ 759657 words of font info for 360 fonts, out of 8000000 for 9000
  19 hyphenation exceptions out of 8191
- 68i,9n,69p,1898b,1651s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 68i,10n,69p,1898b,1651s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/urw/tim
 es/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/sh
 are/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on main.pdf (9 pages, 5697821 bytes).
+Output written on main.pdf (9 pages, 2146817 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
+ 79 PDF objects out of 1000 (max. 8388607)
  45 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 55854 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 55829 words of extra memory for PDF output out of 61914 (max. 10000000)
 

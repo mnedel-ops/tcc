@@ -454,8 +454,8 @@
     \list{organization}{1}{%
       {Ministério da Educação}%
     }
-    \strng{namehash}{B2}
-    \strng{fullhash}{B2}
+    \strng{namehash}{B1}
+    \strng{fullhash}{B1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{title}{Base Nacional Comum Curricular}
@@ -490,6 +490,29 @@
     \verb us.pdf
     \endverb
     \field{year}{2020}
+  \endentry
+
+  \entry{sapach17}{article}{}{}
+    \name{author}{1}{}{%
+      {{hash=SSC}{%
+         family={Sapach},
+         familyi={S\bibinitperiod},
+         given={S.\bibnamedelima C.},
+         giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SSC1}
+    \strng{fullhash}{SSC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{16}
+    \field{pages}{53\bibrangedash 74}
+    \field{title}{``Gotta Catch Em' All'': The Compelling Act of Creature
+  Collection in Pok{\'e}mon, Ni No Kuni, Shin Megami Tensei, and World of
+  Warcraft}
+    \field{volume}{10}
+    \field{journaltitle}{Loading...}
+    \field{year}{2017}
   \endentry
 
   \entry{Ryan1985}{article}{}{}
@@ -959,245 +982,6 @@
     \field{year}{2020}
   \endentry
 
-  \entry{Bloom1956}{book}{}{}
-    \name{author}{5}{}{%
-      {{hash=BBS}{%
-         family={Bloom},
-         familyi={B\bibinitperiod},
-         given={Benjamin\bibnamedelima S.},
-         giveni={B\bibinitperiod\bibinitdelim S\bibinitperiod},
-      }}%
-      {{hash=EMD}{%
-         family={Engelhart},
-         familyi={E\bibinitperiod},
-         given={Max\bibnamedelima D.},
-         giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
-      }}%
-      {{hash=FEJ}{%
-         family={Furst},
-         familyi={F\bibinitperiod},
-         given={Edward\bibnamedelima J.},
-         giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=HWH}{%
-         family={Hill},
-         familyi={H\bibinitperiod},
-         given={Walker\bibnamedelima H.},
-         giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod},
-      }}%
-      {{hash=KDR}{%
-         family={Krathwohl},
-         familyi={K\bibinitperiod},
-         given={David\bibnamedelima R.},
-         giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {David McKay Company}%
-    }
-    \strng{namehash}{BBS+1}
-    \strng{fullhash}{BBSEMDFEJHWHKDR1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Taxonomy of Educational Objectives: The Classification of
-  Educational Goals. Handbook I: Cognitive Domain}
-    \list{location}{1}{%
-      {New York}%
-    }
-    \field{year}{1956}
-  \endentry
-
-  \entry{Anderson2001}{book}{}{}
-    \name{author}{2}{}{%
-      {{hash=ALW}{%
-         family={Anderson},
-         familyi={A\bibinitperiod},
-         given={Lorin\bibnamedelima W.},
-         giveni={L\bibinitperiod\bibinitdelim W\bibinitperiod},
-      }}%
-      {{hash=KDR}{%
-         family={Krathwohl},
-         familyi={K\bibinitperiod},
-         given={David\bibnamedelima R.},
-         giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Longman}%
-    }
-    \strng{namehash}{ALWKDR1}
-    \strng{fullhash}{ALWKDR1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{A Taxonomy for Learning, Teaching, and Assessing: A Revision
-  of Bloom's Taxonomy of Educational Objectives}
-    \list{location}{1}{%
-      {New York}%
-    }
-    \field{year}{2001}
-  \endentry
-
-  \entry{KrishnaShinde2025}{article}{}{}
-    \name{author}{2}{}{%
-      {{hash=SPK}{%
-         family={Shinde},
-         familyi={S\bibinitperiod},
-         given={Popat\bibnamedelima Krishna},
-         giveni={P\bibinitperiod\bibinitdelim K\bibinitperiod},
-      }}%
-      {{hash=SL}{%
-         family={Singh},
-         familyi={S\bibinitperiod},
-         given={Lavkush},
-         giveni={L\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{SPKSL1}
-    \strng{fullhash}{SPKSL1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{1}
-    \field{pages}{2456\bibrangedash 2750}
-    \field{title}{BLOOM'S TAXONOMY: A FRAMEWORK FOR ENHANCING EDUCATIONAL
-  PRACTICES}
-    \field{journaltitle}{Society's Journal of Interdisciplinary Research}
-    \field{year}{2025}
-  \endentry
-
-  \entry{Tuomisto2015}{thesis}{}{}
-    \name{author}{1}{}{%
-      {{hash=TJ}{%
-         family={Tuomisto},
-         familyi={T\bibinitperiod},
-         given={Jari},
-         giveni={J\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{TJ1}
-    \strng{fullhash}{TJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Educational Games in Chemistry: A Design-Based Research Study
-  on the Development of a Game-Based Learning Environment}
-    \verb{url}
-    \verb http://hdl.handle.net/10138/154134
-    \endverb
-    \list{location}{1}{%
-      {Helsinki, Finland}%
-    }
-    \list{institution}{1}{%
-      {University of Helsinki}%
-    }
-    \field{type}{Doctoral Dissertation}
-    \field{year}{2015}
-  \endentry
-
-  \entry{Gee2003}{book}{}{}
-    \name{author}{1}{}{%
-      {{hash=GJP}{%
-         family={Gee},
-         familyi={G\bibinitperiod},
-         given={James\bibnamedelima Paul},
-         giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Palgrave Macmillan}%
-    }
-    \strng{namehash}{GJP1}
-    \strng{fullhash}{GJP1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{What video games have to teach us about learning and
-  literacy}
-    \list{location}{1}{%
-      {New York}%
-    }
-    \field{year}{2003}
-  \endentry
-
-  \entry{sapach17}{article}{}{}
-    \name{author}{1}{}{%
-      {{hash=SSC}{%
-         family={Sapach},
-         familyi={S\bibinitperiod},
-         given={S.\bibnamedelima C.},
-         giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{SSC1}
-    \strng{fullhash}{SSC1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{16}
-    \field{pages}{53\bibrangedash 74}
-    \field{title}{``Gotta Catch Em' All'': The Compelling Act of Creature
-  Collection in Pok{\'e}mon, Ni No Kuni, Shin Megami Tensei, and World of
-  Warcraft}
-    \field{volume}{10}
-    \field{journaltitle}{Loading...}
-    \field{year}{2017}
-  \endentry
-
-  \entry{Gomez2019}{article}{}{}
-    \name{author}{3}{}{%
-      {{hash=GJ}{%
-         family={Gomez},
-         familyi={G\bibinitperiod},
-         given={J.},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=BM}{%
-         family={Barnett},
-         familyi={B\bibinitperiod},
-         given={M.},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=GSK}{%
-         family={Grill-Spector},
-         familyi={G\bibinithyphendelim S\bibinitperiod},
-         given={K.},
-         giveni={K\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{GJBMGSK1}
-    \strng{fullhash}{GJBMGSK1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{note}{Referência [7] no documento original [cite: 128, 129]}
-    \field{number}{6}
-    \field{pages}{611\bibrangedash 624}
-    \field{title}{Extensive childhood experience with Pokémon suggests
-  eccentricity drives organization of visual cortex}
-    \field{volume}{3}
-    \field{journaltitle}{Nature Human Behaviour}
-    \field{month}{06}
-    \field{year}{2019}
-  \endentry
-
-  \entry{AceEdVenture2016}{misc}{}{}
-    \name{author}{2}{}{%
-      {{hash=A}{%
-         family={{ACE EdVenture Studio}},
-         familyi={A\bibinitperiod},
-      }}%
-      {{hash=A}{%
-         family={Artoncode},
-         familyi={A\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{AA1}
-    \strng{fullhash}{AA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{note}{Jogo digital educacional (RPG).}
-    \field{title}{ChemCaper: Act I - Petticles in Peril}
-    \verb{url}
-    \verb https://chemcaper.com/
-    \endverb
-    \field{year}{2016}
-  \endentry
-
   \entry{Chandler2009}{book}{}{}
     \name{author}{1}{}{%
       {{hash=CHM}{%
@@ -1222,129 +1006,6 @@
       {Sudbury, Massachusetts}%
     }
     \field{year}{2009}
-  \endentry
-
-  \entry{Godot2024}{software}{}{}
-    \name{author}{1}{}{%
-      {{hash=G}{%
-         family={{Godot Engine Contributors}},
-         familyi={G\bibinitperiod},
-      }}%
-    }
-    \list{organization}{1}{%
-      {Godot Foundation}%
-    }
-    \strng{namehash}{G1}
-    \strng{fullhash}{G1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{note}{Motor de jogo multiplataforma e de código aberto.}
-    \field{title}{Godot Engine}
-    \verb{url}
-    \verb https://godotengine.org
-    \endverb
-    \field{year}{2024}
-  \endentry
-
-  \entry{Blender2024}{software}{}{}
-    \name{author}{1}{}{%
-      {{hash=B}{%
-         family={{Blender Online Community}},
-         familyi={B\bibinitperiod},
-      }}%
-    }
-    \list{organization}{1}{%
-      {Blender Foundation}%
-    }
-    \strng{namehash}{B1}
-    \strng{fullhash}{B1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Blender: A 3D modelling and rendering package}
-    \verb{url}
-    \verb https://www.blender.org
-    \endverb
-    \list{location}{1}{%
-      {Amsterdam, The Netherlands}%
-    }
-    \field{year}{2024}
-  \endentry
-
-  \entry{Krita2024}{software}{}{}
-    \name{author}{1}{}{%
-      {{hash=K}{%
-         family={{Krita Foundation}},
-         familyi={K\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{K1}
-    \strng{fullhash}{K1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{note}{Software de pintura digital e ilustração de código aberto.}
-    \field{title}{Krita: Digital Painting. Creative Freedom.}
-    \verb{url}
-    \verb https://krita.org
-    \endverb
-    \field{year}{2024}
-  \endentry
-
-  \entry{Jacobs2021}{article}{}{}
-    \name{author}{1}{}{%
-      {{hash=JRS}{%
-         family={Jacobs},
-         familyi={J\bibinitperiod},
-         given={R.\bibnamedelima S.},
-         giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{JRS1}
-    \strng{fullhash}{JRS1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{note}{Referência [4] no documento original [cite: 115]}
-    \field{number}{1}
-    \field{pages}{28\bibrangedash 38}
-    \field{title}{Winning Over the Players: Investigating the Motivations to
-  Play and Acceptance of Serious Games}
-    \field{volume}{9}
-    \field{journaltitle}{Media and Communication}
-    \field{year}{2021}
-  \endentry
-
-  \entry{Vahlo2023}{article}{}{}
-    \name{author}{3}{}{%
-      {{hash=VJ}{%
-         family={Vahlo},
-         familyi={V\bibinitperiod},
-         given={Jukka},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=VT}{%
-         family={Välisalo},
-         familyi={V\bibinitperiod},
-         given={Tanja},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=TK}{%
-         family={Tuuri},
-         familyi={T\bibinitperiod},
-         given={Kai},
-         giveni={K\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{VJVTTK1}
-    \strng{fullhash}{VJVTTK1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.3389/fpsyg.2023.1176773
-    \endverb
-    \field{title}{Informal learning and wellbeing outcomes of gameplay and
-  their associations with gameplay motivation}
-    \field{volume}{14}
-    \field{journaltitle}{Frontiers in Psychology}
-    \field{year}{2023}
   \endentry
 \enddatalist
 \endinput

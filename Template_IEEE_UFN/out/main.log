@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.18)  2 NOV 2026 17:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.18)  4 NOV 2026 12:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -650,248 +650,145 @@ Package biblatex Info: ... file 'main.bbl' found.
  (out/main.bbl)
 Package biblatex Info: Reference section=0 on input line 26.
 Package biblatex Info: Reference segment=0 on input line 26.
- (./sections/00_header.tex) (./sections/01_abstract.tex) (./sections/02_introducao.tex
-
-LaTeX Warning: Citation 'Bellotti2010' on page 1 undefined on input line 2.
-
-
-LaTeX Warning: Citation 'Turkay2012' on page 1 undefined on input line 3.
-
-
-LaTeX Warning: Citation 'Soriano-Sanchez2026' on page 1 undefined on input line 4.
-
-
-LaTeX Warning: Citation 'Bellotti2010' on page 1 undefined on input line 5.
-
-
-LaTeX Warning: Citation 'Espirito2020' on page 1 undefined on input line 5.
-
-
-LaTeX Warning: Citation 'OECD2023' on page 1 undefined on input line 10.
-
-
-LaTeX Warning: Citation 'Latonio2023' on page 1 undefined on input line 12.
-
-
-LaTeX Warning: Citation 'Lackey2022' on page 1 undefined on input line 12.
-
-
-LaTeX Warning: Citation 'Lima2010' on page 1 undefined on input line 15.
-
-
-LaTeX Warning: Citation 'Han2021' on page 1 undefined on input line 16.
-
-
-LaTeX Warning: Citation 'Latonio2023' on page 1 undefined on input line 16.
-
-(/usr/share/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+ (./sections/00_header.tex) (./sections/01_abstract.tex) (./sections/02_introducao.tex (/usr/share/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 ) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
 
-]
+]) (./sections/03_secao.tex
 
-LaTeX Warning: Citation 'Latonio2023' on page 2 undefined on input line 34.
+LaTeX Warning: Reference `fig:sdt' on page 2 undefined on input line 12.
 
-
-LaTeX Warning: Citation 'Lima2010' on page 2 undefined on input line 35.
-
-
-LaTeX Warning: Citation 'OECD2023' on page 2 undefined on input line 37.
-
-
-LaTeX Warning: Citation 'SilvaFilho2023' on page 2 undefined on input line 37.
-
-
-LaTeX Warning: Citation 'Plass2020' on page 2 undefined on input line 38.
-
-
-LaTeX Warning: Citation 'Soriano-Sanchez2026' on page 2 undefined on input line 38.
-
-
-LaTeX Warning: Citation 'Bellotti2010' on page 2 undefined on input line 39.
-
-
-LaTeX Warning: Citation 'Li2024' on page 2 undefined on input line 39.
-
-
-LaTeX Warning: Citation 'BNCC26' on page 2 undefined on input line 42.
-
-
-LaTeX Warning: Citation 'igcse_chemistry_2023' on page 2 undefined on input line 42.
-
-) (./sections/03_secao.tex
-
-LaTeX Warning: Citation 'Ryan1985' on page 2 undefined on input line 8.
-
-
-LaTeX Warning: Citation 'Ryan2020' on page 2 undefined on input line 8.
-
-
-LaTeX Warning: Citation 'Ryan1985' on page 2 undefined on input line 8.
-
-
-LaTeX Warning: Citation 'Ryan1985' on page 2 undefined on input line 8.
-
-
-LaTeX Warning: Citation 'Shi2016' on page 2 undefined on input line 8.
-
-
-LaTeX Warning: Reference `fig:sdt' on page 2 undefined on input line 8.
-
-<images/sdt.png, id=11, 957.5775pt x 453.19313pt>
+[2]
+<images/sdt.png, id=14, 957.5775pt x 453.19313pt>
 File: images/sdt.png Graphic file (type png)
 <use images/sdt.png>
-Package pdftex.def Info: images/sdt.png  used on input line 12.
+Package pdftex.def Info: images/sdt.png  used on input line 16.
 (pdftex.def)             Requested size: 202.3529pt x 95.76807pt.
 
-LaTeX Warning: Citation 'Ryan1985' on page 2 undefined on input line 17.
 
+LaTeX Warning: Reference `fig:tas' on page 3 undefined on input line 30.
 
-LaTeX Warning: Citation 'Plass2020' on page 2 undefined on input line 17.
-
-
-LaTeX Warning: Citation 'Coelho2025' on page 2 undefined on input line 17.
-
-[2 <./images/sdt.png>]
-
-LaTeX Warning: Citation 'Ryan2022' on page 3 undefined on input line 19.
-
-
-LaTeX Warning: Citation 'Gao2024' on page 3 undefined on input line 19.
-
-
-LaTeX Warning: Citation 'Ryan2022' on page 3 undefined on input line 21.
-
-
-LaTeX Warning: Citation 'Ryan2022' on page 3 undefined on input line 21.
-
-
-LaTeX Warning: Citation 'Ryan1985' on page 3 undefined on input line 21.
-
-
-LaTeX Warning: Citation 'Gao2024' on page 3 undefined on input line 21.
-
-
-LaTeX Warning: Citation 'Ausubel1963' on page 3 undefined on input line 24.
-
-
-LaTeX Warning: Citation 'Espirito2020' on page 3 undefined on input line 24.
-
-
-LaTeX Warning: Citation 'Ausubel1963' on page 3 undefined on input line 24.
-
-
-LaTeX Warning: Citation 'Custodio2015' on page 3 undefined on input line 24.
-
-
-LaTeX Warning: Citation 'Espirito2020' on page 3 undefined on input line 24.
-
-
-LaTeX Warning: Citation 'Custodio2015' on page 3 undefined on input line 24.
-
-
-LaTeX Warning: Citation 'Bryce2024' on page 3 undefined on input line 26.
-
-
-LaTeX Warning: Citation 'Bryce2024' on page 3 undefined on input line 26.
-
-
-LaTeX Warning: Reference `fig:tas' on page 3 undefined on input line 26.
-
-<images/tas.png, id=17, 2372.11218pt x 853.68938pt>
+<images/tas.png, id=16, 2372.11218pt x 853.68938pt>
 File: images/tas.png Graphic file (type png)
 <use images/tas.png>
-Package pdftex.def Info: images/tas.png  used on input line 30.
+Package pdftex.def Info: images/tas.png  used on input line 34.
 (pdftex.def)             Requested size: 202.3529pt x 72.81665pt.
 
-LaTeX Warning: Citation 'Portnow2012' on page 3 undefined on input line 36.
+LaTeX Warning: Reference `fig:tangencial' on page 3 undefined on input line 40.
 
-
-LaTeX Warning: Citation 'Mozelius2017' on page 3 undefined on input line 36.
-
-
-LaTeX Warning: Citation 'LimadaCostaJunior2022' on page 3 undefined on input line 36.
-
-
-LaTeX Warning: Citation 'GomesdeFreitas2017' on page 3 undefined on input line 36.
-
-
-LaTeX Warning: Citation 'Lorenzatti2020' on page 3 undefined on input line 36.
-
-
-LaTeX Warning: Reference `fig:tangencial' on page 3 undefined on input line 36.
-
-
-LaTeX Warning: Citation 'Lorenzatti2020' on page 3 undefined on input line 36.
-
-<images/tangencial.png, id=18, 383.18156pt x 172.39406pt>
+<images/tangencial.png, id=17, 383.18156pt x 172.39406pt>
 File: images/tangencial.png Graphic file (type png)
 <use images/tangencial.png>
-Package pdftex.def Info: images/tangencial.png  used on input line 40.
+Package pdftex.def Info: images/tangencial.png  used on input line 44.
 (pdftex.def)             Requested size: 202.3529pt x 91.0396pt.
 
-LaTeX Warning: Citation 'Mozelius2017' on page 3 undefined on input line 45.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3 <./images/sdt.png> <./images/tas.png>]) (./sections/05_metodologia.tex
+
+LaTeX Warning: Reference `fig:ciclochandler' on page 4 undefined on input line 3.
+
+<images/ciclochandler.png, id=23, 505.13719pt x 505.13719pt>
+File: images/ciclochandler.png Graphic file (type png)
+<use images/ciclochandler.png>
+Package pdftex.def Info: images/ciclochandler.png  used on input line 7.
+(pdftex.def)             Requested size: 202.3529pt x 202.3519pt.
+[4 <./images/tangencial.png> <./images/ciclochandler.png>] [5]) (./sections/06_conclusao.tex
+! Undefined control sequence.
+l.6 ... foi realizado em ambiente Linux, na \texit
+                                                  {engine} Godot 4.4.1. [Par...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Citation 'Mozelius2017' on page 3 undefined on input line 45.
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+[]\T1/ptm/m/n/8 (+20) Não
+ []
 
 
-LaTeX Warning: Citation 'GomesdeFreitas2017' on page 3 undefined on input line 45.
+Underfull \hbox (badness 10000) in paragraph at lines 36--36
+[]\T1/ptm/m/n/8 (+20) Não
+ []
 
 
-LaTeX Warning: Citation 'Bloom1956' on page 3 undefined on input line 48.
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
+[]\T1/ptm/m/n/8 (+20) Não
+ []
 
 
-LaTeX Warning: Citation 'Anderson2001' on page 3 undefined on input line 48.
+Overfull \hbox (1.84883pt too wide) in paragraph at lines 32--39
+ [][] 
+ []
 
 
-LaTeX Warning: Reference `fig:bloom' on page 3 undefined on input line 48.
+Underfull \hbox (badness 3439) in paragraph at lines 51--51
+[]\T1/ptm/b/n/8 (+20) Teste im-ple-men-
+ []
 
 
-LaTeX Warning: Citation 'Plass2020' on page 3 undefined on input line 48.
-
-[3 <./images/tas.png> <./images/tangencial.png>]
-<images/bloom.png, id=26, 603.75563pt x 341.77687pt>
-File: images/bloom.png Graphic file (type png)
-<use images/bloom.png>
-Package pdftex.def Info: images/bloom.png  used on input line 52.
-(pdftex.def)             Requested size: 202.3529pt x 114.54941pt.
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
+[]\T1/ptm/b/n/8 (+20) Integração
+ []
 
 
-LaTeX Warning: Citation 'KrishnaShinde2025' on page 4 undefined on input line 57.
+Overfull \hbox (18.7281pt too wide) in paragraph at lines 49--59
+ [][] 
+ []
+
+[6] [7]) (./sections/07_bibliography.tex) [8]
+Underfull \hbox (badness 4660) in paragraph at lines 36--36
+[]\T1/ptm/m/n/10 (+20) Richard M. Ryan e Edward L. Deci. ^^P  Self-
+ []
 
 
-LaTeX Warning: Citation 'Tuomisto2015' on page 4 undefined on input line 57.
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
+
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
+
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
+
+[9] (out/main.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+ ***********
 
 
-LaTeX Warning: Citation 'Plass2020' on page 4 undefined on input line 57.
+LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Citation 'Gee2003' on page 4 undefined on input line 57.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-)
 
-! LaTeX Error: File `sections/04_secao2.tex' not found.
+Package biblatex Warning: Please (re)run BibTeX on the file(s):
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: tex)
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
 
-Enter file name: 
-! Emergency stop.
-<read *> 
-         
-l.34 \input{sections/04_secao2}
-                               ^^M
-*** (cannot \read from terminal in nonstop modes)
-
- 
+ ) 
 Here is how much of TeX's memory you used:
- 17307 strings out of 469495
- 309695 string characters out of 5470098
- 984971 words of memory out of 5000000
- 45558 multiletter control sequences out of 15000+600000
- 744942 words of font info for 277 fonts, out of 8000000 for 9000
+ 17566 strings out of 469495
+ 315258 string characters out of 5470098
+ 995971 words of memory out of 5000000
+ 45689 multiletter control sequences out of 15000+600000
+ 759657 words of font info for 360 fonts, out of 8000000 for 9000
  19 hyphenation exceptions out of 8191
- 68i,9n,69p,1954b,1368s stack positions out of 10000i,1000n,20000p,200000b,200000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 68i,10n,69p,1954b,1685s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on out/main.pdf (9 pages, 2147177 bytes).
+PDF statistics:
+ 79 PDF objects out of 1000 (max. 8388607)
+ 45 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 55829 words of extra memory for PDF output out of 61914 (max. 10000000)
+

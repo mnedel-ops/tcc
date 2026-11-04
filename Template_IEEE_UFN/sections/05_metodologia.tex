@@ -1,6 +1,6 @@
 \section{METODOLOGIA}
 mudar para o presente e como foi usado
-A execução do projeto fundamenta-se no Ciclo Básico de Produção de Jogos proposto por Heather Chandler \cite{Chandler2009}, Fig. \ref{fig:ciclochandler}, adotando uma abordagem cíclica e iterativa. A escolha dessa metodologia justifica-se pela necessidade de equilibrar a fidelidade científica com a jogabilidade de um jogo sério eficaz.
+A execução do projeto fundamentou-se no Ciclo Básico de Produção de Jogos proposto por Heather Chandler \cite{Chandler2009}, Fig. \ref{fig:ciclochandler}, que adotou uma abordagem cíclica e iterativa. A escolha dessa metodologia justificou-se pela necessidade de equilibrar a fidelidade científica com a jogabilidade de um jogo sério eficaz.
 
 \begin{figure}[h]
     \centering
@@ -8,6 +8,11 @@ A execução do projeto fundamenta-se no Ciclo Básico de Produção de Jogos pr
     \caption{Ciclo Básico de Produção de Jogos. Fonte: adaptado de \cite{Chandler2009}.}
     \label{fig:ciclochandler}
 \end{figure}
+Na etapa de pré-produção, foi definido o escopo pedagógico do projeto, delimitado pelos conteúdos de Química Geral. Nessa fase, também foram realizados o levantamento de requisitos e a elaboração da documentação de apoio, representada pelo *Game Design Document* (GDD), que registrou as diretrizes e características do jogo.
+
+Na etapa de produção, os requisitos estabelecidos na fase anterior foram implementados conforme as especificações documentadas no GDD. Em paralelo ao desenvolvimento, foram conduzidos testes internos de qualidade, com o objetivo de verificar o funcionamento dos recursos implementados e identificar possíveis inconsistências. Entre os testes realizados, destacam-se: [inserir lista de testes].
+
+Por fim, na etapa de pós-produção, foram analisados os resultados de cada ciclo de desenvolvimento. Essa avaliação permitiu identificar aspectos que necessitavam de ajustes e definir melhorias para o *sprint* seguinte, mantendo o caráter iterativo do processo.
 
 
 \subsection{Produção e transposição didática}
@@ -21,13 +26,14 @@ No sistema de jogo, essa progressão curricular dita a curva de dificuldade e o 
 
 O diferencial desta etapa reside na transformação das propriedades periódicas em regras de mecânica e atributos sistêmicos, de modo que o domínio das leis da Química se torne condição essencial para o sucesso estratégico no jogo. As mecânicas e a fundamentação teórica serão expandidas no \textit{High-Concept Document} (HCD) anexado.
 
-\subsection{Testes Funcionais Internos (QA - Quality Assurance)}
-A produção ocorrerá de forma iterativa, dividindo-se entre a lógica sistêmica e a construção estética. A implementação técnica das mecânicas principais e do sistema de progressão pedagógica será realizada no motor de jogos Godot \cite{Godot2024}, escolhido por sua versatilidade e sua natureza (\textit{open-source}). Em um segundo ciclo iterativo, o foco voltar-se-á para a identidade visual das criaturas, visando criar representações únicas e memoráveis para os elementos químicos.
+\subsection{Desenvolvimendo dos Testes Funcionais Internos (QA - Quality Assurance)}
+A verificação do Alchemon foi conduzida por meio de testes funcionais internos de Garantia de Qualidade (QA), realizados durante o desenvolvimento do protótipo. Os testes tiveram como objetivo verificar o funcionamento das mecânicas implementadas e sua conformidade com os requisitos funcionais definidos para o projeto. Não foram realizados \textit{playtests} com estudantes nesta etapa.
 
-Utilizar-se-á o \textit{software} Blender \cite{Blender2024} para modelagem 3D e o Krita \cite{Krita2024} para texturização e arte 2D. A estética será deliberadamente inspirada no estilo gráfico de \textit{Digimon World}, adotando arquétipos que facilitem a memorização visual e a conexão psicológica do jogador com sua coleção \cite{Gomez2019}. Essa abordagem visar-se-á a reduzir a carga cognitiva estranha e aumentar a curiosidade, estimulando a aprendizagem tangencial espontânea \cite{Portnow2012}.
+O protocolo de testes considerou a verificação dos requisitos funcionais, a identificação de erros de execução e travamentos, o tempo de resposta das funcionalidades, a estabilidade da taxa de quadros (FPS) e a integridade da compilação do jogo. Os critérios de aceite foram definidos com base no comportamento esperado de cada funcionalidade e na ausência de falhas que impedissem sua utilização.
 
-Os ciclos de testes concentrar-se-ão em usabilidade e diversão, validando se o Alchemon atenderá ao critério de ser engajador sem que a intencionalidade pedagógica prejudique o engajamento volitivo do jogador \cite{Jacobs2021}. Buscar-se-á confirmar se o jogo promove a satisfação das necessidades psicológicas básicas, especificamente autonomia e competência \cite{Ryan1985}, permitindo que o estudante sinta-se o agente de seu próprio progresso.
+Os testes automatizados foram desenvolvidos com o \textit{framework} GdUnit4, exclusivo do motor Godot 4.
 
+O processo de QA seguiu um ciclo iterativo: quando um teste identificava uma falha, o item retornava à etapa de desenvolvimento para correção ou refatoração do código. Após a alteração, o teste era executado novamente para verificar se o problema havia sido resolvido e se a correção não havia comprometido outras funcionalidades.
 \section{IDENTIFICAÇÃO E DESCRIÇÃO DO PROBLEMA}
 
 O ensino de Química, especialmente no que se refere ao domínio da Tabela Periódica, enfrenta uma persistente dificuldade de aprendizagem associada à predominância de práticas pedagógicas tradicionais baseadas na memorização mecânica, em detrimento de abordagens que promovam o engajamento ativo dos estudantes \cite{Latonio2023}. Nesse contexto, a periodicidade química é frequentemente percebida como um conteúdo abstrato e de alta complexidade, sendo abordada por meio de estratégias de memorização que não favorecem a construção de uma compreensão significativa de suas relações estruturais e funcionais \cite{Lima2010}.
@@ -39,27 +45,49 @@ Além das dificuldades cognitivas, a predominância de métodos expositivos e ce
 Nesse panorama, o desenvolvimento do projeto Alchemon justifica-se como uma tentativa de mitigar essas barreiras por meio de um jogo sério \cite{Plass2020}. A proposta busca converter a passividade da recepção de conteúdo em uma experiência de descoberta ativa, utilizando a estética de captura de criaturas para transformar o estudo da Química em uma ferramenta estratégica de progressão e maestria.
 
 \section{SOLUÇÃO DESENVOLVIDA}
-O projeto Alchemon propõe a convergência sinérgica entre a SDT \cite{Ryan1985}, a TAS \cite{Ausubel1963} e a Aprendizagem Tangencial \cite{Portnow2012} para mitigar as barreiras do ensino tradicional. Para evitar o fenômeno do \enquote{brócolis coberto de chocolate} \cite{Plass2020, Lorenzatti2020}, o jogo diferencia-se de abordagens educativas convencionais ao buscar uma sólida integração intrínseca (\textit{intrinsic integration}) \cite{Vahlo2023}. Assegura-se, assim, que as mecânicas lúdicas e o conteúdo científico sejam indissociáveis \cite{Plass2020}, de modo que as leis da Química não funcionem como obstáculos ou interrupções didáticas, mas constituam a própria lógica de interação e as condições de vitória do sistema \cite{Mozelius2017}.
-
-Sob essa lógica, a solução concentra-se em satisfazer as necessidades psicológicas de autonomia e competência por meio de \textit{feedbacks} de maestria \cite{Shi2016}, transformando o conteúdo acadêmico em uma ferramenta de empoderamento estratégico \cite{Plass2020, Shi2016}. Isso garante que o jogador busque voluntariamente informações técnicas para obter vantagens \textit{in-game} \cite{Vahlo2023}, convertendo o interesse espontâneo em desempenho acadêmico mensurável \cite{LimadaCostaJunior2022}.
-
-Para materializar esse engajamento, o projeto apoia-se na curiosidade inerente ao gênero \textit{Creature Capture} \cite{Portnow2012}, preenchendo uma lacuna teórica e estética identificada a partir dos trabalhos correlatos. Enquanto o \textit{ChemCraft} concentra-se em reações diretas e o \textit{ChemCaper} em um RPG tradicional, o Alchemon inova ao adotar uma estética de criaturas única para cada elemento químico. Superando os modelos baseados apenas em cartas ou fórmulas geométricas, essa escolha de \textit{design} atua como um \textit{cantilevers} conceituais \cite{Bryce2024}: as mecânicas de captura facilitam a memorização visual e ancoram os novos conhecimentos químicos de forma não arbitrária e substantiva, conforme a TAS \cite{Ausubel1963, Espirito2020}.
-
+Nesta seção, apresenta-se o desenvolvimento técnico do protótipo do jogo digital Alchemon, concebido para promover a aprendizagem tangencial e o engajamento de estudantes do Ensino Médio com os conceitos e elementos da Tabela Periódica. A seção está organizada em três subseções: a Subseção A descreve a arquitetura de software e a organização estrutural do projeto; a Subseção B apresenta as principais mecânicas de jogabilidade (gameplay) e seus aspectos de implementação; e a Subseção C reúne registros visuais das interfaces e dos ambientes do jogo durante sua execução.
 \subsection{Arquitetura e Engenharia do Sistema/Jogo}
-**Visão Geral da Arquitetura:** Apresente a organização interna do código (ex: divisão em cenas, gerenciadores globais/Singletons, máquina de estados do jogador).
-**Diagramas Técnicos:** Insira diagramas visuais (como Diagrama de Classes UML, Diagrama de Transição de Estados ou o fluxo do Game Design Document final).
-**Desacoplamento:** Reforce brevemente como a estrutura foi criada de forma independente e limpa (resgatando a independência de engine que discutimos no Referencial).
-Testes internos
+A arquitetura do Alchemon foi organizada em módulos responsáveis pelos sistemas de exploração, combate, persistência de dados, interfaces e gerenciamento de cenas. Essa divisão estabelece as responsabilidades de cada componente e facilita a manutenção e a expansão do projeto.
+
+O sistema de exploração reúne os elementos necessários à movimentação do personagem, à interação com objetos e personagens não jogáveis (NPCs) e ao gerenciamento do inventário. A cena principal integra o personagem, a câmera, os seguidores e os elementos de interface. O carregamento dinâmico das fases permite a transição entre ambientes durante a sessão de jogo.
+
+A comunicação entre os módulos ocorre por meio de serviços globais e sinais da engine Godot. O gerenciamento da sessão concentra as operações de salvamento, carregamento e controle do progresso do jogador. Outro serviço centraliza os eventos relacionados ao combate e à sincronização dos dados das criaturas.
+
+O sistema de combate possui componentes responsáveis pelo controle das ações, pelo armazenamento do estado temporário da batalha e pela aplicação das regras de confronto. Uma máquina de estados organiza o fluxo das batalhas em etapas de encontro, seleção e resolução de ações, encerramento de rodada e definição do resultado. Essa organização também permite que as regras de combate sejam processadas independentemente da apresentação visual das cenas.
+
+A persistência dos dados utiliza arquivos no formato JSON. São armazenadas informações sobre a equipe do jogador, as criaturas mantidas em armazenamento, o inventário, a quantidade de moedas, o progresso relacionado aos NPCs e a posição do personagem. O sistema também diferencia os dados permanentes das criaturas dos estados temporários utilizados durante as batalhas. Ao salvar ou carregar uma sessão, são realizadas verificações para tratar informações inválidas ou incompletas, além da criação de cópias de segurança dos arquivos de salvamento.
 \subsection{Detalhamento da Implementação}
-* Descreva cada mecânica principal que foi efetivamente implementada e como ela funciona no código.
-* **Exemplos para Jogos:**
-*Sistema de Movimentação e Física:* Como a captura de comandos do teclado/gamepad faz o personagem responder.
-*Sistema de Colisão e Interação:* Como o jogo detecta contato com objetos, inimigos ou coletáveis.
-*Progressão e Condições de Vitória/Derrota:* Como o estado do jogo muda ao atingir um objetivo ou perder vida.
+O Alchemon foi desenvolvido em ambiente tridimensional, com a engine Godot 4 e a linguagem GDScript. A implementação reúne sistemas de exploração, interação, captura, combate e progressão das criaturas. Os nós da engine controlam a movimentação, as colisões, as interações e a apresentação das informações ao jogador, enquanto os componentes responsáveis pelas regras processam os comportamentos das mecânicas.
+
+\subsubsection{Exploração e Interação}
+A exploração ocorre em ambientes tridimensionais, nos quais o jogador movimenta o personagem em quatro direções, com detecção de colisões. O sistema de interação permite examinar objetos, coletar itens e iniciar combates com NPCs.
+
+Os encontros com criaturas selvagens ocorrem por meio de uma probabilidade de encontro, com um intervalo entre as tentativas. Os NPCs treinadores possuem equipes predefinidas, compostas por criaturas de espécies e níveis específicos, e podem iniciar combates quando o jogador entra em contato com eles.
+
+\subsubsection{Captura de Criaturas}
+A captura ocorre durante os combates em que essa ação está disponível. A probabilidade de sucesso considera a quantidade atual de pontos de vida da criatura em relação ao seu total, além da compatibilidade do item de captura. Assim, criaturas com menos pontos de vida apresentam maior probabilidade de captura.
+
+O cálculo produz um resultado dentro de uma faixa de valores, cujo limite superior representa uma captura garantida. Após o sucesso, o sistema registra a instância específica da criatura capturada, preservando seus dados individuais, como identificador, características genéticas, personalidade e pontos de vida restantes. Dessa forma, cada criatura mantém suas características próprias ao integrar a equipe ou o armazenamento do jogador.
+
+\subsubsection{Sistema de Combate e Atributos}
+
+O combate utiliza um sistema de turnos, com etapas de seleção e resolução das ações. Durante o confronto, o jogador pode escolher entre atacar, utilizar itens, tentar capturar uma criatura ou fugir, conforme as condições da batalha.
+
+Os ataques consideram os atributos das criaturas e a efetividade entre os elementos químicos. O sistema também contempla a possibilidade de erros de ataque e acertos críticos, além do consumo de energia pelas habilidades. Quando a energia disponível não permite o uso de determinado ataque, outra opção pode ser utilizada. Os itens de cura também seguem limites de uso.
+
+Os atributos das criaturas são calculados a partir dos valores básicos de cada espécie, do nível, das características individuais e da personalidade. A experiência acumulada permite que as criaturas subam de nível, com ajustes nos atributos e nos limites de pontos de vida e energia.
+
+A relação entre a Química e as mecânicas também aparece na representação dos estados físicos das criaturas. O sistema considera os pontos de fusão e ebulição associados a cada espécie para determinar seus estados sólido, líquido ou gasoso. Durante o combate, a temperatura da arena pode alterar esses estados e seus efeitos.
+
+Essas relações incorporam propriedades químicas às regras do jogo, especialmente por meio da efetividade entre elementos e da representação dos estados físicos. A correspondência entre as demais propriedades periódicas e os atributos das criaturas deve ser explicitada conforme sua aplicação efetiva na implementação, de modo que a descrição não atribua ao protótipo relações que ainda não estejam implementadas.
+
+\subsubsection{Outros Sistemas}
+Além das mecânicas principais, o jogo possui sistemas de vitória e derrota, distribuição de recompensas, gerenciamento da equipe e armazenamento de criaturas. Nas batalhas contra treinadores, a vitória concede moedas ao jogador, enquanto o sistema também registra o resultado do confronto e atualiza o progresso relacionado ao NPC.
+
+A persistência em arquivos JSON mantém os dados da equipe, das criaturas armazenadas, do inventário, das moedas, do progresso dos NPCs e da posição do personagem. Esses recursos permitem preservar o progresso entre sessões e retomar a exploração após o carregamento dos dados.
 
 \subsection{Evidências Visuais}
-* Esta é a parte com maior impacto visual da Seção V. Insira capturas de tela (*screenshots*) em alta resolução mostrando:
-* Tela de Menu / Título.
-* Gameplay principal com a Interface de Usuário (HUD: barra de vida, pontuação, inventário).
-* Telas de transição (Pause, *Game Over*, Vitória).
-* **Regra da UFN/IEEE:** Todas as imagens devem ficar preferencialmente no topo ou rodapé das colunas, ter legenda abaixo no tamanho 8-9pt e ser citadas no texto antecedente usando a sintaxe **Fig. X** (ex: *"A* **Fig. 3** *ilustra a tela de gameplay durante a batalha..."*).
+Tela de Menu / Título.
+Gameplay principal, Exploracao e Combate.
+Telas de transição (Pause, *Game Over*, Vitória).
+
