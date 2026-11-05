@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.18)  4 NOV 2026 15:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.18)  5 NOV 2026 13:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -650,22 +650,20 @@ Package biblatex Info: ... file 'main.bbl' found.
  (out/main.bbl)
 Package biblatex Info: Reference section=0 on input line 26.
 Package biblatex Info: Reference segment=0 on input line 26.
- (./sections/00_header.tex) (./sections/01_abstract.tex) (./sections/02_introducao.tex (/usr/share/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+ (./sections/00_header.tex) (./sections/01_abstract.tex) (./sections/02_introducao.tex [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}
+
+
+] (/usr/share/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
-) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}
+)) (./sections/03_secao.tex [2]
 
+LaTeX Warning: Reference `fig:sdt' on page 3 undefined on input line 12.
 
-]) (./sections/03_secao.tex
-
-LaTeX Warning: Reference `fig:sdt' on page 2 undefined on input line 12.
-
-[2]
 <images/sdt.png, id=14, 957.5775pt x 453.19313pt>
 File: images/sdt.png Graphic file (type png)
 <use images/sdt.png>
 Package pdftex.def Info: images/sdt.png  used on input line 16.
 (pdftex.def)             Requested size: 202.3529pt x 95.76807pt.
-
 
 LaTeX Warning: Reference `fig:tas' on page 3 undefined on input line 30.
 
@@ -677,24 +675,77 @@ Package pdftex.def Info: images/tas.png  used on input line 34.
 
 LaTeX Warning: Reference `fig:tangencial' on page 3 undefined on input line 40.
 
-<images/tangencial.png, id=17, 383.18156pt x 172.39406pt>
+[3 <./images/sdt.png> <./images/tas.png>]
+<images/tangencial.png, id=22, 383.18156pt x 172.39406pt>
 File: images/tangencial.png Graphic file (type png)
 <use images/tangencial.png>
 Package pdftex.def Info: images/tangencial.png  used on input line 44.
 (pdftex.def)             Requested size: 202.3529pt x 91.0396pt.
+) (./sections/05_metodologia.tex
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3 <./images/sdt.png> <./images/tas.png>]) (./sections/05_metodologia.tex
-
-LaTeX Warning: Reference `fig:ciclochandler' on page 4 undefined on input line 3.
+LaTeX Warning: Reference `fig:ciclochandler' on page 4 undefined on input line 2.
 
 <images/ciclochandler.png, id=23, 505.13719pt x 505.13719pt>
 File: images/ciclochandler.png Graphic file (type png)
 <use images/ciclochandler.png>
-Package pdftex.def Info: images/ciclochandler.png  used on input line 7.
+Package pdftex.def Info: images/ciclochandler.png  used on input line 6.
 (pdftex.def)             Requested size: 202.3529pt x 202.3519pt.
-[4 <./images/tangencial.png> <./images/ciclochandler.png>] [5]) (./sections/06_conclusao.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 1248) has occurred while \output is active []
+
+ [4 <./images/tangencial.png> <./images/ciclochandler.png>] [5]
+! Missing number, treated as zero.
+<to be read again> 
+                   n
+l.87 ...em ser encontradas no GDD\footnote[number]
+                                                  {Link} do projeto, que det...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+LaTeX Warning: Reference `fig:jmain' on page 6 undefined on input line 91.
+
+<images/main.png, id=34, 1725.44624pt x 977.6525pt>
+File: images/main.png Graphic file (type png)
+<use images/main.png>
+Package pdftex.def Info: images/main.png  used on input line 95.
+(pdftex.def)             Requested size: 202.3529pt x 114.64296pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6]
+
+LaTeX Warning: Reference `fig:gameplayExploracao' on page 7 undefined on input line 100.
+
+<images/gameplayExploracao.png, id=38, 1725.44624pt x 977.6525pt>
+File: images/gameplayExploracao.png Graphic file (type png)
+<use images/gameplayExploracao.png>
+Package pdftex.def Info: images/gameplayExploracao.png  used on input line 104.
+(pdftex.def)             Requested size: 202.3529pt x 114.64296pt.
+
+LaTeX Warning: Reference `fig:gameplay' on page 7 undefined on input line 109.
+
+<images/gameplay.png, id=39, 1725.44624pt x 977.6525pt>
+File: images/gameplay.png Graphic file (type png)
+<use images/gameplay.png>
+Package pdftex.def Info: images/gameplay.png  used on input line 113.
+(pdftex.def)             Requested size: 202.3529pt x 114.64296pt.
+
+LaTeX Warning: Reference `fig:pc' on page 7 undefined on input line 118.
+
+<images/pc.png, id=40, 1725.44624pt x 977.6525pt>
+File: images/pc.png Graphic file (type png)
+<use images/pc.png>
+Package pdftex.def Info: images/pc.png  used on input line 121.
+(pdftex.def)             Requested size: 202.3529pt x 114.64296pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+) (./sections/06_conclusao.tex
 ! Undefined control sequence.
 l.6 ... foi realizado em ambiente Linux, na \texit
                                                   {engine} Godot 4.4.1. [Par...
@@ -724,7 +775,7 @@ Overfull \hbox (1.84883pt too wide) in paragraph at lines 32--39
  [][] 
  []
 
-
+[7 <./images/main.png> <./images/gameplayExploracao.png> <./images/gameplay.png> <./images/pc.png>]
 Underfull \hbox (badness 3439) in paragraph at lines 51--51
 []\T1/ptm/b/n/8 (+20) Teste im-ple-men-
  []
@@ -739,11 +790,12 @@ Overfull \hbox (18.7281pt too wide) in paragraph at lines 49--59
  [][] 
  []
 
-[6] [7]) (./sections/07_bibliography.tex) [8]
+[8]) (./sections/07_bibliography.tex)
 Underfull \hbox (badness 4660) in paragraph at lines 36--36
 []\T1/ptm/m/n/10 (+20) Richard M. Ryan e Edward L. Deci. ^^P  Self-
  []
 
+[9]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -755,7 +807,7 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[9] (out/main.aux)
+[10] (out/main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -777,18 +829,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 17566 strings out of 469495
- 315258 string characters out of 5470098
- 999971 words of memory out of 5000000
- 45689 multiletter control sequences out of 15000+600000
- 759657 words of font info for 360 fonts, out of 8000000 for 9000
+ 17645 strings out of 469495
+ 316503 string characters out of 5470098
+ 992971 words of memory out of 5000000
+ 45726 multiletter control sequences out of 15000+600000
+ 766295 words of font info for 387 fonts, out of 8000000 for 9000
  19 hyphenation exceptions out of 8191
  68i,10n,69p,1954b,1685s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on out/main.pdf (9 pages, 2147504 bytes).
+Output written on out/main.pdf (10 pages, 2376113 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 45 compressed objects within 1 object stream
+ 90 PDF objects out of 1000 (max. 8388607)
+ 47 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 55829 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 68137 words of extra memory for PDF output out of 74296 (max. 10000000)
 
