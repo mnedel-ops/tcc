@@ -25,11 +25,13 @@ Essas correspondências devem ser compreendidas como abstrações lúdicas desti
 \end{itemize}
 
 \subsection{Desenvolvimento dos Testes Funcionais Internos (QA - Quality Assurance)}
-A verificação interna do Alchemon utiliza testes automatizados desenvolvidos com o GdUnit4, ferramenta de testes para Godot 4. A documentação técnica do repositório registra quatro suítes, com 65 casos voltados a atributos, captura, recompensas, persistência, integração e continuidade da sessão. Esses casos foram concebidos para verificar regras de negócio e consistência dos dados.
 
-É necessário distinguir a existência dos casos automatizados de sua execução e aprovação. A documentação também identifica cenários de integração visual que dependem da execução das cenas no Godot. Não foram realizadas avaliações com estudantes do Ensino Médio, e os testes automatizados não medem, por si só, aprendizagem, usabilidade ou engajamento.
+A verificação interna do Alchemon utiliza testes automatizados desenvolvidos com o GdUnit4, ferramenta de testes para Godot 4. Foram implementadas quatro suítes, totalizando 65 casos, voltados à verificação de atributos, captura, recompensas, persistência e continuidade da sessão. Todos os casos automatizados foram executados e aprovados.
 
-Quando uma verificação identifica uma falha, o comportamento correspondente retorna à etapa de desenvolvimento para correção. Após a alteração, o caso pertinente deve ser executado novamente, inclusive para verificar possíveis regressões.
+Além dos testes automatizados, foram realizados testes funcionais manuais por meio da interação direta com o jogo. Os procedimentos contemplaram as principais funcionalidades, incluindo inicialização, exploração, interação com criaturas, captura, combate, evolução e persistência dos dados. Os testes manuais foram executados e aprovados nos ambientes Linux e Windows. Também foram realizados testes de integração entre os sistemas do jogo, cujos resultados foram aprovados.
+
+A avaliação de desempenho permanece pendente e deverá considerar parâmetros como taxa de quadros por segundo, tempo de carregamento das cenas e consumo de memória. Ressalta-se que a aprovação dos testes técnicos não comprova, por si só, a eficácia pedagógica da proposta. Não foram realizadas avaliações com estudantes do Ensino Médio, portanto, ainda não há resultados empíricos sobre aprendizagem, usabilidade ou engajamento.
+
 \section{IDENTIFICAÇÃO E DESCRIÇÃO DO PROBLEMA}
 
 O ensino da Tabela Periódica apresenta dificuldades relacionadas à memorização de símbolos, propriedades e tendências químicas. Por ser um conteúdo abstrato, sua abordagem baseada principalmente na memorização pode dificultar a compreensão das relações entre os elementos químicos \cite{Latonio2023,Lima2010}.

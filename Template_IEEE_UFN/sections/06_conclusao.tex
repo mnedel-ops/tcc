@@ -3,7 +3,7 @@ Esta seção apresenta os procedimentos de verificação e os resultados obtidos
 
 
 \subsection{Ambiente de Testes Funcionais e Verificação de Requisitos}
-O desenvolvimento foi realizado em ambiente Linux, com a engine Godot 4.4.1. A documentação técnica registra testes automatizados com GdUnit4 e descreve cenários adicionais de integração visual. Não há um registro consolidado que comprove a execução de todos os cenários em diferentes sistemas operacionais; por isso, não se apresenta uma comparação entre plataformas.
+Os testes funcionais do Alchemon foram realizados em ambientes Linux e Windows, utilizando a engine Godot 4.6.1. Foram executados testes automatizados com GdUnit4, testes funcionais manuais e testes de integração entre os sistemas do jogo. Todas essas verificações foram aprovadas nas duas plataformas, conforme os procedimentos descritos nas subseções seguintes. As configurações dos equipamentos utilizados estão apresentadas na Tabela~\ref{tab:ambientes_teste}.
 
 \begin{table}[!ht]
 \centering
@@ -58,7 +58,7 @@ Executável \\
 \end{table}
 
 \subsection{Matriz de Verificação de Requisitos Funcionais}
-A documentação técnica do repositório registra quatro suítes automatizadas com o GdUnit4, totalizando 65 casos. Os testes abrangem regras relacionadas aos atributos, à captura, às recompensas e à persistência. A existência de um caso de teste não comprova, isoladamente, sua execução ou aprovação.
+A verificação dos requisitos funcionais foi realizada por meio de testes automatizados, manuais e de integração. Os testes automatizados abrangem quatro suítes, com 65 casos executados e aprovados. As funcionalidades que dependem da interação com a interface foram verificadas manualmente nos ambientes Linux e Windows. A Tabela~\ref{tab:matriz-requisitos} apresenta a cobertura e os resultados obtidos.
 
 \begin{table}[!t]
     \caption{Matriz de verificação dos requisitos funcionais}
@@ -67,24 +67,18 @@ A documentação técnica do repositório registra quatro suítes automatizadas 
     \footnotesize
     \begin{tabular}{|p{0.27\columnwidth}|p{0.25\columnwidth}|p{0.18\columnwidth}|p{0.18\columnwidth}|}
         \hline
-        \textbf{Requisito} & \textbf{Teste implementado} & \textbf{Executado} & \textbf{Integração confirmada} \\ \hline
-            Crescimento das criaturas & Coberto & Não documentado & Requer verificação integrada \\ \hline
-            Atributos das criaturas & Coberto & Não documentado & Requer verificação integrada \\ \hline
-            Captura & Coberto & Não documentado & Requer verificação integrada \\ \hline
-            Distribuição de recompensas & Coberto & Não documentado & Requer verificação integrada \\ \hline
-            Interface & Parcial & Não documentado & Requer verificação manual \\ \hline
-            Persistência de dados & Coberto & Não documentado & Requer verificação integrada \\ \hline
-        \end{tabular}
+        \textbf{Requisito} & \textbf{Tipo de teste} & \textbf{Execução} & \textbf{Integração} \\ \hline
+        Crescimento das criaturas & Automatizado e manual & Aprovado & Aprovada \\ \hline
+        Atributos das criaturas & Automatizado e manual & Aprovado & Aprovada \\ \hline
+        Captura & Automatizado e manual & Aprovado & Aprovada \\ \hline
+        Distribuição de recompensas & Automatizado e manual & Aprovado & Aprovada \\ \hline
+        Interface & Manual & Aprovado & Aprovada \\ \hline
+        Persistência de dados & Automatizado e manual & Aprovado & Aprovada \\ \hline
+    \end{tabular}
 \end{table}
 
 \subsection{Matriz de Testes Manuais}
-Os testes funcionais manuais foram conduzidos por meio da interação
-direta com o jogo, com o objetivo de verificar o comportamento das
-principais funcionalidades em condições de uso. A Tabela~\ref{tab:testes_manuais}
-resume os procedimentos e os resultados esperados para cada sistema.
-Os resultados obtidos foram registrados individualmente, considerando
-a execução dos procedimentos e a ocorrência de comportamentos
-inesperados.
+Os testes funcionais manuais foram conduzidos por meio da interação direta com o jogo, com o objetivo de verificar o comportamento das principais funcionalidades em condições de uso. Os procedimentos foram executados nos ambientes Linux e Windows, e todos apresentaram os resultados esperados. A Tabela~\ref{tab:testes_manuais} resume as funcionalidades verificadas e os respectivos procedimentos.
 
 \begin{table}[htbp]
     \caption{Resumo dos testes funcionais manuais do Alchemon}
@@ -127,10 +121,7 @@ inesperados.
 \end{table}
 
 \subsection{Matriz dos Testes Automatizados}
-Os testes automatizados foram organizados em quatro suítes, totalizando 65 casos implementados com o framework GdUnit4, conforme apresentado
-na Tabela~\ref{tab:testes_automatizados}. As verificações abrangem os sistemas de evolução, captura, combate e persistência de dados
-das criaturas. A descrição individual dos casos de teste, incluindo seus procedimentos e critérios esperados, encontra-se na documentação
-técnica do repositório do projeto\footnote{AlchemonRepositorio}.
+Os testes automatizados foram organizados em quatro suítes, totalizando 65 casos executados e aprovados com o framework GdUnit4, conforme apresentado na Tabela~\ref{tab:testes_automatizados}. As verificações abrangem os sistemas de evolução, captura, combate e persistência de dados das criaturas. A descrição individual dos casos de teste, incluindo seus procedimentos e critérios esperados, encontra-se na documentação técnica do repositório do projeto \footnote{AlchemonRepositorio}.
 
 \begin{table}[htbp]
     \caption{Resumo dos testes automatizados do Alchemon}
@@ -161,29 +152,20 @@ técnica do repositório do projeto\footnote{AlchemonRepositorio}.
 
 
 \subsubsection{Resultados Alcançados}
-Durante o desenvolvimento, foram implementados sistemas de exploração tridimensional, combate por turnos, captura, progressão e persistência de dados. A documentação técnica descreve correções relacionadas à sincronização dos dados das criaturas durante o combate, à separação entre atributos temporários e permanentes e à sequência de encerramento das batalhas e apresentação das recompensas.
+Durante o desenvolvimento, foram implementados sistemas de exploração tridimensional, combate por turnos, captura, progressão e persistência de dados. A verificação técnica contemplou quatro suítes de testes automatizados, com 65 casos executados e aprovados, além de testes funcionais manuais realizados com aprovação nos ambientes Linux e Windows. Os testes de integração também foram aprovados, indicando o funcionamento conjunto dos sistemas contemplados pelos procedimentos de verificação.
 
-Apesar desses avanços, a execução e a aprovação de todos os testes ainda precisam ser confirmadas. Também não foram realizadas avaliações com estudantes, de modo que os efeitos do jogo sobre o engajamento e a aprendizagem ainda não podem ser afirmados.
+Apesar dos resultados obtidos, a avaliação de desempenho ainda não foi concluída. Parâmetros como taxa de quadros por segundo, tempo de carregamento das cenas e consumo de memória permanecem pendentes de medição. Também não foram realizadas avaliações com estudantes do Ensino Médio, de modo que os efeitos do jogo sobre a aprendizagem e o engajamento ainda não podem ser afirmados.
 
 \subsection{Discussão Crítica e Limitações}
 
-Os resultados documentados demonstram avanços na implementação das estruturas técnicas do Alchemon, especialmente nos sistemas de exploração, combate, captura, progressão e persistência. Entretanto, a documentação dos testes não permite concluir que todos os cenários foram executados e aprovados, nem que o protótipo já esteja pronto para avaliação de sua proposta educacional.
+Os resultados obtidos demonstram que os principais sistemas técnicos do Alchemon foram implementados e submetidos a procedimentos de verificação. Os 65 casos de testes automatizados foram aprovados, assim como os testes funcionais manuais realizados nos ambientes Linux e Windows. A integração entre os sistemas também foi verificada e aprovada. Esses resultados fornecem evidências do funcionamento das funcionalidades contempladas pelos testes realizados.
 
-Uma das limitações corresponde à ausência de medições de desempenho. Embora tenham sido definidos critérios para avaliar a taxa de quadros por segundo, o tempo de carregamento das cenas e o consumo de memória, esses parâmetros ainda não foram mensurados. Além disso, a execução nativa dos artefatos exportados para Windows x86-64 não foi confirmada. Dessa forma, a presença dos arquivos de exportação não permite concluir que o jogo funciona integralmente nessa plataforma.
+Uma limitação técnica corresponde à ausência de medições de desempenho. Embora os testes funcionais e de integração tenham sido aprovados, ainda é necessário avaliar a taxa de quadros por segundo, o tempo de carregamento das cenas e o consumo de memória. Essas medições permitirão caracterizar o comportamento do jogo durante sua execução e identificar possíveis restrições de desempenho nos ambientes utilizados.
 
-Outra limitação está relacionada à abrangência dos testes funcionais. O projeto possui 65 casos de teste automatizados distribuídos em quatro suítes, mas a quantidade de testes implementados não comprova que todos foram executados e aprovados. Também é necessário distinguir a verificação isolada das regras de negócio da confirmação de seu funcionamento integrado à interface e aos demais sistemas do jogo.
+Outra limitação está relacionada à validação da proposta educacional. Não foram realizadas avaliações com estudantes do Ensino Médio, portanto, ainda não existem dados empíricos que permitam determinar se as mecânicas de captura e colecionismo favorecem o engajamento ou a aprendizagem tangencial dos conteúdos relacionados à Tabela Periódica. Aspectos como compreensão das mecânicas, curva de aprendizado, nível de dificuldade e experiência de uso permanecem sem validação junto ao público-alvo.
 
-Por fim, não foram realizadas avaliações com estudantes do Ensino Médio. Assim, ainda não existem dados empíricos que permitam determinar se as mecânicas de captura e colecionismo favorecem o engajamento ou a aprendizagem tangencial dos conteúdos relacionados à Tabela Periódica. Aspectos como compreensão das mecânicas, curva de aprendizado, nível de dificuldade e experiência de uso permanecem sem validação junto ao público-alvo.
-
-Diante dessas limitações, a continuidade do projeto exige a conclusão e integração das funcionalidades planejadas, a execução dos testes nos ambientes Windows e Linux e a realização das medições de desempenho. Posteriormente, será possível conduzir avaliações com estudantes, incluindo testes de usabilidade e instrumentos de avaliação da aprendizagem. Essas etapas permitirão investigar tanto a estabilidade técnica do jogo quanto sua contribuição para os objetivos educacionais propostos.
+Dessa forma, embora os testes funcionais e de integração tenham sido aprovados, a avaliação do projeto ainda requer as medições de desempenho e, posteriormente, a realização de avaliações com estudantes. Essas etapas permitirão investigar tanto o comportamento do jogo em execução quanto sua contribuição para os objetivos educacionais propostos.
 
 \section{CONCLUSÕES}
-Neste trabalho, foi apresentado o desenvolvimento do protótipo do Alchemon, um jogo digital educativo que utiliza mecânicas de captura e colecionismo para abordar elementos e propriedades da Tabela Periódica. Foram implementados sistemas de exploração tridimensional, combate por turnos, captura, progressão das criaturas e persistência de dados. A documentação do projeto registra quatro suítes de testes automatizados, com 65 casos, mas não permite afirmar que todos foram executados e aprovados. Assim, os resultados representam avanços na implementação técnica, embora o desenvolvimento da solução ainda não esteja concluído.
-
-Como principal limitação, destaca-se que a validação realizada se restringiu aos aspectos técnicos e funcionais contemplados pelos testes internos. Não foram realizados testes de usabilidade ou avaliações com estudantes, o que impossibilita determinar, neste momento, se o jogo favorece efetivamente a aprendizagem dos conteúdos de Química. Aspectos como a curva de aprendizado, a compreensão das mecânicas, o nível de dificuldade, o engajamento e a recepção dos jogadores ainda dependem de investigação empírica. Portanto, é necessário distinguir o funcionamento das funcionalidades verificadas da eficácia pedagógica da proposta, que permanece sem comprovação prática.
-
-Como contribuição, o trabalho apresenta uma implementação inicial de um jogo educativo que utiliza mecânicas de captura, coleção e desenvolvimento de criaturas como recursos para abordar elementos da Tabela Periódica. O protótipo e sua arquitetura constituem uma base técnica para a continuidade do projeto. Entretanto, ainda são necessários tempo adicional de desenvolvimento, integração das funcionalidades e validação técnica antes de sua aplicação com o público-alvo. Essa necessidade não implica reduzir o escopo original, mas concluir as etapas previstas antes da avaliação pedagógica.
 
 \subsection{Trabalhos Futuros}
-
-Como trabalhos futuros, o projeto demanda tempo adicional para concluir as funcionalidades planejadas e integrar os diferentes sistemas do jogo. Em seguida, será necessário executar os testes internos, verificar os builds para os sistemas operacionais previstos e avaliar a estabilidade do protótipo. Após essa etapa, uma versão suficientemente completa poderá ser submetida a avaliações com estudantes do Ensino Médio. Os playtests deverão investigar usabilidade, dificuldade, engajamento e aprendizagem dos conteúdos relacionados à Tabela Periódica. Essas avaliações permitirão examinar se as mecânicas de captura, coleção e interação com as criaturas favorecem a aprendizagem tangencial dos conceitos químicos.
