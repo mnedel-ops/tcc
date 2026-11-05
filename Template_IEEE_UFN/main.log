@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.18)  5 NOV 2026 14:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.18)  5 NOV 2026 15:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -786,107 +786,422 @@ File: images/pc.png Graphic file (type png)
 Package pdftex.def Info: images/pc.png  used on input line 114.
 (pdftex.def)             Requested size: 202.3529pt x 114.64296pt.
 ) (./sections/06_conclusao.tex
-Underfull \hbox (badness 3439) in paragraph at lines 18--18
+
+! LaTeX Error: Environment tabularx undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \begin{tabularx}
+                     {\columnwidth}{
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.13 \begin{tabularx}{\columnwidth}
+                                   {
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.13 \begin{tabularx}{\columnwidth}
+                                   {
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Undefined control sequence.
+l.14     >{\raggedright\arraybackslash
+                                      }p{2.1cm}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.18 \toprule
+             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+l.19 \textbf{InformaÃ§Ã£o} &
+                            
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.20 \textbf{Linux} &
+                     
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+<recently read> \midrule 
+                         
+l.22 \midrule
+             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+l.23 Sistema operacional &
+                          
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.24 Arch Linux &
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.27 VersÃ£o do sistema &
+                         
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.28 7.0.9-arch1-1 &
+                    
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.31 Processador &
+                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 3
+2.
+(/usr/share/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+! Misplaced alignment tab character &.
+l.32 IntelÂ® Coreâ„¢ i7-8750H Ã— 12 &
+                                     
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.35 MemÃ³ria RAM &
+                   
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.36 32.0 GiB &
+               
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.39 Placa de vÃ­deo &
+                      
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.40 Nvidia 1060 &
+                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.43 VersÃ£o da Godot &
+                       
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.44 4.6.1.stable &
+                   
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.47 Tipo de compilaÃ§Ã£o &
+                           
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.48 Debug &
+            
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+<recently read> \bottomrule 
+                            
+l.50 \bottomrule
+                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{table} on input line 8 ended by \end{tabularx}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 \end{tabularx}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[6 <./images/main.png> <./images/gameplayExploracao.png> <./images/gameplay.png
+> <./images/pc.png>]
+Underfull \hbox (badness 3439) in paragraph at lines 70--70
 []\T1/ptm/b/n/8 (+20) Teste im-ple-men-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--18
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
 []\T1/ptm/b/n/8 (+20) Integração
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--19
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
 []\T1/ptm/m/n/8 (+20) Não
  []
 
 
-Underfull \hbox (badness 2644) in paragraph at lines 19--19
+Underfull \hbox (badness 2644) in paragraph at lines 71--71
 []\T1/ptm/m/n/8 (+20) Requer ve-ri-
  []
 
 
-Underfull \hbox (badness 4805) in paragraph at lines 19--19
+Underfull \hbox (badness 4805) in paragraph at lines 71--71
 \T1/ptm/m/n/8 (+20) fi-ca-ção in-te-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--20
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
 []\T1/ptm/m/n/8 (+20) Não
  []
 
 
-Underfull \hbox (badness 2644) in paragraph at lines 20--20
+Underfull \hbox (badness 2644) in paragraph at lines 72--72
 []\T1/ptm/m/n/8 (+20) Requer ve-ri-
  []
 
 
-Underfull \hbox (badness 4805) in paragraph at lines 20--20
+Underfull \hbox (badness 4805) in paragraph at lines 72--72
 \T1/ptm/m/n/8 (+20) fi-ca-ção in-te-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--21
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
 []\T1/ptm/m/n/8 (+20) Não
  []
 
 
-Underfull \hbox (badness 2644) in paragraph at lines 21--21
+Underfull \hbox (badness 2644) in paragraph at lines 73--73
 []\T1/ptm/m/n/8 (+20) Requer ve-ri-
  []
 
 
-Underfull \hbox (badness 4805) in paragraph at lines 21--21
+Underfull \hbox (badness 4805) in paragraph at lines 73--73
 \T1/ptm/m/n/8 (+20) fi-ca-ção in-te-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--22
+Underfull \hbox (badness 10000) in paragraph at lines 74--74
 []\T1/ptm/m/n/8 (+20) Não
  []
 
 
-Underfull \hbox (badness 2644) in paragraph at lines 22--22
+Underfull \hbox (badness 2644) in paragraph at lines 74--74
 []\T1/ptm/m/n/8 (+20) Requer ve-ri-
  []
 
 
-Underfull \hbox (badness 4805) in paragraph at lines 22--22
+Underfull \hbox (badness 4805) in paragraph at lines 74--74
 \T1/ptm/m/n/8 (+20) fi-ca-ção in-te-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--23
+Underfull \hbox (badness 10000) in paragraph at lines 75--75
 []\T1/ptm/m/n/8 (+20) Não
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--24
+Underfull \hbox (badness 10000) in paragraph at lines 76--76
 []\T1/ptm/m/n/8 (+20) Não
  []
 
 
-Underfull \hbox (badness 2644) in paragraph at lines 24--24
+Underfull \hbox (badness 2644) in paragraph at lines 76--76
 []\T1/ptm/m/n/8 (+20) Requer ve-ri-
  []
 
 
-Underfull \hbox (badness 4805) in paragraph at lines 24--24
+Underfull \hbox (badness 4805) in paragraph at lines 76--76
 \T1/ptm/m/n/8 (+20) fi-ca-ção in-te-
  []
 
 
-Overfull \hbox (18.7281pt too wide) in paragraph at lines 16--26
+Overfull \hbox (18.7281pt too wide) in paragraph at lines 68--78
  [][] 
  []
 
-[6 <./images/main.png> <./images/gameplayExploracao.png> <./images/gameplay.png
-> <./images/pc.png>] [7]) (./sections/07_bibliography.tex)
+
+LaTeX Warning: Reference `tab:testes_manuais' on page 7 undefined on input line
+ 83.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--98
+[]\T1/ptm/m/n/8 (+20) Inicialização do
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
+[]\T1/ptm/m/n/8 (+20) Movimentação
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
+\T1/ptm/m/n/8 (+20) ade-quada, in-te-ra-ção
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
+\T1/ptm/m/n/8 (+20) com o ce-ná-rio e
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
+[]\T1/ptm/m/n/8 (+20) Processamento das
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
+\T1/ptm/m/n/8 (+20) ações, atu-a-li-za-ção
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
+\T1/ptm/m/n/8 (+20) dos atri-bu-tos e
+ []
+
+
+Overfull \hbox (5.48439pt too wide) in paragraph at lines 94--127
+ [][] 
+ []
+
+
+LaTeX Warning: Reference `tab:testes_automatizados' on page 7 undefined on inpu
+t line 131.
+
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 14
+4.
+(/usr/share/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `pcr' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Overfull \hbox (102.97882pt too wide) in paragraph at lines 140--160
+ [][] 
+ []
+
+[7]) (./sections/07_bibliography.tex) [8]
 Underfull \hbox (badness 4660) in paragraph at lines 36--36
 []\T1/ptm/m/n/10 (+20) Richard M. Ryan e Edward L. Deci. ^^P  Self-
  []
 
-[8]
+[9]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -898,7 +1213,9 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[9] (./main.aux)
+[10
+
+] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -906,6 +1223,9 @@ L3 programming layer <2026-01-19>
 
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
@@ -917,23 +1237,24 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 17636 strings out of 469495
- 316222 string characters out of 5470098
- 995068 words of memory out of 5000000
- 45725 multiletter control sequences out of 15000+600000
- 765750 words of font info for 383 fonts, out of 8000000 for 9000
+ 17773 strings out of 469495
+ 317965 string characters out of 5470098
+ 1003068 words of memory out of 5000000
+ 45797 multiletter control sequences out of 15000+600000
+ 771181 words of font info for 421 fonts, out of 8000000 for 9000
  19 hyphenation exceptions out of 8191
- 68i,10n,69p,1898b,1651s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 68i,10n,69p,1898b,1652s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/urw/tim
-es/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/sh
-are/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/ty
-pe1/urw/times/utmri8a.pfb>
-Output written on main.pdf (9 pages, 2369056 bytes).
+s/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/urw/cou
+rier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/s
+hare/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/
+type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a
+.pfb>
+Output written on main.pdf (10 pages, 2385748 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
- 45 compressed objects within 1 object stream
+ 95 PDF objects out of 1000 (max. 8388607)
+ 50 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 68137 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 78889 words of extra memory for PDF output out of 89155 (max. 10000000)
 

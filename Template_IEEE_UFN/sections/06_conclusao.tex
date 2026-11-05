@@ -5,6 +5,58 @@ Esta seção apresenta os procedimentos de verificação e os resultados obtidos
 \subsection{Ambiente de Testes Funcionais e Verificação de Requisitos}
 O desenvolvimento foi realizado em ambiente Linux, com a engine Godot 4.4.1. A documentação técnica registra testes automatizados com GdUnit4 e descreve cenários adicionais de integração visual. Não há um registro consolidado que comprove a execução de todos os cenários em diferentes sistemas operacionais; por isso, não se apresenta uma comparação entre plataformas.
 
+\begin{table}[!ht]
+\centering
+\caption{Ambientes utilizados nos testes do Alchemon}
+\label{tab:ambientes_teste}
+\scriptsize
+\begin{tabularx}{\columnwidth}{
+    >{\raggedright\arraybackslash}p{2.1cm}
+    X
+    X
+}
+\toprule
+\textbf{Informação} &
+\textbf{Linux} &
+\textbf{Windows} \\
+\midrule
+Sistema operacional &
+Arch Linux &
+Windows 10 \\
+
+Versão do sistema &
+7.0.9-arch1-1 &
+A preencher \\
+
+Processador &
+Intel® Core™ i7-8750H × 12 &
+A preencher \\
+
+Memória RAM &
+32.0 GiB &
+A preencher \\
+
+Placa de vídeo &
+Nvidia 1060 &
+A preencher \\
+
+Versão da Godot &
+4.6.1.stable &
+4.6.1.stable \\
+
+Tipo de compilação &
+Debug &
+Executável \\
+\bottomrule
+\end{tabularx}
+
+\vspace{2mm}
+\begin{minipage}{\columnwidth}
+\scriptsize
+\textit{Fonte: Elaborado pelo autor (2026).}
+\end{minipage}
+\end{table}
+
 \subsection{Matriz de Verificação de Requisitos Funcionais}
 A documentação técnica do repositório registra quatro suítes automatizadas com o GdUnit4, totalizando 65 casos. Os testes abrangem regras relacionadas aos atributos, à captura, às recompensas e à persistência. A existência de um caso de teste não comprova, isoladamente, sua execução ou aprovação.
 
@@ -24,6 +76,90 @@ A documentação técnica do repositório registra quatro suítes automatizadas 
             Persistência de dados & Coberto & Não documentado & Requer verificação integrada \\ \hline
         \end{tabular}
 \end{table}
+
+\subsection{Matriz de Testes Manuais}
+Os testes funcionais manuais foram conduzidos por meio da interação
+direta com o jogo, com o objetivo de verificar o comportamento das
+principais funcionalidades em condições de uso. A Tabela~\ref{tab:testes_manuais}
+resume os procedimentos e os resultados esperados para cada sistema.
+Os resultados obtidos foram registrados individualmente, considerando
+a execução dos procedimentos e a ocorrência de comportamentos
+inesperados.
+
+\begin{table}[htbp]
+    \caption{Resumo dos testes funcionais manuais do Alchemon}
+    \label{tab:testes_manuais}
+    \centering
+    \footnotesize
+    \begin{tabular}{|p{2.3cm}|p{2.5cm}|p{2.7cm}|}
+        \hline
+        \textbf{Funcionalidade} & \textbf{Procedimento} & \textbf{Resultado esperado} \\
+        \hline
+            Inicialização do jogo &
+            Iniciar o jogo e acessar o menu principal. &
+            Exibição do menu e disponibilidade das opções implementadas. \\
+        \hline
+            Exploração &
+            Movimentar o personagem pelo ambiente e utilizar os controles disponíveis. &
+            Movimentação adequada, interação com o cenário e ausência de bloqueios inesperados. \\
+        \hline
+            Interação com criaturas &
+            Aproximar-se de criaturas e acionar as interações disponíveis. &
+            Exibição das informações e respostas correspondentes à interação. \\
+        \hline
+            Captura de criaturas &
+            Utilizar os instrumentos de captura em diferentes situações. &
+            Resolução da tentativa de captura e atualização da coleção conforme o resultado. \\
+        \hline
+            Sistema de combate &
+            Iniciar um combate e executar ações disponíveis. &
+            Processamento das ações, atualização dos atributos e encerramento adequado do combate. \\
+        \hline
+            Evolução das criaturas &
+            Acumular experiência e verificar a evolução de nível. &
+            Atualização do nível e dos atributos conforme as regras implementadas. \\
+        \hline
+            Persistência de dados &
+            Salvar o progresso, encerrar o jogo e carregar os dados novamente. &
+            Recuperação dos dados salvos, incluindo as criaturas e o progresso do jogador. \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\subsection{Matriz dos Testes Automatizados}
+Os testes automatizados foram organizados em quatro suítes, totalizando 65 casos implementados com o framework GdUnit4, conforme apresentado
+na Tabela~\ref{tab:testes_automatizados}. As verificações abrangem os sistemas de evolução, captura, combate e persistência de dados
+das criaturas. A descrição individual dos casos de teste, incluindo seus procedimentos e critérios esperados, encontra-se na documentação
+técnica do repositório do projeto\footnote{AlchemonRepositorio}.
+
+\begin{table}[htbp]
+    \caption{Resumo dos testes automatizados do Alchemon}
+    \label{tab:testes_automatizados}
+    \centering
+    \footnotesize
+    \begin{tabular}{|l|c|p{5.5cm}|}
+        \hline
+        \textbf{Suíte de testes} & \textbf{Casos} & \textbf{Aspectos verificados} \\
+        \hline
+        \texttt{test\_alchemonGrowth.gd} & 4 &
+            Cálculo de atributos, evolução de nível, energia e classificação dos estados físicos das criaturas. \\
+        \hline
+        \texttt{test\_capture\_formula.gd} & 13 &
+            Fórmula de captura, limites de probabilidade, influência dos pontos de vida e compatibilidade dos instrumentos de captura. \\
+        \hline
+        \texttt{test\_battle\_rewards.gd} & 11 &
+            Recompensas de combate, experiência, evolução, apresentação dos resultados e encerramento das batalhas. \\
+        \hline
+        \texttt{test\_creature\_persistence.gd} & 37 &
+            Identificação das criaturas, serialização de dados, sincronização com o combate, inventário e persistência dos dados. \\
+        \hline
+    \textbf{Total} & \textbf{65} &
+    \textbf{4 suítes de testes automatizados com GdUnit4.} \\
+    \hline
+    \end{tabular}
+\end{table}
+
+
 \subsubsection{Resultados Alcançados}
 Durante o desenvolvimento, foram implementados sistemas de exploração tridimensional, combate por turnos, captura, progressão e persistência de dados. A documentação técnica descreve correções relacionadas à sincronização dos dados das criaturas durante o combate, à separação entre atributos temporários e permanentes e à sequência de encerramento das batalhas e apresentação das recompensas.
 
