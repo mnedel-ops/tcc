@@ -2,13 +2,13 @@
 ["bibtex out/main"] 0 "out/main.aux" "out/main.bbl" "out/main" 0 -1
   "./references.bib" 1793725687.93263 17728 b4417a65ba54a58a480663257cdb1829 ""
   "/usr/share/texmf-dist/bibtex/bst/biblatex/biblatex.bst" 1775415801 65510 9a2a51799b543ff279b8ea2dd91ec499 ""
-  "out/main-blx.bib" 1793902182.80275 343 bf1f0c75b5bafd473925320ac9611e26 "pdflatex"
-  "out/main.aux" 1793902182.79775 15515 47be9750291f9bd502b12bdf37e1c459 "pdflatex"
+  "out/main-blx.bib" 1793904234.17915 343 bf1f0c75b5bafd473925320ac9611e26 "pdflatex"
+  "out/main.aux" 1793904234.17315 15515 47be9750291f9bd502b12bdf37e1c459 "pdflatex"
   (generated)
   "out/main.bbl"
   "out/main.blg"
   (rewritten before read)
-["pdflatex"] 1793902179.43533 "/run/media/reis/SDextra/Faculdade/tcc/Template_IEEE_UFN/main.tex" "out/main.pdf" "main" 1793902183.10424 2
+["pdflatex"] 1793904231.3697 "/run/media/reis/SDextra/Faculdade/tcc/Template_IEEE_UFN/main.tex" "out/main.pdf" "main" 1793904234.49465 2
   "/run/media/reis/SDextra/Faculdade/tcc/Template_IEEE_UFN/main.tex" 1793795148.08177 1508 8e1d51d15797def55ea09364e1dc8f2d ""
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1775415801 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1775415801 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -132,9 +132,9 @@
   "images/sdt.png" 1780678769.98091 102242 9df2cc4ee8d37d5fc152692cacd33f62 ""
   "images/tangencial.png" 1782239128.9823 39751 03063c5eb8b023b958e5ecf49571dcdc ""
   "images/tas.png" 1782240401.99253 1656789 2bae119e81f1d9cd80b1310ae4836c00 ""
-  "main.run.xml" 1793898579.51671 2558 a908a2d60c13e141278b32acac88ed16 ""
+  "main.run.xml" 1793902188.68273 2558 a908a2d60c13e141278b32acac88ed16 ""
   "main.tex" 1793795148.08177 1508 8e1d51d15797def55ea09364e1dc8f2d ""
-  "out/main.aux" 1793902182.79775 15515 47be9750291f9bd502b12bdf37e1c459 "pdflatex"
+  "out/main.aux" 1793904234.17315 15515 47be9750291f9bd502b12bdf37e1c459 "pdflatex"
   "out/main.bbl" 1793898379.15971 29689 22f1db12acdedb0192e2c79c9e89c0fc "bibtex out/main"
   "preamble.tex" 1782232252.33781 989 42ea2b87624614189af4befe66d81716 ""
   "sections/00_header.tex" 1782217642.79749 381 bcd798c6ef3f3dc36ad358d19cae74c7 ""
@@ -142,7 +142,7 @@
   "sections/02_introducao.tex" 1793898283.45221 4451 47ce5cd2116140facc758f2a4cd7a78b ""
   "sections/03_secao.tex" 1793898190.80322 8880 f931766e64f45b8aef2fd88d44bc4f80 ""
   "sections/05_metodologia.tex" 1793898562.01931 14072 e342e2082392f6a20eeb21b4ef62eda8 ""
-  "sections/06_conclusao.tex" 1793902178.92677 12917 f34bd10c810a0584153f9ecc4a5449ec ""
+  "sections/06_conclusao.tex" 1793904226.27915 12936 5b58e4d12158a1c668dc5f7ec9cb5fc5 ""
   "sections/07_bibliography.tex" 1773066615.76537 62 df187e92fd7e6dfeb25215f21253d933 ""
   (generated)
   "out/main-blx.bib"

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.18)  5 NOV 2026 15:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.18)  5 NOV 2026 16:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1135,10 +1135,6 @@ Overfull \hbox (18.7281pt too wide) in paragraph at lines 68--78
  []
 
 
-LaTeX Warning: Reference `tab:testes_manuais' on page 7 undefined on input line
- 83.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 98--98
 []\T1/ptm/m/n/8 (+20) Inicialização do
  []
@@ -1177,10 +1173,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--117
 Overfull \hbox (5.48439pt too wide) in paragraph at lines 94--127
  [][] 
  []
-
-
-LaTeX Warning: Reference `tab:testes_automatizados' on page 7 undefined on inpu
-t line 131.
 
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 14
 4.
@@ -1225,9 +1217,6 @@ L3 programming layer <2026-01-19>
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
 (biblatex)                main
 (biblatex)                and rerun LaTeX afterwards.
@@ -1237,13 +1226,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 17773 strings out of 469495
- 317965 string characters out of 5470098
- 1003068 words of memory out of 5000000
+ 17775 strings out of 469495
+ 317983 string characters out of 5470098
+ 1003137 words of memory out of 5000000
  45797 multiletter control sequences out of 15000+600000
- 771181 words of font info for 421 fonts, out of 8000000 for 9000
+ 771313 words of font info for 423 fonts, out of 8000000 for 9000
  19 hyphenation exceptions out of 8191
- 68i,10n,69p,1898b,1652s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 68i,10n,69p,1898b,1651s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/urw/cou
@@ -1251,7 +1240,7 @@ rier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/s
 hare/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/
 type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a
 .pfb>
-Output written on main.pdf (10 pages, 2385748 bytes).
+Output written on main.pdf (10 pages, 2385792 bytes).
 PDF statistics:
  95 PDF objects out of 1000 (max. 8388607)
  50 compressed objects within 1 object stream
