@@ -87,80 +87,40 @@
     \field{year}{2012}
   \endentry
 
-  \entry{Soriano-Sanchez2026}{article}{}{}
-    \name{author}{3}{}{%
-      {{hash=SSJG}{%
-         family={Soriano-Sánchez},
-         familyi={S\bibinithyphendelim S\bibinitperiod},
-         given={José\bibnamedelima Gabriel},
-         giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod},
+  \entry{Plass2020}{book}{}{}
+    \name{editor}{3}{}{%
+      {{hash=PJL}{%
+         family={Plass},
+         familyi={P\bibinitperiod},
+         given={Jan\bibnamedelima L.},
+         giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
       }}%
-      {{hash=LRQ}{%
-         family={López},
-         familyi={L\bibinitperiod},
-         given={Rocío\bibnamedelima Quijano},
-         giveni={R\bibinitperiod\bibinitdelim Q\bibinitperiod},
+      {{hash=MRE}{%
+         family={Mayer},
+         familyi={M\bibinitperiod},
+         given={Richard\bibnamedelima E.},
+         giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
       }}%
-      {{hash=RDA}{%
-         family={Rodríguez},
-         familyi={R\bibinitperiod},
-         given={Diego\bibnamedelima Airado},
-         giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{SSJGLRQRDA1}
-    \strng{fullhash}{SSJGLRQRDA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.3390/educsci16010122
-    \endverb
-    \field{number}{1}
-    \field{pages}{122}
-    \field{title}{The Impact of Game-Based Learning on Motivation,
-  Self-Efficacy, and Academic Achievement in the Natural Sciences: A
-  Meta-Analysis}
-    \field{volume}{16}
-    \field{journaltitle}{Education Sciences}
-    \field{year}{2026}
-  \endentry
-
-  \entry{Espirito2020}{article}{}{}
-    \name{author}{3}{}{%
-      {{hash=SPFDES}{%
-         family={Silva-Pires},
-         familyi={S\bibinithyphendelim P\bibinitperiod},
-         given={Felipe Do Espirito\bibnamedelima Santo},
-         giveni={F\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim
-  E\bibinitperiod\bibinitdelim S\bibinitperiod},
-      }}%
-      {{hash=TVDS}{%
-         family={Trajano},
-         familyi={T\bibinitperiod},
-         given={Valéria Da\bibnamedelima Silva},
-         giveni={V\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim
-  S\bibinitperiod},
-      }}%
-      {{hash=dAJTC}{%
-         prefix={de},
-         prefixi={d\bibinitperiod},
-         family={Araujo-Jorge},
-         familyi={A\bibinithyphendelim J\bibinitperiod},
-         given={Tania\bibnamedelima Cremonini},
-         giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod},
+      {{hash=HBD}{%
+         family={Homer},
+         familyi={H\bibinitperiod},
+         given={Bruce\bibnamedelima D.},
+         giveni={B\bibinitperiod\bibinitdelim D\bibinitperiod},
       }}%
     }
-    \strng{namehash}{SPFDESTVDSAJTCd1}
-    \strng{fullhash}{SPFDESTVDSAJTCd1}
-    \field{labelnamesource}{author}
+    \list{publisher}{1}{%
+      {The MIT Press}%
+    }
+    \strng{namehash}{PJLMREHBD1}
+    \strng{fullhash}{PJLMREHBD1}
+    \field{labelnamesource}{editor}
     \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.21680/1981-1802.2020v58n57id21088
-    \endverb
-    \field{number}{57}
-    \field{title}{A Teoria da Aprendizagem Significativa e o jogo}
-    \field{volume}{58}
-    \field{journaltitle}{Revista Educação em Questão}
+    \field{isbn}{9780262043045}
+    \field{note}{Publicado originalmente no final de 2019, registrado em 2020.}
+    \field{title}{Handbook of Game-Based Learning}
+    \list{location}{1}{%
+      {Cambridge, MA}%
+    }
     \field{year}{2020}
   \endentry
 
@@ -333,78 +293,42 @@
     \field{year}{2021}
   \endentry
 
-  \entry{SilvaFilho2023}{article}{}{}
-    \name{author}{2}{}{%
-      {{hash=dSFTD}{%
-         prefix={da},
-         prefixi={d\bibinitperiod},
-         family={Silva\bibnamedelima Filho},
-         familyi={S\bibinitperiod\bibinitdelim F\bibinitperiod},
-         given={T.\bibnamedelima D.},
-         giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod},
-      }}%
-      {{hash=AJG}{%
-         family={Aquino},
-         familyi={A\bibinitperiod},
-         given={J.\bibnamedelima G.},
+  \entry{Soriano-Sanchez2026}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=SSJG}{%
+         family={Soriano-Sánchez},
+         familyi={S\bibinithyphendelim S\bibinitperiod},
+         given={José\bibnamedelima Gabriel},
          giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod},
       }}%
+      {{hash=LRQ}{%
+         family={López},
+         familyi={L\bibinitperiod},
+         given={Rocío\bibnamedelima Quijano},
+         giveni={R\bibinitperiod\bibinitdelim Q\bibinitperiod},
+      }}%
+      {{hash=RDA}{%
+         family={Rodríguez},
+         familyi={R\bibinitperiod},
+         given={Diego\bibnamedelima Airado},
+         giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
     }
-    \list{publisher}{1}{%
-      {Abraptec}%
-    }
-    \strng{namehash}{SFTDdAJG1}
-    \strng{fullhash}{SFTDdAJG1}
+    \strng{namehash}{SSJGLRQRDA1}
+    \strng{fullhash}{SSJGLRQRDA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \verb{doi}
-    \verb 10.28173/2179-33012023v23e39647
+    \verb 10.3390/educsci16010122
     \endverb
-    \field{eid}{e39647}
-    \field{pages}{1\bibrangedash 22}
-    \field{title}{Os Usos da Tabela Periódica no Campo Escolar: Um Estudo
-  Sobre o Ensino da Química em Dois Periódicos}
-    \field{volume}{23}
-    \field{journaltitle}{Revista Brasileira de Pesquisa em Educação em
-  Ciências (RBPEC)}
-    \field{year}{2023}
-  \endentry
-
-  \entry{Plass2020}{book}{}{}
-    \name{editor}{3}{}{%
-      {{hash=PJL}{%
-         family={Plass},
-         familyi={P\bibinitperiod},
-         given={Jan\bibnamedelima L.},
-         giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
-      }}%
-      {{hash=MRE}{%
-         family={Mayer},
-         familyi={M\bibinitperiod},
-         given={Richard\bibnamedelima E.},
-         giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
-      }}%
-      {{hash=HBD}{%
-         family={Homer},
-         familyi={H\bibinitperiod},
-         given={Bruce\bibnamedelima D.},
-         giveni={B\bibinitperiod\bibinitdelim D\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {The MIT Press}%
-    }
-    \strng{namehash}{PJLMREHBD1}
-    \strng{fullhash}{PJLMREHBD1}
-    \field{labelnamesource}{editor}
-    \field{labeltitlesource}{title}
-    \field{isbn}{9780262043045}
-    \field{note}{Publicado originalmente no final de 2019, registrado em 2020.}
-    \field{title}{Handbook of Game-Based Learning}
-    \list{location}{1}{%
-      {Cambridge, MA}%
-    }
-    \field{year}{2020}
+    \field{number}{1}
+    \field{pages}{122}
+    \field{title}{The Impact of Game-Based Learning on Motivation,
+  Self-Efficacy, and Academic Achievement in the Natural Sciences: A
+  Meta-Analysis}
+    \field{volume}{16}
+    \field{journaltitle}{Education Sciences}
+    \field{year}{2026}
   \endentry
 
   \entry{Li2024}{article}{}{}
@@ -755,6 +679,45 @@
     \field{year}{1963}
   \endentry
 
+  \entry{Espirito2020}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=SPFDES}{%
+         family={Silva-Pires},
+         familyi={S\bibinithyphendelim P\bibinitperiod},
+         given={Felipe Do Espirito\bibnamedelima Santo},
+         giveni={F\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim
+  E\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=TVDS}{%
+         family={Trajano},
+         familyi={T\bibinitperiod},
+         given={Valéria Da\bibnamedelima Silva},
+         giveni={V\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim
+  S\bibinitperiod},
+      }}%
+      {{hash=dAJTC}{%
+         prefix={de},
+         prefixi={d\bibinitperiod},
+         family={Araujo-Jorge},
+         familyi={A\bibinithyphendelim J\bibinitperiod},
+         given={Tania\bibnamedelima Cremonini},
+         giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SPFDESTVDSAJTCd1}
+    \strng{fullhash}{SPFDESTVDSAJTCd1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.21680/1981-1802.2020v58n57id21088
+    \endverb
+    \field{number}{57}
+    \field{title}{A Teoria da Aprendizagem Significativa e o jogo}
+    \field{volume}{58}
+    \field{journaltitle}{Revista Educação em Questão}
+    \field{year}{2020}
+  \endentry
+
   \entry{Custodio2015}{article}{}{}
     \name{author}{4}{}{%
       {{hash=CF}{%
@@ -1006,6 +969,43 @@
       {Sudbury, Massachusetts}%
     }
     \field{year}{2009}
+  \endentry
+
+  \entry{SilvaFilho2023}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=dSFTD}{%
+         prefix={da},
+         prefixi={d\bibinitperiod},
+         family={Silva\bibnamedelima Filho},
+         familyi={S\bibinitperiod\bibinitdelim F\bibinitperiod},
+         given={T.\bibnamedelima D.},
+         giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=AJG}{%
+         family={Aquino},
+         familyi={A\bibinitperiod},
+         given={J.\bibnamedelima G.},
+         giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Abraptec}%
+    }
+    \strng{namehash}{SFTDdAJG1}
+    \strng{fullhash}{SFTDdAJG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.28173/2179-33012023v23e39647
+    \endverb
+    \field{eid}{e39647}
+    \field{pages}{1\bibrangedash 22}
+    \field{title}{Os Usos da Tabela Periódica no Campo Escolar: Um Estudo
+  Sobre o Ensino da Química em Dois Periódicos}
+    \field{volume}{23}
+    \field{journaltitle}{Revista Brasileira de Pesquisa em Educação em
+  Ciências (RBPEC)}
+    \field{year}{2023}
   \endentry
 \enddatalist
 \endinput

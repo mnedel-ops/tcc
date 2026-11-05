@@ -1,0 +1,273 @@
+--- a/Template_IEEE_UFN/sections/02_introducao.tex
++++ b/Template_IEEE_UFN/sections/02_introducao.tex
+@@ -1,46 +1,30 @@
+ \section{INTRODUÇÃO}
+-A sociedade contemporânea vivencia uma fase de transformações profundas no campo educacional, em que o ensino tradicional enfrenta o desafio de se adaptar às novas linguagens e dinâmicas da era digital \cite{Bellotti2010}.
+-Nesse cenário, a inserção das Tecnologias de Informação e Comunicação (TICs) e, especificamente, do \textit{Game-Based Learning} (GBL), tem se consolidado como uma estratégia de mediação pedagógica eficaz para aumentar o engajamento discente \cite{Turkay2012}.
+-Os jogos digitais, ao integrarem elementos lúdicos a objetivos de instrução, deixaram de ser meros artefatos de entretenimento para se tornarem ambientes complexos de construção de conhecimento e desenvolvimento de habilidades críticas \cite{Soriano-Sanchez2026}.
+-Essa evolução tecnológica permite criar contextos situados onde o aprendizado ocorre imersivamente, assim supera as limitações de modelos puramente expositivos e proporciona experiências que favorecem a retenção de informações a longo prazo \cite{Bellotti2010,Espirito2020}.
++Os jogos digitais podem integrar objetivos de aprendizagem a experiências interativas, oferecendo contextos nos quais o estudante explora conteúdos por meio de desafios e decisões. Essa abordagem, conhecida como Aprendizagem Baseada em Jogos (	extit{Game-Based Learning} — GBL), tem sido investigada como estratégia de mediação pedagógica e de engajamento discente \cite{Bellotti2010,Turkay2012,Plass2020}.
+ 
+-Contudo, a despeito do potencial das novas tecnologias, os índices de desempenho escolar em áreas fundamentais permanecem em patamares alarmantes.
+-No âmbito das ciências da natureza, o relatório do PISA 2022 revela um déficit quantitativo significativo no sistema educacional brasileiro, no qual a pontuação média em ciências fixou-se em 403 pontos, valor substancialmente abaixo da média da OCDE, de 485 pontos.
+-De forma mais crítica, os dados estatísticos indicam que apenas cerca de 45\% dos estudantes brasileiros atingiram o nível mínimo de proficiência em ciências (Nível 2). 
+-Isso implica que a maioria absoluta dos jovens não consegue reconhecer explicações corretas para fenômenos científicos familiares ou identificar se uma conclusão é válida com base em dados simples, reflete uma estagnação no letramento científico que persiste há mais de uma década \cite{OECD2023}.
++No Brasil, os resultados do PISA 2022 indicam que a pontuação média dos estudantes em Ciências foi de 403 pontos, abaixo da média de 485 pontos dos países da OCDE. Além disso, cerca de 45\% dos estudantes brasileiros alcançaram ao menos o nível 2 de proficiência. Esse indicador oferece um panorama das dificuldades mais amplas na aprendizagem científica, embora não avalie especificamente o domínio da Tabela Periódica \cite{OECD2023}.
+ 
+-Este déficit de aprendizagem é particularmente acentuado no ensino de Química, disciplina frequentemente percebida pelos estudantes como um domínio de excessiva abstração e complexidade \cite{Latonio2023,Lackey2022}. 
+-O estudo de tópicos fundantes, como a Atomística e a Tabela Periódica, é marcado por uma aversão histórica por parte dos alunos, frequentemente agravada por práticas pedagógicas que priorizam a recepção passiva e a memorização mecânica de símbolos, fórmulas e tendências periódicas. 
+-Tais métodos tradicionais resultam em sobrecarga cognitiva e falham ao tentar estabelecer conexões entre as estruturas microscópicas e os fenômenos do cotidiano, e gera uma fragmentação do conhecimento.
+-A frustração das necessidades psicológicas básicas de autonomia e competência dos estudantes culmina em um cenário de baixo engajamento e desinteresse pela continuidade dos estudos na área \cite{Lima2010}.
+-Diante dessa conjuntura, manifesta-se uma necessidade latente de ferramentas lúdicas e interativas que realizem a transposição didática de conceitos químicos para sistemas digitais integrados, capazes de preencher essa lacuna pedagógica e transformar o esforço intelectual em um processo volitivo e significativo \cite{Han2021,Latonio2023}.
++No ensino de Química, conteúdos como Atomística e Tabela Periódica podem representar dificuldades devido ao nível de abstração e à necessidade de compreender relações entre propriedades dos elementos, modelos microscópicos e fenômenos observáveis \cite{Latonio2023,Lackey2022}. Abordagens centradas na memorização de símbolos, fórmulas e tendências periódicas podem limitar a construção dessas relações e o envolvimento dos estudantes com o conteúdo \cite{Lima2010}. Nesse contexto, jogos digitais constituem uma possibilidade a ser investigada para apresentar conceitos químicos por meio de sistemas interativos, sem pressupor que sua utilização, por si só, assegure a aprendizagem \cite{Han2021,Latonio2023}.
+ 
+-Nesta seção, define-se os objetivos do projeto, justifica-se a escolha de jogos sérios como solução pedagógica e apresenta-se a delimitação do problema.
++Nesta seção, apresentam-se os objetivos, a justificativa e a delimitação do projeto.
+ 
+ \subsection{Objetivo geral}
+-Desenvolver o jogo sério Alchemon, por meio de mecânicas de captura e colecionismo de criaturas como estratégia para promover a aprendizagem tangencial e o engajamento volitivo de estudantes do Ensino Médio no domínio da Tabela Periódica.
++Propor e desenvolver o jogo educativo Alchemon, utilizando mecânicas de captura e colecionismo, para promover a aprendizagem tangencial e o engajamento de estudantes do Ensino Médio com os conceitos e elementos da Tabela Periódica.
+ 
+ \subsection{Objetivos específicos}
+-Para a consecução do objetivo geral e o desenvolvimento do jogo sério Alchemon, estabelecem-se os seguintes objetivos específicos:
++Para alcançar o objetivo geral, estabelecem-se os seguintes objetivos específicos:
+ \begin{itemize}
+-    \item Investigar o estado da arte e as fragilidades no ensino de Química para o Ensino Médio, correlacionando-as aos referenciais de engajamento volitivo da Teoria da Autodeterminação (SDT) e da Aprendizagem Significativa (TAS);
+-    \item Mapear as propriedades físico-químicas e tendências periódicas dos elementos químicos para a transposição didática em arquétipos e atributos de criaturas colecionáveis;
+-    \item Projetar a arquitetura do jogo por meio de um \textit{Game Design Document} (GDD), definir mecânicas de captura e colecionismo que operem como organizadores prévios alinhados aos níveis de \enquote{Lembrar} e \enquote{Entender} da Taxonomia de Bloom;
+-    \item Desenvolver o protótipo funcional do jogo em um motor de jogos, como Unity ou Godot, programar sistemas de \textit{feedback} imediato e ciclos de maestria para satisfazer a necessidade de competência do jogador;
+-    \item Implementar ferramentas de aprendizagem tangencial, como enciclopédias \textit{in-game} e espaços informativos, visando estimular a pesquisa autodidata sobre o conteúdo científico fora do ambiente virtual.
++    \item Examinar estudos sobre as dificuldades de aprendizagem de Química e sobre o uso de jogos digitais em contextos educacionais;
++    \item Identificar propriedades e tendências periódicas que possam ser representadas nas criaturas e nas regras do jogo;
++    \item Definir o conceito, os requisitos e as mecânicas do Alchemon por meio de um \textit{Game Design Document} (GDD);
++    \item Implementar os sistemas centrais do protótipo tridimensional, incluindo exploração, captura, combate e progressão;
++    \item Verificar internamente os sistemas implementados e documentar as limitações que precisam ser resolvidas antes de avaliações com estudantes.
+ \end{itemize}
+ 
+ \subsection{Justificativa}
+-O ensino de Química no Ensino Médio, particularmente no que tange ao domínio da Tabela Periódica e da atomística, enfrenta desafios críticos relacionados à excessiva abstração dos conteúdos e ao baixo engajamento dos estudantes \cite{Latonio2023}. 
+-Métodos tradicionais baseados na recepção passiva falham em promover a compreensão das relações entre os níveis macroscópico e microscópico da matéria, o que resulta em uma memorização mecânica que compromete a retenção do conhecimento a longo prazo \cite{Lima2010}.
+-
+-Dados do PISA \cite{OECD2023} e avaliações nacionais corroboram um cenário de desinteresse generalizado pelas ciências básicas \cite{SilvaFilho2023}. 
+-Nesse panorama, a Aprendizagem Baseada em Jogos (GBL) \cite{Plass2020} surge como uma ferramenta de intervenção pedagógica necessária, que apresenta um tamanho de efeito superior aos meios convencionais para o ensino de ciências naturais \cite{Soriano-Sanchez2026}.
+-Os jogos digitais oferecem ambientes imersivos nos quais a cognição situada permite que o aprendizado ocorra dentro de um contexto funcional \cite{Bellotti2010}, que facilitam a transposição didática por meio de desafios progressivos \cite{Li2024}.
++A escolha do formato de jogo educativo decorre da possibilidade de associar conteúdos químicos a objetivos, decisões e desafios presentes na experiência de jogo. Estudos sobre aprendizagem baseada em jogos discutem o potencial dessa abordagem para apoiar o ensino de Ciências, embora seus resultados dependam da qualidade da integração entre conteúdo, mecânicas e contexto de aplicação \cite{Plass2020,Soriano-Sanchez2026}. O Alchemon explora essa possibilidade por meio da representação de elementos químicos como criaturas colecionáveis e de regras inspiradas em propriedades periódicas \cite{Bellotti2010,Li2024}.
+ 
+ \subsection{Delimitação do Estudo}
+-O presente projeto delimita-se ao planejamento e design instrucional dos conteúdos programáticos iniciais de Química Geral e Físico-Química, convergindo as diretrizes da Base Nacional Comum Curricular (BNCC) para o Ensino Médio \cite{BNCC26} e o referencial internacional \textit{Cambridge IGCSE Chemistry} \cite{igcse_chemistry_2023}. O escopo pedagógico do jogo \textit{Alchemon} compreende especificamente os módulos de: (i) Estados da Matéria e Modelos Atômicos; (ii) Tabela Periódica e Propriedades Periódicas; (iii) Ligações Químicas (Iônica, Covalente e Metálica). 
+-
+-Estão explicitamente excluídos deste ciclo inicial de desenvolvimento os tópicos avançados de Termoquímica, Cinética, Equilíbrio Químico e Química Orgânica. Essa delimitação justifica-se pela necessidade de consolidar um Produto Mínimo Viável (MVP) que valide a arquitetura lúdico-pedagógica proposta, assegurando a profundidade mecânica necessária para a compreensão das relações estequiométricas antes da expansão para outras áreas da disciplina.
++O projeto toma como referência as orientações da Base Nacional Comum Curricular para o Ensino Médio \cite{BNCC26} e o currículo \textit{Cambridge IGCSE Chemistry} \cite{igcse_chemistry_2023}. O protótipo aborda elementos da Tabela Periódica e propriedades periódicas por meio de criaturas e mecânicas de jogo. A implementação ainda não corresponde a uma solução pedagógica concluída: são necessárias a integração das funcionalidades planejadas, a verificação técnica do protótipo e avaliações posteriores com estudantes do Ensino Médio.
+ 
+ \subsection{Estrutura do trabalho}
++O artigo está organizado da seguinte forma: a Seção II apresenta o referencial teórico; a Seção III descreve a metodologia; as seções seguintes caracterizam o problema e a solução desenvolvida; a seção de resultados discute o estado do protótipo e suas limitações; por fim, são apresentadas as conclusões e os trabalhos futuros.
+--- a/Template_IEEE_UFN/sections/03_secao.tex
++++ b/Template_IEEE_UFN/sections/03_secao.tex
+@@ -1,5 +1,5 @@
+ \section{REFERENCIAL TEÓRICO}
+-Neste tópico, apresenta-se o referencial teórico que fundamenta esta pesquisa. Conceituam-se as principais teorias que serviram de fundação para o \textit{game design} e elementos do game design, definição do gênero e de jogos sérios.
++Nesta seção, apresenta-se o referencial teórico que fundamenta o projeto, com ênfase no gênero \textit{Creature Capture}, nas teorias de motivação e aprendizagem e no uso de jogos digitais em contextos educacionais.
+ 
+ \subsection{Game Design}
+ O gênero \textit{Creature Capture}, também conhecido como \textit{Monster Taming}, constitui uma subcategoria dos jogos de \textit{Role-Playing Games} (RPG) cujo ciclo de jogo é centrado em capturar, colecionar, treinar e combater com as criaturas capturadas. Consolidado por franquias como \textit{Pokémon} e \textit{Digimon}, esse gênero diferencia-se dos RPGs tradicionais ao transferir parte do protagonismo do jogador para as criaturas que atuam como parceiras e extensões de suas capacidades estratégicas no mundo virtual.
+@@ -22,12 +22,12 @@
+ 
+ Ao aprofundar a análise da SDT no contexto lúdico, a Teoria da Integração Organísmica (OIT) \cite{Ryan2022} explica como comportamentos inicialmente motivados por fatores externos podem ser internalizados e integrados ao \textit{self}. Para que essa transição ocorra, o ambiente de jogo deve possuir uma significância funcional informacional \cite{Gao2024}, na qual o jogador percebe o \textit{feedback} e as recompensas como suportes à sua competência, e não como mecanismos de controle. 
+ 
+-Estudos indicam que o uso de recompensas pode minar a motivação intrínseca se forem compreendidas como controladoras, por reduzir a autonomia do jogador \cite{Ryan2022}. Inversamente, recompensas intrínsecas, que oferecem novas habilidades ou acesso a conteúdos, reforçam o engajamento volitivo \cite{Ryan2022}, definido como o estado de envolvimento ativo e focado no jogo. Além disso, a satisfação das necessidades é mutuamente informativa, pois a competência só gera motivação de alta qualidade quando acompanhada por um senso de autonomia, permitindo que o jogador sinta-se o \textit{locus} de causalidade de seu sucesso \cite{Ryan1985, Gao2024}.
++Estudos indicam que o uso de recompensas pode reduzir a motivação intrínseca quando é percebido como controlador, pois limita a autonomia do jogador \cite{Ryan2022}. Em contrapartida, recompensas que oferecem novas habilidades ou acesso a conteúdos podem apoiar o engajamento quando são percebidas como informativas, e não como mecanismos de controle \cite{Ryan2022}. A satisfação da necessidade de competência também depende da autonomia, para que o jogador reconheça sua participação nas próprias conquistas \cite{Ryan1985, Gao2024}.
+ 
+ \subsection{Teoria da Aprendizagem Significativa (TAS) e organizadores prévios}
+ David Ausubel fundamentou a Aprendizagem Significativa (TAS) \cite{Ausubel1963} no princípio de que novas ideias são assimiladas apenas quando ancoradas em conhecimentos prévios estáveis, processo denominado subsunção \cite{Espirito2020}. Para mitigar o distanciamento entre o que o estudante já sabe e o material novo, Ausubel \cite{Ausubel1963} propôs o uso de organizadores prévios, que são materiais introdutórios apresentados em um nível mais alto de abstração e generalidade. Esses materiais servem como pontes conceituais para destacar a importância do novo conteúdo \cite{Custodio2015}. No \textit{design} de jogos, isso se manifesta em tutoriais que apresentam a estrutura do sistema antes da complexidade total, permitindo a diferenciação progressiva do conhecimento \cite{Espirito2020, Custodio2015}.
+ 
+-Recentes revisões críticas da TAS, fundamentadas em avanços da neurociência, sugerem que a memória não é um constructo estático, mas um processo dinâmico e generativo \cite{Bryce2024}. Sob esta ótica, a aprendizagem significativa não envolve a substituição de concepções intuitivas, conhecidas como alternativas, mas sim um processo de coexistência conceitual e revisão. Nesse processo, o aprendiz desenvolve a habilidade de selecionar o repertório (\textit{scaffolding}), seja ele cotidiano ou científico, mais adequado à situação imediata. Em vez de apenas suportes temporários (\textit{scaffolding}), propõe-se o uso de \textit{cantilevers} conceituais , que são estruturas de apoio permanentes baseadas no conhecimento prévio que sustentam a construção de novos saberes \cite{Bryce2024}. Tal analogia pode ser compreendiada na Fig. \ref{fig:tas}.
++Recentes revisões críticas da TAS, fundamentadas em avanços da neurociência, sugerem que a memória não é um constructo estático, mas um processo dinâmico e generativo \cite{Bryce2024}. Sob esta ótica, a aprendizagem significativa não envolve a substituição de concepções intuitivas, conhecidas como alternativas, mas sim um processo de coexistência conceitual e revisão. Nesse processo, o aprendiz desenvolve a habilidade de selecionar o repertório (\textit{scaffolding}), seja ele cotidiano ou científico, mais adequado à situação imediata. Em vez de apenas suportes temporários (\textit{scaffolding}), propõe-se o uso de \textit{cantilevers} conceituais, estruturas de apoio baseadas no conhecimento prévio que sustentam a construção de novos saberes \cite{Bryce2024}. Essa analogia está representada na Fig. \ref{fig:tas}.
+ 
+ \begin{figure}[H]
+     \centering
+--- a/Template_IEEE_UFN/sections/05_metodologia.tex
++++ b/Template_IEEE_UFN/sections/05_metodologia.tex
+@@ -1,5 +1,5 @@
+ \section{METODOLOGIA}
+-A execução do projeto fundamentou-se no Ciclo Básico de Produção de Jogos proposto por Heather Chandler \cite{Chandler2009}, Fig. \ref{fig:ciclochandler}, que adotou uma abordagem cíclica e iterativa. A escolha dessa metodologia justificou-se pela necessidade de equilibrar a fidelidade científica com a jogabilidade de um jogo sério eficaz.
++A metodologia adotada baseia-se no Ciclo Básico de Produção de Jogos proposto por Heather Chandler \cite{Chandler2009}, apresentado na Fig. \ref{fig:ciclochandler}. O modelo organiza o desenvolvimento em etapas de pré-produção, produção e pós-produção, com ciclos de avaliação e ajuste. Essa abordagem orienta as atividades de concepção, implementação e verificação do protótipo.
+ 
+ \begin{figure}[h]
+     \centering
+@@ -7,32 +7,29 @@
+     \caption{Ciclo Básico de Produção de Jogos. Fonte: adaptado de \cite{Chandler2009}.}
+     \label{fig:ciclochandler}
+ \end{figure}
+-Na etapa de pré-produção, foi definido o escopo pedagógico do projeto, delimitado pelos conteúdos de Química Geral. Nessa fase, também foram realizados o levantamento de requisitos e a elaboração da documentação de apoio, representada pelo *Game Design Document* (GDD), que registrou as diretrizes e características do jogo.
++Na pré-produção, foram definidos o conceito do jogo, o escopo inicial dos conteúdos químicos, os requisitos funcionais e as diretrizes registradas no \textit{Game Design Document} (GDD). Essa etapa também orientou a seleção das mecânicas de captura, coleção e combate.
+ 
+-Na etapa de produção, os requisitos estabelecidos na fase anterior foram implementados conforme as especificações documentadas no GDD. Em paralelo ao desenvolvimento, foram conduzidos testes internos de qualidade, com o objetivo de verificar o funcionamento dos recursos implementados e identificar possíveis inconsistências. Entre os testes realizados, destacam-se: [inserir lista de testes].
++Na produção, os sistemas foram implementados de forma incremental com a engine Godot 4 e a linguagem GDScript. A implementação abrange exploração tridimensional, encontros, captura, combate por turnos, progressão das criaturas e persistência dos dados. Em paralelo, foram desenvolvidos testes automatizados para verificar regras de negócio e fluxos de dados.
+ 
+-Por fim, na etapa de pós-produção, foram analisados os resultados de cada ciclo de desenvolvimento. Essa avaliação permitiu identificar aspectos que necessitavam de ajustes e definir melhorias para o *sprint* seguinte, mantendo o caráter iterativo do processo.
++Na pós-produção de cada ciclo, os resultados da implementação e das verificações disponíveis orientaram a identificação de falhas e a definição de ajustes para o ciclo seguinte. O processo permaneceu iterativo, com retorno à implementação quando uma verificação apontava comportamento divergente do esperado.
+ 
+ 
+ \subsection{Produção e transposição didática}
+-A seleção dos conteúdos para o \textit{Alchemon} foi estruturada para refletir as competências de análise de fenômenos naturais da BNCC (competência EM13CNT201 da BNCC) \cite{BNCC26}, utilizando a clareza prática e experimental do currículo internacional IGCSE \cite{igcse_chemistry_2023}. 
++A seleção dos conteúdos considera as orientações da Base Nacional Comum Curricular para o Ensino Médio \cite{BNCC26} e o referencial \textit{Cambridge IGCSE Chemistry} \cite{igcse_chemistry_2023}. No protótipo, a transposição didática ocorre principalmente por meio da representação de elementos químicos como criaturas e da associação de propriedades periódicas a atributos utilizados no combate.
+ 
+-No sistema de jogo, essa progressão curricular dita a curva de dificuldade e o desbloqueio de mecânicas:
++Essas correspondências devem ser compreendidas como abstrações lúdicas destinadas a estabelecer associações entre o conteúdo químico e as regras do jogo, e não como equivalências científicas entre grandezas. A implementação atual não permite afirmar que todos os conteúdos previstos no planejamento curricular estejam contemplados ou que a proposta já tenha sido validada como estratégia de aprendizagem.
+ \begin{itemize}
+-    \item Atomística e Tabela Periódica: Estruturam as propriedades fundamentais das criaturas (\textit{status} base de HP, ataque e defesa determinados por raio atômico e eletronegatividade).
+-    \item Ligações Químicas: Atuam como sistemas de sinergia em batalhas de equipe e mecânicas de evolução por fusão (combinação de elementos para formar substâncias iônicas ou covalentes).
++    \item A massa atômica serve como referência para os pontos de vida; a eletronegatividade, para o ataque; e a energia de ionização, para a defesa;
++    \item As categorias Metal, Metaloide e Ametal organizam um ciclo de efetividade entre ataques;
++    \item Os pontos de fusão e ebulição são utilizados para determinar estados físicos e reações à temperatura da arena.
+ \end{itemize}
+ 
+-O diferencial desta etapa reside na transformação das propriedades periódicas em regras de mecânica e atributos sistêmicos, de modo que o domínio das leis da Química se torne condição essencial para o sucesso estratégico no jogo. As mecânicas e a fundamentação teórica serão expandidas no \textit{High-Concept Document} (HCD) anexado.
++\subsection{Desenvolvimento dos Testes Funcionais Internos (QA - Quality Assurance)}
++A verificação interna do Alchemon utiliza testes automatizados desenvolvidos com o GdUnit4, ferramenta de testes para Godot 4. A documentação técnica do repositório registra quatro suítes, com 65 casos voltados a atributos, captura, recompensas, persistência, integração e continuidade da sessão. Esses casos foram concebidos para verificar regras de negócio e consistência dos dados.
+ 
+-\subsection{Desenvolvimento dos Testes Funcionais Internos (QA - Quality Assurance)}
+-A verificação do Alchemon foi conduzida por meio de testes funcionais internos de Garantia de Qualidade (QA), realizados durante o desenvolvimento do protótipo. Os testes tiveram como objetivo verificar o funcionamento das mecânicas implementadas e sua conformidade com os requisitos funcionais definidos para o projeto. Não foram realizados \textit{playtests} com estudantes nesta etapa.
++É necessário distinguir a existência dos casos automatizados de sua execução e aprovação. A documentação também identifica cenários de integração visual que dependem da execução das cenas no Godot. Não foram realizadas avaliações com estudantes do Ensino Médio, e os testes automatizados não medem, por si só, aprendizagem, usabilidade ou engajamento.
+ 
+-O protocolo de testes considerou a verificação dos requisitos funcionais, a identificação de erros de execução e travamentos, o tempo de resposta das funcionalidades, a estabilidade da taxa de quadros (FPS). Os critérios de aceite foram definidos com base no comportamento esperado de cada funcionalidade e na ausência de falhas que impedissem sua utilização.
+-
+-Os testes automatizados foram desenvolvidos com o \textit{framework} GdUnit4, exclusivo do motor Godot 4.
+-
+-O processo de QA seguiu um ciclo iterativo: quando um teste identificava uma falha, o item retornava à etapa de desenvolvimento para correção ou refatoração do código. Após a alteração, o teste era executado novamente para verificar se o problema havia sido resolvido e se a correção não havia comprometido outras funcionalidades.
++Quando uma verificação identifica uma falha, o comportamento correspondente retorna à etapa de desenvolvimento para correção. Após a alteração, o caso pertinente deve ser executado novamente, inclusive para verificar possíveis regressões.
+ \section{IDENTIFICAÇÃO E DESCRIÇÃO DO PROBLEMA}
+ 
+ O ensino da Tabela Periódica apresenta dificuldades relacionadas à memorização de símbolos, propriedades e tendências químicas. Por ser um conteúdo abstrato, sua abordagem baseada principalmente na memorização pode dificultar a compreensão das relações entre os elementos químicos \cite{Latonio2023,Lima2010}.
+@@ -72,11 +69,7 @@
+ 
+ Cada Alchemon pertence a uma das três categorias: Metal, Metaloide ou Ametal. A relação entre elas segue um ciclo de vantagens: Metal possui vantagem sobre Metaloide, Metaloide sobre Ametal e Ametal sobre Metal. Quando um ataque possui vantagem de categoria, seu dano recebe um multiplicador de 1,5; quando o alvo apresenta resistência, o multiplicador é de 0,66; e, em situações neutras, aplica-se o multiplicador de 1,0. Essa organização estabelece uma relação estratégica entre a composição da equipe e a escolha dos ataques durante os confrontos.
+ 
+-Os atributos das criaturas também estabelecem correspondências com propriedades químicas. A vida utiliza a massa atômica como referência; o ataque relaciona-se à eletronegatividade; a defesa, à energia de ionização; a velocidade mecânica, à velocidade cinética; e a energia de ação, à quantidade de elétrons de valência. Essas associações orientam a definição dos valores e das características das criaturas, convertendo propriedades da Tabela Periódica em parâmetros utilizados pelo sistema de combate.
+-
+-O sistema também contempla a formação de misturas e compostos entre as criaturas aliadas em campo. Nas misturas, as duas criaturas permanecem como unidades independentes e continuam disponíveis como alvos individuais. Como efeito do vínculo, cada uma recebe um incremento fixo de oito pontos em todos os atributos. Nos compostos, por sua vez, duas ou mais criaturas estabelecem uma ligação química representada por um vínculo entre seus elementos. A formação exige que o jogador possua as quantidades necessárias de cada elemento e verifique a possibilidade da combinação com base na regra do octeto. O jogo informa se a combinação proposta é quimicamente possível, sem apresentar diretamente a resposta.
+-
+-Durante um composto, a criatura classificada como ânion concentra as ações do par e recebe um bônus equivalente a 70% dos atributos do cátion. A criatura classificada como cátion permanece visível na arena, mas não pode ser alvejada nem receber dano. Em ligações covalentes, nas quais a classificação entre ânion e cátion não se aplica da mesma maneira, a criatura de maior nível assume a função ativa. A ruptura do vínculo pode ocorrer pelo superaquecimento da arena, relacionando a mecânica à energia de dissociação da ligação química.
++Os atributos das criaturas estabelecem associações lúdicas com propriedades químicas. A massa atômica serve como referência para os pontos de vida; a eletronegatividade, para o ataque; a energia de ionização, para a defesa; e os elétrons de valência, para a energia de ação. A velocidade mecânica é um parâmetro de jogo. Essas associações não representam relações físicas diretas entre as grandezas, mas uma forma de relacionar características dos elementos às regras de combate.
+ 
+ Os valores finais dos atributos consideram os valores básicos da espécie, o nível, as características individuais e a personalidade da criatura. A experiência acumulada permite subir de nível, com ajustes nos atributos e nos limites de vida e energia. O sistema também considera os estados físicos sólido, líquido e gasoso, determinados pelos pontos de fusão e ebulição de cada espécie. Durante o combate, a temperatura da arena pode alterar esses estados e produzir efeitos sobre as criaturas.
+ \subsubsection{Outros Sistemas}
+@@ -84,11 +77,11 @@
+ 
+ A persistência em arquivos JSON mantém os dados da equipe, das criaturas armazenadas, do inventário, das moedas, do progresso dos NPCs e da posição do personagem. Esses recursos permitem preservar o progresso entre sessões e retomar a exploração após o carregamento dos dados.
+ 
+-Mais informacoes podem ser encontradas no GDD\footnote[number]{Link} do projeto, que detalha as mecânicas, os sistemas e as regras de jogo, bem como as especificações técnicas e os requisitos funcionais.
++As especificações complementares das mecânicas, dos sistemas e dos requisitos funcionais estão registradas no GDD do projeto.
+ \subsection{Evidências Visuais}
+-Para comprovar o funcionamento prático e a integridade da interface do protótipo final, apresenta-se nesta subseção o conjunto de \textit{screenshots} extraídas da \textit{build} executável.
++Nesta subseção, apresentam-se registros visuais das interfaces e dos ambientes do protótipo durante sua execução.
+ 
+-A Fig. \ref{fig:jmain} exibe a tela de menu principal do jogo, construída com uma interface com opções para: iniciar o um novo jogo e carregar um \textit{load} existente, visualizar as instruções.
++A Fig. \ref{fig:jmain} apresenta o menu principal, com opções para iniciar uma nova sessão, carregar um jogo salvo e consultar as instruções.
+ 
+ \begin{figure}[H]
+     \centering
+@@ -115,7 +108,7 @@
+     \label{fig:gameplay}    
+ \end{figure}
+ 
+-Por fim, a Fig. \ref{fig:pc} ilustra os menus do computador, para gerenciamento dos Alchemons, e formacao de componentes.
++Por fim, a Fig. \ref{fig:pc} ilustra os menus do computador utilizados para o gerenciamento dos Alchemons.
+ \begin{figure}[H]
+     \centering
+     \includegraphics[width=0.4\textwidth]{images/pc.png}
+--- a/Template_IEEE_UFN/sections/06_conclusao.tex
++++ b/Template_IEEE_UFN/sections/06_conclusao.tex
+@@ -3,43 +3,10 @@
+ 
+ 
+ \subsection{Ambiente de Testes Funcionais e Verificação de Requisitos}
+-O desenvolvimento foi realizado em ambiente Linux, na \texit{engine} Godot 4.4.1. [Para futuras verificações, estão previstos ambientes Windows e Linux, cujas configurações deverão ser registradas conforme a Tabela I. Os testes de desempenho ainda não foram realizados; portanto, os valores apresentados na Tabela II representam critérios definidos para avaliações futuras, e não resultados obtidos.]
+-\begin{table}[!t]
+-    \caption{Ambientes previstos para os testes}
+-    \label{tab:ambientes-teste}
+-    \centering
+-    \footnotesize
+-    \begin{tabular}{|l|c|c|}
+-        \hline
+-        \textbf{Configuração} & \textbf{Windows} & \textbf{Linux} \\ \hline
+-            Sistema operacional & A preencher & A preencher \\ \hline
+-            Versão do sistema & A preencher & A preencher \\ \hline
+-            Versão do Godot & A preencher & A preencher \\ \hline
+-            Processador & A preencher & A preencher \\ \hline
+-            Memória RAM & A preencher & A preencher \\ \hline
+-            Placa de vídeo & A preencher & A preencher \\ \hline
+-            Resolução & A preencher & A preencher \\ \hline
+-            Data do teste & A preencher & A preencher \\ \hline
+-            Situação & Pendente & Pendente \\ \hline
+-    \end{tabular}
+-\end{table}
+-
+-\begin{table}[!t]
+-    \caption{Critérios definidos para avaliação de desempenho}
+-    \label{tab:criterios-desempenho}
+-    \centering
+-    \footnotesize
+-    \begin{tabular}{|p{0.23\columnwidth}|p{0.43\columnwidth}|p{0.20\columnwidth}|}
+-        \hline
+-        \textbf{Métrica} & \textbf{Critério} & \textbf{Resultado} \\ \hline
+-            Taxa de quadros & Média igual ou superior a 60 FPS, sem quedas sustentadas abaixo de 30 FPS. & Não mensurado \\ \hline
+-            Carregamento & Média de até 3 segundos, sem ocorrências acima de 5 segundos. & Não mensurado \\ \hline
+-            Memória RAM e VRAM & Ausência de crescimento contínuo após o carregamento e cinco ciclos de combate. & Não mensurado \\ \hline
+-    \end{tabular}
+-\end{table}
++O desenvolvimento foi realizado em ambiente Linux, com a engine Godot 4.4.1. A documentação técnica registra testes automatizados com GdUnit4 e descreve cenários adicionais de integração visual. Não há um registro consolidado que comprove a execução de todos os cenários em diferentes sistemas operacionais; por isso, não se apresenta uma comparação entre plataformas.
+ 
+ \subsection{Matriz de Verificação de Requisitos Funcionais}
+-Foram desenvolvidas quatro suítes de testes automatizados com o GdUnit4, totalizando 65 casos. A matriz da Tabela III relaciona os principais requisitos contemplados. A implementação de um teste não implica sua execução ou aprovação; esses estados devem ser registrados após a realização das verificações correspondentes.
++A documentação técnica do repositório registra quatro suítes automatizadas com o GdUnit4, totalizando 65 casos. Os testes abrangem regras relacionadas aos atributos, à captura, às recompensas e à persistência. A existência de um caso de teste não comprova, isoladamente, sua execução ou aprovação.
+ 
+ \begin{table}[!t]
+     \caption{Matriz de verificação dos requisitos funcionais}
+@@ -49,22 +16,22 @@
+     \begin{tabular}{|p{0.27\columnwidth}|p{0.25\columnwidth}|p{0.18\columnwidth}|p{0.18\columnwidth}|}
+         \hline
+         \textbf{Requisito} & \textbf{Teste implementado} & \textbf{Executado} & \textbf{Integração confirmada} \\ \hline
+-            Crescimento das criaturas & Sim & A registrar & A registrar \\ \hline
+-            Atributos das criaturas & Sim & A registrar & A registrar \\ \hline
+-            Captura & Sim & A registrar & A registrar \\ \hline
+-            Distribuição de recompensas & Sim & A registrar & A registrar \\ \hline
+-            Interface & Sim & A registrar & A registrar \\ \hline
+-            Persistência de dados & Sim & A registrar & A registrar \\ \hline
++            Crescimento das criaturas & Coberto & Não documentado & Requer verificação integrada \\ \hline
++            Atributos das criaturas & Coberto & Não documentado & Requer verificação integrada \\ \hline
++            Captura & Coberto & Não documentado & Requer verificação integrada \\ \hline
++            Distribuição de recompensas & Coberto & Não documentado & Requer verificação integrada \\ \hline
++            Interface & Parcial & Não documentado & Requer verificação manual \\ \hline
++            Persistência de dados & Coberto & Não documentado & Requer verificação integrada \\ \hline
+         \end{tabular}
+ \end{table}
+ \subsubsection{Resultados Alcançados}
+-Durante o desenvolvimento, foram implementados os sistemas de exploração, combate por turnos, captura, progressão e persistência de dados. Também foram identificados e corrigidos problemas relacionados à sincronização dos dados das criaturas durante o combate, à distinção entre atributos temporários e permanentes e ao encerramento das batalhas com a distribuição de recompensas.
++Durante o desenvolvimento, foram implementados sistemas de exploração tridimensional, combate por turnos, captura, progressão e persistência de dados. A documentação técnica descreve correções relacionadas à sincronização dos dados das criaturas durante o combate, à separação entre atributos temporários e permanentes e à sequência de encerramento das batalhas e apresentação das recompensas.
+ 
+ Apesar desses avanços, a execução e a aprovação de todos os testes ainda precisam ser confirmadas. Também não foram realizadas avaliações com estudantes, de modo que os efeitos do jogo sobre o engajamento e a aprendizagem ainda não podem ser afirmados.
+ 
+ \subsection{Discussão Crítica e Limitações}
+ 
+-Os resultados obtidos demonstram avanços na implementação das estruturas técnicas do Alchemon, especialmente nos sistemas de exploração, combate, captura, progressão e persistência. Entretanto, o protótipo ainda não apresenta todas as condições necessárias para uma avaliação completa de seu funcionamento e de sua proposta educacional.
++Os resultados documentados demonstram avanços na implementação das estruturas técnicas do Alchemon, especialmente nos sistemas de exploração, combate, captura, progressão e persistência. Entretanto, a documentação dos testes não permite concluir que todos os cenários foram executados e aprovados, nem que o protótipo já esteja pronto para avaliação de sua proposta educacional.
+ 
+ Uma das limitações corresponde à ausência de medições de desempenho. Embora tenham sido definidos critérios para avaliar a taxa de quadros por segundo, o tempo de carregamento das cenas e o consumo de memória, esses parâmetros ainda não foram mensurados. Além disso, a execução nativa dos artefatos exportados para Windows x86-64 não foi confirmada. Dessa forma, a presença dos arquivos de exportação não permite concluir que o jogo funciona integralmente nessa plataforma.
+ 
+@@ -75,12 +42,12 @@
+ Diante dessas limitações, a continuidade do projeto exige a conclusão e integração das funcionalidades planejadas, a execução dos testes nos ambientes Windows e Linux e a realização das medições de desempenho. Posteriormente, será possível conduzir avaliações com estudantes, incluindo testes de usabilidade e instrumentos de avaliação da aprendizagem. Essas etapas permitirão investigar tanto a estabilidade técnica do jogo quanto sua contribuição para os objetivos educacionais propostos.
+ 
+ \section{CONCLUSÕES}
+-Neste trabalho, foi apresentado o desenvolvimento do Alchemon, um jogo digital educativo concebido com o propósito de promover a aprendizagem tangencial e o engajamento de estudantes do Ensino Médio com os conceitos e elementos da Tabela Periódica. Ao longo do projeto, foram implementadas estruturas fundamentais para o funcionamento do protótipo, incluindo sistemas de exploração, combate, captura de criaturas, progressão e persistência de dados. Os testes internos, organizados em quatro conjuntos com 65 casos de teste, permitiram verificar diferentes comportamentos dessas estruturas, identificar falhas e orientar suas correções. Dessa forma, os resultados demonstram o cumprimento de objetivos técnicos importantes estabelecidos para esta etapa do trabalho, embora o desenvolvimento da solução ainda não esteja concluído.
++Neste trabalho, foi apresentado o desenvolvimento do protótipo do Alchemon, um jogo digital educativo que utiliza mecânicas de captura e colecionismo para abordar elementos e propriedades da Tabela Periódica. Foram implementados sistemas de exploração tridimensional, combate por turnos, captura, progressão das criaturas e persistência de dados. A documentação do projeto registra quatro suítes de testes automatizados, com 65 casos, mas não permite afirmar que todos foram executados e aprovados. Assim, os resultados representam avanços na implementação técnica, embora o desenvolvimento da solução ainda não esteja concluído.
+ 
+ Como principal limitação, destaca-se que a validação realizada se restringiu aos aspectos técnicos e funcionais contemplados pelos testes internos. Não foram realizados testes de usabilidade ou avaliações com estudantes, o que impossibilita determinar, neste momento, se o jogo favorece efetivamente a aprendizagem dos conteúdos de Química. Aspectos como a curva de aprendizado, a compreensão das mecânicas, o nível de dificuldade, o engajamento e a recepção dos jogadores ainda dependem de investigação empírica. Portanto, é necessário distinguir o funcionamento das funcionalidades verificadas da eficácia pedagógica da proposta, que permanece sem comprovação prática.
+ 
+-Como contribuição, o trabalho apresenta uma implementação inicial de um jogo educativo que utiliza mecânicas de captura, coleção e desenvolvimento de criaturas como recursos para abordar os elementos da Tabela Periódica. O protótipo e sua arquitetura constituem uma base técnica para a continuidade do projeto e para futuras investigações sobre a aplicação de mecânicas de jogos de captura e colecionismo no ensino de Química. Embora ainda não esteja em condições adequadas para aplicação com o público-alvo, os resultados obtidos demonstram a viabilidade de dar continuidade à solução sem a necessidade de reduzir seu escopo original.
++Como contribuição, o trabalho apresenta uma implementação inicial de um jogo educativo que utiliza mecânicas de captura, coleção e desenvolvimento de criaturas como recursos para abordar elementos da Tabela Periódica. O protótipo e sua arquitetura constituem uma base técnica para a continuidade do projeto. Entretanto, ainda são necessários tempo adicional de desenvolvimento, integração das funcionalidades e validação técnica antes de sua aplicação com o público-alvo. Essa necessidade não implica reduzir o escopo original, mas concluir as etapas previstas antes da avaliação pedagógica.
+ 
+ \subsection{Trabalhos Futuros}
+ 
+-Como trabalhos futuros, o projeto demanda a continuidade do desenvolvimento, com tempo adicional para concluir as funcionalidades planejadas e integrar os diferentes sistemas do jogo. Após essa etapa, será necessário realizar uma nova rodada de validação técnica, contemplando a execução dos testes internos, a verificação dos builds para os sistemas operacionais previstos e a avaliação da estabilidade do jogo. Com uma versão suficientemente completa e estável, poderão ser conduzidas avaliações com estudantes do Ensino Médio, por meio de sessões de playtest destinadas a investigar aspectos como usabilidade, dificuldade, engajamento e aprendizagem dos conteúdos relacionados à Tabela Periódica. Essas avaliações também permitirão analisar se as mecânicas de captura, coleção e interação com as criaturas contribuem para a aprendizagem tangencial dos conceitos químicos. Portanto, a continuidade do projeto depende de mais tempo de desenvolvimento e validação, antes de sua avaliação junto ao público-alvo.
++Como trabalhos futuros, o projeto demanda tempo adicional para concluir as funcionalidades planejadas e integrar os diferentes sistemas do jogo. Em seguida, será necessário executar os testes internos, verificar os builds para os sistemas operacionais previstos e avaliar a estabilidade do protótipo. Após essa etapa, uma versão suficientemente completa poderá ser submetida a avaliações com estudantes do Ensino Médio. Os playtests deverão investigar usabilidade, dificuldade, engajamento e aprendizagem dos conteúdos relacionados à Tabela Periódica. Essas avaliações permitirão examinar se as mecânicas de captura, coleção e interação com as criaturas favorecem a aprendizagem tangencial dos conceitos químicos.

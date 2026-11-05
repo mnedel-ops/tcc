@@ -1,5 +1,5 @@
 \section{METODOLOGIA}
-A execução do projeto fundamentou-se no Ciclo Básico de Produção de Jogos proposto por Heather Chandler \cite{Chandler2009}, Fig. \ref{fig:ciclochandler}, que adotou uma abordagem cíclica e iterativa. A escolha dessa metodologia justificou-se pela necessidade de equilibrar a fidelidade científica com a jogabilidade de um jogo sério eficaz.
+A metodologia adotada baseia-se no Ciclo Básico de Produção de Jogos proposto por Heather Chandler \cite{Chandler2009}, apresentado na Fig. \ref{fig:ciclochandler}. O modelo organiza o desenvolvimento em etapas de pré-produção, produção e pós-produção, com ciclos de avaliação e ajuste. Essa abordagem orienta as atividades de concepção, implementação e verificação do protótipo.
 
 \begin{figure}[h]
     \centering
@@ -7,37 +7,34 @@ A execução do projeto fundamentou-se no Ciclo Básico de Produção de Jogos p
     \caption{Ciclo Básico de Produção de Jogos. Fonte: adaptado de \cite{Chandler2009}.}
     \label{fig:ciclochandler}
 \end{figure}
-Na etapa de pré-produção, foi definido o escopo pedagógico do projeto, delimitado pelos conteúdos de Química Geral. Nessa fase, também foram realizados o levantamento de requisitos e a elaboração da documentação de apoio, representada pelo *Game Design Document* (GDD), que registrou as diretrizes e características do jogo.
+Na pré-produção, foram definidos o conceito do jogo, o escopo inicial dos conteúdos químicos, os requisitos funcionais e as diretrizes registradas no \textit{Game Design Document} (GDD). Essa etapa também orientou a seleção das mecânicas de captura, coleção e combate.
 
-Na etapa de produção, os requisitos estabelecidos na fase anterior foram implementados conforme as especificações documentadas no GDD. Em paralelo ao desenvolvimento, foram conduzidos testes internos de qualidade, com o objetivo de verificar o funcionamento dos recursos implementados e identificar possíveis inconsistências. Entre os testes realizados, destacam-se: [inserir lista de testes].
+Na produção, os sistemas foram implementados de forma incremental com a engine Godot 4 e a linguagem GDScript. A implementação abrange exploração tridimensional, encontros, captura, combate por turnos, progressão das criaturas e persistência dos dados. Em paralelo, foram desenvolvidos testes automatizados para verificar regras de negócio e fluxos de dados.
 
-Por fim, na etapa de pós-produção, foram analisados os resultados de cada ciclo de desenvolvimento. Essa avaliação permitiu identificar aspectos que necessitavam de ajustes e definir melhorias para o *sprint* seguinte, mantendo o caráter iterativo do processo.
+Na pós-produção de cada ciclo, os resultados da implementação e das verificações disponíveis orientaram a identificação de falhas e a definição de ajustes para o ciclo seguinte. O processo permaneceu iterativo, com retorno à implementação quando uma verificação apontava comportamento divergente do esperado.
 
 
 \subsection{Produção e transposição didática}
-A seleção dos conteúdos para o \textit{Alchemon} foi estruturada para refletir as competências de análise de fenômenos naturais da BNCC (competência EM13CNT201 da BNCC) \cite{BNCC26}, utilizando a clareza prática e experimental do currículo internacional IGCSE \cite{igcse_chemistry_2023}. 
+A seleção dos conteúdos considera as orientações da Base Nacional Comum Curricular para o Ensino Médio \cite{BNCC26} e o referencial \textit{Cambridge IGCSE Chemistry} \cite{igcse_chemistry_2023}. No protótipo, a transposição didática ocorre principalmente por meio da representação de elementos químicos como criaturas e da associação de propriedades periódicas a atributos utilizados no combate.
 
-No sistema de jogo, essa progressão curricular dita a curva de dificuldade e o desbloqueio de mecânicas:
+Essas correspondências devem ser compreendidas como abstrações lúdicas destinadas a estabelecer associações entre o conteúdo químico e as regras do jogo, e não como equivalências científicas entre grandezas. A implementação atual não permite afirmar que todos os conteúdos previstos no planejamento curricular estejam contemplados ou que a proposta já tenha sido validada como estratégia de aprendizagem.
 \begin{itemize}
-    \item Atomística e Tabela Periódica: Estruturam as propriedades fundamentais das criaturas (\textit{status} base de HP, ataque e defesa determinados por raio atômico e eletronegatividade).
-    \item Ligações Químicas: Atuam como sistemas de sinergia em batalhas de equipe e mecânicas de evolução por fusão (combinação de elementos para formar substâncias iônicas ou covalentes).
+    \item A massa atômica serve como referência para os pontos de vida; a eletronegatividade, para o ataque; e a energia de ionização, para a defesa;
+    \item As categorias Metal, Metaloide e Ametal organizam um ciclo de efetividade entre ataques;
+    \item Os pontos de fusão e ebulição são utilizados para determinar estados físicos e reações à temperatura da arena.
 \end{itemize}
 
-O diferencial desta etapa reside na transformação das propriedades periódicas em regras de mecânica e atributos sistêmicos, de modo que o domínio das leis da Química se torne condição essencial para o sucesso estratégico no jogo. As mecânicas e a fundamentação teórica serão expandidas no \textit{High-Concept Document} (HCD) anexado.
-
 \subsection{Desenvolvimento dos Testes Funcionais Internos (QA - Quality Assurance)}
-A verificação do Alchemon foi conduzida por meio de testes funcionais internos de Garantia de Qualidade (QA), realizados durante o desenvolvimento do protótipo. Os testes tiveram como objetivo verificar o funcionamento das mecânicas implementadas e sua conformidade com os requisitos funcionais definidos para o projeto. Não foram realizados \textit{playtests} com estudantes nesta etapa.
+A verificação interna do Alchemon utiliza testes automatizados desenvolvidos com o GdUnit4, ferramenta de testes para Godot 4. A documentação técnica do repositório registra quatro suítes, com 65 casos voltados a atributos, captura, recompensas, persistência, integração e continuidade da sessão. Esses casos foram concebidos para verificar regras de negócio e consistência dos dados.
 
-O protocolo de testes considerou a verificação dos requisitos funcionais, a identificação de erros de execução e travamentos, o tempo de resposta das funcionalidades, a estabilidade da taxa de quadros (FPS). Os critérios de aceite foram definidos com base no comportamento esperado de cada funcionalidade e na ausência de falhas que impedissem sua utilização.
+É necessário distinguir a existência dos casos automatizados de sua execução e aprovação. A documentação também identifica cenários de integração visual que dependem da execução das cenas no Godot. Não foram realizadas avaliações com estudantes do Ensino Médio, e os testes automatizados não medem, por si só, aprendizagem, usabilidade ou engajamento.
 
-Os testes automatizados foram desenvolvidos com o \textit{framework} GdUnit4, exclusivo do motor Godot 4.
-
-O processo de QA seguiu um ciclo iterativo: quando um teste identificava uma falha, o item retornava à etapa de desenvolvimento para correção ou refatoração do código. Após a alteração, o teste era executado novamente para verificar se o problema havia sido resolvido e se a correção não havia comprometido outras funcionalidades.
+Quando uma verificação identifica uma falha, o comportamento correspondente retorna à etapa de desenvolvimento para correção. Após a alteração, o caso pertinente deve ser executado novamente, inclusive para verificar possíveis regressões.
 \section{IDENTIFICAÇÃO E DESCRIÇÃO DO PROBLEMA}
 
 O ensino da Tabela Periódica apresenta dificuldades relacionadas à memorização de símbolos, propriedades e tendências químicas. Por ser um conteúdo abstrato, sua abordagem baseada principalmente na memorização pode dificultar a compreensão das relações entre os elementos químicos \cite{Latonio2023,Lima2010}.
 
-No Brasil, os resultados do PISA 2022 indicam que apenas 45% dos estudantes atingiram o nível mínimo de proficiência em Ciências \cite{OECD2023}. Embora esse indicador não avalie especificamente o domínio da Tabela Periódica, ele evidencia dificuldades mais amplas na aprendizagem científica.
+No Brasil, os resultados do PISA 2022 indicam que apenas 45\% dos estudantes atingiram o nível mínimo de proficiência em Ciências \cite{OECD2023}. Embora esse indicador não avalie especificamente o domínio da Tabela Periódica, ele evidencia dificuldades mais amplas na aprendizagem científica.
 
 Além disso, métodos de ensino centrados na exposição do professor podem limitar a participação dos estudantes e reduzir seu envolvimento com os conteúdos \cite{Ryan1985,SilvaFilho2023}. Nesse contexto, identifica-se a necessidade de investigar abordagens interativas para o ensino de Química, como o uso de jogos sérios \cite{Plass2020}.
 
@@ -72,11 +69,7 @@ O combate utiliza um sistema de turnos no qual o jogador pode selecionar ataques
 
 Cada Alchemon pertence a uma das três categorias: Metal, Metaloide ou Ametal. A relação entre elas segue um ciclo de vantagens: Metal possui vantagem sobre Metaloide, Metaloide sobre Ametal e Ametal sobre Metal. Quando um ataque possui vantagem de categoria, seu dano recebe um multiplicador de 1,5; quando o alvo apresenta resistência, o multiplicador é de 0,66; e, em situações neutras, aplica-se o multiplicador de 1,0. Essa organização estabelece uma relação estratégica entre a composição da equipe e a escolha dos ataques durante os confrontos.
 
-Os atributos das criaturas também estabelecem correspondências com propriedades químicas. A vida utiliza a massa atômica como referência; o ataque relaciona-se à eletronegatividade; a defesa, à energia de ionização; a velocidade mecânica, à velocidade cinética; e a energia de ação, à quantidade de elétrons de valência. Essas associações orientam a definição dos valores e das características das criaturas, convertendo propriedades da Tabela Periódica em parâmetros utilizados pelo sistema de combate.
-
-O sistema também contempla a formação de misturas e compostos entre as criaturas aliadas em campo. Nas misturas, as duas criaturas permanecem como unidades independentes e continuam disponíveis como alvos individuais. Como efeito do vínculo, cada uma recebe um incremento fixo de oito pontos em todos os atributos. Nos compostos, por sua vez, duas ou mais criaturas estabelecem uma ligação química representada por um vínculo entre seus elementos. A formação exige que o jogador possua as quantidades necessárias de cada elemento e verifique a possibilidade da combinação com base na regra do octeto. O jogo informa se a combinação proposta é quimicamente possível, sem apresentar diretamente a resposta.
-
-Durante um composto, a criatura classificada como ânion concentra as ações do par e recebe um bônus equivalente a 70% dos atributos do cátion. A criatura classificada como cátion permanece visível na arena, mas não pode ser alvejada nem receber dano. Em ligações covalentes, nas quais a classificação entre ânion e cátion não se aplica da mesma maneira, a criatura de maior nível assume a função ativa. A ruptura do vínculo pode ocorrer pelo superaquecimento da arena, relacionando a mecânica à energia de dissociação da ligação química.
+Os atributos das criaturas estabelecem associações lúdicas com propriedades químicas. A massa atômica serve como referência para os pontos de vida; a eletronegatividade, para o ataque; a energia de ionização, para a defesa; e os elétrons de valência, para a energia de ação. A velocidade mecânica é um parâmetro de jogo. Essas associações não representam relações físicas diretas entre as grandezas, mas uma forma de relacionar características dos elementos às regras de combate.
 
 Os valores finais dos atributos consideram os valores básicos da espécie, o nível, as características individuais e a personalidade da criatura. A experiência acumulada permite subir de nível, com ajustes nos atributos e nos limites de vida e energia. O sistema também considera os estados físicos sólido, líquido e gasoso, determinados pelos pontos de fusão e ebulição de cada espécie. Durante o combate, a temperatura da arena pode alterar esses estados e produzir efeitos sobre as criaturas.
 \subsubsection{Outros Sistemas}
@@ -84,11 +77,11 @@ Além das mecânicas principais, o jogo possui sistemas de vitória e derrota, d
 
 A persistência em arquivos JSON mantém os dados da equipe, das criaturas armazenadas, do inventário, das moedas, do progresso dos NPCs e da posição do personagem. Esses recursos permitem preservar o progresso entre sessões e retomar a exploração após o carregamento dos dados.
 
-Mais informacoes podem ser encontradas no GDD\footnote[number]{Link} do projeto, que detalha as mecânicas, os sistemas e as regras de jogo, bem como as especificações técnicas e os requisitos funcionais.
+As especificações complementares das mecânicas, dos sistemas e dos requisitos funcionais estão registradas no GDD do projeto\footnote{Link abreviado para o GDD}.
 \subsection{Evidências Visuais}
-Para comprovar o funcionamento prático e a integridade da interface do protótipo final, apresenta-se nesta subseção o conjunto de \textit{screenshots} extraídas da \textit{build} executável.
+Nesta subseção, apresentam-se registros visuais das interfaces e dos ambientes do protótipo durante sua execução.
 
-A Fig. \ref{fig:jmain} exibe a tela de menu principal do jogo, construída com uma interface com opções para: iniciar o um novo jogo e carregar um \textit{load} existente, visualizar as instruções.
+A Fig. \ref{fig:jmain} apresenta o menu principal, com opções para iniciar uma nova sessão, carregar um jogo salvo e consultar as instruções.
 
 \begin{figure}[H]
     \centering
@@ -115,7 +108,7 @@ E, na Fig. \ref{fig:gameplay}, o \textit{gameplay} no momento de batalha, com a 
     \label{fig:gameplay}    
 \end{figure}
 
-Por fim, a Fig. \ref{fig:pc} ilustra os menus do computador, para gerenciamento dos Alchemons, e formacao de componentes.
+Por fim, a Fig. \ref{fig:pc} ilustra os menus do computador utilizados para o gerenciamento dos Alchemons.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.4\textwidth]{images/pc.png}
