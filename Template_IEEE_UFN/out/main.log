@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.18)  6 NOV 2026 11:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.18)  6 NOV 2026 11:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -593,7 +593,10 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'brazilian'.
- (out/main.aux)
+ (out/main.aux
+Package babel Info: 'brazilian' activates 'portuges' shorthands.
+(babel)             Reported on input line 48.
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
@@ -610,8 +613,6 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
-Package babel Info: 'brazilian' activates 'portuges' shorthands.
-(babel)             Reported on input line 26.
 LaTeX Info: Redefining \microtypecontext on input line 26.
 Package microtype Info: Applying patch `item' on input line 26.
 Package microtype Info: Applying patch `toc' on input line 26.
@@ -675,87 +676,60 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (
 
 
 ]) (./sections/03_secao.tex
-
-LaTeX Warning: Reference `fig:sdt' on page 2 undefined on input line 12.
-
 <images/sdt.png, id=11, 957.5775pt x 453.19313pt>
 File: images/sdt.png Graphic file (type png)
 <use images/sdt.png>
 Package pdftex.def Info: images/sdt.png  used on input line 16.
 (pdftex.def)             Requested size: 202.3529pt x 95.76807pt.
-[2 <./images/sdt.png>]
-
-LaTeX Warning: Reference `fig:tas' on page 3 undefined on input line 30.
-
+ [2 <./images/sdt.png>]
 <images/tas.png, id=17, 2372.11218pt x 853.68938pt>
 File: images/tas.png Graphic file (type png)
 <use images/tas.png>
 Package pdftex.def Info: images/tas.png  used on input line 34.
 (pdftex.def)             Requested size: 202.3529pt x 72.81665pt.
-
-LaTeX Warning: Reference `fig:tangencial' on page 3 undefined on input line 40.
-
 <images/tangencial.png, id=18, 383.18156pt x 172.39406pt>
 File: images/tangencial.png Graphic file (type png)
 <use images/tangencial.png>
 Package pdftex.def Info: images/tangencial.png  used on input line 44.
 (pdftex.def)             Requested size: 202.3529pt x 91.0396pt.
 ) (./sections/05_metodologia.tex
-
-LaTeX Warning: Reference `fig:ciclochandler' on page 3 undefined on input line 2.
-
 <images/ciclochandler.png, id=19, 505.13719pt x 505.13719pt>
 File: images/ciclochandler.png Graphic file (type png)
 <use images/ciclochandler.png>
 Package pdftex.def Info: images/ciclochandler.png  used on input line 6.
 (pdftex.def)             Requested size: 202.3529pt x 202.3519pt.
 
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [3 <./images/tas.png> <./images/tangencial.png>] [4 <./images/ciclochandler.png>] [5]
-
-LaTeX Warning: Reference `fig:jmain' on page 6 undefined on input line 85.
-
 <images/main.png, id=34, 1725.44624pt x 977.6525pt>
 File: images/main.png Graphic file (type png)
 <use images/main.png>
-Package pdftex.def Info: images/main.png  used on input line 89.
+Package pdftex.def Info: images/main.png  used on input line 93.
 (pdftex.def)             Requested size: 202.3529pt x 114.64296pt.
-
-LaTeX Warning: Reference `fig:gameplayExploracao' on page 6 undefined on input line 94.
-
 <images/gameplayExploracao.png, id=35, 1725.44624pt x 977.6525pt>
 File: images/gameplayExploracao.png Graphic file (type png)
 <use images/gameplayExploracao.png>
-Package pdftex.def Info: images/gameplayExploracao.png  used on input line 98.
+Package pdftex.def Info: images/gameplayExploracao.png  used on input line 102.
 (pdftex.def)             Requested size: 202.3529pt x 114.64296pt.
-
-LaTeX Warning: Reference `fig:gameplay' on page 6 undefined on input line 103.
-
 <images/gameplay.png, id=36, 1725.44624pt x 977.6525pt>
 File: images/gameplay.png Graphic file (type png)
 <use images/gameplay.png>
-Package pdftex.def Info: images/gameplay.png  used on input line 107.
+Package pdftex.def Info: images/gameplay.png  used on input line 111.
 (pdftex.def)             Requested size: 202.3529pt x 114.64296pt.
-
-LaTeX Warning: Reference `fig:pc' on page 6 undefined on input line 112.
-
 <images/pc.png, id=37, 1725.44624pt x 977.6525pt>
 File: images/pc.png Graphic file (type png)
 <use images/pc.png>
-Package pdftex.def Info: images/pc.png  used on input line 115.
+Package pdftex.def Info: images/pc.png  used on input line 119.
 (pdftex.def)             Requested size: 202.3529pt x 114.64296pt.
 ) (./sections/06_conclusao.tex
+Underfull \vbox (badness 3291) has occurred while \output is active []
 
-LaTeX Warning: Reference `tab:ambientes_teste' on page 6 undefined on input line 6.
-
-
+ [6 <./images/main.png> <./images/gameplayExploracao.png> <./images/gameplay.png> <./images/pc.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 21--21
 []|\T1/ptm/m/n/7 (+20) Memória
  []
-
-
-LaTeX Warning: Reference `tab:matriz-requisitos' on page 6 undefined on input line 32.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 42--42
@@ -788,126 +762,64 @@ Overfull \hbox (20.72807pt too wide) in paragraph at lines 39--50
  []
 
 
-LaTeX Warning: Reference `tab:desempenho_completo' on page 6 undefined on input line 56.
-
-[6 <./images/main.png> <./images/gameplayExploracao.png> <./images/gameplay.png> <./images/pc.png>]
-
-LaTeX Warning: Reference `tab:testes_manuais' on page 7 undefined on input line 122.
-
-(/usr/share/texmf-dist/tex/latex/psnfss/t1pcr.fd)
-! LaTeX Error: \begin{tabularx} on input line 129 ended by \end{tabular}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.215     \end{tabularx}
-                        
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.215     \end{tabularx}
-                        
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.215     \end{tabularx}
-                        
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-LaTeX Warning: Reference `tab:testes_automatizados' on page 7 undefined on input line 215.
-
-! Argument of \TX@get@body has an extra }.
-<inserted text> 
-                \par 
-l.215     \end{tabularx}
-                        
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-{ |>{\raggedright \arraybackslash \ttfamily }p{2.15cm} |>{\centering \ETC.
-! Paragraph ended before \TX@get@body was complete.
-<to be read again> 
-                   \par 
-l.215     \end{tabularx}
-                        
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Undefined control sequence.
-\TX@trial ...ar \the \toks@ \endtabular }\TX@ckpt 
-                                                  \TX@typeout@ {\@spaces \ex...
-l.215     \end{tabularx}
-                        
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-! Package array Error:  Illegal pream-token (\noextrasbrazilian): `c' used.
-
-See the array package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.215     \end{tabularx}
-                        
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \unskip 
-l.215     \end{tabularx}
-                        
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-
-Overfull \hbox (6.0pt too wide) in alignment at lines 215--215
-[] 
+Overfull \hbox (12.6441pt too wide) in paragraph at lines 178--178
+[]|\T1/ptm/b/n/7 (-20) Funcionalidade|  
  []
 
-! Extra }, or forgotten \endgroup.
-\TX@endtabularx ... }\the \TX@ftn \ifnum 0=`{\fi }
-                                                  \expandafter \expandafter ...
-l.215     \end{tabularx}
-                        
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
 
-[7]) (./sections/07_bibliography.tex) [8]
+Overfull \hbox (2.32658pt too wide) in paragraph at lines 178--178
+[]|\T1/ptm/m/n/7 (-20) Inicialização|  
+ []
+
+(/usr/share/texmf-dist/tex/latex/psnfss/t1pcr.fd)
+Overfull \hbox (4.34618pt too wide) in paragraph at lines 232--232
+ []|\T1/ptm/b/n/7 (-20) Casos| 
+ []
+
+
+Overfull \hbox (10.49811pt too wide) in paragraph at lines 232--232
+[]\T1/pcr/m/n/7 test_alchemon  
+ []
+
+
+Overfull \hbox (6.29811pt too wide) in paragraph at lines 232--232
+[]\T1/pcr/m/n/7 test_capture  
+ []
+
+
+Overfull \hbox (1.67812pt too wide) in paragraph at lines 232--232
+[]\T1/pcr/m/n/7 _formula.gd  
+ []
+
+
+Overfull \hbox (2.09811pt too wide) in paragraph at lines 232--232
+[]\T1/pcr/m/n/7 test_battle  
+ []
+
+
+Overfull \hbox (1.67812pt too wide) in paragraph at lines 232--232
+[]\T1/pcr/m/n/7 _rewards.gd  
+ []
+
+
+Overfull \hbox (10.49811pt too wide) in paragraph at lines 232--232
+[]\T1/pcr/m/n/7 test_creature  
+ []
+
+
+Overfull \hbox (18.4781pt too wide) in paragraph at lines 232--232
+[]\T1/pcr/m/n/7 _persistence.gd  
+ []
+
+
+Underfull \vbox (badness 1122) has occurred while \output is active []
+
+ [7] [8]) (./sections/07_bibliography.tex)
 Underfull \hbox (badness 4660) in paragraph at lines 36--36
 []\T1/ptm/m/n/10 (+20) Richard M. Ryan e Edward L. Deci. ^^P  Self-
  []
 
+[9]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -919,7 +831,7 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[9] (out/main.aux)
+[10] (out/main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -927,9 +839,6 @@ L3 programming layer <2026-01-19>
 
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
@@ -941,18 +850,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 17834 strings out of 469495
- 319310 string characters out of 5470098
- 1002583 words of memory out of 5000000
- 45894 multiletter control sequences out of 15000+600000
- 768206 words of font info for 394 fonts, out of 8000000 for 9000
+ 17836 strings out of 469495
+ 319327 string characters out of 5470098
+ 1011770 words of memory out of 5000000
+ 45893 multiletter control sequences out of 15000+600000
+ 768378 words of font info for 397 fonts, out of 8000000 for 9000
  19 hyphenation exceptions out of 8191
- 68i,11n,69p,1954b,1682s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on out/main.pdf (9 pages, 2373015 bytes).
+ 68i,13n,69p,1954b,1651s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on out/main.pdf (10 pages, 2387935 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
- 45 compressed objects within 1 object stream
+ 95 PDF objects out of 1000 (max. 8388607)
+ 50 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 73257 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 72745 words of extra memory for PDF output out of 74296 (max. 10000000)
 

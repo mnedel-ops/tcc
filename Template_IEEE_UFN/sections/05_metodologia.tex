@@ -25,12 +25,16 @@ Essas correspondências devem ser compreendidas como abstrações lúdicas desti
 \end{itemize}
 
 \subsection{Desenvolvimento dos Testes Funcionais Internos (QA - Quality Assurance)}
+\subsection{Verificação e Avaliação Técnica}
 
-A verificação interna do Alchemon utiliza testes automatizados desenvolvidos com o GdUnit4, ferramenta de testes para Godot 4. Foram implementadas quatro suítes, totalizando 65 casos, voltados à verificação de atributos, captura, recompensas, persistência e continuidade da sessão. Todos os casos automatizados foram executados e aprovados.
+A verificação interna do Alchemon compreendeu testes automatizados, funcionais manuais, de integração e de desempenho. Os testes automatizados foram desenvolvidos com o GdUnit4, ferramenta de testes para Godot 4. Foram implementadas quatro suítes, totalizando 65 casos voltados à verificação dos sistemas de atributos, captura, recompensas e persistência das criaturas.
 
-Além dos testes automatizados, foram realizados testes funcionais manuais por meio da interação direta com o jogo. Os procedimentos contemplaram as principais funcionalidades, incluindo inicialização, exploração, interação com criaturas, captura, combate, evolução e persistência dos dados. Os testes manuais foram executados e aprovados nos ambientes Linux e Windows. Também foram realizados testes de integração entre os sistemas do jogo, cujos resultados foram aprovados.
+Os testes funcionais manuais foram realizados por meio da interação direta com o jogo. Os procedimentos contemplaram a inicialização, a exploração, a interação com criaturas, a captura, o combate, a evolução e a persistência dos dados. Essas verificações foram executadas nos ambientes Linux e Windows. Também foram realizados testes de integração para verificar a comunicação e o funcionamento conjunto dos sistemas implementados.
 
-A avaliação de desempenho foi realizada por meio de medições de taxa de quadros, tempo de carregamento e consumo de memória, conforme apresentado na Subseção B. Os resultados caracterizam o comportamento do protótipo no ambiente utilizado, mas não permitem generalizações para outras configurações de hardware.
+A avaliação de desempenho foi conduzida em cinco execuções do procedimento de teste, cada uma com cinco ciclos de combate e retorno à exploração, totalizando 25 ciclos. Foram coletadas métricas de taxa de quadros por segundo (FPS), tempo de carregamento e transição entre cenas e consumo de memória RAM e VRAM. As medições de FPS contemplaram os cenários de exploração e combate, com 150 amostras por cenário. Os dados foram organizados em tabelas para comparação entre as execuções e análise do comportamento do protótipo nas condições avaliadas.
+
+Os procedimentos descritos correspondem à avaliação técnica interna do jogo. Não foram realizadas avaliações com estudantes do Ensino Médio nesta etapa, portanto, a eficácia pedagógica, a usabilidade e o engajamento do público-alvo permanecem sem validação empírica.
+
 \section{IDENTIFICAÇÃO E DESCRIÇÃO DO PROBLEMA}
 
 O ensino da Tabela Periódica apresenta dificuldades relacionadas à memorização de símbolos, propriedades e tendências químicas. Por ser um conteúdo abstrato, sua abordagem baseada principalmente na memorização pode dificultar a compreensão das relações entre os elementos químicos \cite{Latonio2023,Lima2010}.
@@ -82,7 +86,7 @@ As especificações complementares das mecânicas, dos sistemas e dos requisitos
 \subsection{Evidências Visuais}
 Nesta subseção, apresentam-se registros visuais das interfaces e dos ambientes do protótipo durante sua execução.
 
-A Fig. \ref{fig:jmain} apresenta o menu principal, com opções para iniciar uma nova sessão, carregar um jogo salvo e consultar as instruções.
+A Fig. \ref{fig:jmain} apresenta o menu principal, com opções para iniciar uma nova sessão, carregar um jogo salvo e sair.
 
 \begin{figure}[H]
     \centering
@@ -91,7 +95,7 @@ A Fig. \ref{fig:jmain} apresenta o menu principal, com opções para iniciar uma
     \label{fig:jmain}
 \end{figure}
 
-Na Fig. \ref{fig:gameplayExploracao} observa-se a tela de \textit{gameplay} no momento de exploração. 
+Na Fig. \ref{fig:gameplayExploracao} observa-se a tela de \textit{gameplay} no momento de exploração. Ela não vai possuir HUD.
 
 \begin{figure}[H]
     \centering
@@ -100,7 +104,7 @@ Na Fig. \ref{fig:gameplayExploracao} observa-se a tela de \textit{gameplay} no m
     \label{fig:gameplayExploracao}
 \end{figure}
 
-E, na Fig. \ref{fig:gameplay}, o \textit{gameplay} no momento de batalha, com a interface de combate e os elementos de interação com o jogador.
+E, na Fig. \ref{fig:gameplay}, o \textit{gameplay} no momento de batalha, com a interface de combate e os elementos de interação com o jogador. O HUD fica na parte superior da tela para não atrapalhar o jogador. Nele, ha as opcoes de comandos, Ataque, Item e Fugir. Seguido da caixa de Acoes, que contem as ultimas quatro acoes que aconteceram.
 
 \begin{figure}[H]
     \centering
@@ -109,7 +113,7 @@ E, na Fig. \ref{fig:gameplay}, o \textit{gameplay} no momento de batalha, com a 
     \label{fig:gameplay}    
 \end{figure}
 
-Por fim, a Fig. \ref{fig:pc} ilustra os menus do computador utilizados para o gerenciamento dos Alchemons.
+Por fim, a Fig. \ref{fig:pc} ilustra os menus do computador utilizados para o gerenciamento dos Alchemons e formacao de Compostos. O menu Alquimia serve para fazer as ligacoes e formar compostos, entre dois ou mais Alchemons, tanto na equipe como armazenados. O menu Armazenados, ficam guardados os Alchemons que nao estiverem na equipe do jogador.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.4\textwidth]{images/pc.png}
