@@ -4,60 +4,31 @@ Esta seção apresenta os procedimentos de verificação e os resultados obtidos
 
 \subsection{Ambiente de Testes Funcionais e Verificação de Requisitos}
 Os testes funcionais do Alchemon foram realizados em ambientes Linux e Windows, utilizando a engine Godot 4.6.1. Foram executados testes automatizados com GdUnit4, testes funcionais manuais e testes de integração entre os sistemas do jogo. Todas essas verificações foram aprovadas nas duas plataformas, conforme os procedimentos descritos nas subseções seguintes. As configurações dos equipamentos utilizados estão apresentadas na Tabela~\ref{tab:ambientes_teste}.
-
-\begin{table}[!ht]
-\centering
-\caption{Ambientes utilizados nos testes do Alchemon}
-\label{tab:ambientes_teste}
-\scriptsize
-\begin{tabularx}{\columnwidth}{
-    >{\raggedright\arraybackslash}p{2.1cm}
-    X
-    X
-}
-\toprule
-\textbf{Informação} &
-\textbf{Linux} &
-\textbf{Windows} \\
-\midrule
-Sistema operacional &
-Arch Linux &
-Windows 10 \\
-
-Versão do sistema &
-7.0.9-arch1-1 &
-22H2\\
-
-Processador &
-Intel® Core™ i7-8750H × 12 &
-Intel® Core™ i3-3217U CPU @1.80GHz\\
-
-Memória RAM &
-32.0 GiB &
-8.00 GiB \\
-
-Placa de vídeo &
-Nvidia 1060 &
-Sem VRAM dedicada\\
-
-Versão da Godot &
-4.6.1.stable &
-4.6.1.stable \\
-
-Tipo de compilação &
-Debug &
-Executável \\
-\bottomrule
-\end{tabularx}
-
-\vspace{2mm}
-\begin{minipage}{\columnwidth}
-\scriptsize
-\textit{Fonte: Elaborado pelo autor (2026).}
-\end{minipage}
+\begin{table}[htbp]
+    \centering
+    \caption{Ambientes utilizados nos testes do Alchemon}
+    \label{tab:ambientes_teste}
+    \scriptsize
+    \setlength{\tabcolsep}{2pt}
+    \renewcommand{\arraystretch}{1.15}
+    \begin{tabular}{p{1.35cm} p{2.35cm} p{2.35cm}}
+        \hline
+        \textbf{Informação} & \textbf{Linux} & \textbf{Windows} \\
+        \hline
+        Sistema operacional & Arch Linux & Windows 10 \\
+        Versão do sistema & 7.0.9-arch1-1 & 22H2 \\
+        Processador & Intel Core i7-8750H (12 threads) & Intel Core i3-3217U @ 1.80 GHz \\
+        Memória RAM & 32 GiB & 8 GiB \\
+        Placa de vídeo & NVIDIA GTX 1060 & Sem VRAM dedicada \\
+        Versão da Godot & 4.6.1.stable & 4.6.1.stable \\
+        Tipo de compilação & Debug & Executável \\
+        \hline
+    \end{tabular}
+    \\
+    \footnotesize Fonte: Elaborado pelo autor (2026).
 \end{table}
 
-\subsection{Matriz de Verificação de Requisitos Funcionais}
+\subsubsection{Matriz de Verificação de Requisitos Funcionais}
 A verificação dos requisitos funcionais foi realizada por meio de testes automatizados, manuais e de integração. Os testes automatizados abrangem quatro suítes, com 65 casos executados e aprovados. As funcionalidades que dependem da interação com a interface foram verificadas manualmente nos ambientes Linux e Windows. A Tabela~\ref{tab:matriz-requisitos} apresenta a cobertura e os resultados obtidos.
 
 \begin{table}[!t]
@@ -75,9 +46,79 @@ A verificação dos requisitos funcionais foi realizada por meio de testes autom
         Interface & Manual & Aprovado & Aprovada \\ \hline
         Persistência de dados & Automatizado e manual & Aprovado & Aprovada \\ \hline
     \end{tabular}
+    \footnotesize Fonte: Elaborado pelo autor (2026).
 \end{table}
 
-\subsection{Matriz de Testes Manuais}
+\subsection{Análise de Dados e Métricas}
+
+\subsubsection{Testes de Desempenho}
+
+Os testes de desempenho avaliaram o tempo de carregamento das cenas, o consumo de memória, a taxa de quadros e o comportamento do jogo após transições repetidas entre exploração e combate. Para isso, foram realizadas cinco execuções do procedimento de teste, cada uma com cinco ciclos de combate e retorno, totalizando 25 ciclos repetidos. As medições de FPS contemplaram os cenários de exploração e combate, com 150 amostras por cenário, distribuídas entre as cinco execuções. A Tabela~\ref{tab:desempenho_completo} apresenta a síntese dos resultados obtidos.
+
+Os resultados indicaram médias de 139,36 FPS durante a exploração e 138,58 FPS durante o combate. Quanto aos tempos de carregamento, a inicialização apresentou média de 579,8 ms, enquanto o retorno da batalha registrou o maior valor, com 621,6 ms. O consumo de RAM passou de 252,84 MB na inicialização para aproximadamente 287 MB após o combate. Nos ciclos repetidos, a variação de RAM entre o primeiro e o quinto ciclo permaneceu entre 0,0 e 0,1 MB. Além disso, os registros não apontaram a ocorrência de nós órfãos nas etapas monitoradas. Em conjunto, essas medições demonstram comportamento consistente nas execuções realizadas, embora os resultados se restrinjam ao ambiente de teste utilizado e não comprovem, isoladamente, a ausência de vazamentos de memória ou o desempenho em outras configurações de hardware.
+
+\begin{table*}[htbp]
+    \centering
+    \caption{Métricas de desempenho e estabilidade em ciclos repetidos}
+    \label{tab:desempenho_completo}
+    \scriptsize
+    \begin{tabular}{l|c|c|c|c|l}
+        \hline
+        \textbf{Cenário / Etapa} &
+        \textbf{Carga (ms)} &
+        \textbf{RAM / VRAM (MB)} &
+        \textbf{FPS} &
+        \textbf{Ciclos} &
+        \textbf{Estabilidade} \\
+        \hline
+            Inicialização &
+            579,8 &
+            252,84 / 18,80 &
+            -- &
+            5 &
+            0 nós órfãos \\
+
+            Carregamento da exploração &
+            346,8 &
+            280,86 / 31,44 &
+            139,36 (132 mín.) &
+            5 &
+            0 nós órfãos \\
+
+            Troca para combate &
+            20,8 &
+            -- &
+            -- &
+            5 &
+            -- \\
+
+            Carregamento do combate &
+            42,6 &
+            286,88 / 58,20 &
+            138,58 (131 mín.) &
+            5 &
+            0 nós órfãos \\
+
+            Retorno da batalha &
+            621,6 &
+            287,18 / 58,92 &
+            -- &
+            5 &
+            0 nós órfãos \\
+
+            Ciclos repetidos &
+            22,04 / 33,16 / 626,32 &
+            287,2 / -- &
+            -- &
+            25 &
+            Variação RAM: 0,0--0,1 MB \\
+        \hline
+    \end{tabular}
+    \\
+    \footnotesize Fonte: Elaborado pelo autor (2026).
+\end{table*}
+
+\subsubsection{Testes Manuais}
 Os testes funcionais manuais foram conduzidos por meio da interação direta com o jogo, com o objetivo de verificar o comportamento das principais funcionalidades em condições de uso. Os procedimentos foram executados nos ambientes Linux e Windows, e todos apresentaram os resultados esperados. A Tabela~\ref{tab:testes_manuais} resume as funcionalidades verificadas e os respectivos procedimentos.
 
 \begin{table}[htbp]
@@ -85,7 +126,11 @@ Os testes funcionais manuais foram conduzidos por meio da interação direta com
     \label{tab:testes_manuais}
     \centering
     \footnotesize
-    \begin{tabular}{|p{2.3cm}|p{2.5cm}|p{2.7cm}|}
+        \begin{tabularx}{\columnwidth}{
+    |>{\raggedright\arraybackslash\ttfamily}p{2.15cm}
+    |>{\centering\arraybackslash}p{0.55cm}
+    |>{\raggedright\arraybackslash}X|
+}
         \hline
         \textbf{Funcionalidade} & \textbf{Procedimento} & \textbf{Resultado esperado} \\
         \hline
@@ -118,38 +163,59 @@ Os testes funcionais manuais foram conduzidos por meio da interação direta com
             Recuperação dos dados salvos, incluindo as criaturas e o progresso do jogador. \\
         \hline
     \end{tabular}
+    \footnotesize Fonte: Elaborado pelo autor (2026).
 \end{table}
 
-\subsection{Matriz dos Testes Automatizados}
+\subsubsection{Testes Automatizados}
 Os testes automatizados foram organizados em quatro suítes, totalizando 65 casos executados e aprovados com o framework GdUnit4, conforme apresentado na Tabela~\ref{tab:testes_automatizados}. As verificações abrangem os sistemas de evolução, captura, combate e persistência de dados das criaturas. A descrição individual dos casos de teste, incluindo seus procedimentos e critérios esperados, encontra-se na documentação técnica do repositório do projeto \footnote{AlchemonRepositorio}.
 
 \begin{table}[htbp]
+    \centering
     \caption{Resumo dos testes automatizados do Alchemon}
     \label{tab:testes_automatizados}
-    \centering
-    \footnotesize
-    \begin{tabular}{|l|c|p{5.5cm}|}
-        \hline
-        \textbf{Suíte de testes} & \textbf{Casos} & \textbf{Aspectos verificados} \\
-        \hline
-        \texttt{test\_alchemonGrowth.gd} & 4 &
-            Cálculo de atributos, evolução de nível, energia e classificação dos estados físicos das criaturas. \\
-        \hline
-        \texttt{test\_capture\_formula.gd} & 13 &
-            Fórmula de captura, limites de probabilidade, influência dos pontos de vida e compatibilidade dos instrumentos de captura. \\
-        \hline
-        \texttt{test\_battle\_rewards.gd} & 11 &
-            Recompensas de combate, experiência, evolução, apresentação dos resultados e encerramento das batalhas. \\
-        \hline
-        \texttt{test\_creature\_persistence.gd} & 37 &
-            Identificação das criaturas, serialização de dados, sincronização com o combate, inventário e persistência dos dados. \\
-        \hline
-    \textbf{Total} & \textbf{65} &
-    \textbf{4 suítes de testes automatizados com GdUnit4.} \\
-    \hline
-    \end{tabular}
-\end{table}
+    \scriptsize
+    \setlength{\tabcolsep}{3pt}
+    \renewcommand{\arraystretch}{1.15}
 
+    \begin{tabularx}{\columnwidth}{
+        |>{\raggedright\arraybackslash\ttfamily}p{2.15cm}
+        |>{\centering\arraybackslash}p{0.55cm}
+        |>{\raggedright\arraybackslash}X|
+    }
+        \hline
+        \textbf{Suíte de testes} &
+        \textbf{Casos} &
+        \textbf{Aspectos verificados} \\
+        \hline
+
+            test\_alchemonGrowth.gd &
+            4 &
+            Cálculo de atributos, evolução de nível, energia e classificação dos estados físicos. \\
+        \hline
+
+            test\_capture\_formula.gd &
+            13 &
+            Fórmula de captura, limites de probabilidade, influência dos pontos de vida e compatibilidade dos instrumentos. \\
+        \hline
+
+            test\_battle\_rewards.gd &
+            11 &
+            Recompensas, experiência, evolução, apresentação dos resultados e encerramento das batalhas. \\
+        \hline
+
+            test\_creature\_persistence.gd &
+            37 &
+            Identificação das criaturas, serialização, sincronização com o combate, inventário e persistência dos dados. \\
+        \hline
+
+            \textbf{Total} &
+            \textbf{65} &
+            Quatro suítes de testes automatizados com GdUnit4. \\
+        \hline
+    \end{tabularx}
+
+    \footnotesize Fonte: Elaborado pelo autor (2026).
+\end{table}
 
 \subsubsection{Resultados Alcançados}
 Durante o desenvolvimento, foram implementados sistemas de exploração tridimensional, combate por turnos, captura, progressão e persistência de dados. A verificação técnica contemplou quatro suítes de testes automatizados, com 65 casos executados e aprovados, além de testes funcionais manuais realizados com aprovação nos ambientes Linux e Windows. Os testes de integração também foram aprovados, indicando o funcionamento conjunto dos sistemas contemplados pelos procedimentos de verificação.
