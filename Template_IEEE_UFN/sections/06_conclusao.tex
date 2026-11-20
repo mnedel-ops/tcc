@@ -72,7 +72,20 @@ Os resultados indicam que a parte técnica e funcional do protótipo está concl
 
 Esses resultados têm limites. As medições de desempenho restringem-se ao equipamento de teste e não permitem generalizar para outras configurações de hardware. A ausência de nós órfãos também não comprova, isoladamente, a inexistência de vazamentos de memória. Além disso, os testes foram internos e conduzidos pelo próprio desenvolvedor, sem usuários externos.
 
-Principalmente, não foi realizada avaliação com estudantes do Ensino Médio. O funcionamento do código foi, portanto, separado da medição do impacto pedagógico. Ainda não há dados empíricos sobre se o jogo favorece a aprendizagem tangencial, a compreensão dos conceitos da Tabela Periódica ou o engajamento do público-alvo. Essa validação com estudantes permanece como etapa futura.
-\section{CONCLUSÕES}
+Principalmente, não foi realizada avaliação com estudantes do Ensino Médio, por limitações de tempo. O funcionamento do código foi, portanto, separado da medição do impacto pedagógico. Ainda não há dados empíricos, mas, devido a robusta teoria apresentada, o uso de leis da química e de outros preceitos, pode-se inferir que o jogo favorece a aprendizagem tangencial, a compreensão dos conceitos da Tabela Periódica, quando combinado com um professor que utilize o jogo . Essa validação com estudantes permanece como etapa futura.
 
-\subsection{Trabalhos Futuros}
+% =====================================================================
+% SEÇÃO VII - CONCLUSÃO
+% =====================================================================
+
+\section{CONCLUSÃO}
+Neste trabalho, apresentou-se o desenvolvimento do jogo digital \textit{Alchemon}, um jogo 3D de captura de criaturas concebido para promover a aprendizagem tangencial dos elementos da Tabela Periódica entre estudantes do Ensino Médio. A partir da execução do projeto, verifica-se que o objetivo geral e os objetivos específicos foram cumpridos no âmbito do desenvolvimento de \textit{software}. O protótipo foi construído com a engine Godot 4, com uma arquitetura que separa as regras de jogo da apresentação, e implementa exploração, captura, combate por turnos, progressão, formação de compostos e persistência de dados, como é esperado do gênero. A estabilidade funcional foi evidenciada pelos testes internos de qualidade apresentados na Seção VI: 65 casos automatizados aprovados, testes manuais em Linux e Windows e desempenho estável em 25 ciclos repetidos de combate e retorno à exploração.
+
+Como limitação, destaca-se a impossibilidade temporal de conduzir testes empíricos de usabilidade e de aprendizagem com estudantes do público-alvo. Os testes internos indicam que o \textit{software} é funcional e estável nas condições avaliadas, mas não medem o ganho pedagógico nem a retenção de conteúdo. Por isso, a contribuição da proposta para a aprendizagem permanece como hipótese fundamentada na literatura, e não como resultado comprovado. Reconhece-se também que mais tempo de desenvolvimento permitiria o refinamento visual do jogo. Os modelos 3D definitivos das criaturas não foram implementados, e as animações e os elementos da interface podem ser aprimorados para elevar a imersão e o apelo estético.
+
+Para a continuidade deste projeto em pesquisas futuras, recomendam-se as seguintes etapas:
+\begin{enumerate}
+    \item \textbf{Aplicação de testes empíricos com estudantes:} realização de sessões de uso com estudantes do Ensino Médio, acompanhadas de pré-testes e pós-testes, para mensurar o impacto pedagógico, a usabilidade e a curva de aprendizagem;
+    \item \textbf{Refinamento e expansão gráfica:} criação dos modelos 3D das criaturas, com aparência e personalidade condizentes com a natureza de cada elemento, e polimento da direção de arte, das animações e da interface;
+    \item \textbf{Expansão do conteúdo pedagógico:} criação de novos Alchemons e ataques, além da ampliação do mundo do jogo com novos ginásios e do ajuste fino do balanceamento das mecânicas.
+\end{enumerate}
