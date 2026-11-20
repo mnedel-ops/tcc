@@ -35,80 +35,275 @@ A avaliação de desempenho foi conduzida em cinco execuções do procedimento d
 Os procedimentos descritos correspondem à avaliação técnica interna do jogo. Não foram realizadas avaliações com estudantes do Ensino Médio nesta etapa, portanto, a eficácia pedagógica, a usabilidade e o engajamento do público-alvo permanecem sem validação empírica.
 
 
+% =====================================================================
+% SEÇÃO V - SOLUÇÃO DESENVOLVIDA
+% Requer (já no preâmbulo do main.tex): graphicx, amsmath, listings, placeins
+% =====================================================================
+
+\lstdefinestyle{gd}{
+  basicstyle=\ttfamily\scriptsize,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  frame=single,
+  xleftmargin=2pt,
+  xrightmargin=2pt,
+  aboveskip=4pt,
+  belowskip=2pt,
+  showstringspaces=false
+}
+
 \section{SOLUÇÃO DESENVOLVIDA}
-Nesta seção, apresenta-se o desenvolvimento técnico do protótipo do jogo digital \textit{Alchemon}, concebido para promover a aprendizagem tangencial e o engajamento de estudantes do Ensino Médio com os conceitos e elementos da Tabela Periódica. A seção está organizada em três subseções: a Subseção A descreve a arquitetura de software e a organização estrutural do projeto; a Subseção B apresenta as principais mecânicas de jogabilidade (\textit{gameplay}) e seus aspectos de implementação; e a Subseção C reúne registros visuais das interfaces e dos ambientes do jogo durante sua execução.
-\subsection{Arquitetura e Engenharia do Jogo}
-A arquitetura do Alchemon foi organizada em módulos responsáveis pelos sistemas de exploração, combate, persistência de dados, interfaces e gerenciamento de cenas. Essa divisão estabelece as responsabilidades de cada componente e facilita a manutenção e a expansão do projeto.
+Nesta seção, apresenta-se o detalhamento técnico e a engenharia do protótipo do jogo \textit{Alchemon}. A estruturação da solução desenvolvida foi organizada com base nas quatro fases do ciclo de produção propostas por Chandler \cite{Chandler2009}: a Subseção A detalha as atividades de Pré-Produção; a Subseção B descreve a etapa de Produção e implementação prática; a Subseção C aborda os Testes internos de Garantia de Qualidade (QA) e as evidências visuais; e a Subseção D apresenta a Finalização e a geração da compilação executável.
 
-O sistema de exploração reúne os elementos necessários à movimentação do personagem, à interação com objetos e personagens não jogáveis (NPCs) e ao gerenciamento do inventário. A cena principal integra o personagem, a câmera, os seguidores e os elementos de interface. O carregamento dinâmico das fases permite a transição entre ambientes durante a sessão de jogo.
+% ---------------------------------------------------------------------
+\subsection{Pré-Produção: Planejamento, Conceito e Requisitos}
 
-A comunicação entre os módulos ocorre por meio de serviços globais e sinais da engine Godot. O gerenciamento da sessão concentra as operações de salvamento, carregamento e controle do progresso do jogador. Outro serviço centraliza os eventos relacionados ao combate e à sincronização dos dados das criaturas.
+\subsubsection{Conceito e escopo}
+O \textit{Alchemon} é um jogo 3D de captura e colecionismo de criaturas (\textit{creature capture}), em que cada criatura representa um elemento químico da Tabela Periódica. A direção de arte prevista é \textit{low-poly}, com referências estéticas à era PSX, e a plataforma-alvo é o PC (Windows). O protótipo foi desenvolvido na engine Godot 4.6, com a linguagem GDScript, renderizador \textit{GL Compatibility} e física Jolt.
 
-O sistema de combate possui componentes responsáveis pelo controle das ações, pelo armazenamento do estado temporário da batalha e pela aplicação das regras de confronto. Uma máquina de estados organiza o fluxo das batalhas em etapas de encontro, seleção e resolução de ações, encerramento de rodada e definição do resultado. Essa organização também permite que as regras de combate sejam processadas independentemente da apresentação visual das cenas.
+\subsubsection{Documentação técnica de apoio}
+As decisões de projeto foram registradas em um \textit{Game Design Document} (GDD) em formato reduzido, que reúne a visão geral, as mecânicas, as fórmulas, o estado de implementação de cada sistema e as divergências entre o planejado e o implementado\footnote{GDD: https://tinyurl.com/3uc3x2d8}.
 
-A persistência dos dados utiliza arquivos no formato JSON. São armazenadas informações sobre a equipe do jogador, as criaturas mantidas em armazenamento, o inventário, a quantidade de moedas, o progresso relacionado aos NPCs e a posição do personagem. O sistema também diferencia os dados permanentes das criaturas dos estados temporários utilizados durante as batalhas. Ao salvar ou carregar uma sessão, são realizadas verificações para tratar informações inválidas ou incompletas, além da criação de cópias de segurança dos arquivos de salvamento.
-\subsection{Detalhamento da Implementação}
-O Alchemon foi desenvolvido em ambiente tridimensional, com a engine Godot 4 e a linguagem GDScript. A implementação reúne sistemas de exploração, interação, captura, combate e progressão das criaturas. Os nós da engine controlam a movimentação, as colisões, as interações e a apresentação das informações ao jogador, enquanto os componentes responsáveis pelas regras processam os comportamentos das mecânicas.
+\subsubsection{Levantamento de requisitos}
+Os requisitos foram mapeados a partir do GDD e organizados em Requisitos Funcionais (RF), relativos às mecânicas, e Requisitos Não Funcionais (RNF), relativos à qualidade do produto. A Tabela~\ref{tab:rf} resume os RFs, e os RNFs são listados a seguir.
 
-\subsubsection{Exploração e Interação}
-A exploração ocorre em ambientes tridimensionais, nos quais o jogador movimenta o personagem em quatro direções, com detecção de colisões. O sistema de interação permite examinar objetos, coletar itens e iniciar combates com NPCs.
+\begin{table}[!h]
+\caption{Requisitos funcionais do protótipo.}
+\label{tab:rf}
+\centering
+\footnotesize
+\begin{tabular}{@{}p{0.9cm}p{6.8cm}@{}}
+\hline
+\textbf{Código} & \textbf{Requisito} \\
+\hline
+RF01 & Movimentação com colisão e interação com itens \\
+RF02 & Encontros com criaturas selvagens em mato alto \\
+RF03 & Batalha contra NPC \textit{Fighter} \\
+RF04 & Seleção e resolução de ações por turno (iniciativa) \\
+RF05 & Dano, erro, crítico e consumo de energia \\
+RF06 & Uso de itens de cura em combate \\
+RF07 & Captura com fórmula dependente de HP e ferramenta \\
+RF08 & Posse e armazenamento de criaturas \\
+RF09 & Preservação do indivíduo capturado \\
+RF10 & Atributos derivados, temperatura e estados físicos \\
+RF11 & Experiência, níveis e aprendizado de ataques \\
+RF12 & Vitória, derrota e recompensas \\
+RF13 & Formação de Misturas e Compostos \\
+RF14 & Salvamento, carregamento e continuidade \\
+\hline
+\end{tabular}
+\end{table}
 
-Os encontros com criaturas selvagens ocorrem por meio de uma probabilidade de encontro, com um intervalo entre as tentativas. Os NPCs treinadores possuem equipes predefinidas, compostas por criaturas de espécies e níveis específicos, e podem iniciar combates quando o jogador entra em contato com eles.
+\begin{itemize}
+    \item \textbf{RNF01 (Desempenho):} média de 60 quadros por segundo (FPS) na exploração e no combate, sem quedas sustentadas abaixo de 30 FPS;
+    \item \textbf{RNF02 (Portabilidade):} compilação nativa para Windows x86\_64;
+    \item \textbf{RNF03 (Confiabilidade):} gravação atômica do salvamento com cópia de segurança, tolerando arquivos corrompidos;
+    \item \textbf{RNF04 (Manutenibilidade):} regras de jogo separadas da apresentação, de modo que possam ser testadas sem executar uma partida;
+    \item \textbf{RNF05 (Estabilidade de memória):} consumo de RAM e VRAM sem crescimento contínuo após ciclos repetidos de exploração e combate.
+\end{itemize}
 
-\subsubsection{Captura de Alchemons}
-A captura ocorre durante os combates contra Alchemons selvagens, sem treinador, em que essa ação está disponível. A probabilidade de sucesso considera a quantidade atual de pontos de vida da criatura em relação ao seu total, além da compatibilidade do item de captura. Assim, criaturas com menos pontos de vida apresentam maior probabilidade de captura.
+\subsubsection{Transposição didática}
+A transposição didática foi planejada em torno de quatro referenciais: a Química, a Teoria da Autodeterminação (SDT), a teoria de Ausubel e a aprendizagem tangencial.
 
-O cálculo produz um resultado dentro de uma faixa de valores, cujo limite superior representa uma captura garantida. Após o sucesso, o sistema registra a instância específica da criatura capturada, preservando seus dados individuais, como identificador, características genéticas, personalidade e pontos de vida restantes. Dessa forma, cada criatura mantém suas características próprias ao integrar a equipe ou o armazenamento do jogador.
+\textbf{Química.} Cada espécie corresponde a um elemento, e seus atributos-base são gerados a partir de propriedades tabeladas, normalizadas para a faixa de 30 a 110. A Tabela~\ref{tab:quimica} apresenta as correspondências adotadas. Elas são abstrações lúdicas, e não equivalências físicas entre grandezas.
 
-\subsubsection{Sistema de Combate e Atributos}
-O combate utiliza um sistema de turnos no qual o jogador pode selecionar ataques, utilizar itens, tentar capturar criaturas ou fugir, conforme as condições do confronto. A ordem das ações considera a velocidade mecânica dos participantes. Os ataques levam em conta os atributos das criaturas e a efetividade entre suas categorias químicas, além de contemplarem erros, acertos críticos e consumo de energia.
+\begin{table}[!h]
+\caption{Correspondência entre atributos do jogo e conceitos químicos.}
+\label{tab:quimica}
+\centering
+\footnotesize
+\begin{tabular}{@{}p{1.7cm}p{5.9cm}@{}}
+\hline
+\textbf{Atributo} & \textbf{Conceito químico} \\
+\hline
+HP base & Entalpia de atomização \\
+Ataque base & Reatividade (afinidade eletrônica em ametais; inverso da energia de ionização em metais) \\
+Defesa base & Primeira energia de ionização \\
+Velocidade base & Eletronegatividade de Pauling dividida pela raiz da massa atômica \\
+Energia de ação & Elétrons de valência (referência conceitual) \\
+\hline
+\end{tabular}
+\end{table}
 
-Cada Alchemon pertence a uma das três categorias: Metal, Metaloide ou Ametal. A relação entre elas segue um ciclo de vantagens: Metal possui vantagem sobre Metaloide, Metaloide sobre Ametal e Ametal sobre Metal. Quando um ataque possui vantagem de categoria, seu dano recebe um multiplicador de 1,5; quando o alvo apresenta resistência, o multiplicador é de 0,66; e, em situações neutras, aplica-se o multiplicador de 1,0. Essa organização estabelece uma relação estratégica entre a composição da equipe e a escolha dos ataques durante os confrontos.
+O valor final de cada atributo depende da espécie, do nível $N$ e de um valor individual (IV) sorteado entre 1 e 31 na criação da criatura:
+\begin{equation}
+\mathrm{Stat}(B,IV,N)=\lfloor 0{,}01\,(2B+IV)\,N\rfloor+5
+\label{eq:stat}
+\end{equation}
+em que $B$ é o atributo-base. Por exemplo, com $B=50$, $IV=20$ e $N=10$, obtém-se $\lfloor 0{,}01\cdot 120\cdot 10\rfloor+5=17$. A progressão de nível segue a curva cúbica: o XP acumulado para atingir o nível $N$ é $N^3$, e subir de $N$ para $N+1$ custa $(N+1)^3-N^3$.
 
-Os atributos das criaturas estabelecem associações lúdicas com propriedades químicas. A massa atômica serve como referência para os pontos de vida; a eletronegatividade, para o ataque; a energia de ionização, para a defesa; e os elétrons de valência, para a energia de ação. A velocidade mecânica é um parâmetro de jogo. Essas associações não representam relações físicas diretas entre as grandezas, mas uma forma de relacionar características dos elementos às regras de combate.
+A conversão entre os atributos e o dano de um golpe é dada por
+\begin{equation}
+D=\left\lfloor\left(\frac{\left(\frac{2N}{5}+2\right)\cdot P\cdot \frac{A}{\max(D_f,1)}}{50}+2\right)\cdot E\right\rfloor
+\label{eq:dano}
+\end{equation}
+cujos termos estão descritos na Tabela~\ref{tab:termos}. Para $N=10$, $P=40$, $A=20$ e $D_f=15$, o dano é 12 com vantagem de tipo ($E=1{,}5$), 8 em situação neutra ($E=1{,}0$) e 5 com resistência ($E=0{,}66$).
 
-Os valores finais dos atributos consideram os valores básicos da espécie, o nível, as características individuais e a personalidade da criatura. A experiência acumulada permite subir de nível, com ajustes nos atributos e nos limites de vida e energia. O sistema também considera os estados físicos sólido, líquido e gasoso, determinados pelos pontos de fusão e ebulição de cada espécie. Durante o combate, a temperatura da arena pode alterar esses estados e produzir efeitos sobre as criaturas.
-\subsubsection{Outros Sistemas}
-Além das mecânicas principais, o jogo possui sistemas de vitória e derrota, distribuição de recompensas, gerenciamento da equipe e armazenamento de criaturas. Nas batalhas contra treinadores, a vitória concede moedas ao jogador, enquanto o sistema também registra o resultado do confronto e atualiza o progresso relacionado ao NPC.
+\begin{table}[!h]
+\caption{Termos da fórmula de dano (Eq.~\ref{eq:dano}).}
+\label{tab:termos}
+\centering
+\footnotesize
+\begin{tabular}{@{}p{0.8cm}p{6.8cm}@{}}
+\hline
+\textbf{Termo} & \textbf{Significado} \\
+\hline
+$N$ & Nível do atacante \\
+$P$ & Poder do golpe \\
+$A$ & Atributo Ataque do atacante (Eq.~\ref{eq:stat}) \\
+$D_f$ & Atributo Defesa do alvo, com piso 1 \\
+$E$ & Efetividade: 1,5 (vantagem), 1,0 (neutro), 0,66 (desvantagem) \\
+\hline
+\end{tabular}
+\end{table}
 
-A persistência em arquivos JSON mantém os dados da equipe, das criaturas armazenadas, do inventário, das moedas, do progresso dos NPCs e da posição do personagem. Esses recursos permitem preservar o progresso entre sessões e retomar a exploração após o carregamento dos dados.
+As propriedades térmicas também derivam da Química. Cada golpe que acerta injeta energia $Q$ no alvo, e a variação de temperatura é $\Delta T=Q/(m\,c_p)$. Ao ultrapassar o ponto de fusão ou de ebulição da espécie, a criatura muda de estado físico e sofre dano de transição.
 
-As especificações complementares das mecânicas, dos sistemas e dos requisitos funcionais estão registradas no GDD do projeto\footnote{GDD: https://tinyurl.com/3uc3x2d8}.
-\subsection{Evidências Visuais}
-Nesta subseção, apresentam-se registros visuais das interfaces e dos ambientes do protótipo durante sua execução.
+\textbf{SDT.} O jogo possui poucos tutoriais, todos extremamente didáticos, de modo que o sucesso inicial do jogador sustenta a sensação de competência e a motivação. Em contrapartida, os combates são desafiadores e exigem o uso conjunto de todas as mecânicas apresentadas, em especial a temperatura e os pontos de ebulição, para que o jogador obtenha êxito.
 
-A Fig. \ref{fig:jmain} apresenta o menu principal, com opções para iniciar uma nova sessão, carregar um jogo salvo e sair.
+\textbf{Ausubel.} Os subsunçores são as próprias criaturas. Em combate, elas se combinam em compostos, e o jogador associa os tipos científicos (Metal, Metaloide e Ametal) ao elemento correspondente. Por limitação de tempo, não foi possível implementar modelos 3D definitivos; a proposta é que cada Alchemon tenha aparência e personalidade condizentes com a natureza de seu elemento.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.4\textwidth]{images/main.png}
-    \caption{Menu principal. Fonte: elaborado pelo autor.}
-    \label{fig:jmain}
+\textbf{Aprendizagem tangencial.} Ocorre quando o jogador consulta a Tabela Periódica, presente no jogo ou fora dele. A informação obtida gera vantagens táticas, como a escolha do tipo de ataque ou o aproveitamento dos pontos de ebulição, e reforça a motivação para novas consultas.
+
+\subsubsection{Arquitetura e desacoplamento}
+O projeto foi organizado por responsabilidade em sete diretórios: \texttt{scenes}, \texttt{EXPLORATION}, \texttt{COMBAT}, \texttt{DATABASE}, \texttt{INTERFACES}, \texttt{autoload} e \texttt{test}. O desacoplamento separa dados e regras da orquestração de cenas. As regras (fórmulas, captura, recompensas e sincronização) são classes que não dependem da árvore de nós, e os nós da engine atuam como adaptadores de entrada, apresentação e ciclo de vida. Dois serviços globais, \texttt{GameSession} e \texttt{CombatSignal}, centralizam o progresso e os eventos de combate, permitindo que os módulos reajam por sinais sem referências diretas. O estado transitório da batalha também é distinto dos dados permanentes das criaturas, que só são atualizados em pontos bem definidos. Assim, a dependência da engine permanece, mas o núcleo de regras pode ser testado isoladamente.
+
+% ---------------------------------------------------------------------
+\subsection{Produção: Implementação Prática e \textit{Gameplay}}
+
+\subsubsection{Programação das mecânicas}
+A implementação adota uma arquitetura baseada em composição de componentes. O jogador é um nó \texttt{CharacterBody3D} composto por \texttt{MovementComponent}, \texttt{InteractionComponent}, \texttt{InventoryComponent} e \texttt{CombatHandler}, o que evita concentrar movimentação, interação e inventário em uma única classe. As criaturas, ataques e itens são recursos de dados, e as regras operam sobre eles. As mecânicas dividem-se em Exploração, Combate e Formação de Compostos.
+
+\subsubsection{Exploração}
+O jogador caminha pelo cenário, limitado por colisores, e coleta itens ao interagir com eles. Também interage com NPCs de quatro tipos: o \textit{Fighter} luta contra o jogador e, ao ser derrotado, concede experiência e moedas; o Enfermeiro cura os Alchemons do jogador; o Lojista compra e vende itens; e os Civis apenas conversam. Os cenários são carregados dinamicamente e ligados por portas.
+
+\subsubsection{Combate}
+O combate é por turnos, no formato 2$\times$2. Ele inicia quando o jogador é avistado por um \textit{Fighter} ou por uma criatura selvagem, encontrada em mato alto. Em cada rodada, o jogador possui três ações: Ataque, Item e Fuga.
+
+\textbf{Ataque.} A ação usa apenas os atributos para calcular o dano, segundo a Eq.~\ref{eq:dano}. O tipo da criatura atacante é irrelevante: um golpe do tipo Metal pode ser usado por criaturas Ametal, Metal ou Metaloide sem consequências adicionais. A consequência surge na relação entre o tipo do golpe e o tipo do defensor, que segue o ciclo da Tabela~\ref{tab:tipos}. Há ainda 1/6 de chance de erro e 12,5\% de chance de crítico (multiplicador 1,5).
+
+\begin{table}[!h]
+\caption{Vantagens e desvantagens entre o tipo do golpe e o tipo do defensor.}
+\label{tab:tipos}
+\centering
+\footnotesize
+\begin{tabular}{@{}lccc@{}}
+\hline
+\textbf{Golpe $\backslash$ Defensor} & \textbf{Metal} & \textbf{Metaloide} & \textbf{Ametal} \\
+\hline
+Metal & 1,0 & 1,5 & 0,66 \\
+Metaloide & 0,66 & 1,0 & 1,5 \\
+Ametal & 1,5 & 0,66 & 1,0 \\
+\hline
+\end{tabular}
+\end{table}
+
+\textbf{Item.} Representa o uso de itens para curar ou capturar Alchemons selvagens. Os itens de cura restauram um valor fixo de HP, definido pela qualidade do item (30 ou 100 pontos). Na captura, o jogador deve usar a ferramenta do mesmo tipo da criatura selvagem, em vez de explorar a vantagem de tipo. A probabilidade depende do HP atual:
+\begin{equation}
+a=\left\lfloor \frac{(3\,HP_{max}-2\,HP)\,M}{3\,HP_{max}} \right\rfloor,\quad 1\le a\le 255
+\label{eq:captura}
+\end{equation}
+com $M=255$ para a ferramenta compatível e $M=127$ para a incompatível. A captura é bem-sucedida quando um valor sorteado entre 0 e 254 é menor que $a$. Para $HP_{max}=40$ e $HP=10$, a ferramenta correta resulta em $a=212$ (cerca de 83\%) e a incorreta em $a=105$ (cerca de 41\%). A captura é bloqueada em batalhas contra \textit{Fighters}.
+
+\textbf{Fuga.} Permite ao jogador tentar escapar de combates contra adversários, com chance de sucesso de 5/6. Uma tentativa malsucedida não traz benefícios ao adversário, mas consome a ação do jogador naquele turno.
+
+\subsubsection{Formação de compostos}
+Na estação de alquimia, o jogador vincula de dois a quatro Alchemons. Um grupo forma um composto \textbf{iônico} quando combina metal e ametal com diferença de eletronegatividade $\Delta E\ge 2{,}0$ e cargas que se neutralizam; forma um composto \textbf{covalente} quando combina ametais com $\Delta E<2{,}0$ e ligações que fecham o octeto; e, em qualquer outro caso, forma uma \textbf{Mistura}, sempre de dois Alchemons. O composto possui temperatura própria, e sua temperatura de cisão depende do tipo de ligação: no iônico, $T_{cis}=T_{eb,\hat{a}nion}+250|\Delta E|+100|Z_{c\acute{a}tion}|$. Quando a temperatura atinge esse limite, o vínculo é desfeito, os sobreviventes sofrem choque térmico e ficam em Sobrecarga Térmica por duas rodadas.
+
+\subsubsection{Detalhamento algorítmico}
+O Quadro~\ref{lst:dano} mostra a fórmula de dano, implementada como função estática pura, e o Quadro~\ref{lst:fases} apresenta a máquina de estados que controla as fases de uma batalha.
+
+\begin{lstlisting}[style=gd,caption={Cálculo de dano (\texttt{alchemon\_formulas.gd}).},label={lst:dano}]
+static func compute_damage(level: int, power: int, attack: int, defense: int, effectiveness: float = 1.0) -> int:
+    var defense_safe := maxi(defense, 1)
+    var scaled := (2.0 * level / 5.0 + 2.0) * power * (float(attack) / defense_safe)
+    var damage := (scaled / 50.0 + 2.0) * effectiveness
+    return maxi(int(floor(damage)), 0)
+\end{lstlisting}
+
+\begin{lstlisting}[style=gd,caption={Transições válidas entre fases do combate (\texttt{battle\_phase.gd}).},label={lst:fases}]
+static func is_valid_transition(from_phase: String, to_phase: String) -> bool:
+    if is_terminal_phase(from_phase):
+        return false
+    match from_phase:
+        ENCOUNTER_START: return to_phase == SELECTING_ACTIONS
+        SELECTING_ACTIONS: return to_phase == RESOLVING_ACTIONS
+        RESOLVING_ACTIONS: return to_phase == END_OF_ROUND or to_phase == COMBAT_OVER
+        END_OF_ROUND: return to_phase == SELECTING_ACTIONS or to_phase == COMBAT_OVER
+        COMBAT_OVER: return to_phase == VICTORY or to_phase == DEFEAT
+        _: return false
+\end{lstlisting}
+
+% ---------------------------------------------------------------------
+\subsection{Testes e Garantia de Qualidade (QA)}
+
+\subsubsection{Protocolo de testes internos}
+A verificação foi contínua e conduzida pelo próprio desenvolvedor. Os testes funcionais de caixa-preta consistiram em executar o jogo em Linux e Windows e verificar, a partir das entradas do jogador, se cada mecânica produzia o resultado esperado, conforme os RFs da Tabela~\ref{tab:rf}: inicialização, exploração, encontros, combate, captura, evolução, formação de compostos e persistência. Em paralelo, as regras de domínio foram cobertas por testes automatizados com o GdUnit4, em 17 suítes que abrangem crescimento, captura, recompensas, persistência, compostos, temperatura, loja e desempenho. Esses testes verificam também casos-limite, como o valor de captura entre 1 e 255, dados de salvamento inválidos e arquivos corrompidos.
+
+A avaliação de desempenho seguiu um procedimento automatizado, com cinco execuções de cinco ciclos de combate e retorno à exploração, e registrou FPS, tempos de carregamento e consumo de RAM e VRAM. Não foram realizadas avaliações com estudantes nesta etapa, de modo que a eficácia pedagógica não foi validada empiricamente.
+
+\subsubsection{Ciclo iterativo de correção de erros}
+A fase de testes retroalimentou a Produção, conforme o ciclo de Chandler: ao identificar uma falha, o código retornava à implementação para refatoração e só então era verificado novamente. Quatro casos ilustram esse ciclo:
+\begin{itemize}
+    \item \textbf{Captura do indivíduo errado:} a captura registrava apenas a espécie. A correção passou a guardar a instância combatida, preservando identificador, IV, personalidade e HP;
+    \item \textbf{Sincronização por posição:} HP e XP eram gravados pela posição na equipe, e uma criatura removida causava gravação na criatura errada. A sincronização passou a usar o identificador único (UID);
+    \item \textbf{Vazamento de bônus de vínculo:} o bônus temporário de Mistura ou Composto era copiado para os atributos permanentes. Ele passou a existir apenas no estado transitório da batalha;
+    \item \textbf{Fim de combate prematuro:} o sinal de encerramento liberava a exploração antes da tela de recompensas. A emissão foi concentrada no controlador de batalha.
+\end{itemize}
+Cada correção foi acompanhada de um teste de regressão que protege o comportamento corrigido.
+
+\subsubsection{Evidências visuais}
+A Fig.~\ref{fig:jmain} apresenta o menu principal, com as opções de nova sessão, carregamento e saída. A Fig.~\ref{fig:jexplor} mostra a exploração, com o personagem, os NPCs e as áreas de mato alto. No canto inferior esquerdo, há os comandos para abrir o menu e interagir com os itens ou NPCs. A Fig.~\ref{fig:jcombate} exibe a interface de combate, com os comandos, as barras de HP e energia e o registro de eventos. Quando o jogador escolhe a opção de combate, a interface é atualizada, e um menu abre com a lisa de ataques conhecidos pela criatura que deve agir. E com o ataque escolhido, outro menu abre, dessa vez, pra escolher o alvo. A Fig.~\ref{fig:jtabela} mostra a Tabela de espécies do menu, que permite ao jogador consultar os dados dos elementos, e a Fig.~\ref{fig:jalquimia} apresenta a estação de alquimia, em que são formados os compostos.
+
+% Substituir os arquivos pelas capturas finais.
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.45\textwidth]{images/jmain.png}
+\caption{Menu principal.}
+\label{fig:jmain}
 \end{figure}
 
-Na Fig. \ref{fig:gameplayExploracao} observa-se a tela de \textit{gameplay} no momento de exploração. Ela não vai possuir HUD.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.4\textwidth]{images/gameplayExploracao.png}
-    \caption{\textit{Gameplay} em exploração. Fonte: elaborado pelo autor.}
-    \label{fig:gameplayExploracao}
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.45\textwidth]{images/jexplor.png}
+\caption{Exploração do cenário.}
+\label{fig:jexplor}
 \end{figure}
 
-E, na Fig. \ref{fig:gameplay}, o \textit{gameplay} no momento de batalha, com a interface de combate e os elementos de interação com o jogador. O HUD fica na parte superior da tela para não atrapalhar o jogador. Nele, ha as opcoes de comandos, Ataque, Item e Fugir. Seguido da caixa de Acoes, que contem as ultimas quatro acoes que aconteceram.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.4\textwidth]{images/gameplay.png}
-    \caption{\textit{Gameplay} em batalha. Fonte: elaborado pelo autor.}
-    \label{fig:gameplay}    
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.45\textwidth]{images/jcombate.png}
+\caption{Interface de combate.}
+\label{fig:jcombate}
 \end{figure}
 
-Por fim, a Fig. \ref{fig:pc} ilustra os menus do computador utilizados para o gerenciamento dos Alchemons e formacao de Compostos. O menu Alquimia serve para fazer as ligacoes e formar compostos, entre dois ou mais Alchemons, tanto na equipe como armazenados. O menu Armazenados, ficam guardados os Alchemons que nao estiverem na equipe do jogador.
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.4\textwidth]{images/pc.png}
-    \caption{Menu do computador. Fonte: elaborado pelo autor.}
-    \label{fig:pc}
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.45\textwidth]{images/jtabela.png}
+\caption{Tabela de espécies no menu do jogo.}
+\label{fig:jtabela}
 \end{figure}
 
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.45\textwidth]{images/jalquimia.png}
+\caption{Estação de alquimia.}
+\label{fig:jalquimia}
+\end{figure}
+
+\FloatBarrier
+
+% ---------------------------------------------------------------------
+\subsection{Finalização e Pós-Produção}
+
+\subsubsection{Geração da \textit{build} executável}
+A versão final foi gerada pelo sistema de exportação da Godot, com o \textit{preset} Windows Desktop, arquitetura x86\_64, renderizador \textit{GL Compatibility} e pacote de recursos (\texttt{.pck}) externo. A compilação produziu o executável \texttt{tcc-jogo.exe} (cerca de 100,6~MB) e o pacote \texttt{tcc-jogo.pck} (cerca de 1,3~MB).
+
+\subsubsection{Disponibilização e hospedagem}
+O jogo foi publicado na plataforma itch.io\footnote{[INSERIR LINK DA PÁGINA NO ITCH.IO]}, e os arquivos foram enviados ao Sistema TFG OnLine da UFN. O código-fonte e a documentação estão disponíveis em repositório aberto no GitHub\footnote{https://github.com/mnedel-ops/TCC-Jogo}.
+
+\subsubsection{Arquivamento e \textit{post-mortem}}
+Os \textit{assets} e o código foram organizados por responsabilidade, com as espécies, os ataques e os itens como recursos de dados independentes. Essa organização facilita o reaproveitamento em pesquisas futuras: novas espécies são cadastradas preenchendo uma ficha, sem alterar as regras.
+
+Entre as lições aprendidas, destacam-se: (i) separar o estado transitório da batalha dos dados permanentes evitou uma classe inteira de erros de persistência; (ii) escrever os testes junto das regras detectou falhas antes da integração visual; (iii) o escopo do GDD foi maior que o prazo, de modo que modelos 3D definitivos, ginásios adicionais, cena de hospital e balanceamento fino permaneceram como trabalho futuro; e (iv) a validação com estudantes do Ensino Médio é o passo necessário para avaliar a eficácia pedagógica da proposta.

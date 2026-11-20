@@ -1,232 +1,78 @@
+% =====================================================================
+% SEÇÃO VI - RESULTADOS E DISCUSSÕES
+% =====================================================================
+
 \section{RESULTADOS E DISCUSSÕES}
-Esta seção apresenta os procedimentos de verificação e os resultados obtidos no desenvolvimento do Alchemon. São descritos os ambientes de teste, os critérios de desempenho, a verificação dos requisitos funcionais e as principais limitações identificadas.
+Esta seção apresenta as evidências de funcionamento e de estabilidade técnica do protótipo \textit{Alchemon}, obtidas por meio de testes internos de qualidade. Ela está organizada em três partes: a Subseção A reúne os testes funcionais; a Subseção B resume o desempenho técnico; e a Subseção C discute os resultados e as limitações do trabalho.
 
-\subsubsection{Matriz de Verificação de Requisitos Funcionais}
-A verificação dos requisitos funcionais considerou testes automatizados, manuais e de integração. As quatro suítes automatizadas totalizaram 65 casos aprovados, enquanto as funcionalidades relacionadas à interação com a interface foram verificadas manualmente nos ambientes Linux e Windows. A Tabela~\ref{tab:matriz-requisitos} apresenta a relação entre os requisitos e os procedimentos de verificação.
+% ---------------------------------------------------------------------
+\subsection{Testes Funcionais}
+Os testes funcionais verificaram se cada mecânica planejada operava conforme o esperado. Foram realizados testes manuais, por interação direta com o jogo nos ambientes Linux e Windows, e testes automatizados com o GdUnit4. A Tabela~\ref{tab:funcionais} apresenta as mecânicas verificadas e o status de cada uma. Todas foram aprovadas.
 
-\begin{table}[!t]
-    \caption{Matriz de verificação dos requisitos funcionais}
-    \label{tab:matriz-requisitos}
-    \centering
-    \footnotesize
-    \begin{tabular}{|p{0.27\columnwidth}|p{0.25\columnwidth}|p{0.18\columnwidth}|p{0.18\columnwidth}|}
-        \hline
-        \textbf{Requisito} & \textbf{Tipo de teste} & \textbf{Execução} & \textbf{Integração} \\ \hline
-        Crescimento das criaturas & Automatizado e manual & Aprovado & Aprovada \\ \hline
-        Atributos das criaturas & Automatizado e manual & Aprovado & Aprovada \\ \hline
-        Captura & Automatizado e manual & Aprovado & Aprovada \\ \hline
-        Distribuição de recompensas & Automatizado e manual & Aprovado & Aprovada \\ \hline
-        Interface & Manual & Aprovado & Aprovada \\ \hline
-        Persistência de dados & Automatizado e manual & Aprovado & Aprovada \\ \hline
-    \end{tabular}
-    \footnotesize Fonte: Elaborado pelo autor (2026).
+\begin{table}[!h]
+\caption{Testes funcionais das mecânicas do \textit{Alchemon}.}
+\label{tab:funcionais}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}p{2.6cm}p{3.9cm}p{1.1cm}@{}}
+\hline
+\textbf{Mecânica} & \textbf{Resultado esperado} & \textbf{Status} \\
+\hline
+Movimentação e colisão & Deslocamento limitado pelos colisores do cenário & Aprovado \\
+Interação e coleta & Item identificado e adicionado ao inventário & Aprovado \\
+NPCs (\textit{Fighter}, Enfermeiro, Lojista, Civil) & Luta, cura, compra/venda e diálogo & Aprovado \\
+Encontros selvagens & Combate iniciado em mato alto & Aprovado \\
+Combate por turnos & Ações resolvidas pela iniciativa até a vitória ou derrota & Aprovado \\
+Dano e efetividade de tipo & Multiplicadores 1,5, 1,0 e 0,66 aplicados & Aprovado \\
+Uso de itens e fuga & Cura limitada ao HP máximo; fuga com chance de 5/6 & Aprovado \\
+Captura & Chance cresce com a redução do HP; ferramenta correta é mais eficaz & Aprovado \\
+Temperatura e estados físicos & Mudança de estado e dano de transição & Aprovado \\
+Misturas e Compostos & Vínculo formado, validado e desfeito & Aprovado \\
+Experiência e níveis & Nível e atributos atualizados & Aprovado \\
+Barra de vida, HUD e menus & Informações exibidas e navegação funcional & Aprovado \\
+Salvamento e carregamento & Progresso e posição restaurados & Aprovado \\
+\hline
+\end{tabular}
 \end{table}
 
-\subsection{Análise de Dados e Métricas}
-Os dados obtidos nos testes foram organizados em tabelas para facilitar a comparação dos resultados e a verificação dos requisitos técnicos do Alchemon. A análise contemplou os ambientes de execução, o atendimento aos requisitos funcionais, o desempenho, a estabilidade e os resultados dos testes manuais e automatizados. Para os testes de desempenho, foram consideradas as médias e os valores mínimos de FPS, os tempos de carregamento e transição entre cenas e o consumo de memória RAM e de vídeo (VRAM). As execuções repetidas também permitiram observar possíveis variações no consumo de recursos e ocorrências relacionadas à estabilidade. As Tabelas I a V sintetizam os resultados obtidos, enquanto a análise considera os limites dos procedimentos realizados e as condições dos ambientes de teste.
+Os testes automatizados foram organizados em quatro suítes, com 65 casos executados e aprovados: 4 de atributos e evolução, 13 de captura, 11 de recompensas e interface e 37 de persistência e continuidade da sessão. Eles cobrem fórmulas, limites e dados inválidos, como o valor de captura restrito de 1 a 255 e arquivos de salvamento corrompidos. A descrição individual dos casos encontra-se na documentação técnica do repositório\footnote{https://tinyurl.com/2ydk7rt7}.
 
-\subsubsection{Testes de Desempenho}
+% ---------------------------------------------------------------------
+\subsection{Desempenho Técnico}
+O desempenho foi medido em cinco execuções do procedimento de teste, cada uma com cinco ciclos de combate e retorno à exploração, totalizando 25 ciclos. A Tabela~\ref{tab:desempenho} resume os resultados.
 
-Os testes de desempenho avaliaram o tempo de carregamento das cenas, o consumo de memória, a taxa de quadros e o comportamento do jogo após transições repetidas entre exploração e combate. Para isso, foram realizadas cinco execuções do procedimento de teste, cada uma com cinco ciclos de combate e retorno, totalizando 25 ciclos repetidos. As medições de FPS contemplaram os cenários de exploração e combate, com 150 amostras por cenário, distribuídas entre as cinco execuções. A Tabela~\ref{tab:desempenho_completo} apresenta a síntese dos resultados obtidos.
-
-Os resultados indicaram médias de 139,36 FPS durante a exploração e 138,58 FPS durante o combate. Quanto aos tempos de carregamento, a inicialização apresentou média de 579,8 ms, enquanto o retorno da batalha registrou o maior valor, com 621,6 ms. O consumo de RAM passou de 252,84 MB na inicialização para aproximadamente 287 MB após o combate. Nos ciclos repetidos, a variação de RAM entre o primeiro e o quinto ciclo permaneceu entre 0,0 e 0,1 MB. Além disso, os registros não apontaram a ocorrência de nós órfãos nas etapas monitoradas. Em conjunto, essas medições demonstram comportamento consistente nas execuções realizadas, embora os resultados se restrinjam ao ambiente de teste utilizado e não comprovem, isoladamente, a ausência de vazamentos de memória ou o desempenho em outras configurações de hardware.
-
-\begin{table*}[htbp]
-    \centering
-    \caption{Métricas de desempenho e estabilidade em ciclos repetidos}
-    \label{tab:desempenho_completo}
-    \scriptsize
-    \begin{tabular}{l|c|c|c|c|l}
-        \hline
-        \textbf{Cenário / Etapa} &
-        \textbf{Carga (ms)} &
-        \textbf{RAM / VRAM (MB)} &
-        \textbf{FPS} &
-        \textbf{Ciclos} &
-        \textbf{Estabilidade} \\
-        \hline
-            Inicialização &
-            579,8 &
-            252,84 / 18,80 &
-            -- &
-            5 &
-            0 nós órfãos \\
-
-            Carregamento da exploração &
-            346,8 &
-            280,86 / 31,44 &
-            139,36 (132 mín.) &
-            5 &
-            0 nós órfãos \\
-
-            Troca para combate &
-            20,8 &
-            -- &
-            -- &
-            5 &
-            -- \\
-
-            Carregamento do combate &
-            42,6 &
-            286,88 / 58,20 &
-            138,58 (131 mín.) &
-            5 &
-            0 nós órfãos \\
-
-            Retorno da batalha &
-            621,6 &
-            287,18 / 58,92 &
-            -- &
-            5 &
-            0 nós órfãos \\
-
-            Ciclos repetidos &
-            22,04 / 33,16 / 626,32 &
-            287,2 / -- &
-            -- &
-            25 &
-            Variação RAM: 0,0--0,1 MB \\
-        \hline
-    \end{tabular}
-    \\
-    \footnotesize Fonte: Elaborado pelo autor (2026).
-\end{table*}
-
-\subsubsection{Testes Manuais}
-Os testes manuais foram conduzidos por meio da interação direta com o jogo, com o objetivo de verificar o comportamento das principais funcionalidades em condições de uso. Os procedimentos foram executados nos ambientes Linux e Windows, e todos apresentaram os resultados esperados. A Tabela~\ref{tab:testes_manuais} resume as funcionalidades verificadas e os respectivos procedimentos.
-
-\begin{table}[htbp]
-    \centering
-    \caption{Resumo dos testes funcionais manuais do Alchemon}
-    \label{tab:testes_manuais}
-    \scriptsize
-    \setlength{\tabcolsep}{3pt}
-    \renewcommand{\arraystretch}{1.2}
-
-    \begin{tabularx}{\columnwidth}{
-        |>{\raggedright\arraybackslash}p{1.15cm}
-        |>{\raggedright\arraybackslash}X
-        |>{\raggedright\arraybackslash}X|
-    }
-        \hline
-        \textbf{Funcionalidade} &
-        \textbf{Procedimento} &
-        \textbf{Resultado obtido} \\
-        \hline
-
-        Inicialização &
-        Iniciar o jogo e acessar o menu principal. &
-        Exibição do menu e disponibilidade das opções implementadas. \\
-        \hline
-
-        Exploração &
-        Movimentar o personagem pelo ambiente e utilizar os controles disponíveis. &
-        Movimentação adequada, interação com o cenário e ausência de bloqueios inesperados. \\
-        \hline
-
-        Interação com criaturas &
-        Aproximar-se de criaturas e acionar as interações disponíveis. &
-        Exibição das informações e respostas correspondentes à interação. \\
-        \hline
-
-        Captura &
-        Utilizar os instrumentos de captura em diferentes situações. &
-        Resolução da tentativa de captura e atualização da coleção conforme o resultado. \\
-        \hline
-
-        Combate &
-        Iniciar um combate e executar as ações disponíveis. &
-        Processamento das ações, atualização dos atributos e encerramento adequado do combate. \\
-        \hline
-
-        Evolução &
-        Acumular experiência e verificar a evolução de nível. &
-        Atualização do nível e dos atributos conforme as regras implementadas. \\
-        \hline
-
-        Persistência &
-        Salvar o progresso, encerrar o jogo e carregar os dados novamente. &
-        Recuperação dos dados salvos, incluindo as criaturas e o progresso do jogador. \\
-        \hline
-    \end{tabularx}
-
-    \footnotesize Fonte: Elaborado pelo autor (2026).
+\begin{table}[!h]
+\caption{Resumo do desempenho técnico.}
+\label{tab:desempenho}
+\centering
+\footnotesize
+\begin{tabular}{@{}p{3.5cm}p{4.1cm}@{}}
+\hline
+\textbf{Métrica} & \textbf{Resultado} \\
+\hline
+FPS na exploração & 139,36 (mínimo 132) \\
+FPS no combate & 138,58 (mínimo 131) \\
+Inicialização & 579,8 ms \\
+Carregamento da exploração & 346,8 ms \\
+Carregamento do combate & 42,6 ms \\
+Retorno do combate & 621,6 ms \\
+RAM (início $\rightarrow$ após combate) & 252,84 $\rightarrow$ 287,18 MB \\
+Variação de RAM em 25 ciclos & 0,0 a 0,1 MB \\
+Nós órfãos & 0 \\
+\hline
+\end{tabular}
 \end{table}
 
-\subsubsection{Testes Automatizados}
-Os testes automatizados foram organizados em quatro suítes, totalizando 65 casos executados e aprovados com o framework GdUnit4, conforme apresentado na Tabela~\ref{tab:testes_automatizados}. As verificações abrangem os sistemas de evolução, captura, combate e persistência de dados das criaturas. A descrição individual dos casos de teste, incluindo seus procedimentos e critérios esperados, encontra-se na documentação técnica do repositório do projeto \footnote{Repositório do Alchemon: https://tinyurl.com/2ydk7rt7}.
-\begin{table}[htbp]
-    \centering
-    \caption{Resumo dos testes automatizados do Alchemon}
-    \label{tab:testes_automatizados}
-    \scriptsize
-    \setlength{\tabcolsep}{3pt}
-    \renewcommand{\arraystretch}{1.2}
+Os resultados foram os esperados. Quanto à fluidez, as médias de FPS superaram a meta de 60 quadros por segundo nos dois cenários, sem quedas próximas de 30 FPS. Quanto à velocidade, as transições levaram menos de 1 s, abaixo do limite de 3 s definido nos requisitos. Quanto à memória, o consumo estabilizou após o primeiro ciclo e variou no máximo 0,1 MB nos ciclos seguintes, sem travamentos e sem nós órfãos.
 
-    \begin{tabularx}{\columnwidth}{
-        |>{\raggedright\arraybackslash}p{1.55cm}
-        |>{\centering\arraybackslash}p{0.45cm}
-        |>{\raggedright\arraybackslash}X|
-    }
-        \hline
-        \textbf{Suíte de testes} &
-        \textbf{Casos} &
-        \textbf{Aspectos verificados} \\
-        \hline
+% ---------------------------------------------------------------------
+\subsection{Análise Crítica e Limitações}
+Os resultados indicam que a parte técnica e funcional do protótipo está concluída e aprovada nas condições avaliadas: as mecânicas planejadas operam como especificado e o jogo permaneceu estável em execuções repetidas.
 
-        \parbox[t]{1.55cm}{\raggedright\ttfamily
-        test\_alchemon\\Growth.gd} &
-        4 &
-        Cálculo de atributos, evolução de nível, energia e classificação dos estados físicos. \\
-        \hline
+Esses resultados têm limites. As medições de desempenho restringem-se ao equipamento de teste e não permitem generalizar para outras configurações de hardware. A ausência de nós órfãos também não comprova, isoladamente, a inexistência de vazamentos de memória. Além disso, os testes foram internos e conduzidos pelo próprio desenvolvedor, sem usuários externos.
 
-        \parbox[t]{1.55cm}{\raggedright\ttfamily
-        test\_capture\\\_formula.gd} &
-        13 &
-        Fórmula de captura, limites de probabilidade, influência dos pontos de vida e compatibilidade dos instrumentos. \\
-        \hline
-
-        \parbox[t]{1.55cm}{\raggedright\ttfamily
-        test\_battle\\\_rewards.gd} &
-        11 &
-        Recompensas, experiência, evolução, apresentação dos resultados e encerramento das batalhas. \\
-        \hline
-
-        \parbox[t]{1.55cm}{\raggedright\ttfamily
-        test\_creature\\\_persistence.gd} &
-        37 &
-        Identificação das criaturas, serialização, sincronização com o combate, inventário e persistência dos dados. \\
-        \hline
-
-        \textbf{Total} &
-        \textbf{65} &
-        Quatro suítes de testes automatizados com GdUnit4. \\
-        \hline
-    \end{tabularx}
-
-    \footnotesize Fonte: Elaborado pelo autor (2026).
-\end{table}
-
-\subsubsection{Resultados Alcançados}
-Durante o desenvolvimento, foram implementados sistemas de exploração tridimensional, combate por turnos, captura, progressão e persistência de dados. A verificação técnica contemplou quatro suítes de testes automatizados, com 65 casos aprovados, além de testes funcionais manuais e de integração. Os testes manuais foram realizados nos ambientes Linux e Windows.
-
-A avaliação de desempenho contemplou medições de taxa de quadros, tempos de carregamento e transição entre cenas e consumo de memória. Os resultados estão sintetizados na Tabela~\ref{tab:desempenho_completo} e caracterizam o comportamento do protótipo nas condições avaliadas. Entretanto, não foram realizadas avaliações com estudantes do Ensino Médio, de modo que ainda não há dados empíricos sobre os efeitos do jogo na aprendizagem ou no engajamento do público-alvo.
-\subsection{Discussão Crítica e Limitações}
-
-Os resultados obtidos demonstram que os principais sistemas técnicos do Alchemon foram implementados e submetidos a procedimentos de verificação. Os 65 casos de testes automatizados foram aprovados, assim como os testes funcionais manuais realizados nos ambientes Linux e Windows. A integração entre os sistemas também foi verificada e aprovada. Esses resultados fornecem evidências do funcionamento das funcionalidades contempladas pelos testes realizados.
-
-Os resultados dos testes indicam que os principais sistemas técnicos do Alchemon foram implementados e submetidos a procedimentos de verificação. As quatro suítes automatizadas, compostas por 65 casos, foram aprovadas, assim como os testes funcionais manuais e de integração. Essas verificações fornecem evidências do funcionamento dos recursos contemplados pelos procedimentos, mas não representam uma avaliação completa de todas as condições possíveis de execução.
-
-As medições de desempenho permitiram observar a taxa de quadros, os tempos de carregamento e o consumo de memória durante as execuções realizadas. Entretanto, os resultados estão restritos aos equipamentos e às condições utilizados nos testes, não permitindo generalizações para outras configurações de hardware. A ausência de nós órfãos nos registros também não comprova, isoladamente, a inexistência de vazamentos de memória.
-
-A principal limitação permanece na validação da proposta educacional. Não foram realizadas avaliações com estudantes do Ensino Médio, portanto, ainda não existem dados empíricos que permitam determinar se as mecânicas de captura e colecionismo favorecem a aprendizagem tangencial ou o engajamento com os conteúdos da Tabela Periódica. Aspectos como compreensão das mecânicas, curva de aprendizado, dificuldade e experiência de uso também permanecem sem avaliação junto ao público-alvo.
-
-Assim, os resultados apresentados correspondem à verificação técnica do protótipo. A continuidade do projeto requer o aprofundamento dos testes técnicos e, posteriormente, avaliações com estudantes, a fim de investigar sua adequação ao público-alvo e sua contribuição para os objetivos educacionais propostos.
-
-Outra limitação está relacionada à validação da proposta educacional. Não foram realizadas avaliações com estudantes do Ensino Médio, portanto, ainda não existem dados empíricos que permitam determinar se as mecânicas de captura e colecionismo favorecem o engajamento ou a aprendizagem tangencial dos conteúdos relacionados à Tabela Periódica. Aspectos como compreensão das mecânicas, curva de aprendizado, nível de dificuldade e experiência de uso permanecem sem validação junto ao público-alvo.
-
-Dessa forma, embora os testes funcionais e de integração tenham sido aprovados, a avaliação do projeto ainda requer as medições de desempenho e, posteriormente, a realização de avaliações com estudantes. Essas etapas permitirão investigar tanto o comportamento do jogo em execução quanto sua contribuição para os objetivos educacionais propostos.
-
+Principalmente, não foi realizada avaliação com estudantes do Ensino Médio. O funcionamento do código foi, portanto, separado da medição do impacto pedagógico. Ainda não há dados empíricos sobre se o jogo favorece a aprendizagem tangencial, a compreensão dos conceitos da Tabela Periódica ou o engajamento do público-alvo. Essa validação com estudantes permanece como etapa futura.
 \section{CONCLUSÕES}
 
 \subsection{Trabalhos Futuros}
