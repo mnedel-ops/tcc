@@ -31,18 +31,15 @@
          given={Riccardo},
          giveni={R\bibinitperiod},
       }}%
-      {{hash=GAD}{%
-         family={Gloria},
-         familyi={G\bibinitperiod},
-         given={Alessandro\bibnamedelima De},
-         giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod},
+      {{hash=DA}{%
+         family={{De Gloria}},
+         familyi={D\bibinitperiod},
+         given={Alessandro},
+         giveni={A\bibinitperiod},
       }}%
     }
-    \list{publisher}{1}{%
-      {International Association of Online Engineering}%
-    }
-    \strng{namehash}{BFBRGAD1}
-    \strng{fullhash}{BFBRGAD1}
+    \strng{namehash}{BFBRDA1}
+    \strng{fullhash}{BFBRDA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \verb{doi}
@@ -50,9 +47,9 @@
     \endverb
     \field{number}{3}
     \field{pages}{22\bibrangedash 35}
-    \field{title}{Designing Effective Serious Games: Opportunities and Challenges for Research}
+    \field{title}{Designing effective serious games: Opportunities and challenges for research}
     \field{volume}{5}
-    \field{journaltitle}{International Journal of Emerging Technologies in Learning (iJET)}
+    \field{journaltitle}{International Journal of Emerging Technologies in Learning}
     \field{year}{2010}
   \endentry
 
@@ -79,9 +76,9 @@
     \verb 10.1016/j.sbspro.2012.06.064
     \endverb
     \field{pages}{3345\bibrangedash 3349}
-    \field{title}{What do Players (Think They) Learn in Games?}
+    \field{title}{What do players (think they) learn in games?}
     \field{volume}{46}
-    \field{journaltitle}{Procedia - Social and Behavioral Sciences}
+    \field{journaltitle}{Procedia -- Social and Behavioral Sciences}
     \field{year}{2012}
   \endentry
 
@@ -113,11 +110,10 @@
     \strng{fullhash}{PJLMREHBD1}
     \field{labelnamesource}{editor}
     \field{labeltitlesource}{title}
-    \field{isbn}{9780262043045}
-    \field{note}{Publicado originalmente no final de 2019, registrado em 2020.}
+    \field{isbn}{978-0-262-04304-5}
     \field{title}{Handbook of Game-Based Learning}
     \list{location}{1}{%
-      {Cambridge, MA}%
+      {Cambridge, MA, USA}%
     }
     \field{year}{2020}
   \endentry
@@ -130,7 +126,7 @@
       }}%
     }
     \list{publisher}{1}{%
-      {PISA, OECD Publishing}%
+      {OECD Publishing}%
     }
     \strng{namehash}{O1}
     \strng{fullhash}{O1}
@@ -139,8 +135,7 @@
     \verb{doi}
     \verb 10.1787/53f23881-en
     \endverb
-    \field{note}{Relatório baseado nos dados coletados em 2022, publicado em 2023.}
-    \field{title}{PISA 2022 Results (Volume I): The State of Learning and Equity in Education}
+    \field{title}{{PISA} 2022 Results (Volume {I}): The State of Learning and Equity in Education}
     \list{location}{1}{%
       {Paris, France}%
     }
@@ -168,9 +163,6 @@
          giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim A\bibinitperiod},
       }}%
     }
-    \list{publisher}{1}{%
-      {Academia Pedia}%
-    }
     \strng{namehash}{LBCLRASVJMA1}
     \strng{fullhash}{LBCLRASVJMA1}
     \field{labelnamesource}{author}
@@ -180,7 +172,7 @@
     \endverb
     \field{number}{6}
     \field{pages}{1878\bibrangedash 1892}
-    \field{title}{Beyond Symbols and Trends: Conceptual Understanding and Motivation in Periodic Table Learning among Grade 9 Students}
+    \field{title}{Beyond symbols and trends: Conceptual understanding and motivation in periodic table learning among grade 9 students}
     \field{volume}{4}
     \field{journaltitle}{International Journal of Multidisciplinary: Applied Business and Education Research}
     \field{year}{2023}
@@ -208,6 +200,7 @@
     }
     \field{type}{Doctoral dissertation}
     \field{year}{2022}
+    \warn{\item Invalid format of field 'urldate'}
   \endentry
 
   \entry{Lima2010}{inproceedings}{}{}
@@ -240,11 +233,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{booktitle}{Anais do XV Encontro Nacional de Ensino de Química (ENEQ)}
-    \field{note}{Trabalho que mapeia o estado da arte do uso de jogos didáticos no Brasil.}
-    \field{title}{O uso de jogos no ensino de química: uma revisão da literatura}
-    \verb{url}
-    \verb http://www.eneq2010.unb.br/
-    \endverb
+    \field{title}{O uso de jogos no ensino de química: Uma revisão da literatura}
     \list{location}{1}{%
       {Brasília, DF, Brasil}%
     }
@@ -267,12 +256,12 @@
     \strng{fullhash}{HJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{CHI Conference on Human Factors in Computing Systems Extended Abstracts (CHI '21 Extended Abstracts)}
+    \field{booktitle}{Extended Abstracts of the 2021 CHI Conference on Human Factors in Computing Systems (CHI '21 Extended Abstracts)}
     \verb{doi}
     \verb 10.1145/3411763.3451854
     \endverb
     \field{pages}{1\bibrangedash 5}
-    \field{title}{ChemCraft: A Ludic Approach to Educational Game Design}
+    \field{title}{{ChemCraft}: A ludic approach to educational game design}
     \list{location}{1}{%
       {New York, NY, USA}%
     }
@@ -287,79 +276,40 @@
          given={José\bibnamedelima Gabriel},
          giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod},
       }}%
-      {{hash=LRQ}{%
-         family={López},
-         familyi={L\bibinitperiod},
-         given={Rocío\bibnamedelima Quijano},
-         giveni={R\bibinitperiod\bibinitdelim Q\bibinitperiod},
+      {{hash=QR}{%
+         family={{Quijano López}},
+         familyi={Q\bibinitperiod},
+         given={Rocío},
+         giveni={R\bibinitperiod},
       }}%
-      {{hash=RDA}{%
-         family={Rodríguez},
-         familyi={R\bibinitperiod},
-         given={Diego\bibnamedelima Airado},
-         giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+      {{hash=AD}{%
+         family={{Airado Rodríguez}},
+         familyi={A\bibinitperiod},
+         given={Diego},
+         giveni={D\bibinitperiod},
       }}%
     }
-    \strng{namehash}{SSJGLRQRDA1}
-    \strng{fullhash}{SSJGLRQRDA1}
+    \strng{namehash}{SSJGQRAD1}
+    \strng{fullhash}{SSJGQRAD1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \verb{doi}
     \verb 10.3390/educsci16010122
     \endverb
+    \field{note}{Art. no. 122}
     \field{number}{1}
-    \field{pages}{122}
-    \field{title}{The Impact of Game-Based Learning on Motivation, Self-Efficacy, and Academic Achievement in the Natural Sciences: A Meta-Analysis}
+    \field{title}{The impact of game-based learning on motivation, self-efficacy, and academic achievement in the natural sciences: A meta-analysis}
     \field{volume}{16}
     \field{journaltitle}{Education Sciences}
     \field{year}{2026}
   \endentry
 
-  \entry{Li2024}{article}{}{}
-    \name{author}{3}{}{%
-      {{hash=LL}{%
-         family={Li},
-         familyi={L\bibinitperiod},
-         given={Liuyufeng},
-         giveni={L\bibinitperiod},
-      }}%
-      {{hash=HKF}{%
-         family={Hew},
-         familyi={H\bibinitperiod},
-         given={Khe\bibnamedelima Foon},
-         giveni={K\bibinitperiod\bibinitdelim F\bibinitperiod},
-      }}%
-      {{hash=DJ}{%
-         family={Du},
-         familyi={D\bibinitperiod},
-         given={Jiahui},
-         giveni={J\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{LLHKFDJ1}
-    \strng{fullhash}{LLHKFDJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1007/s11423-023-10337-7
-    \endverb
-    \field{number}{2}
-    \field{pages}{765\bibrangedash 796}
-    \field{title}{Gamification enhances student intrinsic motivation, perceptions of autonomy and relatedness}
-    \field{volume}{72}
-    \field{journaltitle}{Educational Technology Research and Development}
-    \field{year}{2024}
-  \endentry
-
-  \entry{BNCC26}{manual}{}{}
+  \entry{BNCC26}{misc}{}{}
     \name{author}{1}{}{%
       {{hash=B}{%
-         family={BRASIL},
+         family={{Brasil. Ministério da Educação}},
          familyi={B\bibinitperiod},
       }}%
-    }
-    \list{organization}{1}{%
-      {Ministério da Educação}%
     }
     \strng{namehash}{B1}
     \strng{fullhash}{B1}
@@ -370,12 +320,13 @@
     \verb http://basenacionalcomum.mec.gov.br/
     \endverb
     \list{location}{1}{%
-      {Brasília, DF}%
+      {Brasília, DF, Brasil}%
     }
     \field{year}{2018}
+    \warn{\item Invalid format of field 'urldate'}
   \endentry
 
-  \entry{igcse_chemistry_2023}{online}{}{}
+  \entry{igcse_chemistry_2023}{misc}{}{}
     \name{author}{1}{}{%
       {{hash=C}{%
          family={{Cambridge Assessment International Education}},
@@ -389,13 +340,13 @@
     \strng{fullhash}{C1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{note}{Acedido em: 11 jun. 2026}
-    \field{title}{Syllabus {Cambridge} {IGCSE} {Chemistry} 0620: For examination in 2023, 2024 and 2025}
+    \field{title}{Syllabus {Cambridge} {IGCSE} Chemistry 0620: For examination in 2023, 2024 and 2025}
     \verb{url}
     \verb https://www.cambridgeinternational.org/Images/595428-2023-2025-syllab
     \verb us.pdf
     \endverb
     \field{year}{2020}
+    \warn{\item Invalid format of field 'urldate'}
   \endentry
 
   \entry{sapach17}{article}{}{}
@@ -413,7 +364,7 @@
     \field{labeltitlesource}{title}
     \field{number}{16}
     \field{pages}{53\bibrangedash 74}
-    \field{title}{``Gotta Catch Em' All'': The Compelling Act of Creature Collection in Pok{\'e}mon, Ni No Kuni, Shin Megami Tensei, and World of Warcraft}
+    \field{title}{``Gotta catch 'em all'': The compelling act of creature collection in {Pok\'emon}, {Ni No Kuni}, {Shin Megami Tensei}, and {World of Warcraft}}
     \field{volume}{10}
     \field{journaltitle}{Loading...}
     \field{year}{2017}
@@ -439,7 +390,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{pages}{145\bibrangedash 162}
-    \field{title}{Self-Determination Theory: An Approach to Motivation for Learning}
+    \field{title}{Self-determination theory: An approach to motivation for learning}
     \field{volume}{94}
     \field{journaltitle}{Psychological Review}
     \field{year}{1985}
@@ -467,7 +418,8 @@
     \verb{doi}
     \verb 10.1016/j.cedpsych.2020.101860
     \endverb
-    \field{title}{Intrinsic and extrinsic motivation from a self-determination theory perspective}
+    \field{note}{Art. no. 101860}
+    \field{title}{Intrinsic and extrinsic motivation from a self-determination theory perspective: Definitions, theory, practices, and future directions}
     \field{volume}{61}
     \field{journaltitle}{Contemporary Educational Psychology}
     \field{year}{2020}
@@ -488,15 +440,19 @@
          giveni={A\bibinitperiod\bibinitdelim I\bibinitperiod},
       }}%
     }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
     \strng{namehash}{SLCAI1}
     \strng{fullhash}{SLCAI1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{Lecture Notes in Computer Science}
+    \field{booktitle}{Intelligent Tutoring Systems}
     \verb{doi}
     \verb 10.1007/978-3-319-39583-8_32
     \endverb
     \field{pages}{294\bibrangedash 300}
+    \field{series}{Lecture Notes in Computer Science}
     \field{title}{Motivational gamification strategies rooted in self-determination theory for social adaptive e-learning}
     \field{volume}{9684}
     \field{year}{2016}
@@ -548,7 +504,7 @@
     \verb{doi}
     \verb 10.1007/s40692-025-00366-x
     \endverb
-    \field{title}{The impact of educational gamification on cognition, emotions, and motivation: a randomized controlled trial}
+    \field{title}{The impact of educational gamification on cognition, emotions, and motivation: A randomized controlled trial}
     \field{journaltitle}{Journal of Computers in Education}
     \field{year}{2025}
   \endentry
@@ -567,11 +523,11 @@
          given={Jasper\bibnamedelima J.},
          giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
       }}%
-      {{hash=DSID}{%
-         family={Domenico},
+      {{hash=DSI}{%
+         family={{Di Domenico}},
          familyi={D\bibinitperiod},
-         given={Stefano I.\bibnamedelima Di},
-         giveni={S\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim D\bibinitperiod},
+         given={Stefano\bibnamedelima I.},
+         giveni={S\bibinitperiod\bibinitdelim I\bibinitperiod},
       }}%
       {{hash=RWS}{%
          family={Ryan},
@@ -593,10 +549,10 @@
       }}%
     }
     \strng{namehash}{RRM+1}
-    \strng{fullhash}{RRMDJJDSIDRWSSBABEL1}
+    \strng{fullhash}{RRMDJJDSIRWSSBABEL1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{title}{A Meta-Review of Meta-Analytic Findings Evaluating Self-Determination Theory}
+    \field{title}{A meta-review of meta-analytic findings evaluating self-determination theory}
     \field{volume}{34}
     \field{journaltitle}{Educational Psychology Review}
     \field{year}{2022}
@@ -620,7 +576,7 @@
     \endverb
     \field{number}{4}
     \field{pages}{661\bibrangedash 671}
-    \field{title}{Advancing Gamification Research and Practice with Three Underexplored Ideas in Self-Determination Theory}
+    \field{title}{Advancing gamification research and practice with three underexplored ideas in self-determination theory}
     \field{volume}{68}
     \field{journaltitle}{TechTrends}
     \field{year}{2024}
@@ -635,18 +591,16 @@
          giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod},
       }}%
     }
-    \list{publisher}{2}{%
-      {Grune}%
-      {Stratton}%
+    \list{publisher}{1}{%
+      {Grune \& Stratton}%
     }
     \strng{namehash}{ADP1}
     \strng{fullhash}{ADP1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{note}{Obra fundamental onde o autor estabelece a Teoria da Aprendizagem Significativa.}
     \field{title}{The Psychology of Meaningful Verbal Learning}
     \list{location}{1}{%
-      {New York}%
+      {New York, NY, USA}%
     }
     \field{year}{1963}
   \endentry
@@ -682,45 +636,35 @@
     \verb 10.21680/1981-1802.2020v58n57id21088
     \endverb
     \field{number}{57}
-    \field{title}{A Teoria da Aprendizagem Significativa e o jogo}
+    \field{title}{A teoria da aprendizagem significativa e o jogo}
     \field{volume}{58}
     \field{journaltitle}{Revista Educação em Questão}
     \field{year}{2020}
   \endentry
 
   \entry{Custodio2015}{article}{}{}
-    \name{author}{4}{}{%
-      {{hash=CF}{%
-         family={Custodio},
-         familyi={C\bibinitperiod},
-         given={Fernando},
-         giveni={F\bibinitperiod},
-      }}%
-      {{hash=CC}{%
+    \name{author}{2}{}{%
+      {{hash=CFCC}{%
          family={Campos},
          familyi={C\bibinitperiod},
-         given={Cerqueira},
-         giveni={C\bibinitperiod},
+         given={Fernando Custodio\bibnamedelima Cerqueira},
+         giveni={F\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim C\bibinitperiod},
       }}%
-      {{hash=RJ}{%
-         family={Ricardo},
-         familyi={R\bibinitperiod},
-         given={João},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=SND}{%
+      {{hash=dSJRN}{%
+         prefix={da},
+         prefixi={d\bibinitperiod},
          family={Silva},
          familyi={S\bibinitperiod},
-         given={Neves\bibnamedelima Da},
-         giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod},
+         given={João Ricardo\bibnamedelima Neves},
+         giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim N\bibinitperiod},
       }}%
     }
-    \strng{namehash}{CF+2}
-    \strng{fullhash}{CFCCRJSND1}
+    \strng{namehash}{CFCCSJRNd1}
+    \strng{fullhash}{CFCCSJRNd1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{number}{3}
-    \field{title}{O DESENVOLVIMENTO E ANÁLISES DE UM JOGO VIRTUAL PARA O ENSINO DE ASTRONOMIA: UMA COMPREENSÃO SOBRE AS PRIMEIRAS INTERAÇÕES}
+    \field{title}{O desenvolvimento e análises de um jogo virtual para o ensino de astronomia: Uma compreensão sobre as primeiras interações}
     \field{volume}{8}
     \field{journaltitle}{Revista Brasileira de Ensino de Ciência e Tecnologia}
     \field{year}{2015}
@@ -750,13 +694,13 @@
     \endverb
     \field{number}{5}
     \field{pages}{1\bibrangedash 16}
-    \field{title}{Ausubel’s meaningful learning re-visited}
+    \field{title}{{Ausubel's} meaningful learning re-visited}
     \field{volume}{43}
     \field{journaltitle}{Current Psychology}
     \field{year}{2024}
   \endentry
 
-  \entry{Portnow2012}{online}{}{}
+  \entry{Portnow2012}{misc}{}{}
     \name{author}{1}{}{%
       {{hash=PJ}{%
          family={Portnow},
@@ -772,13 +716,13 @@
     \strng{fullhash}{PJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{note}{Vídeo original que popularizou o conceito de Aprendizagem Tangencial no design de jogos.}
-    \field{title}{Tangential Learning - {E}xtra {C}redits}
+    \field{title}{Tangential learning -- {Extra Credits}}
     \verb{url}
     \verb https://www.youtube.com/watch?v=rlQZreov_v0
     \endverb
     \field{month}{03}
     \field{year}{2012}
+    \warn{\item Invalid format of field 'urldate'}
   \endentry
 
   \entry{Mozelius2017}{article}{}{}
@@ -808,7 +752,7 @@
     \field{labeltitlesource}{title}
     \field{number}{4}
     \field{pages}{343\bibrangedash 355}
-    \field{title}{Motivating Factors and Tangential Learning for Knowledge Acquisition in Educational Games}
+    \field{title}{Motivating factors and tangential learning for knowledge acquisition in educational games}
     \field{volume}{15}
     \field{journaltitle}{The Electronic Journal of e-Learning}
     \field{year}{2017}
@@ -848,7 +792,7 @@
     \endverb
     \field{number}{1}
     \field{pages}{203\bibrangedash 212}
-    \field{title}{Uso da Aprendizagem Tangencial Através de Jogos: Um Mapeamento Sistemático da Literatura}
+    \field{title}{Uso da aprendizagem tangencial através de jogos: Um mapeamento sistemático da literatura}
     \field{volume}{20}
     \field{journaltitle}{RENOTE}
     \field{year}{2022}
@@ -869,13 +813,12 @@
     \strng{fullhash}{FRGd1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{note}{Referência [6] no documento original [cite: 126, 127]}
-    \field{title}{Validação do jogo digital Batalha Quimicard para o ensino de ácidos e bases}
+    \field{title}{Validação do jogo digital {Batalha Quimicard} para o ensino de ácidos e bases}
     \list{location}{1}{%
-      {Caruaru, PE}%
+      {Caruaru, PE, Brasil}%
     }
     \list{institution}{1}{%
-      {Universidade Federal de Pernambuco (UFPE)}%
+      {Universidade Federal de Pernambuco}%
     }
     \field{type}{Trabalho de Conclusão de Curso}
     \field{year}{2017}
@@ -902,7 +845,7 @@
     \field{labeltitlesource}{title}
     \field{booktitle}{Anais do XIX Simpósio Brasileiro de Games e Entretenimento Digital (SBGames)}
     \field{pages}{344\bibrangedash 347}
-    \field{title}{Análise do Aprendizado Tangencial em Jogos Digitais}
+    \field{title}{Análise do aprendizado tangencial em jogos digitais}
     \field{year}{2020}
   \endentry
 
@@ -915,9 +858,8 @@
          giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod},
       }}%
     }
-    \list{publisher}{2}{%
-      {Jones}%
-      {Bartlett Publishers}%
+    \list{publisher}{1}{%
+      {Jones \& Bartlett Publishers}%
     }
     \strng{namehash}{CHM1}
     \strng{fullhash}{CHM1}
@@ -927,44 +869,9 @@
     \field{isbn}{978-0-7637-5420-4}
     \field{title}{The Game Production Handbook}
     \list{location}{1}{%
-      {Sudbury, Massachusetts}%
+      {Sudbury, MA, USA}%
     }
     \field{year}{2009}
-  \endentry
-
-  \entry{SilvaFilho2023}{article}{}{}
-    \name{author}{2}{}{%
-      {{hash=dSFTD}{%
-         prefix={da},
-         prefixi={d\bibinitperiod},
-         family={Silva\bibnamedelima Filho},
-         familyi={S\bibinitperiod\bibinitdelim F\bibinitperiod},
-         given={T.\bibnamedelima D.},
-         giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod},
-      }}%
-      {{hash=AJG}{%
-         family={Aquino},
-         familyi={A\bibinitperiod},
-         given={J.\bibnamedelima G.},
-         giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Abraptec}%
-    }
-    \strng{namehash}{SFTDdAJG1}
-    \strng{fullhash}{SFTDdAJG1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.28173/2179-33012023v23e39647
-    \endverb
-    \field{eid}{e39647}
-    \field{pages}{1\bibrangedash 22}
-    \field{title}{Os Usos da Tabela Periódica no Campo Escolar: Um Estudo Sobre o Ensino da Química em Dois Periódicos}
-    \field{volume}{23}
-    \field{journaltitle}{Revista Brasileira de Pesquisa em Educação em Ciências (RBPEC)}
-    \field{year}{2023}
   \endentry
 \enddatalist
 \endinput

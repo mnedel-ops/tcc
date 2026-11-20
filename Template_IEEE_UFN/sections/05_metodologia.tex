@@ -7,22 +7,12 @@ A metodologia adotada baseia-se no Ciclo Básico de Produção de Jogos proposto
     \caption{Ciclo Básico de Produção de Jogos. Fonte: adaptado de \cite{Chandler2009}.}
     \label{fig:ciclochandler}
 \end{figure}
+
 Na pré-produção, foram definidos o conceito do jogo, o escopo inicial dos conteúdos químicos, os requisitos funcionais e as diretrizes registradas no \textit{Game Design Document} (GDD). Essa etapa também orientou a seleção das mecânicas de captura, coleção e combate.
 
 Na produção, os sistemas foram implementados de forma incremental com a engine Godot 4 e a linguagem GDScript. A implementação abrange exploração tridimensional, encontros, captura, combate por turnos, progressão das criaturas e persistência dos dados. Em paralelo, foram desenvolvidos testes automatizados para verificar regras de negócio e fluxos de dados.
 
 Na pós-produção de cada ciclo, os resultados da implementação e das verificações disponíveis orientaram a identificação de falhas e a definição de ajustes para o ciclo seguinte. O processo permaneceu iterativo, com retorno à implementação quando uma verificação apontava comportamento divergente do esperado.
-
-
-\subsection{Produção e transposição didática}
-A seleção dos conteúdos considera as orientações da Base Nacional Comum Curricular para o Ensino Médio \cite{BNCC26} e o referencial \textit{Cambridge IGCSE Chemistry} \cite{igcse_chemistry_2023}. No protótipo, a transposição didática ocorre principalmente por meio da representação de elementos químicos como criaturas e da associação de propriedades periódicas a atributos utilizados no combate.
-
-Essas correspondências devem ser compreendidas como abstrações lúdicas destinadas a estabelecer associações entre o conteúdo químico e as regras do jogo, e não como equivalências científicas entre grandezas. A implementação atual não permite afirmar que todos os conteúdos previstos no planejamento curricular estejam contemplados ou que a proposta já tenha sido validada como estratégia de aprendizagem.
-\begin{itemize}
-    \item A massa atômica serve como referência para os pontos de vida; a eletronegatividade, para o ataque; e a energia de ionização, para a defesa;
-    \item As categorias Metal, Metaloide e Ametal organizam um ciclo de efetividade entre ataques;
-    \item Os pontos de fusão e ebulição são utilizados para determinar estados físicos e reações à temperatura da arena.
-\end{itemize}
 
 \subsection{Verificação e Avaliação Técnica}
 
@@ -37,7 +27,6 @@ Os procedimentos descritos correspondem à avaliação técnica interna do jogo.
 
 % =====================================================================
 % SEÇÃO V - SOLUÇÃO DESENVOLVIDA
-% Requer (já no preâmbulo do main.tex): graphicx, amsmath, listings, placeins
 % =====================================================================
 
 \lstdefinestyle{gd}{
@@ -162,7 +151,7 @@ As propriedades térmicas também derivam da Química. Cada golpe que acerta inj
 
 \textbf{SDT.} O jogo possui poucos tutoriais didáticos, pois presume que um professor irá acompanhar o jogador e assistir nesse quesito, de modo que o sucesso inicial do jogador sustenta a sensação de competência e a motivação. Em contrapartida, os combates são desafiadores e exigem o uso conjunto de todas as mecânicas apresentadas, em especial a temperatura e os pontos de ebulição, para que o jogador obtenha êxito.
 
-\textbf{Ausubel.} Os subsunçores são as próprias criaturas. Em combate, elas se combinam em compostos, e o jogador associa os tipos científicos (Metal, Metaloide e Ametal) ao elemento correspondente. Por limitação de tempo, não foi possível implementar modelos 3D definitivos; a proposta é que cada Alchemon tenha aparência e personalidade condizentes com a natureza de seu elemento.
+\textbf{TAS.} Os subsunçores são as próprias criaturas. Em combate, elas se combinam em compostos, e o jogador associa os tipos científicos (Metal, Metaloide e Ametal) ao elemento correspondente. Por limitação de tempo, não foi possível implementar modelos 3D definitivos; a proposta é que cada Alchemon tenha aparência e personalidade condizentes com a natureza de seu elemento.
 
 \textbf{Aprendizagem tangencial.} Ocorre quando o jogador consulta a Tabela Periódica, presente no jogo ou fora dele. A informação obtida gera vantagens táticas, como a escolha do tipo de ataque ou o aproveitamento dos pontos de ebulição, e reforça a motivação para novas consultas.
 
@@ -211,30 +200,6 @@ com $M=255$ para a ferramenta compatível e $M=127$ para a incompatível. A capt
 \subsubsection{Formação de compostos}
 Na estação de alquimia, o jogador vincula de dois a quatro Alchemons. Um grupo forma um composto \textbf{iônico} quando combina metal e ametal com diferença de eletronegatividade $\Delta E\ge 2{,}0$ e cargas que se neutralizam; forma um composto \textbf{covalente} quando combina ametais com $\Delta E<2{,}0$ e ligações que fecham o octeto; e, em qualquer outro caso, forma uma \textbf{Mistura}, sempre de dois Alchemons. O composto possui temperatura própria, e sua temperatura de cisão depende do tipo de ligação: no iônico, $T_{cis}=T_{eb,\hat{a}nion}+250|\Delta E|+100|Z_{c\acute{a}tion}|$. Quando a temperatura atinge esse limite, o vínculo é desfeito, os sobreviventes sofrem choque térmico e ficam em Sobrecarga Térmica por duas rodadas.
 
-\subsubsection{Detalhamento algorítmico}
-O Quadro~\ref{lst:dano} mostra a fórmula de dano, implementada como função estática pura, e o Quadro~\ref{lst:fases} apresenta a máquina de estados que controla as fases de uma batalha.
-
-\begin{lstlisting}[style=gd,caption={Cálculo de dano (\texttt{alchemon\_formulas.gd}).},label={lst:dano}]
-static func compute_damage(level: int, power: int, attack: int, defense: int, effectiveness: float = 1.0) -> int:
-    var defense_safe := maxi(defense, 1)
-    var scaled := (2.0 * level / 5.0 + 2.0) * power * (float(attack) / defense_safe)
-    var damage := (scaled / 50.0 + 2.0) * effectiveness
-    return maxi(int(floor(damage)), 0)
-\end{lstlisting}
-
-\begin{lstlisting}[style=gd,caption={Transições válidas entre fases do combate (\texttt{battle\_phase.gd}).},label={lst:fases}]
-static func is_valid_transition(from_phase: String, to_phase: String) -> bool:
-    if is_terminal_phase(from_phase):
-        return false
-    match from_phase:
-        ENCOUNTER_START: return to_phase == SELECTING_ACTIONS
-        SELECTING_ACTIONS: return to_phase == RESOLVING_ACTIONS
-        RESOLVING_ACTIONS: return to_phase == END_OF_ROUND or to_phase == COMBAT_OVER
-        END_OF_ROUND: return to_phase == SELECTING_ACTIONS or to_phase == COMBAT_OVER
-        COMBAT_OVER: return to_phase == VICTORY or to_phase == DEFEAT
-        _: return false
-\end{lstlisting}
-
 % ---------------------------------------------------------------------
 \subsection{Testes e Garantia de Qualidade (QA)}
 
@@ -245,49 +210,45 @@ A avaliação de desempenho seguiu um procedimento automatizado, com cinco execu
 
 \subsubsection{Ciclo iterativo de correção de erros}
 A fase de testes retroalimentou a Produção, conforme o ciclo de Chandler: ao identificar uma falha, o código retornava à implementação para refatoração e só então era verificado novamente. Quatro casos ilustram esse ciclo:
-\begin{itemize}
-    \item \textbf{Captura do indivíduo errado:} a captura registrava apenas a espécie. A correção passou a guardar a instância combatida, preservando identificador, IV, personalidade e HP;
-    \item \textbf{Sincronização por posição:} HP e XP eram gravados pela posição na equipe, e uma criatura removida causava gravação na criatura errada. A sincronização passou a usar o identificador único (UID);
-    \item \textbf{Vazamento de bônus de vínculo:} o bônus temporário de Mistura ou Composto era copiado para os atributos permanentes. Ele passou a existir apenas no estado transitório da batalha;
-    \item \textbf{Fim de combate prematuro:} o sinal de encerramento liberava a exploração antes da tela de recompensas. A emissão foi concentrada no controlador de batalha.
-\end{itemize}
+Captura do indivíduo errado: a captura registrava apenas a espécie. A correção passou a guardar a instância combatida, preservando identificador, IV, personalidade e HP;
+Sincronização por posição: HP e XP eram gravados pela posição na equipe, e uma criatura removida causava gravação na criatura errada. A sincronização passou a usar o identificador único (UID);
+Vazamento de bônus de vínculo: o bônus temporário de Mistura ou Composto era copiado para os atributos permanentes. Ele passou a existir apenas no estado transitório da batalha; Fim de combate prematuro: o sinal de encerramento liberava a exploração antes da tela de recompensas. A emissão foi concentrada no controlador de batalha.
 Cada correção foi acompanhada de um teste de regressão que protege o comportamento corrigido.
 
 \subsubsection{Evidências visuais}
 A Fig.~\ref{fig:jmain} apresenta o menu principal, com as opções de nova sessão, carregamento e saída. A Fig.~\ref{fig:jexplor} mostra a exploração, com o personagem, os NPCs e as áreas de mato alto. No canto inferior esquerdo, há os comandos para abrir o menu e interagir com os itens ou NPCs. A Fig.~\ref{fig:jcombate} exibe a interface de combate, com os comandos, as barras de HP e energia e o registro de eventos. Quando o jogador escolhe a opção de combate, a interface é atualizada, e um menu abre com a lisa de ataques conhecidos pela criatura que deve agir. E com o ataque escolhido, outro menu abre, dessa vez, pra escolher o alvo. A Fig.~\ref{fig:jtabela} mostra a Tabela de espécies do menu, que permite ao jogador consultar os dados dos elementos, e a Fig.~\ref{fig:jalquimia} apresenta a estação de alquimia, em que são formados os compostos.
 
-% Substituir os arquivos pelas capturas finais.
 \begin{figure}[!h]
 \centering
-\includegraphics[width=0.45\textwidth]{images/jmain.png}
+\includegraphics[width=0.45\textwidth]{images/main.png}
 \caption{Menu principal.}
 \label{fig:jmain}
 \end{figure}
 
 \begin{figure}[!h]
 \centering
-\includegraphics[width=0.45\textwidth]{images/jexplor.png}
+\includegraphics[width=0.45\textwidth]{images/gameplayExploracao.png}
 \caption{Exploração do cenário.}
 \label{fig:jexplor}
 \end{figure}
 
 \begin{figure}[!h]
 \centering
-\includegraphics[width=0.45\textwidth]{images/jcombate.png}
+\includegraphics[width=0.45\textwidth]{images/gameplay.png}
 \caption{Interface de combate.}
 \label{fig:jcombate}
 \end{figure}
 
 \begin{figure}[!h]
 \centering
-\includegraphics[width=0.45\textwidth]{images/jtabela.png}
+\includegraphics[width=0.45\textwidth]{images/tabela.png}
 \caption{Tabela de espécies no menu do jogo.}
 \label{fig:jtabela}
 \end{figure}
 
 \begin{figure}[!h]
 \centering
-\includegraphics[width=0.45\textwidth]{images/jalquimia.png}
+\includegraphics[width=0.45\textwidth]{images/alquimia.png}
 \caption{Estação de alquimia.}
 \label{fig:jalquimia}
 \end{figure}
@@ -301,7 +262,7 @@ A Fig.~\ref{fig:jmain} apresenta o menu principal, com as opções de nova sess�
 A versão final foi gerada pelo sistema de exportação da Godot, com o \textit{preset} Windows Desktop, arquitetura x86\_64, renderizador \textit{GL Compatibility} e pacote de recursos (\texttt{.pck}) externo. A compilação produziu o executável \texttt{tcc-jogo.exe} (cerca de 100,6~MB) e o pacote \texttt{tcc-jogo.pck} (cerca de 1,3~MB).
 
 \subsubsection{Disponibilização e hospedagem}
-O jogo foi publicado na plataforma itch.io\footnote{[INSERIR LINK DA PÁGINA NO ITCH.IO]}, e os arquivos foram enviados ao Sistema TFG OnLine da UFN. O código-fonte e a documentação estão disponíveis em repositório aberto no GitHub\footnote{https://github.com/mnedel-ops/TCC-Jogo}.
+O jogo foi publicado na plataforma itch.io\footnote{https://tinyurl.com/rhp9p3tt}, e os arquivos foram enviados ao Sistema TFG OnLine da UFN. O código-fonte e a documentação estão disponíveis em repositório aberto no GitHub\footnote{https://github.com/mnedel-ops/TCC-Jogo}.
 
 \subsubsection{Arquivamento e \textit{post-mortem}}
 Os \textit{assets} e o código foram organizados por responsabilidade, com as espécies, os ataques e os itens como recursos de dados independentes. Essa organização facilita o reaproveitamento em pesquisas futuras: novas espécies são cadastradas preenchendo uma ficha, sem alterar as regras.
