@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.18)  20 NOV 2026 13:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.18)  20 NOV 2026 15:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -798,15 +798,6 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [8]) (./sections/07_bibliography.tex) [9]
-Underfull \hbox (badness 4660) in paragraph at lines 36--36
-[]\T1/ptm/m/n/10 (+20) Richard M. Ryan e Edward L. Deci. ^^P  Self-
- []
-
-
-Underfull \hbox (badness 1490) in paragraph at lines 36--36
-[]\T1/ptm/m/n/10 (+20) Fei Gao. ^^P  Ad-van-cing ga-mi-fi-ca-tion re-se-arch and
- []
-
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -837,15 +828,15 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 17830 strings out of 469495
- 319061 string characters out of 5470098
+ 17842 strings out of 469495
+ 319174 string characters out of 5470098
  1001768 words of memory out of 5000000
  45895 multiletter control sequences out of 15000+600000
- 766697 words of font info for 392 fonts, out of 8000000 for 9000
+ 767396 words of font info for 401 fonts, out of 8000000 for 9000
  19 hyphenation exceptions out of 8191
  68i,11n,69p,1954b,1651s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on out/main.pdf (10 pages, 2603282 bytes).
+Output written on out/main.pdf (10 pages, 2603176 bytes).
 PDF statistics:
  137 PDF objects out of 1000 (max. 8388607)
  74 compressed objects within 1 object stream
