@@ -24,7 +24,6 @@ Essas correspondências devem ser compreendidas como abstrações lúdicas desti
     \item Os pontos de fusão e ebulição são utilizados para determinar estados físicos e reações à temperatura da arena.
 \end{itemize}
 
-\subsection{Desenvolvimento dos Testes Funcionais Internos (QA - Quality Assurance)}
 \subsection{Verificação e Avaliação Técnica}
 
 A verificação interna do Alchemon compreendeu testes automatizados, funcionais manuais, de integração e de desempenho. Os testes automatizados foram desenvolvidos com o GdUnit4, ferramenta de testes para Godot 4. Foram implementadas quatro suítes, totalizando 65 casos voltados à verificação dos sistemas de atributos, captura, recompensas e persistência das criaturas.
@@ -34,14 +33,6 @@ Os testes funcionais manuais foram realizados por meio da interação direta com
 A avaliação de desempenho foi conduzida em cinco execuções do procedimento de teste, cada uma com cinco ciclos de combate e retorno à exploração, totalizando 25 ciclos. Foram coletadas métricas de taxa de quadros por segundo (FPS), tempo de carregamento e transição entre cenas e consumo de memória RAM e VRAM. As medições de FPS contemplaram os cenários de exploração e combate, com 150 amostras por cenário. Os dados foram organizados em tabelas para comparação entre as execuções e análise do comportamento do protótipo nas condições avaliadas.
 
 Os procedimentos descritos correspondem à avaliação técnica interna do jogo. Não foram realizadas avaliações com estudantes do Ensino Médio nesta etapa, portanto, a eficácia pedagógica, a usabilidade e o engajamento do público-alvo permanecem sem validação empírica.
-
-\section{IDENTIFICAÇÃO E DESCRIÇÃO DO PROBLEMA}
-
-O ensino da Tabela Periódica apresenta dificuldades relacionadas à memorização de símbolos, propriedades e tendências químicas. Por ser um conteúdo abstrato, sua abordagem baseada principalmente na memorização pode dificultar a compreensão das relações entre os elementos químicos \cite{Latonio2023,Lima2010}.
-
-No Brasil, os resultados do PISA 2022 indicam que apenas 45\% dos estudantes atingiram o nível mínimo de proficiência em Ciências \cite{OECD2023}. Embora esse indicador não avalie especificamente o domínio da Tabela Periódica, ele evidencia dificuldades mais amplas na aprendizagem científica.
-
-Além disso, métodos de ensino centrados na exposição do professor podem limitar a participação dos estudantes e reduzir seu envolvimento com os conteúdos \cite{Ryan1985,SilvaFilho2023}. Nesse contexto, identifica-se a necessidade de investigar abordagens interativas para o ensino de Química, como o uso de jogos sérios \cite{Plass2020}.
 
 
 \section{SOLUÇÃO DESENVOLVIDA}
@@ -82,7 +73,7 @@ Além das mecânicas principais, o jogo possui sistemas de vitória e derrota, d
 
 A persistência em arquivos JSON mantém os dados da equipe, das criaturas armazenadas, do inventário, das moedas, do progresso dos NPCs e da posição do personagem. Esses recursos permitem preservar o progresso entre sessões e retomar a exploração após o carregamento dos dados.
 
-As especificações complementares das mecânicas, dos sistemas e dos requisitos funcionais estão registradas no GDD do projeto\footnote{Link abreviado para o GDD}.
+As especificações complementares das mecânicas, dos sistemas e dos requisitos funcionais estão registradas no GDD do projeto\footnote{GDD: https://tinyurl.com/3uc3x2d8}.
 \subsection{Evidências Visuais}
 Nesta subseção, apresentam-se registros visuais das interfaces e dos ambientes do protótipo durante sua execução.
 

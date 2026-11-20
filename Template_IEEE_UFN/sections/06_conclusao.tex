@@ -1,33 +1,6 @@
 \section{RESULTADOS E DISCUSSÕES}
 Esta seção apresenta os procedimentos de verificação e os resultados obtidos no desenvolvimento do Alchemon. São descritos os ambientes de teste, os critérios de desempenho, a verificação dos requisitos funcionais e as principais limitações identificadas.
 
-
-\subsection{Ambiente de Testes Funcionais e Verificação de Requisitos}
-Os testes funcionais manuais do Alchemon foram realizados nos ambientes Linux e Windows, utilizando a engine Godot 4.6.1. Também foram executados testes automatizados com GdUnit4 e testes de integração entre os sistemas do jogo. As configurações dos equipamentos utilizados nos testes estão apresentadas na Tabela~\ref{tab:ambientes_teste}.
-\begin{table}[htbp]
-    \centering
-    \caption{Ambientes utilizados nos testes do Alchemon}
-    \label{tab:ambientes_teste}
-    \scriptsize
-    \setlength{\tabcolsep}{2pt}
-    \renewcommand{\arraystretch}{1.15}
-    \begin{tabular}{p{1.35cm} p{2.35cm} p{2.35cm}}
-        \hline
-        \textbf{Informação} & \textbf{Linux} & \textbf{Windows} \\
-        \hline
-        Sistema operacional & Arch Linux & Windows 10 \\
-        Versão do sistema & 7.0.9-arch1-1 & 22H2 \\
-        Processador & Intel Core i7-8750H (12 threads) & Intel Core i3-3217U @ 1.80 GHz \\
-        Memória RAM & 32 GiB & 8 GiB \\
-        Placa de vídeo & NVIDIA GTX 1060 & Sem VRAM dedicada \\
-        Versão da Godot & 4.6.1.stable & 4.6.1.stable \\
-        Tipo de compilação & Debug & Executável \\
-        \hline
-    \end{tabular}
-    \\
-    \footnotesize Fonte: Elaborado pelo autor (2026).
-\end{table}
-
 \subsubsection{Matriz de Verificação de Requisitos Funcionais}
 A verificação dos requisitos funcionais considerou testes automatizados, manuais e de integração. As quatro suítes automatizadas totalizaram 65 casos aprovados, enquanto as funcionalidades relacionadas à interação com a interface foram verificadas manualmente nos ambientes Linux e Windows. A Tabela~\ref{tab:matriz-requisitos} apresenta a relação entre os requisitos e os procedimentos de verificação.
 
@@ -120,7 +93,7 @@ Os resultados indicaram médias de 139,36 FPS durante a exploração e 138,58 FP
 \end{table*}
 
 \subsubsection{Testes Manuais}
-Os testes funcionais manuais foram conduzidos por meio da interação direta com o jogo, com o objetivo de verificar o comportamento das principais funcionalidades em condições de uso. Os procedimentos foram executados nos ambientes Linux e Windows, e todos apresentaram os resultados esperados. A Tabela~\ref{tab:testes_manuais} resume as funcionalidades verificadas e os respectivos procedimentos.
+Os testes manuais foram conduzidos por meio da interação direta com o jogo, com o objetivo de verificar o comportamento das principais funcionalidades em condições de uso. Os procedimentos foram executados nos ambientes Linux e Windows, e todos apresentaram os resultados esperados. A Tabela~\ref{tab:testes_manuais} resume as funcionalidades verificadas e os respectivos procedimentos.
 
 \begin{table}[htbp]
     \centering
@@ -138,7 +111,7 @@ Os testes funcionais manuais foram conduzidos por meio da interação direta com
         \hline
         \textbf{Funcionalidade} &
         \textbf{Procedimento} &
-        \textbf{Resultado esperado} \\
+        \textbf{Resultado obtido} \\
         \hline
 
         Inicialização &
@@ -181,7 +154,7 @@ Os testes funcionais manuais foram conduzidos por meio da interação direta com
 \end{table}
 
 \subsubsection{Testes Automatizados}
-Os testes automatizados foram organizados em quatro suítes, totalizando 65 casos executados e aprovados com o framework GdUnit4, conforme apresentado na Tabela~\ref{tab:testes_automatizados}. As verificações abrangem os sistemas de evolução, captura, combate e persistência de dados das criaturas. A descrição individual dos casos de teste, incluindo seus procedimentos e critérios esperados, encontra-se na documentação técnica do repositório do projeto \footnote{AlchemonRepositorio}.
+Os testes automatizados foram organizados em quatro suítes, totalizando 65 casos executados e aprovados com o framework GdUnit4, conforme apresentado na Tabela~\ref{tab:testes_automatizados}. As verificações abrangem os sistemas de evolução, captura, combate e persistência de dados das criaturas. A descrição individual dos casos de teste, incluindo seus procedimentos e critérios esperados, encontra-se na documentação técnica do repositório do projeto \footnote{Repositório do Alchemon: https://tinyurl.com/2ydk7rt7}.
 \begin{table}[htbp]
     \centering
     \caption{Resumo dos testes automatizados do Alchemon}
