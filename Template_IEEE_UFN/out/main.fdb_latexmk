@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex out/main"] 1795200693.9124 "out/main.aux" "out/main.bbl" "out/main" 1795200697.83157 0
+["bibtex out/main"] 1795372107.85381 "out/main.aux" "out/main.bbl" "out/main" 1795372111.77511 0
   "./references.bib" 1795200689.23593 18150 385189311bf44b9daf44dfb7cfc9cbd5 ""
   "/usr/share/texmf-dist/bibtex/bst/biblatex/biblatex.bst" 1775415801 65510 9a2a51799b543ff279b8ea2dd91ec499 ""
-  "out/main-blx.bib" 1795200697.48134 343 bf1f0c75b5bafd473925320ac9611e26 "pdflatex"
-  "out/main.aux" 1795200697.47434 15975 974ff41f2ba67506cb94cbc10deee633 "pdflatex"
+  "out/main-blx.bib" 1795372111.44155 343 bf1f0c75b5bafd473925320ac9611e26 "pdflatex"
+  "out/main.aux" 1795372111.43455 12713 6c0f0576acc4e065ed404405042b55d1 "pdflatex"
   (generated)
   "out/main.bbl"
   "out/main.blg"
   (rewritten before read)
-["pdflatex"] 1795200694.06282 "/run/media/reis/SDextra/Faculdade/tcc/Template_IEEE_UFN/main.tex" "out/main.pdf" "main" 1795200697.83186 0
+["pdflatex"] 1795372107.96908 "/run/media/reis/SDextra/Faculdade/tcc/Template_IEEE_UFN/main.tex" "out/main.pdf" "main" 1795372111.77536 0
   "/run/media/reis/SDextra/Faculdade/tcc/Template_IEEE_UFN/main.tex" 1793795148.08177 1508 8e1d51d15797def55ea09364e1dc8f2d ""
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1775415801 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1775415801 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -21,6 +21,7 @@
   "/usr/share/texmf-dist/fonts/tfm/adobe/times/ptmbi8r.tfm" 1775415801 4480 10409ed8bab5aea9ec9a78028b763919 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/times/ptmbi8t.tfm" 1775415801 6784 37b32cc10800b5afa030d935c393695a ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm" 1775415801 2124 2601a75482e9426d33db523edf23570a ""
+  "/usr/share/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm" 1775415801 1352 fa28a7e6d323c65ce7d13d5342ff6be2 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm" 1775415801 4408 25b74d011a4c66b7f212c0cc3c90061b ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm" 1775415801 6672 e3ab9e37e925f3045c9005e6d1473d56 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/times/ptmrc8t.tfm" 1775415801 16648 7e91c60ebf91b9c60e16ef52b3070f9c ""
@@ -54,6 +55,7 @@
   "/usr/share/texmf-dist/fonts/vf/adobe/courier/pcrr8t.vf" 1775415801 2184 8475af1b9cfa983db5f46f5ed4b8f9f7 ""
   "/usr/share/texmf-dist/fonts/vf/adobe/times/ptmb8t.vf" 1775415801 2340 df9c920cc5688ebbf16a93f45ce7bdd3 ""
   "/usr/share/texmf-dist/fonts/vf/adobe/times/ptmbi8t.vf" 1775415801 2324 51908dae6e03953a90119973962f0e4d ""
+  "/usr/share/texmf-dist/fonts/vf/adobe/times/ptmr8c.vf" 1775415801 3556 8a9a6dcbcd146ef985683f677f4758a6 ""
   "/usr/share/texmf-dist/fonts/vf/adobe/times/ptmr8t.vf" 1775415801 2348 91706c542228501c410c266421fbe30c ""
   "/usr/share/texmf-dist/fonts/vf/adobe/times/ptmrc8t.vf" 1775415801 3608 78e4c999d9e69f03f448158d01821741 ""
   "/usr/share/texmf-dist/fonts/vf/adobe/times/ptmri8t.vf" 1775415801 2328 6cd7df782b09b29cfc4d93e55b6b9a59 ""
@@ -123,6 +125,7 @@
   "/usr/share/texmf-dist/tex/latex/psnfss/ot1ptm.fd" 1775415801 961 15056f4a61917ceed3a44e4ac11fcc52 ""
   "/usr/share/texmf-dist/tex/latex/psnfss/t1pcr.fd" 1775415801 798 d5895e9edc628f2be019beb2c0ec66df ""
   "/usr/share/texmf-dist/tex/latex/psnfss/t1ptm.fd" 1775415801 774 61d7da1e9f9e74989b196d147e623736 ""
+  "/usr/share/texmf-dist/tex/latex/psnfss/ts1ptm.fd" 1775415801 619 96f56dc5d1ef1fe1121f1cfeec70ee0c ""
   "/usr/share/texmf-dist/tex/latex/tools/array.sty" 1775415801 15651 9d7c62df82cb29a555c00550babfe364 ""
   "/usr/share/texmf-dist/tex/latex/tools/tabularx.sty" 1775415801 7243 a2c17f18e2c9b702b84fad03d5f9c78b ""
   "/usr/share/texmf-dist/tex/latex/url/url.sty" 1775415801 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
@@ -141,16 +144,16 @@
   "images/tangencial.png" 1782239128.9823 39751 03063c5eb8b023b958e5ecf49571dcdc ""
   "images/tas.png" 1782240401.99253 1656789 2bae119e81f1d9cd80b1310ae4836c00 ""
   "main.tex" 1793795148.08177 1508 8e1d51d15797def55ea09364e1dc8f2d ""
-  "out/main.aux" 1795200697.47434 15975 974ff41f2ba67506cb94cbc10deee633 "pdflatex"
-  "out/main.bbl" 1795200694.05334 26166 b765205200b3425361cefb39a2720cf3 "bibtex out/main"
-  "out/main.run.xml" 1795200697.48368 2558 a908a2d60c13e141278b32acac88ed16 "pdflatex"
+  "out/main.aux" 1795372111.43455 12713 6c0f0576acc4e065ed404405042b55d1 "pdflatex"
+  "out/main.bbl" 1795372107.96155 26190 654ecd753bda31fb4b26901efbe59957 "bibtex out/main"
+  "out/main.run.xml" 1795372111.44326 2558 a908a2d60c13e141278b32acac88ed16 "pdflatex"
   "preamble.tex" 1793973197.58415 1030 216068d8e239f7ac43cca2e0b44c693a ""
   "sections/00_header.tex" 1795188710.44553 376 3e8a72c39659952f8c44053a7802f2ba ""
-  "sections/01_abstract.tex" 1795188710.44553 1292 73191e7e74c384cfd2cafb9c74ae5106 ""
+  "sections/01_abstract.tex" 1795204506.95078 1292 73191e7e74c384cfd2cafb9c74ae5106 ""
   "sections/02_introducao.tex" 1795188710.44553 4446 ff1514673a08f1fe407bd5ceb91966d3 ""
   "sections/03_secao.tex" 1793898190.80322 8880 f931766e64f45b8aef2fd88d44bc4f80 ""
-  "sections/05_metodologia.tex" 1795200687.85136 22256 72a1b3de3c4eeda2217e07ad741f740b ""
-  "sections/06_conclusao.tex" 1795188710.44553 8255 afed6d86784e64161405ea05b6a06dff ""
+  "sections/05_metodologia.tex" 1795371569.56246 25694 b377cf1acb8368296b792f31e8ad325f ""
+  "sections/06_conclusao.tex" 1795372095.38485 7901 bb6b612d4140a1ad61b85ad8b919e727 ""
   "sections/07_bibliography.tex" 1773066615.76537 62 df187e92fd7e6dfeb25215f21253d933 ""
   (generated)
   "out/main-blx.bib"

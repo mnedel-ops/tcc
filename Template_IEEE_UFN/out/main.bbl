@@ -16,7 +16,7 @@
   {}
 \endgroup
 
-\datalist[entry]{none/global//global/global/global}
+\datalist[entry]{nty/global//global/global/global}
   \entry{Bellotti2010}{article}{}{}
     \name{author}{3}{}{%
       {{hash=BF}{%
@@ -496,7 +496,7 @@
          giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
       }}%
     }
-    \strng{namehash}{CF+1}
+    \strng{namehash}{CFRBADPSPGDAAM1}
     \strng{fullhash}{CFRBADPSPGDAAM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -547,7 +547,7 @@
          giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod},
       }}%
     }
-    \strng{namehash}{RRM+1}
+    \strng{namehash}{RRMDJJDSIRWSSBABEL1}
     \strng{fullhash}{RRMDJJDSIRWSSBABEL1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}

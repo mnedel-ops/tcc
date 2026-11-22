@@ -1,5 +1,6 @@
 \section{METODOLOGIA}
-A metodologia adotada baseia-se no Ciclo Básico de Produção de Jogos proposto por Heather Chandler \cite{Chandler2009}, apresentado na Fig. \ref{fig:ciclochandler}. O modelo organiza o desenvolvimento em etapas de pré-produção, produção e pós-produção, com ciclos de avaliação e ajuste. Essa abordagem orienta as atividades de concepção, implementação e verificação do protótipo.
+\label{sec:metodologia}
+A metodologia adotada baseia-se no Ciclo Básico de Produção de Jogos proposto por Heather Chandler \cite{Chandler2009}, apresentado na Fig. \ref{fig:ciclochandler}. O modelo organiza o desenvolvimento em etapas de pré-produção, produção e pós-produção, com ciclos de avaliação e ajuste. Essa abordagem orienta as atividades de concepção, implementação e verificação do protótipo. As atividades de verificação e teste foram conduzidas dentro da produção e da pós-produção de cada ciclo. A etapa de \textit{playtest} com estudantes, prevista em representações usuais do ciclo, não foi executada neste trabalho.
 
 \begin{figure}[h]
     \centering
@@ -16,9 +17,10 @@ Na pós-produção de cada ciclo, os resultados da implementação e das verific
 
 \subsection{Verificação e Avaliação Técnica}
 
-A verificação interna do Alchemon compreendeu testes automatizados, funcionais manuais, de integração e de desempenho. Os testes automatizados foram desenvolvidos com o GdUnit4, ferramenta de testes para Godot 4. Foram implementadas quatro suítes, totalizando 65 casos voltados à verificação dos sistemas de atributos, captura, recompensas e persistência das criaturas.
-
-Os testes funcionais manuais foram realizados por meio da interação direta com o jogo. Os procedimentos contemplaram a inicialização, a exploração, a interação com criaturas, a captura, o combate, a evolução e a persistência dos dados. Essas verificações foram executadas nos ambientes Linux e Windows. Também foram realizados testes de integração para verificar a comunicação e o funcionamento conjunto dos sistemas implementados.
+A verificação interna do Alchemon compreendeu três modalidades, com finalidades distintas.
+Os \textbf{testes automatizados} verificam regras de negócio, fórmulas e persistência de dados. Foram desenvolvidos com o GdUnit4, ferramenta de testes para Godot 4, e organizados em quatro suítes, totalizando 65 casos: atributos e evolução, captura, recompensas e interface, e persistência e continuidade da sessão.
+Os \textbf{testes funcionais manuais} verificam os fluxos de interação e o comportamento das interfaces por meio da interação direta com o jogo, contemplando inicialização, exploração, interação com criaturas, captura, combate, evolução e persistência. Foram executados nos ambientes Linux e Windows e incluíram verificações de integração entre os sistemas.
+Os \textbf{testes de desempenho} medem o comportamento técnico do protótipo, conforme descrito a seguir.
 
 A avaliação de desempenho foi conduzida em cinco execuções do procedimento de teste, cada uma com cinco ciclos de combate e retorno à exploração, totalizando 25 ciclos. Foram coletadas métricas de taxa de quadros por segundo (FPS), tempo de carregamento e transição entre cenas e consumo de memória RAM e VRAM. As medições de FPS contemplaram os cenários de exploração e combate, com 150 amostras por cenário. Os dados foram organizados em tabelas para comparação entre as execuções e análise do comportamento do protótipo nas condições avaliadas.
 
@@ -43,7 +45,7 @@ Os procedimentos descritos correspondem à avaliação técnica interna do jogo.
 }
 
 \section{SOLUÇÃO DESENVOLVIDA}
-Nesta seção, apresenta-se o detalhamento técnico e a engenharia do protótipo do jogo \textit{Alchemon}. A estruturação da solução desenvolvida foi organizada com base nas quatro fases do ciclo de produção propostas por Chandler \cite{Chandler2009}: a Subseção A detalha as atividades de Pré-Produção; a Subseção B descreve a etapa de Produção e implementação prática; a Subseção C aborda os Testes internos de Garantia de Qualidade (QA) e as evidências visuais; e a Subseção D apresenta a Finalização e a geração da compilação executável.
+Nesta seção, apresenta-se o detalhamento técnico e a engenharia do protótipo do jogo \textit{Alchemon}. A estruturação da solução desenvolvida foi organizada com base nas três etapas do ciclo de produção de Chandler \cite{Chandler2009}: a Subseção A detalha a Pré-Produção; a Subseção B descreve a Produção e a implementação prática; a Subseção C apresenta as evidências visuais e o ciclo de correção de erros, que ocorrem entre a produção e a pós-produção; e a Subseção D apresenta a Finalização e a geração da compilação executável. Os procedimentos de teste estão descritos na Seção~\ref{sec:metodologia}, e seus resultados, na Seção~\ref{sec:resultados}.
 
 % ---------------------------------------------------------------------
 \subsection{Pré-Produção: Planejamento, Conceito e Requisitos}
@@ -95,7 +97,7 @@ RF14 & Salvamento, carregamento e continuidade \\
 \subsubsection{Transposição didática}
 A transposição didática foi planejada em torno de quatro referenciais: a Química, a Teoria da Autodeterminação (SDT), a teoria de Ausubel e a aprendizagem tangencial.
 
-\textbf{Química.} Cada espécie corresponde a um elemento, e seus atributos-base são gerados a partir de propriedades tabeladas, normalizadas para a faixa de 30 a 110. A Tabela~\ref{tab:quimica} apresenta as correspondências adotadas. Elas são abstrações lúdicas, e não equivalências físicas entre grandezas.
+\textbf{Química.} Cada espécie corresponde a um elemento, e seus atributos-base são gerados a partir de propriedades tabeladas, normalizadas para a faixa de 30 a 110. A Tabela~\ref{tab:quimica} apresenta as correspondências adotadas. Elas são abstrações lúdicas, e não equivalências físicas entre grandezas; a Eq.~\ref{eq:norm} e o parágrafo seguinte explicam como os valores são calculados.
 
 \begin{table}[!h]
 \caption{Correspondência entre atributos do jogo e conceitos químicos.}
@@ -114,6 +116,13 @@ Energia de ação & Elétrons de valência (referência conceitual) \\
 \hline
 \end{tabular}
 \end{table}
+
+Cada propriedade tabelada $x$ é normalizada pelo método min-max e mapeada para a faixa de 30 a 110:
+\begin{equation}
+B=30+\mathrm{round}\!\left(80\cdot\mathrm{clamp}\!\left(\frac{x-x_{min}}{x_{max}-x_{min}},0,1\right)\right)
+\label{eq:norm}
+\end{equation}
+Os limites de referência, em kJ/mol, são: $0$ a $850$ para a entalpia de atomização (máximo: tungstênio); $375{,}7$ a $2372{,}3$ para a primeira energia de ionização (césio e hélio); e $0$ a $350$ para a reatividade (máximo: afinidade eletrônica do cloro). Para a velocidade, usa-se a razão $\chi/\sqrt{M}$ (eletronegatividade de Pauling sobre a raiz da massa atômica), com limites $0{,}05$ e $2{,}19$. Como a reatividade não é uma grandeza única tabelada, adotou-se uma regra por categoria: em ametais e metaloides, a afinidade eletrônica; em metais, $350\cdot 375{,}7/I_1$, de modo que metais com menor energia de ionização sejam mais reativos; e, em gases nobres, valor nulo. Gases nobres não possuem eletronegatividade de Pauling definida, e sua velocidade usa apenas a massa, por meio de $1/\sqrt{M}$. Fichas com dado obrigatório ausente são rejeitadas na geração, sem alterar os dados químicos originais. A Energia de ação é uma referência conceitual aos elétrons de valência e não é calculada diretamente a partir deles.
 
 O valor final de cada atributo depende da espécie, do nível $N$ e de um valor individual (IV) sorteado entre 1 e 31 na criação da criatura:
 \begin{equation}
@@ -147,13 +156,13 @@ $E$ & Efetividade: 1,5 (vantagem), 1,0 (neutro), 0,66 (desvantagem) \\
 \end{tabular}
 \end{table}
 
-As propriedades térmicas também derivam da Química. Cada golpe que acerta injeta energia $Q$ no alvo, e a variação de temperatura é $\Delta T=Q/(m\,c_p)$. Ao ultrapassar o ponto de fusão ou de ebulição da espécie, a criatura muda de estado físico e sofre dano de transição.
+As propriedades térmicas também derivam da Química. Cada golpe que acerta injeta energia $Q$ no alvo, e a variação de temperatura é $\Delta T=Q/(m\,c_p)$. A energia é obtida de um valor térmico do golpe, $Q=k\,(N/10+1)(P/10)(A/100)$, em que $k=1000$ é um fator de balanceamento sem correspondente físico, necessário para que $\Delta T$ seja comparável aos pontos de fusão e ebulição em kelvin. Ao ultrapassar o ponto de fusão ou de ebulição da espécie, a criatura muda de estado físico e sofre dano de transição, aplicado uma única vez por cruzamento. Trata-se de um modelo térmico simplificado, destinado à representação didática e às regras de combate: não simula o calor latente de mudança de fase, em que a temperatura permanece constante durante a transição, nem constitui uma simulação termodinâmica completa.
 
 \textbf{SDT.} O jogo possui poucos tutoriais didáticos, pois presume que um professor irá acompanhar o jogador e assistir nesse quesito, de modo que o sucesso inicial do jogador sustenta a sensação de competência e a motivação. Em contrapartida, os combates são desafiadores e exigem o uso conjunto de todas as mecânicas apresentadas, em especial a temperatura e os pontos de ebulição, para que o jogador obtenha êxito.
 
-\textbf{TAS.} Os subsunçores são as próprias criaturas. Em combate, elas se combinam em compostos, e o jogador associa os tipos científicos (Metal, Metaloide e Ametal) ao elemento correspondente. Por limitação de tempo, não foi possível implementar modelos 3D definitivos; a proposta é que cada Alchemon tenha aparência e personalidade condizentes com a natureza de seu elemento.
+\textbf{TAS.} As criaturas funcionam como representações mediadoras dos elementos químicos, permitindo relacionar conhecimentos prévios dos estudantes, os subsunçores, às propriedades periódicas apresentadas no jogo. Durante os combates e a formação de compostos, essas representações oferecem situações em que o jogador pode relacionar a classificação dos elementos (Metal, Metaloide e Ametal) a seus comportamentos químicos. Por limitação de tempo, não foi possível implementar modelos 3D definitivos; a proposta é que cada Alchemon tenha aparência e personalidade condizentes com a natureza de seu elemento.
 
-\textbf{Aprendizagem tangencial.} Ocorre quando o jogador consulta a Tabela Periódica, presente no jogo ou fora dele. A informação obtida gera vantagens táticas, como a escolha do tipo de ataque ou o aproveitamento dos pontos de ebulição, e reforça a motivação para novas consultas.
+\textbf{Aprendizagem integrada e tangencial.} O projeto distingue dois processos. No primeiro, de aprendizagem integrada às mecânicas, o jogador consulta a Tabela de espécies no jogo e usa as informações químicas para decidir, por exemplo, o tipo de ataque ou o aproveitamento dos pontos de ebulição. No segundo, a aprendizagem tangencial propriamente dita, o contato com os elementos e suas representações pode despertar curiosidade e motivar a investigação voluntária dos conceitos em outras fontes, fora do jogo. O Alchemon oferece condições para o primeiro processo e busca favorecer o segundo, cuja ocorrência depende de avaliações com os estudantes.
 
 \subsubsection{Arquitetura e desacoplamento}
 O projeto foi organizado por responsabilidade em sete diretórios: \texttt{scenes}, \texttt{EXPLORATION}, \texttt{COMBAT}, \texttt{DATABASE}, \texttt{INTERFACES}, \texttt{autoload} e \texttt{test}. O desacoplamento separa dados e regras da orquestração de cenas. As regras (fórmulas, captura, recompensas e sincronização) são classes que não dependem da árvore de nós, e os nós da engine atuam como adaptadores de entrada, apresentação e ciclo de vida. Dois serviços globais, \texttt{GameSession} e \texttt{CombatSignal}, centralizam o progresso e os eventos de combate, permitindo que os módulos reajam por sinais sem referências diretas. O estado transitório da batalha também é distinto dos dados permanentes das criaturas, que só são atualizados em pontos bem definidos. Assim, a dependência da engine permanece, mas o núcleo de regras pode ser testado isoladamente.
@@ -198,15 +207,15 @@ com $M=255$ para a ferramenta compatível e $M=127$ para a incompatível. A capt
 \textbf{Fuga.} Permite ao jogador tentar escapar de combates contra adversários, com chance de sucesso de 5/6. Uma tentativa malsucedida não traz benefícios ao adversário, mas consome a ação do jogador naquele turno.
 
 \subsubsection{Formação de compostos}
-Na estação de alquimia, o jogador vincula de dois a quatro Alchemons. Um grupo forma um composto \textbf{iônico} quando combina metal e ametal com diferença de eletronegatividade $\Delta E\ge 2{,}0$ e cargas que se neutralizam; forma um composto \textbf{covalente} quando combina ametais com $\Delta E<2{,}0$ e ligações que fecham o octeto; e, em qualquer outro caso, forma uma \textbf{Mistura}, sempre de dois Alchemons. O composto possui temperatura própria, e sua temperatura de cisão depende do tipo de ligação: no iônico, $T_{cis}=T_{eb,\hat{a}nion}+250|\Delta E|+100|Z_{c\acute{a}tion}|$. Quando a temperatura atinge esse limite, o vínculo é desfeito, os sobreviventes sofrem choque térmico e ficam em Sobrecarga Térmica por duas rodadas.
+Na estação de alquimia, o jogador vincula de dois a quatro Alchemons. Um grupo forma um composto \textbf{iônico} quando combina metal e ametal com diferença de eletronegatividade $\Delta E\ge 2{,}0$ e cargas que se neutralizam; e forma um composto \textbf{covalente} quando combina ametais com $\Delta E<2{,}0$ e ligações que fecham o octeto. As proporções são calculadas pelo jogo. A \textbf{Mistura} é exclusiva de pares: se dois Alchemons não formam composto (por exemplo, metal com metal, metaloides ou gases nobres), formam uma Mistura. Se o jogador seleciona três ou quatro Alchemons e o grupo não satisfaz os critérios de composto, a combinação é rejeitada e o jogo informa o motivo.
+
+O composto possui temperatura própria, e sua temperatura de cisão, em kelvin, depende do tipo de ligação. No iônico, $T_{cis}=T_{eb,\hat{a}nion}+250|\Delta E|+100|Z_{c\acute{a}tion}|$; no covalente, $T_{cis}=\max(T_{eb,a},T_{eb,b})+150\,n$, em que $n$ é o número de pares compartilhados. Os coeficientes 250, 100 e 150 são parâmetros de balanceamento, escolhidos para que ligações mais polarizadas, cátions de maior carga e ligações múltiplas resistam a temperaturas mais altas, em analogia qualitativa com a maior estabilidade desses vínculos; não decorrem de uma lei física. Quando a temperatura atinge esse limite, o vínculo é desfeito, os sobreviventes sofrem choque térmico e ficam em Sobrecarga Térmica por duas rodadas. Em resumo, os critérios de classificação (metal ou ametal, $\Delta E$, neutralização de cargas e octeto) possuem fundamentação química, enquanto as equações de temperatura e os bônus numéricos são adaptações para o balanceamento do jogo.
 
 % ---------------------------------------------------------------------
 \subsection{Testes e Garantia de Qualidade (QA)}
 
 \subsubsection{Protocolo de testes internos}
-A verificação foi contínua e conduzida pelo próprio desenvolvedor. Os testes funcionais de caixa-preta consistiram em executar o jogo em Linux e Windows e verificar, a partir das entradas do jogador, se cada mecânica produzia o resultado esperado, conforme os RFs da Tabela~\ref{tab:rf}: inicialização, exploração, encontros, combate, captura, evolução, formação de compostos e persistência. Em paralelo, as regras de domínio foram cobertas por testes automatizados com o GdUnit4, em 4 suítes que abrangem crescimento, captura, recompensas, persistência, compostos, temperatura, loja e desempenho. Esses testes verificam também casos-limite, como o valor de captura entre 1 e 255, dados de salvamento inválidos e arquivos corrompidos.
-
-A avaliação de desempenho seguiu um procedimento automatizado, com cinco execuções de cinco ciclos de combate e retorno à exploração, e registrou FPS, tempos de carregamento e consumo de RAM e VRAM. Não foram realizadas avaliações com estudantes nesta etapa, de modo que a eficácia pedagógica não foi validada empiricamente.
+A verificação foi contínua e conduzida pelo próprio desenvolvedor, conforme os procedimentos da Seção~\ref{sec:metodologia}: testes funcionais manuais em Linux e Windows, com base nos RFs da Tabela~\ref{tab:rf}, e testes automatizados das regras de domínio, incluindo casos-limite, como o valor de captura entre 1 e 255, dados de salvamento inválidos e arquivos corrompidos. Não foram realizadas avaliações com estudantes nesta etapa, de modo que a eficácia pedagógica não foi validada empiricamente.
 
 \subsubsection{Ciclo iterativo de correção de erros}
 A fase de testes retroalimentou a Produção, conforme o ciclo de Chandler: ao identificar uma falha, o código retornava à implementação para refatoração e só então era verificado novamente. Quatro casos ilustram esse ciclo:

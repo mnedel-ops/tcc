@@ -1,70 +1,41 @@
 % =====================================================================
-% SEÇÃO VI - RESULTADOS E DISCUSSÕES
+% SEÇÃO V - RESULTADOS E DISCUSSÕES
 % =====================================================================
 
 \section{RESULTADOS E DISCUSSÕES}
+\label{sec:resultados}
 Esta seção apresenta as evidências de funcionamento e de estabilidade técnica do protótipo \textit{Alchemon}, obtidas por meio de testes internos de qualidade. Ela está organizada em três partes: a Subseção A reúne os testes funcionais; a Subseção B resume o desempenho técnico; e a Subseção C discute os resultados e as limitações do trabalho.
 
 % ---------------------------------------------------------------------
 \subsection{Testes Funcionais}
-Os testes funcionais verificaram se cada mecânica planejada operava conforme o esperado. Foram realizados testes manuais, por interação direta com o jogo nos ambientes Linux e Windows, e testes automatizados com o GdUnit4. A Tabela~\ref{tab:funcionais} apresenta as mecânicas verificadas e o status de cada uma. Todas foram aprovadas.
-
-\begin{table}[!h]
-\caption{Testes funcionais das mecânicas do \textit{Alchemon}.}
-\label{tab:funcionais}
-\centering
-\footnotesize
-\setlength{\tabcolsep}{3pt}
-\begin{tabular}{@{}p{2.6cm}p{3.9cm}p{1.1cm}@{}}
-\hline
-\textbf{Mecânica} & \textbf{Resultado esperado} & \textbf{Status} \\
-\hline
-Movimentação e colisão & Deslocamento limitado pelos colisores do cenário & Aprovado \\
-Interação e coleta & Item identificado e adicionado ao inventário & Aprovado \\
-NPCs (\textit{Fighter}, Enfermeiro, Lojista, Civil) & Luta, cura, compra/venda e diálogo & Aprovado \\
-Encontros selvagens & Combate iniciado em mato alto & Aprovado \\
-Combate por turnos & Ações resolvidas pela iniciativa até a vitória ou derrota & Aprovado \\
-Dano e efetividade de tipo & Multiplicadores 1,5, 1,0 e 0,66 aplicados & Aprovado \\
-Uso de itens e fuga & Cura limitada ao HP máximo; fuga com chance de 5/6 & Aprovado \\
-Captura & Chance cresce com a redução do HP; ferramenta correta é mais eficaz & Aprovado \\
-Temperatura e estados físicos & Mudança de estado e dano de transição & Aprovado \\
-Misturas e Compostos & Vínculo formado, validado e desfeito & Aprovado \\
-Experiência e níveis & Nível e atributos atualizados & Aprovado \\
-Barra de vida, HUD e menus & Informações exibidas e navegação funcional & Aprovado \\
-Salvamento e carregamento & Progresso e posição restaurados & Aprovado \\
-\hline
-\end{tabular}
-\end{table}
-
+Os testes funcionais verificaram se cada mecânica planejada operava conforme o esperado. Foram realizados testes manuais, por interação direta com o jogo nos ambientes Linux e Windows, e testes automatizados com o GdUnit4. Todas as mecânicas verificadas foram aprovadas. As regras de negócio, as fórmulas e a persistência de dados foram cobertas por testes automatizados; os fluxos de interação, os NPCs e o comportamento das interfaces (HUD e menus) foram verificados por testes manuais.
 Os testes automatizados foram organizados em quatro suítes, com 65 casos executados e aprovados: 4 de atributos e evolução, 13 de captura, 11 de recompensas e interface e 37 de persistência e continuidade da sessão. Eles cobrem fórmulas, limites e dados inválidos, como o valor de captura restrito de 1 a 255 e arquivos de salvamento corrompidos. A descrição individual dos casos encontra-se na documentação técnica do repositório\footnote{https://tinyurl.com/2ydk7rt7}.
 
 % ---------------------------------------------------------------------
 \subsection{Desempenho Técnico}
-O desempenho foi medido em cinco execuções do procedimento de teste, cada uma com cinco ciclos de combate e retorno à exploração, totalizando 25 ciclos. A Tabela~\ref{tab:desempenho} resume os resultados.
+O desempenho foi medido em cinco execuções do procedimento de teste, cada uma com cinco ciclos de combate e retorno à exploração, totalizando 25 ciclos, em um único equipamento: processador Intel® Core™ i7-8750H × 12, placa de vídeo NVidia 1960, 32 GB de RAM, sistema operacional Arch Linux, resolução 1920 por 1080 e configurações gráficas padrão. Para cada cenário, foram coletadas 150 amostras de FPS, e o valor mínimo corresponde à menor amostra individual registrada. 
+
+Os resultados foram os esperados. Quanto à fluidez, as médias de FPS superaram a meta de 60 quadros por segundo nos dois cenários, sem quedas próximas de 30 FPS. Quanto à velocidade, as transições levaram menos de 1 s, abaixo do limite de 3 s definido nos requisitos. Quanto à memória, o aumento inicial de RAM, de 252,84 para 287,18 MB, é compatível com o carregamento dos recursos do combate na primeira execução, e o consumo estabilizou em seguida, com variação de no máximo 0,1 MB nos ciclos subsequentes, sem travamentos e sem nós órfãos.
+
+A Tabela~\ref{tab:rnf} relaciona cada requisito não funcional ao procedimento de verificação e à evidência correspondente.
 
 \begin{table}[!h]
-\caption{Resumo do desempenho técnico.}
-\label{tab:desempenho}
+\caption{Verificação dos requisitos não funcionais.}
+\label{tab:rnf}
 \centering
 \footnotesize
-\begin{tabular}{@{}p{3.5cm}p{4.1cm}@{}}
+\begin{tabular}{@{}p{0.9cm}p{3.1cm}p{3.5cm}@{}}
 \hline
-\textbf{Métrica} & \textbf{Resultado} \\
+\textbf{Req.} & \textbf{Verificação} & \textbf{Evidência} \\
 \hline
-FPS na exploração & 139,36 (mínimo 132) \\
-FPS no combate & 138,58 (mínimo 131) \\
-Inicialização & 579,8 ms \\
-Carregamento da exploração & 346,8 ms \\
-Carregamento do combate & 42,6 ms \\
-Retorno do combate & 621,6 ms \\
-RAM (início $\rightarrow$ após combate) & 252,84 $\rightarrow$ 287,18 MB \\
-Variação de RAM em 25 ciclos & 0,0 a 0,1 MB \\
-Nós órfãos & 0 \\
+RNF01 & Medição de FPS & No documento de testes no GitHub \footnote{https://tinyurl.com/2ydk7rt7} \\
+RNF02 & Exportação e execução & Build Windows x86\_64 \\
+RNF03 & Testes de persistência & Suíte automatizada (arquivos corrompidos) \\
+RNF04 & Regras testadas sem executar a partida & Suítes automatizadas \\
+RNF05 & Monitoramento de memória & 25 ciclos de execução \\
 \hline
 \end{tabular}
 \end{table}
-
-Os resultados foram os esperados. Quanto à fluidez, as médias de FPS superaram a meta de 60 quadros por segundo nos dois cenários, sem quedas próximas de 30 FPS. Quanto à velocidade, as transições levaram menos de 1 s, abaixo do limite de 3 s definido nos requisitos. Quanto à memória, o consumo estabilizou após o primeiro ciclo e variou no máximo 0,1 MB nos ciclos seguintes, sem travamentos e sem nós órfãos.
 
 % ---------------------------------------------------------------------
 \subsection{Análise Crítica e Limitações}
@@ -72,20 +43,27 @@ Os resultados indicam que a parte técnica e funcional do protótipo está concl
 
 Esses resultados têm limites. As medições de desempenho restringem-se ao equipamento de teste e não permitem generalizar para outras configurações de hardware. A ausência de nós órfãos também não comprova, isoladamente, a inexistência de vazamentos de memória. Além disso, os testes foram internos e conduzidos pelo próprio desenvolvedor, sem usuários externos.
 
-Principalmente, não foi realizada avaliação com estudantes do Ensino Médio, por limitações de tempo. O funcionamento do código foi, portanto, separado da medição do impacto pedagógico. Ainda não há dados empíricos, mas, devido a robusta teoria apresentada, o uso de leis da química e de outros preceitos, pode-se inferir que o jogo favorece a aprendizagem tangencial, a compreensão dos conceitos da Tabela Periódica, quando combinado com um professor que utilize o jogo . Essa validação com estudantes permanece como etapa futura.
+Principalmente, não foi realizada avaliação com estudantes do Ensino Médio, por limitações de tempo. O funcionamento do código foi, portanto, separado da medição do impacto pedagógico. Embora as mecânicas desenvolvidas tenham sido fundamentadas em princípios da aprendizagem tangencial e em conceitos químicos, não existem, nesta etapa, dados empíricos que permitam determinar sua contribuição para a aprendizagem dos estudantes. Assim, o potencial pedagógico do Alchemon permanece como uma hipótese fundamentada na literatura, cuja investigação depende de avaliações futuras com o público-alvo.
 
 % =====================================================================
-% SEÇÃO VII - CONCLUSÃO
+% SEÇÃO VI - CONCLUSÃO
 % =====================================================================
 
 \section{CONCLUSÃO}
-Neste trabalho, apresentou-se o desenvolvimento do jogo digital \textit{Alchemon}, um jogo 3D de captura de criaturas concebido para promover a aprendizagem tangencial dos elementos da Tabela Periódica entre estudantes do Ensino Médio. A partir da execução do projeto, verifica-se que o objetivo geral e os objetivos específicos foram cumpridos no âmbito do desenvolvimento de \textit{software}. O protótipo foi construído com a engine Godot 4, com uma arquitetura que separa as regras de jogo da apresentação, e implementa exploração, captura, combate por turnos, progressão, formação de compostos e persistência de dados, como é esperado do gênero. A estabilidade funcional foi evidenciada pelos testes internos de qualidade apresentados na Seção VI: 65 casos automatizados aprovados, testes manuais em Linux e Windows e desempenho estável em 25 ciclos repetidos de combate e retorno à exploração.
+\label{sec:conclusao}
+Neste trabalho, apresentou-se o desenvolvimento do Alchemon, um jogo digital 3D de captura e colecionismo de criaturas, concebido para abordar elementos e propriedades da Tabela Periódica por meio de mecânicas inspiradas no gênero \textit{Creature Capture}. A proposta integrou conceitos químicos aos sistemas de atributos, combate, temperatura e formação de compostos, buscando relacionar o conteúdo científico às decisões tomadas durante a partida.
 
-Como limitação, destaca-se a impossibilidade temporal de conduzir testes empíricos de usabilidade e de aprendizagem com estudantes do público-alvo. Os testes internos indicam que o \textit{software} é funcional e estável nas condições avaliadas, mas não medem o ganho pedagógico nem a retenção de conteúdo. Por isso, a contribuição da proposta para a aprendizagem permanece como hipótese fundamentada na literatura, e não como resultado comprovado. Reconhece-se também que mais tempo de desenvolvimento permitiria o refinamento visual do jogo. Os modelos 3D definitivos das criaturas não foram implementados, e as animações e os elementos da interface podem ser aprimorados para elevar a imersão e o apelo estético.
+O desenvolvimento resultou em um protótipo com exploração, interação, captura, combate por turnos, progressão, formação de compostos e persistência de dados. Os objetivos foram cumpridos no âmbito do desenvolvimento técnico. A organização da arquitetura permitiu verificar as funcionalidades por testes automatizados e funcionais: foram aprovados 65 casos automatizados, além das verificações manuais em Linux e Windows, e as medições indicaram desempenho estável nas condições avaliadas, conforme a Seção~\ref{sec:resultados}.
+
+Como limitação, não foram realizadas avaliações com estudantes do Ensino Médio, de modo que a usabilidade, o engajamento e a contribuição do jogo para a aprendizagem dos conceitos químicos não possuem validação empírica. O potencial pedagógico do Alchemon permanece fundamentado na literatura e nas decisões de projeto, sem constituir resultado de aprendizagem comprovado. Também permanecem oportunidades de aprimoramento visual, pois os modelos 3D definitivos das criaturas não foram implementados, e as animações e os elementos da interface podem ser refinados.
 
 Para a continuidade deste projeto em pesquisas futuras, recomendam-se as seguintes etapas:
 \begin{enumerate}
-    \item \textbf{Aplicação de testes empíricos com estudantes:} realização de sessões de uso com estudantes do Ensino Médio, acompanhadas de pré-testes e pós-testes, para mensurar o impacto pedagógico, a usabilidade e a curva de aprendizagem;
+    \item \textbf{Aplicação de testes empíricos com estudantes:} realização de sessões de uso com estudantes do Ensino Médio, acompanhadas de pré-testes e pós-testes e instrumentos de usabilidade e engajamento, para investigar o impacto pedagógico, a usabilidade, o engajamento e a retenção dos conceitos;
     \item \textbf{Refinamento e expansão gráfica:} criação dos modelos 3D das criaturas, com aparência e personalidade condizentes com a natureza de cada elemento, e polimento da direção de arte, das animações e da interface;
     \item \textbf{Expansão do conteúdo pedagógico:} criação de novos Alchemons e ataques, além da ampliação do mundo do jogo com novos ginásios e do ajuste fino do balanceamento das mecânicas.
 \end{enumerate}
+
+
+\subsection{Declaração de uso de IA}
+Os autores utilizaram Claude, Sonnet 5.5, para revisar o código na Seção VI. Todo o conteúdo foi revisado pelos autores, que assumem total responsabilidade pelo texto final.
